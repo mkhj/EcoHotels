@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="169be6aa-2b1d-4395-9b69-1dbbf1e2866c" name="Mark@MACPC 2012-06-13 12:18:58" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-13 12_18_58" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-13T12:18:58.5753277+02:00" queuing="2012-06-13T12:18:58.9854997+02:00" start="2012-06-13T12:18:59.7531073+02:00" finish="2012-06-13T12:19:04.8021293+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test2" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="ad519a8f-c679-6b8d-7622-5d1ed53a4f06">
+      <Execution timeOut="1800000" id="efa55cb0-ecfb-453b-b346-106373bfd77d" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ad519a8f-c679-6b8d-7622-5d1ed53a4f06" executionId="efa55cb0-ecfb-453b-b346-106373bfd77d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="efa55cb0-ecfb-453b-b346-106373bfd77d" testId="ad519a8f-c679-6b8d-7622-5d1ed53a4f06" testName="Test2" computerName="MACPC" duration="00:00:04.1073133" startTime="2012-06-13T12:19:00.0744087+02:00" endTime="2012-06-13T12:19:04.6849373+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="efa55cb0-ecfb-453b-b346-106373bfd77d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.UnitTest1.Test2 threw exception: 
+System.Globalization.CultureNotFoundException: Culture is not supported.
+Parameter name: name
+Germany is an invalid culture identifier.</Message>
+          <StackTrace>    at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at EcoHotels.Core.Tests.UnitTest1.Test2() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\UnitTest1.cs:line 126
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

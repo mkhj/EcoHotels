@@ -1,0 +1,187 @@
+﻿@model EcoHotels.Web.UI.Areas.Backend.Models.EditHotelInfoModel
+@{
+    ViewBag.Title = "Edit Hotel";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "frontdesk" });}
+
+<div id="view" class="container" data-view="hotel" data-action="edit">
+    <h2>
+        Hotel
+        <small>Change property information etc</small>
+    </h2>
+    <div class="row">
+        <div class="span9">
+            <form class="form-horizontal ajaxform" action="@Url.Action("edit", "hotel", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Id" value="@Model.Id" readonly="readonly" />
+                </div>
+
+                     <div class="content">
+                        <div class="control-group">
+                            <div class="alert hidden">...</div>
+                        </div>                     
+                     </div>
+
+                    <div style="padding: 0px 20px 20px 20px;">
+                        <h3>SEO</h3>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Name:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Filename, new { @class = "span6 required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Page title:</label>
+                        <div class="controls">
+                            @Html.TextBoxLocalizationFor(m => m.Title, Model.SelectedLanguageId, new { @class = "span6 required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Keywords:</label>
+                        <div class="controls">
+                            @Html.TextBoxLocalizationFor(m => m.Keywords, Model.SelectedLanguageId, new { @class = "span6 required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Page description:</label>
+                        <div class="controls">
+                            @Html.TextAreaLocalizationFor(m => m.Description, Model.SelectedLanguageId, new { @class = "required span6", rows = "6" })
+                        </div>
+                    </div>
+
+                    <hr />  
+                    <div style="padding: 0px 20px 20px 20px;">
+                        <h3>Information</h3>
+                    </div>                    
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Name:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "span4 required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Vat No.:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.VatNo, new { @class = "required" })
+                        </div>
+                    </div>
+            
+                    <div class="control-group">
+                        <label class="control-label" for="input01">E-mail:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Phone:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Phone, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Fax:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Fax)
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">WWW:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.WWW)
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Address:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Address1)
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Address2)
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Address:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.City, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Zipcode:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Zipcode, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Country:</label>
+                        <div class="controls">
+                            @Html.DropDownListFor(m => m.SelectedCountryName, Model.AvailableCountries, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Is Active:</label>
+                        <div class="controls">
+                            @Html.CheckBoxFor(m => m.IsActive)
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div style="padding: 0px 20px 0px 20px;">
+                        <h3>Photos</h3>
+                    </div>
+                    
+                    <div class="content">
+                        <div class="clearfix">
+                            <div class="btn-toolbar pull-right clearfix">
+                                <a id="btn-remove-files" class="btn btn-small">Remove</a>                            
+                            </div>
+                        </div>
+                        <ul id="roomtype-assets" class="thumbnails files">
+
+                            @for (int i = 0; i < Model.Assets.Count(); i++)
+                            {
+                                var id = Model.Assets.ElementAt(i).Id;
+                                var name = Model.Assets.ElementAt(i).Name;
+                                
+                                <li class="span1">
+                                    @Html.Hidden("Assets.Index", id)
+                                    @Html.Hidden("Assets[" + id + "].Id", id)
+                                    <a class="thumbnail preview"><img src="/img/@id/60x45/@name" /></a>
+                                </li>              
+                            }
+                                                                                              
+                        </ul>
+                    </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="span3">
+            @{Html.RenderAction("backend", "navigation", new { page = "" });}
+        </div>
+    </div>
+
+</div>

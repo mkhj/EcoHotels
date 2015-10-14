@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8598c78d-63cd-4f35-90d4-5a5b7c1a65b8" name="Mark@MACPC 2012-06-19 13:58:23" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-19 13_58_23" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-19T13:58:23.1821395+02:00" queuing="2012-06-19T13:58:23.5453975+02:00" start="2012-06-19T13:58:24.0473185+02:00" finish="2012-06-19T13:58:25.2962620+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="9193d417-81ee-9a8c-b811-a8a6a4e38992">
+      <Execution timeOut="1800000" id="ce72e113-62a9-4e93-a93b-7d07959e6059" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Unit.PasswordHelperTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9193d417-81ee-9a8c-b811-a8a6a4e38992" executionId="ce72e113-62a9-4e93-a93b-7d07959e6059" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ce72e113-62a9-4e93-a93b-7d07959e6059" testId="9193d417-81ee-9a8c-b811-a8a6a4e38992" testName="TestMethod1" computerName="MACPC" duration="00:00:00.1165952" startTime="2012-06-19T13:58:24.5472865+02:00" endTime="2012-06-19T13:58:25.1243980+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce72e113-62a9-4e93-a93b-7d07959e6059">
+      <Output>
+        <DebugTrace>yEuWSOQ1
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

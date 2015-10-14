@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ApplicationServices-Web.config Connection String" description="ApplicationServices Connection String used in web.config by the application to access the database." defaultvalue="Data Source=localhost;Initial Catalog=EcoHotels;Persist Security Info=True;Trusted_Connection=true" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\SourceCode\\EcoHotels\\EcoHotels\.Web\.UI\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ApplicationServices']/@connectionString" />
+  </parameter>
+</parameters>

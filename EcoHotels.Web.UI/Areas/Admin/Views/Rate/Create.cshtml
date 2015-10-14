@@ -1,0 +1,86 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Price.CreateRateCategoryModel
+@{
+    ViewBag.Title = "Rates";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "pricing" });}
+
+
+<style>
+div.pick-a-color-markup .color-menu.small
+{
+    width: inherit;    
+}
+</style>
+<div id="view" class="container" data-view="rates" data-action="create">
+    <h2>
+        Rates
+        <small>Manage all the pricing categories</small>
+    </h2>
+    <div class="row">
+        <div class="span9">
+            <br />
+            
+            <form id="form" class="form-horizontal ajaxform" action="@Url.Action("create", "rate", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                </div>
+
+                <div class="content">
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Name:</label>
+                    <div class="controls">                        
+                        @Html.TextBoxFor(m => m.Name, new { @class = "span5 required" })
+                    </div>
+                </div> 
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Description:</label>
+                    <div class="controls">
+                        @Html.TextAreaFor(m => m.Description, new { @class = "span5", rows = "6" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Color:</label>
+                    <div class="controls">                        
+                        @Html.HiddenFor(m => m.Color, new { @class = "pick-a-color" })
+                    </div>
+                </div> 
+
+                <hr />
+
+                <div class="content">
+                    <h3>Rates</h3>
+                    <br /><br />
+                </div>
+
+                @for(var i = 0; i < Model.Items.Count(); i++)
+                { 
+                <div class="control-group">
+                    <label class="control-label" for="input01">@Model.Items[i].Name:</label>
+                    <div class="controls">                        
+                        @Html.TextBoxFor(m => m.Items[i].Value, new { @class = "span1 number-required" }) &nbsp;
+                        @Html.CheckBoxFor(m => m.Items[i].IsActive)
+                        @Html.HiddenFor(m => m.Items[i].RoomTypeId)
+                    </div>
+                </div>                                    
+                }
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Create">Create</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="span3">
+            @{Html.RenderAction("rates", "navigation", new { page = "add-category" });}
+        </div>
+    </div>
+</div>

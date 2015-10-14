@@ -1,0 +1,29 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.MainMenuModel
+
+<div class="navbar black navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="@Url.Action("index", "dashboard", new { area="admin" })">Goto Organization</a></li>
+
+                @if (User.IsInRole("Supporter") || User.IsInRole("Backend"))
+                { 
+                    <li class="active">
+                        <a href="@Url.Action("index", "dashboard")">Backend</a>   
+                    </li>
+                }  
+            </ul>
+            <ul class="nav pull-right">
+                <li class="divider-vertical"></li>
+                <li><a href="@Url.Action("logoff", "account", new { area="admin" })">Log out</a></li>
+            </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>

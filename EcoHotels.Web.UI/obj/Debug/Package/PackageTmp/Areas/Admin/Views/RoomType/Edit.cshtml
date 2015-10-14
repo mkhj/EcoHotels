@@ -1,0 +1,188 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Property.EditRoomTypeModel
+@{
+    ViewBag.Title = "Edit Room Type";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "hotels" });}
+
+<div id="view" class="container" data-view="roomtype" data-action="edit">
+
+    <h2>
+        Roomtype
+        <small>Change your basic roomtype settings</small>
+    </h2>
+    <div class="row">
+        <div class="span9">
+            <br />
+            <form id="form" class="form-horizontal ajaxform" action="@Url.Action("edit", "roomtype", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="HotelId" value="@Model.HotelId" readonly="readonly" />
+                    <input type="hidden" name="RoomTypeId" value="@Model.RoomTypeId" readonly="readonly" />
+                </div>
+
+                <div class="content">
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Name:</label>
+                    <div class="controls">
+                        @Html.TextBoxLocalizationFor(m => m.Name, Model.SelectedLanguageId, new { @class = "span5 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Description:</label>
+                    <div class="controls">
+                        @Html.TextAreaLocalizationFor(m => m.Description, Model.SelectedLanguageId, new { @class = "required span5", rows = "6" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Size:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Size, new { @class = "input-mini number required", size = "1" }) m<sup>2</sup>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Physical rooms:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.PhysicalRooms, new { @class = "input-mini number required", size = "1" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Capacity:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Capacity, new { @class = "input-mini number required", size = "1" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Rack Rate:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.RackRate, new { @class = "input-mini number required", size = "1" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Smoking:</label>
+                    <div class="controls">
+                        @Html.CheckBoxFor(m => m.Smoking)
+                    </div>
+                </div>
+
+                <hr />
+
+                <fieldset>
+                    <div class="content">
+
+                    <h3>Amenities</h3>
+                    @if (Model.Amenities.Count() == 0)
+                    { 
+                        <text>There are no available items to add.</text>
+                    }
+                    else 
+                    { 
+			            <table class="table table-striped" cellpadding="0" cellspacing="0">			
+				            <thead>
+					            <tr>
+                                    <td style="width: 50px;"></td>
+					                <th>Name</th>
+					            </tr>
+				            </thead>				
+				            <tbody>
+                                @for (int i = 0; i < Model.Amenities.Count(); i++)
+                                {
+                                    <tr class="@(i % 2 == 1 ? "odd" : "even")">
+                                        <td>
+                                            @Html.CheckBoxFor(m => m.Amenities.ElementAt(i).IsSelected)
+                                        </td>
+                                        <td>
+                                
+                                            @Html.DisplayFor(m => m.Amenities.ElementAt(i).Name)
+                                            @Html.HiddenFor(m => m.Amenities.ElementAt(i).Id)
+                                        </td>
+                                    </tr>                    
+                                }
+				            </tbody>
+			            </table>                        
+                    }
+
+                    </div>
+                </fieldset>
+
+                <hr />
+
+                <div class="content">
+                    <h3>Photos</h3>
+                    <small>You can add up to 3 photos.</small>
+                    <br /><br />
+
+                    <ul id="asset-containers" class="thumbnails files">
+
+                    @for (int i = 0; i < Model.Assets.Count; i++)
+                    {
+                        var id = Model.Assets[i].Id;
+                        var name = Model.Assets[i].Name;
+                        var query = Model.Assets[i].CroppingQuery;
+                        
+                        <li data-has-image="true">
+                            <img src="/img/@id/200x150/@name@query" class="img-polaroid" alt="" />
+                            <ul class="container-edit unstyled" style="display: none; ">
+	                            <li class="remove"><a href="#" class="btn">Remove</a></li>
+	                            <li class="resize"><a data-toggle="modal" href="#model-media" class="btn">Resize</a></li>
+                            </ul>
+                            @Html.Hidden("Assets.Index", id, new { @class="data" })
+                            @Html.Hidden("Assets[" + id + "].Id", id, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].Name", name, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].TopX", Model.Assets[i].TopX, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].TopY", Model.Assets[i].TopY, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].BottomX", Model.Assets[i].BottomX, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].BottomY", Model.Assets[i].BottomY, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].CropXUnits", Model.Assets[i].CropXUnits, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].CropYUnits", Model.Assets[i].CropYUnits, new { @class = "data" })
+                        </li>                        
+                    }
+
+                    @if (Model.Assets.Count <= 8) { 
+                         <li data-has-image="false">
+                            <img src="http://placehold.it/200x150&text=Add%20photo" class="img-polaroid" alt="" />
+                            <ul class="container-new unstyled" style="display: none; ">
+                                <li class="add"><a class="btn" data-toggle="modal" href="#model-media">Add</a></li>
+                            </ul>
+                            <ul class="container-edit unstyled" style="display: none; ">
+	                            <li class="remove"><a href="#" class="btn">Remove</a></li>
+	                            <li class="resize"><a data-toggle="modal" href="#model-media" class="btn">Resize</a></li>
+                            </ul>
+                        </li>                   
+                    }
+ 
+                    </ul>
+
+                    <span class="label label-info">Tip:</span> Adding beautiful photos will help generate interest
+                </div>
+                    
+                <div class="form-actions">
+                    <a data-toggle="modal" href="#model-delete" class="btn">Delete</a>
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("hotels", "navigation", new { page = "roomtype", hotelId = Model.HotelId, roomtypeId = Model.RoomTypeId });}
+        </div>
+    </div>
+
+</div>
+
+@Html.Partial("Modal/Delete")
+
+@Html.Partial("Modal/MediaSelector", Model.MediaAssets)

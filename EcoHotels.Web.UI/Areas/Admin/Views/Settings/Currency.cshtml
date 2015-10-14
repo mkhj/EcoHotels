@@ -1,0 +1,53 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelCurrenciesModel
+@{
+    ViewBag.Title = "Create Hotel";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "settings" });}
+
+<div id="view" class="container" data-view="hotel" data-action="create">
+
+    <h2>
+        Currency
+        <small>Change currency settings for all your hotels</small>
+    </h2>
+
+    <div class="row">
+
+        <div class="span9">
+            <br />
+            <form class="form-horizontal ajaxform" action="@Url.Action("currency", "settings", null)" method="post">
+                <div>@Html.AntiForgeryToken()</div>
+
+                <div class="content">
+
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+                    @for (int i = 0; i < Model.Items.Count; i++)
+                    {
+                        <div class="control-group">
+                            @Html.HiddenFor(m => m.Items[i].HotelId, new { @readonly="readonly" })
+                            <label class="control-label" for="input01">@Model.Items[i].HotelName</label>
+                            <div class="controls">
+                                @Html.DropDownListFor(m => m.Items[i].SelectedCurrencyId, Model.Items[i].AvailableCurrencies, new { @class = "required" })
+                            </div>
+                        </div>
+                    }
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save Changes">Save Changes</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("settings", "navigation", new { page = "currency" });}
+        </div>
+
+    </div>
+</div>

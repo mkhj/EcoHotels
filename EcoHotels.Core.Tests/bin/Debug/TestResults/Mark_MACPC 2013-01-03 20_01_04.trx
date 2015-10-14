@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1171c2be-6fd0-42b3-b253-e977bba1b13e" name="Mark@MACPC 2013-01-03 20:01:04" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-01-03 20_01_04" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-03T20:01:04.2332146+01:00" queuing="2013-01-03T20:01:05.3941282+01:00" start="2013-01-03T20:01:06.3039014+01:00" finish="2013-01-03T20:01:15.1671054+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_persist_entity" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="0e9ccde3-606f-d55a-757a-8f455e305efe">
+      <Execution timeOut="1800000" id="c8fd7c64-0472-4b13-acc5-95047bf776cf" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_persist_entity" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0e9ccde3-606f-d55a-757a-8f455e305efe" executionId="c8fd7c64-0472-4b13-acc5-95047bf776cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c8fd7c64-0472-4b13-acc5-95047bf776cf" testId="0e9ccde3-606f-d55a-757a-8f455e305efe" testName="Can_persist_entity" computerName="MACPC" duration="00:00:07.4813846" startTime="2013-01-03T20:01:07.0221434+01:00" endTime="2013-01-03T20:01:15.0127078+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8fd7c64-0472-4b13-acc5-95047bf776cf">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT currency0_.Id as Id5_0_, currency0_.Name as Name5_0_, currency0_.ISO_4217_Number as ISO3_5_0_, currency0_.ISOCurrencySymbol as ISOCurre4_5_0_, currency0_.ExchangeRate as Exchange5_5_0_, currency0_.LCID as LCID5_0_ FROM Currencies currency0_ WHERE currency0_.Id=@p0;@p0 = 5 [Type: Int32 (0)]
+NHibernate: INSERT INTO Organizations (Name, VatNo, Phone, Email, Address1, Address2, City, Zipcode, Country, Created) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); select SCOPE_IDENTITY();@p0 = 'I Love Eco Hotels' [Type: String (4000)], @p1 = '9999999999' [Type: String (4000)], @p2 = '' [Type: String (4000)], @p3 = '' [Type: String (4000)], @p4 = '' [Type: String (4000)], @p5 = '' [Type: String (4000)], @p6 = '' [Type: String (4000)], @p7 = '' [Type: String (4000)], @p8 = '' [Type: String (4000)], @p9 = 03-01-2013 20:01:14 [Type: DateTime (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO PageInformations (Filename, LastModified, TitleMultiLanguageId, DescriptionMultiLanguageId, KeywordsMultiLanguageId) VALUES (@p0, @p1, @p2, @p3, @p4); select SCOPE_IDENTITY();@p0 = 'my-hotel' [Type: String (4000)], @p1 = 03-01-2013 20:01:14 [Type: DateTime (0)], @p2 = 11 [Type: Int32 (0)], @p3 = 12 [Type: Int32 (0)], @p4 = 13 [Type: Int32 (0)]
+NHibernate: INSERT INTO Hotels (Name, Address1, Address2, Zipcode, City, Country, Phone, Fax, Email, WWW, VatNo, CategoryOneId, CategoryTwoId, CategoryThreeId, IsActive, CheckIn, CheckOut, Created, Modified, Verified, AboutMultiLanguageId, OrganizationId, LocalCurrencyId, CancellationPolicyMultiLanguageId, PaymentPolicyMultiLanguageId, PageInformationId) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25); select SCOPE_IDENTITY();@p0 = 'My hotel' [Type: String (4000)], @p1 = '' [Type: String (4000)], @p2 = '' [Type: String (4000)], @p3 = '' [Type: String (4000)], @p4 = '' [Type: String (4000)], @p5 = '' [Type: String (4000)], @p6 = '' [Type: String (4000)], @p7 = '' [Type: String (4000)], @p8 = '' [Type: String (4000)], @p9 = '' [Type: String (4000)], @p10 = 'sdfsdfsdf' [Type: String (4000)], @p11 = 0 [Type: Int32 (0)], @p12 = 0 [Type: Int32 (0)], @p13 = 0 [Type: Int32 (0)], @p14 = False [Type: Boolean (0)], @p15 = '' [Type: String (4000)], @p16 = '' [Type: String (4000)], @p17 = 03-01-2013 20:01:14 [Type: DateTime (0)], @p18 = NULL [Type: DateTime (0)], @p19 = NULL [Type: DateTime (0)], @p20 = 8 [Type: Int32 (0)], @p21 = 6 [Type: Int32 (0)], @p22 = 5 [Type: Int32 (0)], @p23 = 9 [Type: Int32 (0)], @p24 = 10 [Type: Int32 (0)], @p25 = 2 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 0 [Type: Int32 (0)], @p1 = 0 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 14 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 0 [Type: Int32 (0)], @p1 = 1 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 15 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 0 [Type: Int32 (0)], @p1 = 2 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 16 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 0 [Type: Int32 (0)], @p1 = 3 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 17 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 0 [Type: Int32 (0)], @p1 = 4 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 18 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 1 [Type: Int32 (0)], @p1 = 0 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 19 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 1 [Type: Int32 (0)], @p1 = 1 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 20 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 1 [Type: Int32 (0)], @p1 = 2 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 21 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 1 [Type: Int32 (0)], @p1 = 3 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 22 [Type: Int32 (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 1 [Type: Int32 (0)], @p1 = 4 [Type: Int32 (0)], @p2 = 2 [Type: Int32 (0)], @p3 = 23 [Type: Int32 (0)]
+Ending NH Session</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

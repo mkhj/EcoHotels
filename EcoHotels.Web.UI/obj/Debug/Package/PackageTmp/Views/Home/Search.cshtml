@@ -1,0 +1,196 @@
+﻿@model EcoHotels.Web.UI.Models.EditCustomerInformationModel
+@{
+    ViewBag.Title = "Search result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="view" class="container" data-view="search" data-action="result">
+
+    <style>
+        .search-results
+        {
+            /*padding: 20px 20px;*/
+        }
+        
+        .search-results .product
+        {
+            padding-bottom: 40px;
+        }
+        
+        .search-results .price-type{float:left;_display:inline;font-weight:bold}
+        .search-results .price{font:italic 22px georgia,serif; color: #51A351;}  
+        
+ 
+    </style>
+
+    <div class="row">
+        <div class="span8 search-results">
+            <div style="padding: 20px;">
+
+              <div class="clearfix">
+                    <div style="float: left;">
+                        <h4 style="font-weight: 200;margin-top: 6px;">3 match found</h4>
+                    </div>
+                    <div style="float: right;">
+                        Sorted by 
+                        <select class="span2">
+                            <option>Relevance</option>
+                            <option>Price</option>
+                            <option>Rating</option>
+                        </select>
+                    </div>
+                </div>
+            <hr style="margin-top: 4px;" />
+            <div class="product">
+                <div class="clearfix">
+                    <div style="float: left;">
+                        <h2 style="font-weight: 200;"><i class="icon-home" style="margin-top: 5px;"></i> Hotel Das Cataratas</h2>
+                    </div>
+                    <div style="float: right;">
+                        <div class="price-type avg-night">Book from <span class="price" itemprop="price">$423</span> per night</div>
+                    </div>
+                </div>
+
+                <div id="myCarousel" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <img src="/assets/img/hotels/1.png" style="width: 580px; height: 358px;" />   
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/hotels/1.png" style="width: 580px; height: 358px;" /> 
+                        </div>
+                        <div class="item">
+                            <img src="/assets/img/hotels/1.png" style="width: 580px; height: 358px;" /> 
+                        </div>
+                    </div>
+                    <!--
+                    <div class="carousel-caption" style="display: none;">
+                        <h4>Second Thumbnail label</h4>
+                    </div>
+                    -->
+                    <div class="gallery-dots unselectable">
+                        <a class="dot selected" data-index="1">•</a>
+                        <a class="dot" data-index="2">•</a>
+                        <a class="dot" data-index="3">•</a>
+                        <a class="dot" data-index="4">•</a>
+                    </div>
+
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" style="display: none;" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" style="display: none;" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
+
+                <div class="align-right"><a href="@Url.Action("index", "hotel")">View Details</a> <i class="icon-arrow-right"></i></div>
+            </div>
+
+            <div class="product">
+                <div class="clearfix">
+                    <div style="float: left;">
+                        <h2 style="font-weight: 200;"><i class="icon-home" style="margin-top: 5px;"></i> Folegandros</h2>
+                    </div>
+                    <div style="float: right;">
+                        <div class="price-type avg-night">Book from <span class="price" itemprop="price">$560</span> per night</div>
+                    </div>
+                </div>
+                       
+
+                <div id="myCarousel2" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <img src="http://cf2.thingd.com/default/124931703025180045_43d9ed4281fa.jpg" style="width: 620px; height: 320px;" /> 
+                        </div>
+                        <div class="item">
+                            <img src="http://cf2.thingd.com/default/124931703025180045_43d9ed4281fa.jpg" style="width: 620px; height: 320px;" />  
+                        </div>
+                        <div class="item">
+                            <img src="http://cf2.thingd.com/default/124931703025180045_43d9ed4281fa.jpg" style="width: 620px; height: 320px;" />  
+                        </div>
+                    </div>
+                    <!--
+                    <div class="carousel-caption" style="display: none;">
+                        <h4>Second Thumbnail label</h4>
+                    </div>
+                    -->
+                    <div class="gallery-dots unselectable">
+                        <a class="dot selected" data-index="1">•</a>
+                        <a class="dot" data-index="2">•</a>
+                        <a class="dot" data-index="3">•</a>
+                        <a class="dot" data-index="4">•</a>
+                    </div>
+
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" style="display: none;" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" style="display: none;" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+                </div>
+                
+                <div class="align-right"><a href="#">View Details</a> <i class="icon-arrow-right"></i></div>
+            </div>
+
+            <div class="product">
+                <div class="clearfix">
+                    <div style="float: left;">
+                        <h2 style="font-weight: 200;"><i class="icon-home" style="margin-top: 5px;"></i> Port Adriano Marina</h2>
+                    </div>
+                    <div style="float: right;">
+                        <div class="price-type avg-night">Book from <span class="price" itemprop="price">$347</span> per night</div>
+                    </div>
+                </div>
+                       
+                <img src="http://cf6.thingd.com/default/122272491304388681_5d37d2bb41fb.jpg" style="width: 620px; height: 320px;" />            
+                <br /><br />
+                <div class="align-right"><a href="#">View Details</a> <i class="icon-arrow-right"></i></div>
+            </div>
+
+            <div class="product">
+                <div class="clearfix">
+                    <div style="float: left;">
+                        <h2 style="font-weight: 200;"><i class="icon-home" style="margin-top: 5px;"></i> Ritz Carlton Half Moon Bay</h2>
+                    </div>
+                    <div style="float: right;">
+                        <div class="price-type avg-night">Book from <span class="price" itemprop="price">$564</span> per night</div>
+                    </div>
+                </div>
+                       
+                <img src="http://cf2.thingd.com/default/153943818599667405_ab2669391400.jpg" style="width: 620px; height: 320px;" />            
+                <br /><br />
+                <div class="align-right"><a href="#">View Details</a> <i class="icon-arrow-right"></i></div>
+            </div>
+
+            </div>
+            
+        </div>
+        <div id="sidebar" class="span4">
+
+            <div id="calendars">
+                <div class="calendar-text clearfix">
+                    <label>Check-in</label> 
+                    <div class="controls">
+                        <input type="text" id="check-in" readonly="readonly" />
+                    </div>                    
+                </div>
+                <div id="calendar-check-in" class="calendar">
+                    <center style="padding: 10px 0;">Now select the day you'd like to check in</center>
+                    <div id="datepicker" ></div>
+                </div>
+
+                <div class="calendar-text clearfix">
+                    <label>Check-out</label>
+                    <div class="controls">
+                        <input type="text" id="check-out" value="July, 23, 2012" readonly="readonly" />
+                    </div>                    
+                </div>
+                <div id="calendar-check-out" class="calendar">
+                    <center style="padding: 10px 0;">Now select the day you'd like to check out</center>
+                    <div id="datepicker2" ></div>
+                </div>
+            </div>
+            <br /><br />
+            <center>
+            <a class="btn btn-large btn-success">Check Availability</a>
+            </center>
+            <br />
+        </div>
+    </div>
+</div>

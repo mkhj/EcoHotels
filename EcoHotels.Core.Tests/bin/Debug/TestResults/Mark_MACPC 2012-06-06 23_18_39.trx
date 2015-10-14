@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5fe7a5c8-8237-4ecc-9258-6e0d1e9d4bc1" name="Mark@MACPC 2012-06-06 23:18:39" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-06 23_18_39" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-06T23:18:39.9331291+02:00" queuing="2012-06-06T23:18:40.2964209+02:00" start="2012-06-06T23:18:40.8814043+02:00" finish="2012-06-06T23:18:45.5173245+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateUser" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="eb9db0aa-a93e-37a9-9d2c-14ca706497a2">
+      <Execution timeOut="1800000" id="19c5ef9b-7cac-439a-b49f-fc3fa0af6bfc" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateUser" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="eb9db0aa-a93e-37a9-9d2c-14ca706497a2" executionId="19c5ef9b-7cac-439a-b49f-fc3fa0af6bfc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="19c5ef9b-7cac-439a-b49f-fc3fa0af6bfc" testId="eb9db0aa-a93e-37a9-9d2c-14ca706497a2" testName="CreateUser" computerName="MACPC" duration="00:00:03.9254651" startTime="2012-06-06T23:18:41.1362969+02:00" endTime="2012-06-06T23:18:45.3972027+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19c5ef9b-7cac-439a-b49f-fc3fa0af6bfc">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.UnitTest1.CreateUser threw exception: 
+System.ArgumentNullException: Collection cannot be null.
+Parameter name: c</Message>
+          <StackTrace>    at System.Collections.ArrayList..ctor(ICollection c)
+   at NHibernate.Collection.PersistentBag..ctor(ISessionImplementor session, ICollection coll) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Collection\PersistentBag.cs:line 37
+   at NHibernate.Collection.Generic.PersistentGenericBag`1..ctor(ISessionImplementor session, ICollection`1 coll) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Collection\Generic\PersistentGenericBag.cs:line 40
+   at NHibernate.Type.GenericBagType`1.Wrap(ISessionImplementor session, Object collection) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Type\GenericBagType.cs:line 56
+   at NHibernate.Event.Default.WrapVisitor.ProcessArrayOrNewCollection(Object collection, CollectionType collectionType) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\WrapVisitor.cs:line 86
+   at NHibernate.Event.Default.WrapVisitor.ProcessCollection(Object collection, CollectionType collectionType) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\WrapVisitor.cs:line 51
+   at NHibernate.Event.Default.AbstractVisitor.ProcessValue(Object value, IType type) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\AbstractVisitor.cs:line 51
+   at NHibernate.Event.Default.WrapVisitor.ProcessValue(Int32 i, Object[] values, IType[] types) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\WrapVisitor.cs:line 98
+   at NHibernate.Event.Default.AbstractVisitor.ProcessEntityPropertyValues(Object[] values, IType[] types) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\AbstractVisitor.cs:line 120
+   at NHibernate.Event.Default.AbstractSaveEventListener.VisitCollectionsBeforeSave(Object entity, Object id, Object[] values, IType[] types, IEventSource source) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:line 318
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:line 240
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:line 187
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:line 129
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:line 162
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:line 148
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:line 76
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:line 53
+   at NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Impl\SessionImpl.cs:line 2677
+   at NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Impl\SessionImpl.cs:line 551
+   at EcoHotels.Core.Tests.UnitTest1.CreateUser() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\UnitTest1.cs:line 36
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

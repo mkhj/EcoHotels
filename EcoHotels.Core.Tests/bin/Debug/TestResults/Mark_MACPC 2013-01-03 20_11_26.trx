@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c4105f56-d9a8-4046-a4c4-6b60b620b599" name="Mark@MACPC 2013-01-03 20:11:26" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-01-03 20_11_26" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-03T20:11:26.4114279+01:00" queuing="2013-01-03T20:11:26.9010051+01:00" start="2013-01-03T20:11:27.4863479+01:00" finish="2013-01-03T20:11:33.5821215+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_find_entity_by_id" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="52764bed-6215-0f83-4ded-035be53338d6">
+      <Execution timeOut="1800000" id="56a25645-a1a0-4e2f-bb11-c9bdb750af6b" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_find_entity_by_id" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="52764bed-6215-0f83-4ded-035be53338d6" executionId="56a25645-a1a0-4e2f-bb11-c9bdb750af6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="56a25645-a1a0-4e2f-bb11-c9bdb750af6b" testId="52764bed-6215-0f83-4ded-035be53338d6" testName="Can_find_entity_by_id" computerName="MACPC" duration="00:00:05.1354244" startTime="2013-01-03T20:11:27.7296707+01:00" endTime="2013-01-03T20:11:33.3739779+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56a25645-a1a0-4e2f-bb11-c9bdb750af6b">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT organizati0_.Id as Id13_0_, organizati0_.Name as Name13_0_, organizati0_.VatNo as VatNo13_0_, organizati0_.Phone as Phone13_0_, organizati0_.Email as Email13_0_, organizati0_.Address1 as Address6_13_0_, organizati0_.Address2 as Address7_13_0_, organizati0_.City as City13_0_, organizati0_.Zipcode as Zipcode13_0_, organizati0_.Country as Country13_0_, organizati0_.Created as Created13_0_ FROM Organizations organizati0_ WHERE organizati0_.Id=@p0;@p0 = 6 [Type: Int32 (0)]
+NHibernate: SELECT hotels0_.OrganizationId as Organiz23_1_, hotels0_.Id as Id1_, hotels0_.Id as Id9_0_, hotels0_.Name as Name9_0_, hotels0_.Address1 as Address3_9_0_, hotels0_.Address2 as Address4_9_0_, hotels0_.Zipcode as Zipcode9_0_, hotels0_.City as City9_0_, hotels0_.Country as Country9_0_, hotels0_.Phone as Phone9_0_, hotels0_.Fax as Fax9_0_, hotels0_.Email as Email9_0_, hotels0_.WWW as WWW9_0_, hotels0_.VatNo as VatNo9_0_, hotels0_.CategoryOneId as Categor13_9_0_, hotels0_.CategoryTwoId as Categor14_9_0_, hotels0_.CategoryThreeId as Categor15_9_0_, hotels0_.IsActive as IsActive9_0_, hotels0_.CheckIn as CheckIn9_0_, hotels0_.CheckOut as CheckOut9_0_, hotels0_.Created as Created9_0_, hotels0_.Modified as Modified9_0_, hotels0_.Verified as Verified9_0_, hotels0_.AboutMultiLanguageId as AboutMu22_9_0_, hotels0_.OrganizationId as Organiz23_9_0_, hotels0_.LocalCurrencyId as LocalCu24_9_0_, hotels0_.CancellationPolicyMultiLanguageId as Cancell25_9_0_, hotels0_.PaymentPolicyMultiLanguageId as Payment26_9_0_, hotels0_.PageInformationId as PageInf27_9_0_ FROM Hotels hotels0_ WHERE hotels0_.OrganizationId=@p0;@p0 = 6 [Type: Int32 (0)]
+Ending NH Session</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

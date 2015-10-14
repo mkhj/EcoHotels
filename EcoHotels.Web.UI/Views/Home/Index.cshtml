@@ -1,0 +1,175 @@
+﻿@model EcoHotels.Web.UI.Models.HomepageModel
+@{
+    ViewBag.Title = "";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section gce{
+    @*Html.Partial("_ContentExperimentCode")*@
+}
+
+@{
+    @*Html.RequiresCss("/assets/css/frontpage2.css", 100);*@
+}
+
+@section javascript{
+}
+
+<style>
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+      margin-top: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+    
+    
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }    
+
+</style>
+
+<div id="view" data-view="home" data-action="init">
+    <div id="hero">
+
+    
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/assets/img/hotels/front1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="/assets/img/hotels/front2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="/assets/img/hotels/front3.jpg" alt="">
+        </div>
+      </div>
+      <a class="left carousel-control hidden-phone" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control hidden-phone" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+<!--
+        <ul class="unstyled" id="slideshow">
+            <li class="active" style="display: block; ">
+                <img src="/assets/img/hotels/front1.jpg" alt="" style="height:700px; width: 1600px;" >
+            </li>
+            <li class="" style="display: block; ">
+                <img src="/assets/img/hotels/front2.jpg" alt="" style="height:700px; width: 1600px;" >
+            </li>
+            <li class="" style="display: block; ">
+                <img src="/assets/img/hotels/front3.jpg" alt="" style="height:700px; width: 1600px;" >
+            </li>            
+        </ul>
+        -->
+
+        <div class="container">
+        
+        <div class="search-area">
+            <h1 class="hidden-phone">Find a place to stay</h1>
+            <h2 class="hidden-phone">“Take only memories, leave only footprints.” – Chief Seattle</h2>
+            <form id="search-form" action="@Url.Action("index", "home", new { lang="en" })" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                </div>
+
+                <div class="span4 search-form shadow">
+                    <select name="cityid" class="span3 required">
+                        <option value="">Please select destination..</option>
+                        @foreach (var country in Model.TagCities)
+                        { 
+                            <optgroup label="@country.Key">
+                                @foreach (var city in country.Value)
+                                { 
+                                    <option value="@city.Value">@city.Text</option>
+                                }                            
+                            </optgroup>                        
+                        }
+                    </select>
+
+                    @Html.TextBox("arrival", "", new { @class = " required", placeholder = "Check In" })
+
+                    @Html.TextBox("departure", "", new { @class = "span3 required", placeholder = "Check Out" })
+
+                    <center>
+                    <button type="submit" class="btn btn-success">Check Availability</button>
+                    </center>                    
+                </div> 
+            </form>
+        </div>        
+        
+        </div>
+
+    </div>
+</div>

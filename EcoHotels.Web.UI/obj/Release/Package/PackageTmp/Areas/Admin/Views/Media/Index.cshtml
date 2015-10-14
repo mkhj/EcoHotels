@@ -1,0 +1,32 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.AssetCategoryModel
+@{
+    ViewBag.Title = "Media";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "media" });}
+
+<div class="container">
+    <h2>
+        Media
+        <small>Manage all your media assets</small>
+    </h2>
+    <div class="row">
+        <div class="span9">
+            <br />
+            <div class="content">
+                <ul class="thumbnails files">
+                    @foreach (var asset in Model.Items)
+                    { 
+                        <li class="span2" style="width: 170px; height:130px;">
+                        <a class="thumbnail preview" href="/asset/get/@asset.Id" title="@asset.Name" rel="gallery" download="@asset.Name"><img src="/img/@asset.Id/170x130/@asset.Name"  /></a>
+                        </li>            
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="span3">
+            @{Html.RenderAction("media", "navigation", new { page = "all" });}
+        </div>
+    </div>
+</div>

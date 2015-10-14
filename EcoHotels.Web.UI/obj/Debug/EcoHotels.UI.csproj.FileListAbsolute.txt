@@ -1,0 +1,5 @@
+C:\SourceCode\EcoHotels\EcoHotels.UI\bin\EcoHotels.UI.dll
+C:\SourceCode\EcoHotels\EcoHotels.UI\bin\EcoHotels.UI.pdb
+C:\SourceCode\EcoHotels\EcoHotels.UI\obj\Debug\ResolveAssemblyReference.cache
+C:\SourceCode\EcoHotels\EcoHotels.UI\obj\Debug\EcoHotels.UI.dll
+C:\SourceCode\EcoHotels\EcoHotels.UI\obj\Debug\EcoHotels.UI.pdb

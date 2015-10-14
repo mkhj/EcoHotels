@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ad29728c-d25f-4efd-ac47-9cef2e28e74b" name="Mark@MACPC 2013-07-13 17:35:39" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-07-13 17_35_39" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-07-13T17:35:39.2833746+02:00" queuing="2013-07-13T17:35:39.7679170+02:00" start="2013-07-13T17:35:40.2417135+02:00" finish="2013-07-13T17:35:46.0024928+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="fe1b11d9-7505-7444-4c79-a617aaa573cf">
+      <Execution timeOut="1800000" id="812f13b0-338d-4228-83f6-924cac2e7157" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.UserRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fe1b11d9-7505-7444-4c79-a617aaa573cf" executionId="812f13b0-338d-4228-83f6-924cac2e7157" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="812f13b0-338d-4228-83f6-924cac2e7157" testId="fe1b11d9-7505-7444-4c79-a617aaa573cf" testName="TestMethod1" computerName="MACPC" duration="00:00:04.7281146" startTime="2013-07-13T17:35:40.5572522+02:00" endTime="2013-07-13T17:35:45.7778058+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="812f13b0-338d-4228-83f6-924cac2e7157">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT this_.Id as Id28_0_, this_.Firstname as Firstname28_0_, this_.Lastname as Lastname28_0_, this_.Email as Email28_0_, this_.Password as Password28_0_, this_.Role as Role28_0_, this_.IsActive as IsActive28_0_, this_.OrganizationId as Organiza8_28_0_ FROM Users this_ WHERE this_.Email = @p0;@p0 = 'jhjkhkjh''; DROP TABLE [Users3] --' [Type: String (4000)]
+Ending NH Session</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

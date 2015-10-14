@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<exchangerates type="Valutakurser" author="Danmarks Nationalbank" refcur="DKK" refamt="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<dailyrates id="2012-06-13">
+<currency code="EUR" desc="Euro" rate="743,18" />
+<currency code="USD" desc="Amerikanske dollars" rate="592,93" />
+<currency code="GBP" desc="Britiske pund" rate="921,72" />
+<currency code="SEK" desc="Svenske kroner" rate="84,15" />
+<currency code="NOK" desc="Norske kroner" rate="98,94" />
+<currency code="ISK" desc="Islandske kroner" rate="-" />
+<currency code="CHF" desc="Schweiziske franc" rate="618,85" />
+<currency code="CAD" desc="Canadiske dollars" rate="577,90" />
+<currency code="JPY" desc="Japanske yen" rate="7,4467" />
+<currency code="AUD" desc="Australske dollars" rate="591,47" />
+<currency code="NZD" desc="New Zealandske dollars" rate="461,77" />
+<currency code="LVL" desc="Lettiske lats" rate="1066,56" />
+<currency code="LTL" desc="Litauiske litas" rate="215,24" />
+<currency code="PLN" desc="Polske zloty" rate="171,87" />
+<currency code="CZK" desc="Tjekkiske koruna" rate="29,06" />
+<currency code="HUF" desc="Ungarske forint" rate="2,507" />
+<currency code="HKD" desc="Hongkong dollars" rate="76,43" />
+<currency code="SGD" desc="Singapore dollars" rate="463,30" />
+<currency code="ZAR" desc="Sydafrikanske rand" rate="70,58" />
+<currency code="BGN" desc="Bulgarske lev" rate="379,99" />
+<currency code="RON" desc="Rumænske lei" rate="166,57" />
+<currency code="TRY" desc="Tyrkiske lira" rate="324,96" />
+<currency code="KRW" desc="Sydkoreanske won" rate="0,5080" />
+<currency code="HRK" desc="Kroatiske kuna" rate="98,42" />
+<currency code="RUB" desc="Russiske rubel" rate="18,17" />
+<currency code="THB" desc="Thailandske baht" rate="18,78" />
+<currency code="MYR" desc="Malaysiske ringgit" rate="186,66" />
+<currency code="PHP" desc="Filippinske peso" rate="13,94" />
+<currency code="IDR" desc="Indonesiske rupiah" rate="0,0628" />
+<currency code="CNY" desc="Kinesiske Yuan renminbi" rate="93,36" />
+<currency code="BRL" desc="Brasilianske real" rate="288,24" />
+<currency code="MXN" desc="Mexikanske peso" rate="42,44" />
+<currency code="INR" desc="Indiske rupee" rate="10,66" />
+<currency code="ILS" desc="Israelske shekel" rate="152,83" />
+<currency code="SDR" desc="Special Drawing Rights" rate="898,11" />
+</dailyrates>
+</exchangerates>

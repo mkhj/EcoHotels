@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0a45e2fb-c032-4754-aa1e-4d4847727085" name="Mark@MACPC 2012-06-12 23:46:08" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-12 23_46_08" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-12T23:46:08.5555354+02:00" queuing="2012-06-12T23:46:09.0090026+02:00" start="2012-06-12T23:46:09.6647709+02:00" finish="2012-06-12T23:46:13.6873377+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="31853b94-b4e6-faf6-dab5-9fbef20709e9">
+      <Execution timeOut="1800000" id="9159f42d-d06c-49e7-bf21-3fcb166849ef" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="31853b94-b4e6-faf6-dab5-9fbef20709e9" executionId="9159f42d-d06c-49e7-bf21-3fcb166849ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9159f42d-d06c-49e7-bf21-3fcb166849ef" testId="31853b94-b4e6-faf6-dab5-9fbef20709e9" testName="TestMethod1" computerName="MACPC" duration="00:00:02.8201397" startTime="2012-06-12T23:46:10.2218319+02:00" endTime="2012-06-12T23:46:13.5759255+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9159f42d-d06c-49e7-bf21-3fcb166849ef">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester.CreateSessionFactory threw exception. FluentNHibernate.Cfg.FluentConfigurationException: FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---&gt; FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---&gt; FluentNHibernate.Visitors.ValidationException: The entity 'Ip2Location' doesn't have an Id mapped. Use the Id method to map your identity property. For example: Id(x =&gt; x.Id)..</Message>
+          <StackTrace>    at FluentNHibernate.Visitors.ValidationVisitor.ProcessClass(ClassMapping classMapping) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Visitors\ValidationVisitor.cs:line 20
+   at FluentNHibernate.MappingModel.ClassBased.ClassMapping.AcceptVisitor(IMappingModelVisitor visitor) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\MappingModel\ClassBased\ClassMapping.cs:line 71
+   at FluentNHibernate.Visitors.DefaultMappingModelVisitor.Visit(ClassMapping classMapping) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Visitors\DefaultMappingModelVisitor.cs:line 89
+   at FluentNHibernate.MappingModel.HibernateMapping.AcceptVisitor(IMappingModelVisitor visitor) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\MappingModel\HibernateMapping.cs:line 38
+   at FluentNHibernate.Visitors.DefaultMappingModelVisitor.&lt;Visit&gt;b__0(HibernateMapping x) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Visitors\DefaultMappingModelVisitor.cs:line 79
+   at FluentNHibernate.Utils.CollectionExtensions.Each[T](IEnumerable`1 enumerable, Action`1 each) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Utils\CollectionExtensions.cs:line 15
+   at FluentNHibernate.Visitors.DefaultMappingModelVisitor.Visit(IEnumerable`1 mappings) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Visitors\DefaultMappingModelVisitor.cs:line 79
+   at FluentNHibernate.PersistenceModel.ApplyVisitors(IEnumerable`1 mappings) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\PersistenceModel.cs:line 214
+   at FluentNHibernate.PersistenceModel.BuildMappings() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\PersistenceModel.cs:line 169
+   at FluentNHibernate.PersistenceModel.EnsureMappingsBuilt() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\PersistenceModel.cs:line 221
+   at FluentNHibernate.PersistenceModel.Configure(Configuration cfg) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\PersistenceModel.cs:line 277
+   at FluentNHibernate.Cfg.MappingConfiguration.Apply(Configuration cfg) in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Cfg\MappingConfiguration.cs:line 87
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Cfg\FluentConfiguration.cs:line 252
+ --- End of inner exception stack trace ---
+    at FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Cfg\FluentConfiguration.cs:line 264
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Cfg\FluentConfiguration.cs:line 230
+ --- End of inner exception stack trace ---
+    at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Cfg\FluentConfiguration.cs:line 235
+   at EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester.CreateSessionFactory() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Repositories\Ip2LocationRepoTester.cs:line 25
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="bb33ba38-8c22-4551-9d47-9022732466c9" name="Mark@MACPC 2012-09-30 20:35:31" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-09-30 20_35_31" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-09-30T20:35:31.5894391+02:00" queuing="2012-09-30T20:35:32.4277909+02:00" start="2012-09-30T20:35:33.3208603+02:00" finish="2012-09-30T20:35:59.8647724+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="test" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="aeb51a13-4d65-c4d0-a4b8-887ff34c3e21">
+      <Execution timeOut="1800000" id="c67c7f4a-b4eb-40c7-86f6-7786dbbda2c9" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.NHCachingTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="aeb51a13-4d65-c4d0-a4b8-887ff34c3e21" executionId="c67c7f4a-b4eb-40c7-86f6-7786dbbda2c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c67c7f4a-b4eb-40c7-86f6-7786dbbda2c9" testId="aeb51a13-4d65-c4d0-a4b8-887ff34c3e21" testName="test" computerName="MACPC" duration="00:00:25.5627558" startTime="2012-09-30T20:35:33.5006467+02:00" endTime="2012-09-30T20:35:59.5921894+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c67c7f4a-b4eb-40c7-86f6-7786dbbda2c9">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT this_.Id as Id4_0_, this_.Name as Name4_0_, this_.[Alpha-2 code] as column3_4_0_, this_.CurrencyId as CurrencyId4_0_, this_.LanguageId as LanguageId4_0_ FROM Countries this_
+NHibernate: Batch commands:
+command 0:UPDATE Countries SET Name = @p0, [Alpha-2 code] = @p1, CurrencyId = @p2, LanguageId = @p3 WHERE Id = @p4;@p0 = ' Denmark1111112' [Type: String (4000)], @p1 = 'DK' [Type: String (4000)], @p2 = f21d8d81-ae42-439e-a0bd-a06e014192b5 [Type: Guid (0)], @p3 = 3873b730-57d4-4022-835c-9f31011587e3 [Type: Guid (0)], @p4 = 61 [Type: Int32 (0)]
+
+NHibernate: SELECT country0_.Id as Id4_0_, country0_.Name as Name4_0_, country0_.[Alpha-2 code] as column3_4_0_, country0_.CurrencyId as CurrencyId4_0_, country0_.LanguageId as LanguageId4_0_ FROM Countries country0_ WHERE country0_.Id=@p0;@p0 = 61 [Type: Int32 (0)]
+NHibernate: SELECT currency0_.Id as Id5_0_, currency0_.Name as Name5_0_, currency0_.ISO_4217_Number as ISO3_5_0_, currency0_.ISOCurrencySymbol as ISOCurre4_5_0_, currency0_.ExchangeRate as Exchange5_5_0_, currency0_.LCID as LCID5_0_ FROM Currencies currency0_ WHERE currency0_.Id=@p0;@p0 = f21d8d81-ae42-439e-a0bd-a06e014192b5 [Type: Guid (0)]
+NHibernate: SELECT language0_.Id as Id10_0_, language0_.Name as Name10_0_, language0_.Shortname as Shortname10_0_, language0_.IsActive as IsActive10_0_ FROM Languages language0_ WHERE language0_.Id=@p0;@p0 = 3873b730-57d4-4022-835c-9f31011587e3 [Type: Guid (0)]
+Ending NH Session</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;3&gt;. Actual:&lt;2&gt;. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.Integration.NHCachingTester.test() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\NHCachingTester.cs:line 109
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

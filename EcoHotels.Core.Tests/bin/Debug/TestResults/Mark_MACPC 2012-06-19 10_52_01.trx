@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9543373b-b042-4ef5-8df6-6f6ef68218e8" name="Mark@MACPC 2012-06-19 10:52:01" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-19 10_52_01" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-19T10:52:01.9963637+02:00" queuing="2012-06-19T10:52:02.8030353+02:00" start="2012-06-19T10:52:05.2757865+02:00" finish="2012-06-19T10:52:08.3598893+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="can_convert_from_usd_to_nok" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="7532cc48-465c-6aaf-a33e-e51f624234d1">
+      <Execution timeOut="1800000" id="51e4ebf1-2c2a-43b8-aacf-c8b150b443ff" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Unit.MoneyTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="can_convert_from_usd_to_nok" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7532cc48-465c-6aaf-a33e-e51f624234d1" executionId="51e4ebf1-2c2a-43b8-aacf-c8b150b443ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="51e4ebf1-2c2a-43b8-aacf-c8b150b443ff" testId="7532cc48-465c-6aaf-a33e-e51f624234d1" testName="can_convert_from_usd_to_nok" computerName="MACPC" duration="00:00:00.8004514" startTime="2012-06-19T10:52:05.8363549+02:00" endTime="2012-06-19T10:52:07.5805625+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51e4ebf1-2c2a-43b8-aacf-c8b150b443ff">
+    </UnitTestResult>
+  </Results>
+</TestRun>

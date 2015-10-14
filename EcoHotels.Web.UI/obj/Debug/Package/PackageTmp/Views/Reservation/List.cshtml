@@ -1,0 +1,50 @@
+﻿@model EcoHotels.Web.UI.Models.ReservationListModel
+@{
+    ViewBag.Title = "List";
+    ViewBag.TEST = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="view" class="container" data-view="reservation" data-action="list">
+
+    <h2>
+        Reservations
+        <small></small>
+    </h2>
+
+    <div class="row">
+        <div class="span9">
+            <div style="padding: 20px 20px 0 20px;">
+            <table class="table">
+                <thead>
+                    <th>Id</th>
+                    <th>Hotel</th>
+                    <th>Arrival</th>
+                    <th>Departure</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.Items)
+                { 
+                    <tr>
+                        <td><a href="@Url.Action("index", "reservation", new { id=item.Id})">@item.ReserverationId</a></td>
+                        <td>@item.HotelName</td>
+                        <td>@item.Arrival.ToString("mm-dd-yyyy")</td>
+                        <td>@item.Departure.ToString("mm-dd-yyyy")</td>
+                        <td><span class="label label-important">Cancelled</span></td>
+                    </tr>                
+                }
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div id="sidebar" class="span3">
+            <ul class="nav nav-pills nav-stacked" style="padding: 20px 20px 0 20px;">
+                <li class="active"><a href="@Url.Action("index", "account", null)">Account</a></li>
+                <li><a href="@Url.Action("password", "account", null)">Credit Cards & Billing</a></li>
+                <li><a href="@Url.Action("password", "account", null)">Password</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>

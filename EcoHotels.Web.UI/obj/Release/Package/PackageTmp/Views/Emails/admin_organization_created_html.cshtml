@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>Your account has been created</title>
+</head>
+<body>
+
+Hi @Model.Firstname @Model.Lastname
+<br />
+
+<p>
+    We have setup an account for you, so you can logon and start using our system.
+</p>
+<br />
+
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>Username:</td>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <td>Password:</td>
+        <td>@Model.Password</td>
+    </tr>
+</table>
+
+<br />
+
+<p>
+Best regards,<br />
+I Love Echo Hotels
+</p>
+
+</body>
+</html>

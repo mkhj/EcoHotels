@@ -1,0 +1,17 @@
+﻿@model EcoHotels.Web.UI.Areas.Backend.Models.BackendSectionModel
+
+<ul id="sidebar" class="nav nav-list">
+    <li class="nav-header">Organizations</li>
+    <li class="@(Model.Page == "list-organizations" ? "active" : "")"><a href="@Url.Action("list", "organization")">List</a></li>
+    <li class="divider"></li>
+    <li class="@(Model.Page == "add-organization" ? "active" : "")"><a href="@Url.Action("create", "organization", null)" >Add Organization</a></li>
+
+    <li class="nav-header">Hotels</li>
+    <li class="@(Model.Page == "list-hotels" ? "active" : "")"><a href="@Url.Action("list", "hotel")">List</a></li>    
+    <li class="@(Model.Page == "verification-hotels" ? "active" : "")"><a href="@Url.Action("verification", "hotel")">Verification @if(Model.HotelsToVerify > 0){<span class="badge badge-info">@Model.HotelsToVerify</span>}</a></li>
+    <li class="@(Model.Page == "inactive-hotels" ? "active" : "")"><a href="@Url.Action("inactive", "hotel")">Inactives @if(Model.InActiveHotels > 0){<span class="badge badge-info">@Model.InActiveHotels</span>}</a></li>
+
+    <li class="nav-header">Backend settings</li>
+    <li class="@(Model.Page == "currency" ? "active" : "")"><a href="@Url.Action("edit", "currency")">Currency</a></li>
+    <li class="@(Model.Page == "list-users" ? "active" : "")"><a href="@Url.Action("list", "user")">Users</a></li>
+</ul>

@@ -1,0 +1,168 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Price.PricingModel
+@{
+    ViewBag.Title = "Rates";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "pricing" });}
+
+
+<div id="view" class="container" data-view="rates" data-action="pricing">
+
+
+<style>
+    input.span1
+    {
+        width: 16px;
+        padding: 4px 3px;
+    }
+    .calendar-date
+    {
+        display: block;
+        hidden-align: center;
+        margin-bottom: 2px;
+    }
+    
+    table tbody td
+    {
+        padding: 4px;
+    }
+    
+    #qty-controls input,
+    #qty-controls select
+    {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;	          
+    }    
+    
+</style>
+
+    <h2>
+        Rate Management
+        <small>Control how many rooms that are available</small>
+    </h2>
+
+    <div class="row">
+        <div class="span12">
+
+            <br  />
+            <div style="padding: 0px 20px 20px 20px;">
+                <h3>Room rates</h3>
+                <small>Set rates for all the rooms in the given periode.</small>
+            </div>
+            <br />
+
+                <div class="content">
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+                </div>
+
+
+
+            <form id="form" class="ajaxform" action="@Url.Action("index", "pricing", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                </div> 
+                <div class="content">
+
+
+
+                    <div class="row">
+
+                        @{
+                            var firstDateInMonth = new DateTime(Model.SelectedYear, Model.SelectedMonth, 1);
+                        }
+
+                        <div class="first span5 offset3">
+
+                    <div id="qty-controls" style="margin: 0 auto; margin-bottom: 20px; text-align: center;">
+
+                        @Html.DropDownListFor(x => x.SelectedMonth, Model.Months, new { id = "month-selector", @class = "span2" })
+
+                        @Html.DropDownListFor(x => x.SelectedYear, Model.Years, new { id = "year-selector", @class = "span2" })
+                                              
+                    </div>
+
+                            <table id="rates" data-rate-menu="@Model.RateCategoriesJSON" data-rate-ids="@Model.RateCategoryIdsJSON">
+                                <thead>
+                                    <tr>
+                                        <th colspan="7">@firstDateInMonth.ToString("MMMM")</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Mo</th>
+                                        <th>Tu</th>
+                                        <th>We</th>
+                                        <th>Th</th>
+                                        <th>Fr</th>
+                                        <th>Sa</th>
+                                        <th>Su</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                            
+                                    @{
+
+                                        int daysInMonth = DateTime.DaysInMonth(Model.SelectedYear, Model.SelectedMonth);
+                                        var weekDateNumber = (int)firstDateInMonth.DayOfWeek;
+                                
+                                        // Adjusting to first week date
+                                        var currentDate = firstDateInMonth.AddDays(weekDateNumber * -1);                                                               
+
+                                        var isGenerating = true;
+                                        while (isGenerating)
+                                        {
+                                            var date = currentDate;
+                                    
+                                    
+                                            <tr>
+
+                                            @for (int i = 1; i < 8; i++)
+                                            {
+                                                date = currentDate.AddDays(i);
+
+                                                if (date.Month != firstDateInMonth.Month)
+                                                {
+                                                    <td></td>
+                                                }
+                                                else 
+                                                { 
+                                            
+                                                    <td>
+                                                        <span class="calendar-date">@date.Day</span>
+                                                        @Html.HiddenFor(m => m.DateWithPrice[date.Day - 1].Id)
+                                                        @Html.HiddenFor(m => m.DateWithPrice[date.Day - 1].Color, new { @class = "pick-a-color" })
+                                                                                                                
+                                                    </td> 
+                                                }
+
+
+                                            }
+
+                                            </tr>
+                                
+                                            currentDate = date;
+
+                                            isGenerating = !(firstDateInMonth.Month < currentDate.Month);
+                                        }
+
+                            
+                                    }
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+
+                <div class="form-actions" style="text-align: center;">
+                    <button type="submit" class="btn btn-primary" data-loading-hidden="Saving...!" data-complete-hidden="Save change">Save changes</button>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+</div>

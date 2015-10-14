@@ -1,0 +1,99 @@
+﻿@model EcoHotels.Web.UI.Models.EditCustomerInformationModel
+@{
+    ViewBag.Title = "Account details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="view" class="container" data-view="settings" data-action="details">
+    <h2>
+        Account
+        <small>Change your basic account settings</small>
+    </h2>
+
+    <div class="row">
+        <div class="span9">
+            <form class="form-horizontal ajaxform" action="@Url.Action("index", "account", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                </div>
+
+                <div class="control-group" style="padding: 10px 20px;">
+                    <div class="alert hidden">...</div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Firstname:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Firstname, new { @class = "span4" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Lastname:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Lastname, new { @class = "span4" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Email:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "span4 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Country:</label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.SelectedCountryName, Model.AvailableCountries, new { @class = "span4" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Gender:</label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.SelectedGenderType, Model.Genders, new { @class = "span4" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Birthday:</label>
+                    <div class="controls">                        
+                        @Html.DropDownListFor(m => m.SelectedBirthMonth, Model.BirthMonth, new { @class = "input-medium" })
+
+                        @Html.DropDownListFor(m => m.SelectedBirthDate, Model.BirthDate, new { @class = "span1" })
+
+                        @Html.TextBoxFor(m => m.SelectedBirthYear, new { @class = "input-mini number" })
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Email me when:</label>
+                    <div class="controls">
+                        <label class="checkbox">
+                            @Html.CheckBox("sdfsdf") We announce new products and features
+                        </label>
+                        <label class="checkbox">
+                            @Html.CheckBox("sdfssdfdf") We announce new products and features
+                        </label>                        
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn" data-loading-text="Saving...!" data-complete-text="Save changes">Save changes</button>
+                </div>                
+
+            </form>            
+        </div>
+        <div id="sidebar" class="span3">
+            <ul class="nav nav-pills nav-stacked" style="padding: 20px 20px 0 20px;">
+                <li class="active"><a href="@Url.Action("index", "account", null)">Account</a></li>
+                <li><a href="@Url.Action("password", "account", null)">Credit Cards & Billing</a></li>
+                <li><a href="@Url.Action("password", "account", null)">Password</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

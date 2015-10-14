@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c5a6f094-3e16-4a8f-9939-bcdb0d942aa1" name="Mark@MACPC 2012-06-07 12:04:29" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-07 12_04_29" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-07T12:04:29.7495500+02:00" queuing="2012-06-07T12:04:30.1656668+02:00" start="2012-06-07T12:04:30.7644452+02:00" finish="2012-06-07T12:04:36.5226812+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateUser" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="eb9db0aa-a93e-37a9-9d2c-14ca706497a2">
+      <Execution timeOut="1800000" id="ce026e03-8ca1-4641-876f-8984acb30f7b" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateUser" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="eb9db0aa-a93e-37a9-9d2c-14ca706497a2" executionId="ce026e03-8ca1-4641-876f-8984acb30f7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ce026e03-8ca1-4641-876f-8984acb30f7b" testId="eb9db0aa-a93e-37a9-9d2c-14ca706497a2" testName="CreateUser" computerName="MACPC" duration="00:00:04.6016557" startTime="2012-06-07T12:04:31.3026620+02:00" endTime="2012-06-07T12:04:36.3849524+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce026e03-8ca1-4641-876f-8984acb30f7b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.UnitTest1.CreateUser threw exception: 
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---&gt; System.Data.SqlClient.SqlException: Invalid column name 'Roles'.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.SqlClient.SqlCommand.ExecuteBatchRPCCommand()
+   at System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   at NHibernate.AdoNet.SqlClientSqlCommandSet.ExecuteNonQuery() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\AdoNet\SqlClientSqlCommandSet.cs:line 117
+   at NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:line 75
+ --- End of inner exception stack trace ---
+    at NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:line 91
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\AdoNet\AbstractBatcher.cs:line 412
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\AdoNet\AbstractBatcher.cs:line 397
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Engine\ActionQueue.cs:line 129
+   at NHibernate.Engine.ActionQueue.ExecuteActions() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Engine\ActionQueue.cs:line 169
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:line 249
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event) in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Event\Default\DefaultFlushEventListener.cs:line 19
+   at NHibernate.Impl.SessionImpl.Flush() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Impl\SessionImpl.cs:line 1499
+   at EcoHotels.Core.Tests.UnitTest1.CreateUser() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\UnitTest1.cs:line 45
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

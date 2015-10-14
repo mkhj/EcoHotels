@@ -1,0 +1,173 @@
+﻿@model EcoHotels.Web.UI.Models.EditCustomerInformationModel
+@{
+    ViewBag.Title = "Search result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAmNGdNSbyLoOn8n2GycRISMlh0X71CjGY&sensor=false" type="text/javascript"></script>
+}
+
+<div id="view" class="container" data-view="hotel" data-action="view">
+
+
+    <div class="row">
+        <!--<div class="span8" style="padding: 20px;">-->
+        <div class="span8">
+            <div style="padding: 20px;">
+                <h1>Hotel Das Cataratas</h1>
+                <p><i>Paraná, Brazil</i> (<a>map</a>)</p>
+
+                <img src="/assets/img/hotels/1.png" style="width: 580px; height: 358px;" /> 
+
+                <style>
+                    div.thumbs li {
+                    float: left;
+                    _display: inline;
+                    position: relative;
+                    cursor: pointer;
+                    border-top: 9px solid white;
+                    list-style-type: none;
+                    }        
+                </style>
+
+                <div class="thumbs">
+	                <ul class="clearfix unstyled">
+                        <li data-index="0" class="selected odd" data-type="img">
+		                    <img src="http://cdn.jetcdn.com/static/images/product/properties/editorialreviews/9988/pgal-10592-1294867936-thumb.jpg" width="77" height="44" alt="Trump Las Vegas: The gold-plated Trump International offers condo-style suites one block from the Strip.">
+	                    </li>
+                        <li data-index="1" class=" even" data-type="img">
+		                    <img src="http://cdn.jetcdn.com/static/images/product/properties/editorialreviews/9988/pgal-74798-1294867937-thumb.jpg" width="78" height="44" alt="Trump Las Vegas: An expansive lobby of imported marble and crystal greets visitors upon arrival.">
+	                    </li>
+		                <li data-index="2" class=" odd" data-type="img">
+		                    <img src="http://cdn.jetcdn.com/static/images/product/properties/editorialreviews/9988/pgal-88542-1294867937-thumb.jpg" width="77" height="44" alt="Trump Las Vegas: One Bedroom Suites are 900 square feet and come with a kitchen and impressive views.">
+	                    </li>
+                        <li data-index="3" class=" even" data-type="img">
+		                    <img src="http://cdn.jetcdn.com/static/images/product/properties/editorialreviews/9988/pgal-40161-1294867937-thumb.jpg" width="77" height="44" alt="Trump Las Vegas: The marble-lined bathrooms come with an oversize spa tub, shower and a mirror with an inset TV.">
+		                    <div class="mask"></div>
+	                    </li>
+                        <li data-index="4" class=" odd" data-type="img">
+		                    <img src="http://cdn.jetcdn.com/static/images/product/properties/editorialreviews/9988/pgal-49702-1294867937-thumb.jpg" width="78" height="44" alt="Trump Las Vegas: The 530-square-foot Studio Suites are some of the best standard accommodations in Las Vegas.">
+	                    </li>
+                        <li data-index="5" class=" even" data-type="img">
+		                    <img src="http://cdn.jetcdn.com/static/images/product/properties/editorialreviews/9988/pgal-26829-1294867937-thumb.jpg" width="77" height="44" alt="Trump Las Vegas: The Spa at Trump is on hand to melt away any stress experienced while touring the Strip.">
+	                    </li>
+                        
+                        <li data-index="6" class=" odd" data-type="img">
+		                    <img src="http://cdn.jetcdn.com/static/images/product/properties/editorialreviews/9988/pgal-99748-1294867937-thumb.jpg" width="77" height="44" alt="Trump Las Vegas: DJT is the on-site restaurant, while the poolside H2(EAU) is open for drinks and snacks.">
+	                    </li>
+                        <li data-index="7" class=" even" data-type="img">
+		                    <img src="http://cdn.jetcdn.com/static/images/product/properties/editorialreviews/9988/pgal-58940-1294867937-thumb.jpg" width="78" height="44" alt="Trump Las Vegas: This is Vegas, so there's a large pool that's open for lounging and scene-ing.">
+	                    </li>
+                    </ul>
+                </div>
+
+
+                <br /><br />
+                <ul class="nav nav-tabs" id="myTab">
+                  <li class="active"><a href="#home">Overview</a></li>
+                  <li><a id="maps" href="#profile">Maps & Attractions</a></li>
+                  <li><a href="#messages">Room Details</a></li>
+                  <li><a href="#settings">Policies</a></li>
+                  <li><a href="#member-reviews">Member reviews</a></li>
+                </ul>
+
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home">
+                        <h2 style="font-weight: 200;">About the hotel</h2>
+                        <p>
+                        Hotel Das Cataratas is one of the latest luxury hotels to (re-)open in the soon-to-be Olympic capital. 
+                        Fresh from a major restoration and refurbishment, the Belle Epoque property houses 294 rooms, some on two levels in 
+                        rooftop turrets, and a David Collins-designed bar and restaurant. But the showstopper is Espa Life, a four-story 
+                        "next-generation" spa with an amphitheater sauna.
+                        </p>
+        <p>
+        London has witnessed an incredible number of luxury hotel (re-)openings of late, but the Corinthia is a standout for the flagship Espa Life, interiors by David Collins, a seafood restaurant by flamboyant Roman restaurateur Massimo Riccioli and a history of aristocrats and spies. (It was once home to the Ministry of Defence.) 
+        </p>
+        <p>
+        The elegant lobby shows off a dramatic Baccarat "Full Moon" chandelier and bespoke artwork.The approach to the hotel along the Thames Embankment is rather charmless, but the stone building on Whitehall Place is reassuringly colossal. On entering I am confronted by a magnificent Baccarat “Full Moon” chandelier and resin panels of the Thames by the art collective Based Upon. Eye-catching artwork is a feature of all the public areas — look out for London-based Claire Brewster’s ingenious cutout birds created from vintage maps. 
+        </p>
+        <p>
+        This quirky Bassoon Bar was unjustly empty on my visit, but it is worth a stop for the creative cocktail menu and proficient bartenders. The Northall, where the Michelin-starred Gary Holliheed champions British produce, was also on the quiet side, but the staff is friendly and forthcoming. I happily ate salmon smoked over calvados and sole meunière, while a couple looked sheepish as their young daughter rolled around on the floor.
+        </p>
+        <p>
+        All 294 guestrooms are spacious by London standards, with beds dressed in cloud-like duvets and views over the city or to the interior courtyard. The Italian-made marble bathrooms have enormous walk-in showers, deep tubs and in-wall TVs. For alternative relaxation, however, make for the 35,000-square-foot Espa Life complex. Beginning on a mysterious mezzanine level, it descends through four ever-darkening floors to a phenomenal thermal suite. Back in the real world for breakfast at the sunlit Northall, I was left wondering what I could sell on eBay to cover the $5,700 annual membership.
+        </p>
+                  </div>
+                  <div class="tab-pane" id="profile">
+                        <h2>How to get there</h2>
+                        <p>
+                            Flights are available to London Heathrow Airport (LHR) from major U.S. cities on a variety of carriers. The property does not offer private transfers to/from LHR, about 17 miles away, or London Gatwick Airport (LGW), about 29 miles away. Alternatively, taxis are available to/from LHR for approximately $229, each way, and to/from LGW for approximately $294, each way. Alternatively, dedicated airport trains run from all airports except LTN and are much cheaper, costing from about $26, each way, depending on the airport. Check out Heathrow Express and Gatwick Express for prices and times.                
+                        </p>
+
+                        <div id="google-map" style="width: 620px; height: 360px;" data-hotel-address="Hotel das Cataratas, Rodovia Br 469, Km 32 - Iguaçu National Park, Foz do Iguaçu , Paraná, Brazil" data-hotel-region="br">
+                
+                        </div>          
+                  </div>
+                  <div class="tab-pane" id="messages">
+                        <h2>Superior King</h2>
+
+                        <h3>Room Details</h3>
+                        <ul>
+                        <li>Superior King Rooms are approximately 344 square feet and feature city and inner courtyard views.</li>
+                        <li>Maximum Occupancy: Two (Rates quoted are for two people, including children.)</li>
+                        <li>Bed Type: One King</li>
+                        <li>Children Policy: Children 17 and under are permitted within maximum occupancy for no additional cost using existing bedding or a complimentary crib.</li>
+                        <li>Handicap-Accessible: Limited availability. After booking, please indicate any requests in the Special Instructions field on the page immediately following purchase; call 877-JSET-USA for any additional questions.</li>        
+                        </ul>
+          
+                  </div>
+                  <div class="tab-pane" id="settings">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li>Minimum Check-In Age: 18</li>
+                        <li>Transfer Policy: The property does not offer private transfers to/from London Heathrow Airport (LHR), about 17 miles away, or London Gatwick Airport (LGW), about 29 miles away. Alternatively, taxis are available to/from LHR for approximately $229, each way, and to/from LGW for approximately $294, each way. Alternatively, dedicated airport trains run from all airports except LTN and are much cheaper, costing from about $26, each way, depending on the airport. Check out Heathrow Express and Gatwick Express for prices and times.</li>
+                        <li>Pet Policy: Pets are not permitted.</li>
+                        <li>Internet Access: Complimentary WiFi</li>
+                        <li>Smoking Policy: Smoking is permitted in some guestrooms. Please highlight specific requirements in the Special Instructions field after purchase.</li>
+                        <li>Rates quoted for additional fees and services are subject to change due to currency conversion.</li>
+                        <li>All taxes and fees imposed by the property, unless otherwise stated, will be added at the time of purchase on Jetsetter. Guests are responsible for all incidental charges during their stay (e.g., additional person fees, room service, minibar, in-room movies, etc.). </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" id="member-reviews">
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--<div id="sidebar" class="span4" style="width: 250px;">-->
+        <div id="sidebar" class="span4">
+
+            <div id="calendars">
+                <div class="calendar-text clearfix">
+                    <label>Check-in</label> 
+                    <div class="controls">
+                        <input type="text" id="check-in" readonly="readonly" />
+                    </div>  
+                </div>
+                <div id="calendar-check-in" class="calendar">
+                    <center style="padding: 10px 0;">Now select the day you'd like to check in</center>
+                    <div id="datepicker" ></div>
+                </div>
+
+                <div class="calendar-text clearfix">
+                    <label>Check-out</label>
+                    <div class="controls">
+                        <input type="text" id="check-out" value="July, 23, 2012" readonly="readonly" />
+                    </div>                    
+                </div>
+                <div id="calendar-check-out" class="calendar">
+                    <center style="padding: 10px 0;">Now select the day you'd like to check out</center>
+                    <div id="datepicker2" ></div>
+                </div>
+            </div>
+            <br /><br />
+            <center>
+            <a class="btn btn-large btn-success">Check Availability</a>
+            </center>
+            <br />
+        </div>
+    </div>
+</div>

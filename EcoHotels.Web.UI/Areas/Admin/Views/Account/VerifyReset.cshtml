@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Reset";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "logon";
+    Layout = "~/Areas/Admin/Views/Shared/_Basic.cshtml";
+}
+
+@section stylesheet{
+    <!-- Le styles -->
+    <link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+}
+
+@section javascript{
+    <script src="/content/admin/js/jquery-1.7.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input[name=email]').focus();
+        });
+    </script>
+}
+
+    <style type="text/css">
+      /* Override some defaults */
+      html, body {
+        background-color: #eee;
+      }
+      body {
+        padding-top: 40px;
+      }
+      .container {
+        width: 300px;
+        margin: 150px auto 100px;
+      }
+ 
+      /* The white background content wrapper */
+      .container > .content {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+           -moz-border-radius: 10px 10px 10px 10px;
+                border-radius: 10px 10px 10px 10px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+ 
+      .login-form {
+        margin-left: 65px;
+        margin-right: 36px;
+      }
+ 
+      legend {
+        margin-right: -50px;
+        font-weight: bold;
+        color: #404040;
+      }
+ 
+    </style>
+
+
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="login-form">
+                    <h2>Reset Account</h2>
+
+                    @if (ViewData["error"] != null)
+                    {
+                        <div class="alert alert-error"><p>@ViewData["error"]</p></div>
+                    }
+                    else
+                    {
+                        <form class="form" action="@Url.Action("verifyreset", "account", null)" method="post">
+                            <div>
+                                @Html.AntiForgeryToken()
+                            </div>
+                            <fieldset>
+                                <div class="clearfix">
+                                    <input name="password" type="password" placeholder="New password">
+                                </div>
+                                <div style="text-align: right;">
+                                    <button class="btn btn-primary" type="submit">Save and logon</button>
+                                </div>  
+                            </fieldset>
+                        </form>                        
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div> 
+

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="95c3b965-cb6d-4934-8941-c608b4f90f1e" name="Mark@MACPC 2013-01-03 19:43:26" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-01-03 19_43_26" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-03T19:43:26.2186245+01:00" queuing="2013-01-03T19:43:27.2798637+01:00" start="2013-01-03T19:43:28.0235129+01:00" finish="2013-01-03T19:43:35.5919269+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_persist_entity" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="0e9ccde3-606f-d55a-757a-8f455e305efe">
+      <Execution timeOut="1800000" id="4b0a559b-bfce-4b14-b669-a708adae67ba" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_persist_entity" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0e9ccde3-606f-d55a-757a-8f455e305efe" executionId="4b0a559b-bfce-4b14-b669-a708adae67ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4b0a559b-bfce-4b14-b669-a708adae67ba" testId="0e9ccde3-606f-d55a-757a-8f455e305efe" testName="Can_persist_entity" computerName="MACPC" duration="00:00:06.1940984" startTime="2013-01-03T19:43:28.4759565+01:00" endTime="2013-01-03T19:43:35.3642393+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b0a559b-bfce-4b14-b669-a708adae67ba">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: INSERT INTO Organizations (Name, VatNo, Phone, Email, Address1, Address2, City, Zipcode, Country, Created) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); select SCOPE_IDENTITY();@p0 = 'I Love Eco Hotels' [Type: String (4000)], @p1 = '9999999999' [Type: String (4000)], @p2 = '' [Type: String (4000)], @p3 = '' [Type: String (4000)], @p4 = '' [Type: String (4000)], @p5 = '' [Type: String (4000)], @p6 = '' [Type: String (4000)], @p7 = '' [Type: String (4000)], @p8 = '' [Type: String (4000)], @p9 = 03-01-2013 19:43:34 [Type: DateTime (0)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.IsNull failed. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester.Can_persist_entity() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Services\OrganizationServiceTester.cs:line 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

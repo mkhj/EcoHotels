@@ -1,0 +1,45 @@
+﻿@model EcoHotels.Core.Domain.Value_objects.SearchResultHotel
+@{
+    Layout = null;
+}
+
+@for (var i = 0; i < Model.Rooms.Count(); i++)
+{
+    var room = Model.Rooms.ElementAt(i);
+                            
+                            
+    @Html.Hidden("Items[" + i + "].RoomTypeId", room.RoomTypeId)
+                            
+    if (room.IsAvailable)
+    { 
+    <div style="width: 276px;">
+        <h3>@room.Name</h3>
+        <p>@room.Description London has witnessed an incredible number of luxury hotel (re-)openings of late, but the Corinthia is a standout for the flagship Espa Life, interiors by David Collins, a seafood restaurant by flamboyant Roman restaurateur Massimo Riccioli and a history of aristocrats and spies. (It was once home to the Ministry of Defence.) </p>
+        <div class="row">
+            <div class="span2" style="width: 128px;">
+                                
+                <select name="Items[@i].Quantity" style="width: 128px;">
+                    <option value="">Select.. </option>
+
+                    @for (var n = 1; n <= room.AvailableQuantity; n++)
+                    {
+                        if (n == 1)
+                        {
+                            <option value="@n">1 room</option>
+                        }
+                        else
+                        {
+                            <option value="@n">@n rooms</option>
+                        }
+                    }
+                </select>                                
+
+            </div>
+            <div class="span2 align-right" style="width: 128px;">
+                @room.TotalPrice
+            </div>
+        </div>
+    </div>                            
+    }
+
+}

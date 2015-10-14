@@ -1,0 +1,42 @@
+﻿@model dynamic
+
+<div class="">
+    <div class="navbar black navbar-fixed-top shadow">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/" style="background: url(/assets/img/leaf.png) no-repeat 0px 8px;">Eco Hotels</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+
+                        <li class="active"><a href="@Url.Action("index", "home", null)">Home</a></li>
+
+                        <li><a href="@Url.Action("list", "hotels")">Hotels @ViewBag.MenuItem</a></li>                        
+  
+
+
+                       @if (Request.IsAuthenticated)
+                       {
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="@Url.Action("logoff", "account")">Invite Friends</a></li>
+                                    <li><a href="@Url.Action("logoff", "account")">Referral Status</a></li>
+                                    <li><a href="@Url.Action("list", "reservation")">Reservations</a></li>
+                                    <li><a href="@Url.Action("index", "account")">Settings</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="@Url.Action("logoff", "account")">Sign Out</a></li>
+                                </ul>
+                            </li>
+                       }
+                       else
+                       { 
+                           <li><a href="@Url.Action("logon", "account")">Sign In</a></li>
+                            <li><button class="btn btn-mini btn-success" style="margin-top: 8px;" type="button">Join Now</button></li>                            
+                        }
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

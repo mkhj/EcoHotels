@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b0f8cbf9-aaa7-4236-9eb2-c6cd00e0f8da" name="Mark@MACPC 2012-06-13 09:17:28" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-13 09_17_28" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-13T09:17:28.8818308+02:00" queuing="2012-06-13T09:17:29.2306912+02:00" start="2012-06-13T09:17:30.0593568+02:00" finish="2012-06-13T09:17:35.2981260+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="d75c8714-168d-8b15-2b06-a263426686c2">
+      <Execution timeOut="1800000" id="23af5afd-db56-4bcb-af0b-9bdad0d3967b" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="31853b94-b4e6-faf6-dab5-9fbef20709e9">
+      <Execution timeOut="1800000" id="6bfdde56-31ca-46c7-9b96-569619a2d87a" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="d75c8714-168d-8b15-2b06-a263426686c2" executionId="23af5afd-db56-4bcb-af0b-9bdad0d3967b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="31853b94-b4e6-faf6-dab5-9fbef20709e9" executionId="6bfdde56-31ca-46c7-9b96-569619a2d87a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="23af5afd-db56-4bcb-af0b-9bdad0d3967b" testId="d75c8714-168d-8b15-2b06-a263426686c2" testName="Test" computerName="MACPC" duration="00:00:04.1096225" startTime="2012-06-13T09:17:30.2938848+02:00" endTime="2012-06-13T09:17:34.8056172+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23af5afd-db56-4bcb-af0b-9bdad0d3967b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester.Test threw exception: 
+System.ArgumentException: Culture name 'DNK' is not supported.
+Parameter name: name</Message>
+          <StackTrace>    at System.Globalization.RegionInfo..ctor(String name)
+   at EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester.Test() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Repositories\Ip2LocationRepoTester.cs:line 36
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6bfdde56-31ca-46c7-9b96-569619a2d87a" testId="31853b94-b4e6-faf6-dab5-9fbef20709e9" testName="TestMethod1" computerName="MACPC" duration="00:00:00.3749426" startTime="2012-06-13T09:17:34.8329788+02:00" endTime="2012-06-13T09:17:35.2199500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6bfdde56-31ca-46c7-9b96-569619a2d87a">
+      <Output>
+        <StdOut>NHibernate: SELECT TOP (@p0)  ip.countrySHORT FROM IP2Location ip WHERE ipFROM &lt;= @p1 AND @p1 &lt;= ipTO;@p0 = 1 [Type: Int32 (0)], @p1 = 16776331264 [Type: Double (0)]</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

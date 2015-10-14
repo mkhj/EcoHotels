@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e2de481a-b73b-4fc9-8429-cc9bb0a77a61" name="Mark@MACPC 2012-06-13 12:04:39" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-13 12_04_39" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-13T12:04:39.9079871+02:00" queuing="2012-06-13T12:04:40.3288586+02:00" start="2012-06-13T12:04:40.9870196+02:00" finish="2012-06-13T12:04:46.8167246+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_first_level_cache" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="8b19d8fc-0483-e63a-4b3a-e0773c9abfd8">
+      <Execution timeOut="1800000" id="6fc3a57d-646c-4f98-83a9-dadfbadca370" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_first_level_cache" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="99c2fd44-120c-2c4c-b432-60559c7d15a5">
+      <Execution timeOut="1800000" id="8afef074-629a-4f9e-a58b-d2ade6eaf29b" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="Test" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="a8346873-92d1-9365-b4cf-3038ef102245">
+      <Execution timeOut="1800000" id="74a912c0-8300-4f5a-8af0-e95e719d0991" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a8346873-92d1-9365-b4cf-3038ef102245" executionId="74a912c0-8300-4f5a-8af0-e95e719d0991" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b19d8fc-0483-e63a-4b3a-e0773c9abfd8" executionId="6fc3a57d-646c-4f98-83a9-dadfbadca370" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99c2fd44-120c-2c4c-b432-60559c7d15a5" executionId="8afef074-629a-4f9e-a58b-d2ade6eaf29b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="74a912c0-8300-4f5a-8af0-e95e719d0991" testId="a8346873-92d1-9365-b4cf-3038ef102245" testName="Test" computerName="MACPC" duration="00:00:04.2546759" startTime="2012-06-13T12:04:41.2018496+02:00" endTime="2012-06-13T12:04:46.1009501+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74a912c0-8300-4f5a-8af0-e95e719d0991">
+      <Output>
+        <StdOut>English                       , Name        , Currency    , TwoIso</StdOut>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.UnitTest1.Test threw exception: 
+System.ArgumentOutOfRangeException: Valid values are between NeutralCultures and FrameworkCultures, inclusive.
+Parameter name: types</Message>
+          <StackTrace>    at System.Globalization.CultureData.GetCultures(CultureTypes types)
+   at System.Globalization.CultureInfo.GetCultures(CultureTypes types)
+   at EcoHotels.Core.Tests.UnitTest1.Test() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\UnitTest1.cs:line 128
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6fc3a57d-646c-4f98-83a9-dadfbadca370" testId="8b19d8fc-0483-e63a-4b3a-e0773c9abfd8" testName="Test_first_level_cache" computerName="MACPC" duration="00:00:00.3793275" startTime="2012-06-13T12:04:46.1204801+02:00" endTime="2012-06-13T12:04:46.5022916+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fc3a57d-646c-4f98-83a9-dadfbadca370">
+      <Output>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8afef074-629a-4f9e-a58b-d2ade6eaf29b" testId="99c2fd44-120c-2c4c-b432-60559c7d15a5" testName="TestMethod1" computerName="MACPC" duration="00:00:00.1278584" startTime="2012-06-13T12:04:46.5101036+02:00" endTime="2012-06-13T12:04:46.6390016+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8afef074-629a-4f9e-a58b-d2ade6eaf29b">
+      <Output>
+        <StdOut>5sLLzQktAYMIN4HREit9TDiJ+u/3MvxxY3Pq1duITdY=
+e6c2cbcd092d0183083781d1122b7d4c3889faeff732fc716373ead5db884dd6</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.UnitTest1.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\UnitTest1.cs:line 170
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

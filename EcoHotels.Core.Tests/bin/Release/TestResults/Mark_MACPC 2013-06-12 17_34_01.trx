@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="dbd5958a-52e7-4f1b-a336-c326562c9f32" name="Mark@MACPC 2013-06-12 17:34:01" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-06-12 17_34_01" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-12T17:34:01.1883275+02:00" queuing="2013-06-12T17:34:01.7833814+02:00" start="2013-06-12T17:34:02.4048170+02:00" finish="2013-06-12T17:34:07.9772183+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\release\ecohotels.core.tests.dll" id="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c">
+      <Execution timeOut="1800000" id="4f76b8ac-c990-4eb8-bf3a-a72e3efbc0e9" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Release/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.SearchServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" executionId="4f76b8ac-c990-4eb8-bf3a-a72e3efbc0e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4f76b8ac-c990-4eb8-bf3a-a72e3efbc0e9" testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" testName="TestMethod1" computerName="MACPC" duration="00:00:04.5564290" startTime="2013-06-12T17:34:02.7282371+02:00" endTime="2013-06-12T17:34:07.7495540+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f76b8ac-c990-4eb8-bf3a-a72e3efbc0e9">
+      <Output>
+        <StdOut>Starting NH Session</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+SessionScope Initializing...
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Initialization method EcoHotels.Core.Tests.Integration.Services.SearchServiceTester.CreateSessionFactory threw exception. System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'EcoHotels.Core.Infrastructure.NH.SessionFactory' threw an exception. ---&gt; FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---&gt; System.Data.SqlClient.SqlException: Cannot generate SSPI context..</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.SSPIError(String error, String procedure)
+   at System.Data.SqlClient.TdsParser.SNISSPIData(Byte[] receivedBuff, UInt32 receivedLength, Byte[] sendBuff, UInt32&amp; sendLength)
+   at System.Data.SqlClient.TdsParser.ProcessSSPI(Int32 receivedLength)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Cfg\FluentConfiguration.cs:line 230
+ --- End of inner exception stack trace ---
+    at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Cfg\FluentConfiguration.cs:line 235
+   at EcoHotels.Core.Infrastructure.NH.SessionFactory.Init() in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\NH\SessionFactory.cs:line 39
+   at EcoHotels.Core.Infrastructure.NH.SessionFactory..cctor() in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\NH\SessionFactory.cs:line 26
+ --- End of inner exception stack trace ---
+    at EcoHotels.Core.Infrastructure.NH.SessionFactory.BeginTransaction()
+   at EcoHotels.Core.Tests.UnittestContext.CreateSessionFactory() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\UnittestContext.cs:line 49
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

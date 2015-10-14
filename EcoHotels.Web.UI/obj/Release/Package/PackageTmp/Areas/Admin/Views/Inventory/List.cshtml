@@ -1,0 +1,95 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.InventoryModel
+            
+            <table id="rooms-qty">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="31">                            
+                            <div id="qty-controls" style="margin-bottom: 20px;">
+                            
+                                @Html.DropDownListFor(x => x.SelectedHotelId, Model.Hotels, new { id = "hotel-selector" })
+                                
+                                @Html.DropDownListFor(x => x.SelectedMonth, Model.Months, new { id = "month-selector", @class = "span2" })
+
+                                @Html.DropDownListFor(x => x.SelectedYear, Model.Years, new { id = "year-selector", @class = "span2" })
+                                                          
+                            </div>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>1<br />Mo</th>
+                        <th>2<br />Tu</th>
+                        <th>3<br />We</th>
+                        <th>4<br />Th</th>
+                        <th>5<br />Fr</th>
+                        <th>6<br />Sa</th>
+                        <th>7<br />Su</th>
+                        <th>8<br />Mo</th>
+                        <th>9<br />Tu</th>
+                        <th>10<br />We</th>
+                        <th>11<br />Th</th>
+                        <th>12<br />Fr</th>
+                        <th>13<br />Sa</th>
+                        <th>14<br />Su</th>
+                        <th>15<br />Mo</th>
+                        <th>16<br />Tu</th>
+                        <th>17<br />We</th>
+                        <th>18<br />Th</th>
+                        <th>19<br />Fr</th>
+                        <th>20<br />Sa</th>
+                        <th>21<br />Su</th>
+                        <th>22<br />Mo</th>
+                        <th>23<br />Tu</th>
+                        <th>24<br />We</th>
+                        <th>25<br />Th</th>
+                        <th>26<br />Fr</th>
+                        <th>27<br />Sa</th>
+                        <th>28<br />Su</th>
+                        <th>29<br />Mo</th>
+                        <th>30<br />Tu</th>
+                        <th>31<br />We</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach(var item in Model.Rooms)
+                {
+
+                    <tr>
+                        <th>@item.RoomType</th>
+                        <td><input type="text" class="span1 room-open" /></td>
+                        <td><input type="text" class="span1 room-closed" /></td>
+                        <td><input type="text" class="span1 room-sold-out" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                        <td><input type="text" class="span1" /></td>
+                    </tr>                    
+                }
+                </tbody>
+            </table>

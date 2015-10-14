@@ -1,0 +1,52 @@
+﻿<div id="model-media" class="modal hide">
+
+    <div id="media-folder-view">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">×</button>
+        <h3>Media selector</h3>
+      </div>
+      <div class="modal-body">
+        <!--
+        <div class="span2">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Photo folder</a></li>
+            </ul>
+        </div>
+        -->
+        <div class="span8">
+            <ul id="media-files" class="thumbnails files">
+
+            @foreach (var item in Model)
+            { 
+                <li class="span1" data-id="@item.Id" data-filename="@item.Name">
+                    <a class="thumbnail preview"><img src="/img/@item.Id/60x45/@item.Name" /></a>
+                </li>              
+            }
+                                                                                              
+            </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal" >Cancel</a>
+      </div>
+
+    </div>
+
+    <div id="media-crop-view" style="display: none;">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">×</button>
+        <h3>Resize photo</h3>
+      </div>
+      <div class="modal-body">
+        <div style="width: 800px; margin: 0 auto;">
+            <img id="image-to-crop" src="#" alt="" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" id="btn-cancel-crop" class="btn" data-dismiss="modal" >Cancel</a>
+        <a href="#" id="btn-add-ok" class="btn btn-primary">Ok</a>
+      </div>
+    </div>
+
+</div>

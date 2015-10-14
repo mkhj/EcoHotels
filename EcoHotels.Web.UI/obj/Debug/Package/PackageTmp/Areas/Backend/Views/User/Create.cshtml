@@ -1,0 +1,86 @@
+﻿@model EcoHotels.Web.UI.Areas.Backend.Models.CreateUserModel
+@using EcoHotels.Core.Domain.Models.Security
+@{
+    ViewBag.Title = "Backend - Create user";
+    Layout = "~/Areas/backend/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "users" });}
+
+<div id="view" class="container" data-view="user" data-action="create">
+
+    <div class="row">
+
+        <div class="span9">
+
+            <form class="form-horizontal ajaxform" action="@Url.Action("create", "user", null)" method="post">
+                <div>@Html.AntiForgeryToken()</div>
+
+                <fieldset>
+                    <legend style="padding-bottom: 5px;">User Information</legend>
+
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">First name:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Firstname, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Last name:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Lastname, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">E-mail:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "email required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Password:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Password, new { @class = "required" })
+                            <a id="btn-generate-password" class="btn">Generate</a>
+                        </div>
+                    </div>
+
+                    @if (User.IsInRole(RolesEnum.Backend.ToString()))
+                    { 
+                        <div class="control-group">
+                            <label class="control-label" for="input01">Role:</label>
+                            <div class="controls">
+                                @Html.DropDownListFor(m => m.SelectedRoleId, Model.Roles, new { @class = "required" })
+                            </div>
+                        </div>                    
+                    }
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Is active:</label>
+                        <div class="controls">
+                            @Html.CheckBoxFor(m => m.IsActive)
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Create">Create</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("backend", "navigation", new { page = "list-users" });}
+        </div>
+
+    </div>
+</div>

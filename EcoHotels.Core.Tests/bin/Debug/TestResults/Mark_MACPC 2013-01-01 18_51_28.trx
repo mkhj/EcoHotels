@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="07faeae2-666e-409d-8e0e-92e80a0b6810" name="Mark@MACPC 2013-01-01 18:51:28" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-01-01 18_51_28" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-01T18:51:28.4835093+01:00" queuing="2013-01-01T18:51:29.4354969+01:00" start="2013-01-01T18:51:30.5976255+01:00" finish="2013-01-01T18:51:43.3546503+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="b89f4b58-d56b-7f24-c5dc-b60b14545fb4">
+      <Execution timeOut="1800000" id="66a95a6a-b140-4e48-829d-ef5d0bbdfd6c" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.RateServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b89f4b58-d56b-7f24-c5dc-b60b14545fb4" executionId="66a95a6a-b140-4e48-829d-ef5d0bbdfd6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="66a95a6a-b140-4e48-829d-ef5d0bbdfd6c" testId="b89f4b58-d56b-7f24-c5dc-b60b14545fb4" testName="TestMethod1" computerName="MACPC" duration="00:00:10.8225777" startTime="2013-01-01T18:51:31.2925569+01:00" endTime="2013-01-01T18:51:43.0369953+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66a95a6a-b140-4e48-829d-ef5d0bbdfd6c">
+      <Output>
+        <StdOut>Starting NH Session
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Integration.Services.RateServiceTester.TestMethod1 threw exception: 
+System.NotImplementedException: The method or operation is not implemented.</Message>
+          <StackTrace>    at EcoHotels.Core.Domain.Models.Commerce.RateCategory.Validate() in C:\SourceCode\EcoHotels\EcoHotels.Core\Domain\Models\Commerce\RateCategory.cs:line 35
+   at EcoHotels.Core.Domain.EntityBase`1.GetBrokenRules() in C:\SourceCode\EcoHotels\EcoHotels.Core\Domain\EntityBase.cs:line 23
+   at EcoHotels.Core.Domain.EntityBase`1.IsValid() in C:\SourceCode\EcoHotels\EcoHotels.Core\Domain\EntityBase.cs:line 29
+   at EcoHotels.Core.Infrastructure.Services.Price.RateService.Save(RateCategory category) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Services\Price\RateService.cs:line 27
+   at EcoHotels.Core.Tests.Integration.Services.RateServiceTester.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Services\RateServiceTester.cs:line 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

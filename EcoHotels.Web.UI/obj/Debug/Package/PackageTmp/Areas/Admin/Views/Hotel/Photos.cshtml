@@ -1,0 +1,91 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelPhotoModel
+@{
+    ViewBag.Title = "Hotel Photos";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "hotels" });}
+
+<div id="view" class="container" data-view="hotel" data-action="photos">
+    <h2>
+        Photos
+        <small>Change your hotel photos</small>
+    </h2>
+    <div class="row">
+
+        <div class="span9 shadow">
+            <br  />
+            <form class="form-horizontal ajaxform" action="@Url.Action("photos", "hotel", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Id" value="@Model.Id" readonly="readonly" />
+                </div>
+
+                <div class="content">
+
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+
+                    <span class="label label-info">Tip:</span> Adding beautiful photos will help generate interest
+                    <br /><br />
+
+                    <ul id="asset-containers" class="thumbnails files">
+
+                    @for (int i = 0; i < Model.Assets.Count; i++)
+                    {
+                        var id = Model.Assets[i].Id;
+                        var name = Model.Assets[i].Name;
+                        var query = Model.Assets[i].CroppingQuery;
+                        
+                        <li data-has-image="true">
+                            <img src="/img/@id/200x150/@name@query" class="img-polaroid" alt="" />
+                            <ul class="container-edit unstyled" style="display: none; ">
+	                            <li class="remove"><a href="#" class="btn">Remove</a></li>
+	                            <li class="resize"><a data-toggle="modal" href="#model-media" class="btn">Resize</a></li>
+                            </ul>
+                            @Html.Hidden("Assets.Index", id, new { @class="data" })
+                            @Html.Hidden("Assets[" + id + "].Id", id, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].Name", name, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].TopX", Model.Assets[i].TopX, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].TopY", Model.Assets[i].TopY, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].BottomX", Model.Assets[i].BottomX, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].BottomY", Model.Assets[i].BottomY, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].CropXUnits", Model.Assets[i].CropXUnits, new { @class = "data" })
+                            @Html.Hidden("Assets[" + id + "].CropYUnits", Model.Assets[i].CropYUnits, new { @class = "data" })
+                        </li>                        
+                    }
+
+                    @if (Model.Assets.Count <= 8) { 
+                         <li data-has-image="false">
+                            <img src="http://placehold.it/200x150&text=Add%20photo" class="img-polaroid" alt="" />
+                            <ul class="container-new unstyled" style="display: none; ">
+                                <li class="add"><a class="btn" data-toggle="modal" href="#model-media">Add</a></li>
+                            </ul>
+                            <ul class="container-edit unstyled" style="display: none; ">
+	                            <li class="remove"><a href="#" class="btn">Remove</a></li>
+	                            <li class="resize"><a data-toggle="modal" href="#model-media" class="btn">Resize</a></li>
+                            </ul>
+                        </li>                   
+                    }
+ 
+                    </ul>
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="span3 shadow">
+            @{Html.RenderAction("hotels", "navigation", new { page = "photos", hotelId = Model.Id });}
+        </div>
+
+    </div>
+</div>
+
+@Html.Partial("Modal/MediaSelector", Model.MediaAssets)

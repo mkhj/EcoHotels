@@ -1,0 +1,263 @@
+﻿@model EcoHotels.Web.UI.Models.CheckoutBillingInformationModel
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="view" class="container" data-view="checkout" data-action="step1">
+
+    <div class="row">
+        <div class="span9">
+            
+            <div style="padding: 20px 20px 0px 20px;">
+                <h1>Hotel das Cataratas</h1>
+                @Model.Arrival.ToString("dddd dd MMMM, yyyy") - @Model.Departure.ToString("dddd dd MMMM, yyyy") 
+            </div>
+            <hr />
+            <form class="form-horizontal ajaxform" action="@Url.Action("index", "checkout", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    @Html.Hidden("next-step", @Url.Action("complete", "checkout", null))
+                </div>
+
+                <!--
+                <div class="control-group" style="padding: 10px 20px;">
+                    <div class="alert hidden">...</div>
+                </div>
+                -->
+                <div style="padding: 0px 20px 20px 20px;">
+
+                    <h3>Personal Information</h3>
+                    <small>Please provide your personal information for this reservation.</small>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">First name</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Firstname, new { @class = "span4 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Last name:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Lastname, new { @class = "span4 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Phone number:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "span4 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Country:</label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.SelectedCountryName, Model.AvailableCountries, new { @class = "span4 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Email address:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "span4 email-required" })
+                    </div>
+                </div>
+
+                <hr />
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>Room Information</h3>
+                    <small>Enter name and number of guests in room.</small>
+                </div>
+                <div style="padding: 0px 20px 0px 20px;">
+                    <table id="room-information">
+                        <thead>
+                            <tr>
+                                <th style="width: 140px;"></th>
+                                <th style="width: 300px;">Name of guest</th>
+                                <th>Guests</th>
+                                <th class="align-right" style="width: 150px;">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>         
+                            @for (int i = 0; i < Model.Rooms.Count(); i++)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="control-group">
+                                            @Html.HiddenFor(m => m.Rooms[i].Id, new { @readonly="true" })
+                                            <label for="sdfsdf">@Model.Rooms[i].ItemType</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="control-group">
+                                            @Html.TextBoxFor(m => m.Rooms[i].NameOfPrimaryGuest, new { @class = "span4 no-error-message required" })
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="control-group">
+                                            @Html.DropDownListFor(m => m.Rooms[i].Adults, Model.Rooms[i].Guests, new { @class = "input-mini no-error-message required" })
+                                        </div>
+                                    </td>
+                                    <td class="align-right" style="padding-bottom: 18px;">
+                                        @Model.TotalPrice
+                                    </td>
+                                </tr>                           
+                            }                   
+                        </tbody>      
+                        <tfoot>
+                            <tr>
+                                <th class="align-right" colspan="3">Total</th>
+                                <td class="align-right">@Model.TotalPrice.ToString()</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <hr />
+
+                <div style="padding: 0px 20px 20px 20px; position: relative;">
+                    <h3>Credit card details</h3>
+                    <small>Enter your credit card information.</small>
+                    <div style="position: absolute; top: 0px; right: 20px;">
+                        <img src="/assets/img/common/visa-card.png" alt="visa card" />
+                        <img src="/assets/img/common/master-card.png" alt="master card" />
+                        <img src="/assets/img/common/amex-card.png" alt="american express card" />
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Credit Card Type:</label>
+                    <div class="controls">
+                        <select name="CreditcardType" class="span4 required">
+                            <option value="">Choose...</option>
+                            <option value="1">American Express</option>
+                            <option value="9">Master Card</option>
+                            <option value="10">Visa</option>
+                        
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Card Holder's name:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.CreditcardHolder, new { @class = "span4 required", autocomplete = "off" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Credit Card Number:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.CreditcardNumber, new { @class = "span4 required", autocomplete="off" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Expiration Date:</label>
+                    <div class="controls">
+                        <select name="ExpireMonth" class="input-small no-error-message required">
+                            <option value="">Month</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="ExpireYear" class="input-small no-error-message required">
+                            <option value="">Year</option>
+                            @for (var i = 0; i < 12; i++)
+                            {
+                                var year = @DateTime.Now.AddYears(i).ToString("yy");
+                                <option value="@year">@year</option>
+                            }
+                        </select>                        
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Security Code (cvc):</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.CVC, new { @class = "span1 number-required", autocomplete = "off" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01"></label>
+                    <div class="controls">
+                        <label class="checkbox">@Html.CheckBox("sdfsdf") I agree to the <a id="tos" href="#">Terms and Conditions</a> and understand the <a href=#">Cancellation Policy</a>.</label>
+                    </div>
+                </div>
+
+                <div id="test-tos" style="display: none;">
+                    <div style="height: 100px; width: 100px;">sdfsdf</div>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        $('#tos').tooltip({
+                            animation: false,
+                            placement: 'right',
+                            title: function () {
+                                console.log(this);
+                                return $('#test-tos').html();
+                            }
+                        });
+                    });
+                    
+                    
+
+                </script>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-large btn-success" data-loading-text="Please wait...!" data-complete-text="Confirm Reservation"><i class="icon-ok icon-white"></i> Confirm Reservation</button>
+                </div>  
+
+            </form>
+
+  
+        </div>
+        <div id="sidebar" class="span3">
+            <div style="padding: 20px;">
+                <h3>Reservation Summary</h3>
+
+                <hr />
+                <b>Check In</b><br />
+                @Model.Arrival.ToString("dddd dd MMMM, yyyy")<br /><br />
+
+                <b>Check Out</b><br />
+                @Model.Departure.ToString("dddd dd MMMM, yyyy")<br /><br />
+
+                <b>Check-in Instructions Notifications:</b><br />
+                Children 18 years old and younger are not permitted at this property.
+                <hr />
+                <b>Charges</b>
+                <table style="width: 100%; line-height: 1.6em;">
+                    <tr>
+                        <td>Night(s)</td>
+                        <td class="align-right">@Model.Duration</td>
+                    </tr>
+                    <tr>
+                        <td>Rooms</td>
+                        <td class="align-right">@Model.Rooms.Count</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td class="align-right">@Model.TotalPrice.ToString()</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

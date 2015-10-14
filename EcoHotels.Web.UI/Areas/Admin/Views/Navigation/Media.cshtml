@@ -1,0 +1,20 @@
+﻿
+<ul id="sidebar" class="nav nav-list">
+    <li class="nav-header">Folders</li>
+    <li class="@(Model.Page == "all" ? "active" : "")"><a href="@Url.Action("index", "media")">All Photos</a></li>
+
+    @foreach (var item in Model.Items)
+    {
+        if (item.IsSelected)
+        { 
+            <li class="active"><a>@item.Name</a></li>
+        }
+        else
+        { 
+            <li><a href="@Url.Action("folder", "media", new { id = item.Id })">@item.Name</a></li>
+        }
+    }  
+
+    <li class="divider"></li>
+    <li class="@(Model.Page == "add-folder" ? "active" : "")"><a href="@Url.Action("add-folder", "media", null)" >Add folder</a></li>
+</ul>

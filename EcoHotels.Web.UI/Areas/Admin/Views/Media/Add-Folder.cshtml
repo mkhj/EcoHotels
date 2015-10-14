@@ -1,0 +1,52 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.AssetCategoryModel
+@{
+    ViewBag.Title = "Media - Add folder";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "media" });}
+
+
+<div id="view" class="container" data-view="media" data-action="create">
+    <h2>
+        Media
+        <small>Manage all your media assets</small>
+    </h2>
+    <div class="row">
+
+        <div class="span9">
+            <br />          
+
+            <form class="form-horizontal ajaxform" action="@Url.Action("add-folder", "media", null)" method="post">
+                <div>@Html.AntiForgeryToken()</div>
+                    
+                <div class="content">
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+                </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Name:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "required" })
+                        </div>
+                    </div>
+                    
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Add folder">Add folder</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("media", "navigation", new { page = "add-folder" });}
+        </div>
+
+    </div>
+
+</div>

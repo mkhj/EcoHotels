@@ -1,0 +1,14 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.DashboardSectionModel
+
+<div class="container">
+    <ul class="nav nav-pills">
+      <!--
+      <li class="active"><a href="#" class="button">Overview</a></li>
+      -->
+      <li class="@(Model.Page == "addons" ? "active" : "active")"><a href="@Url.Action("create", "addon")" class="button">Overview</a></li>
+
+      <li class="@(Model.Page == "inventory" ? "active" : "")"><a href="@Url.Action("all", "inventory")" class="button">Statistic</a> </li>
+      
+      <li class="@(Model.Page == "season" ? "active" : "")"><a href="@Url.Action("create", "season")" class="button">Reservations</a></li>      
+    </ul>
+</div>

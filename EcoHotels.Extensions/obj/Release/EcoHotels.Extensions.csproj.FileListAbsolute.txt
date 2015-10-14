@@ -1,0 +1,8 @@
+C:\SourceCode\EcoHotels\EcoHotels.Extensions\bin\Release\EcoHotels.Extensions.dll
+C:\SourceCode\EcoHotels\EcoHotels.Extensions\bin\Release\EcoHotels.Extensions.pdb
+C:\SourceCode\EcoHotels\EcoHotels.Extensions\bin\Release\Newtonsoft.Json.dll
+C:\SourceCode\EcoHotels\EcoHotels.Extensions\bin\Release\Newtonsoft.Json.pdb
+C:\SourceCode\EcoHotels\EcoHotels.Extensions\bin\Release\Newtonsoft.Json.xml
+C:\SourceCode\EcoHotels\EcoHotels.Extensions\obj\Release\ResolveAssemblyReference.cache
+C:\SourceCode\EcoHotels\EcoHotels.Extensions\obj\Release\EcoHotels.Extensions.dll
+C:\SourceCode\EcoHotels\EcoHotels.Extensions\obj\Release\EcoHotels.Extensions.pdb

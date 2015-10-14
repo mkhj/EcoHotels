@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@section javascript{
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1', { packages: ['imageareachart'] });
+    </script>
+    <script type="text/javascript">
+        function drawVisualization() {
+            // Create and populate the data table.
+            var data = google.visualization.arrayToDataTable([
+              ['Month', 'Rooms'],
+              ['January', 174],
+              ['February', 378],
+              ['April', 203],
+              ['May', 234],
+              ['June', 412],
+              ['July', 501],
+              ['August', 545],
+              ['September', 495],
+              ['October', 460],
+              ['November', 320],
+              ['December', 379]
+            ]);
+
+            var options = {
+                //colors: ['#68ae00'],
+                legend: 'top',
+                max: 1000
+            };
+
+            // Create and draw the visualization.
+            new google.visualization.ImageAreaChart(document.getElementById('visualization')).
+            draw(data, options);
+        }
+
+
+        google.setOnLoadCallback(drawVisualization);
+    </script>
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "frontdesk" });}
+
+@{Html.RenderAction("dashboard", "navigation", new { selected = "dashboard" });}
+
+<div class="container">
+
+    <div class="row">
+        <div class="span12">
+            <div class="content">
+
+                <h2>Performance</h2>
+                <small>How many rooms have you sold</small>
+
+                <div id="visualization" style="width: 900px; height: 300px;"></div>
+                <br /><br />
+                <h3>New</h3>
+                <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>mdo</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>fat</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>twitter</td>
+                  </tr>
+                </tbody>
+              </table> 
+          
+                <h3>Guests arriving today</h3>
+                <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>mdo</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>fat</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>twitter</td>
+                  </tr>
+                </tbody>
+              </table> 
+
+            </div>
+        </div>
+    </div>
+</div>

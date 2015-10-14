@@ -1,0 +1,25 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.SettingSectionModel
+
+<ul id="sidebar" class="nav nav-list">
+    <li class="nav-header">Settings</li>
+
+    <li class="@(Model.Page == "general" ? "active" : "")"><a href="@Url.Action("general", "settings", null)">Generel</a></li> 
+
+    <li class="@(Model.Page == "currency" ? "active" : "")"><a href="@Url.Action("currency", "settings", null)">Currency</a></li> 
+
+    <li class="nav-header">Users</li>
+    @foreach (var item in Model.Items)
+    {
+        if (item.IsSelected)
+        { 
+            <li class="active"><a>@item.Name</a></li>
+        }
+        else
+        { 
+            <li><a href="@Url.Action("edit", "user", new { id = item.Id })">@item.Name</a></li>
+        }
+    }  
+
+    <li class="divider"></li>
+    <li class="@(Model.Page == "add-users" ? "active" : "")"><a href="@Url.Action("create", "user", null)">Add User</a></li>
+</ul>

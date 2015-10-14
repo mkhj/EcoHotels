@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="76de44c3-4538-48d4-8090-89df97a9e401" name="Mark@MACPC 2012-06-13 11:47:22" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-13 11_47_22" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-13T11:47:22.7670014+02:00" queuing="2012-06-13T11:47:23.2181444+02:00" start="2012-06-13T11:47:23.9466134+02:00" finish="2012-06-13T11:47:29.8681094+02:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="3" executed="3" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_first_level_cache" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="8b19d8fc-0483-e63a-4b3a-e0773c9abfd8">
+      <Execution timeOut="1800000" id="acca8af3-7328-477e-bdd4-871b222f8c73" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_first_level_cache" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="99c2fd44-120c-2c4c-b432-60559c7d15a5">
+      <Execution timeOut="1800000" id="48ccb22c-fee0-4dd0-b577-4582089dd5e1" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="Test" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="a8346873-92d1-9365-b4cf-3038ef102245">
+      <Execution timeOut="1800000" id="19993c4e-fc47-44c8-8922-a973876fa12f" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a8346873-92d1-9365-b4cf-3038ef102245" executionId="19993c4e-fc47-44c8-8922-a973876fa12f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b19d8fc-0483-e63a-4b3a-e0773c9abfd8" executionId="acca8af3-7328-477e-bdd4-871b222f8c73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99c2fd44-120c-2c4c-b432-60559c7d15a5" executionId="48ccb22c-fee0-4dd0-b577-4582089dd5e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="19993c4e-fc47-44c8-8922-a973876fa12f" testId="a8346873-92d1-9365-b4cf-3038ef102245" testName="Test" computerName="MACPC" duration="00:00:04.4154662" startTime="2012-06-13T11:47:24.2014799+02:00" endTime="2012-06-13T11:47:29.1103454+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19993c4e-fc47-44c8-8922-a973876fa12f">
+      <Output>
+        <StdOut>English                       , Name        , Currency    , TwoIso      
+Saudi Arabia                  , SA          , SAR         , SA          
+Bulgaria                      , BG          , BGN         , BG          
+Spain                         , ES          , EUR         , ES          
+Taiwan                        , TW          , TWD         , TW          
+Czech Republic                , CZ          , CZK         , CZ          
+Denmark                       , DK          , DKK         , DK          
+Germany                       , DE          , EUR         , DE          
+Greece                        , GR          , EUR         , GR          
+United States                 , US          , USD         , US          
+Finland                       , FI          , EUR         , FI          
+France                        , FR          , EUR         , FR          
+Israel                        , IL          , ILS         , IL          
+Hungary                       , HU          , HUF         , HU          
+Iceland                       , IS          , ISK         , IS          
+Italy                         , IT          , EUR         , IT          
+Japan                         , JP          , JPY         , JP          
+Korea                         , KR          , KRW         , KR          
+Netherlands                   , NL          , EUR         , NL          
+Norway                        , NO          , NOK         , NO          
+Poland                        , PL          , PLN         , PL          
+Brazil                        , BR          , BRL         , BR          
+Switzerland                   , CH          , CHF         , CH          
+Romania                       , RO          , RON         , RO          
+Russia                        , RU          , RUB         , RU          
+Croatia                       , HR          , HRK         , HR          
+Slovakia                      , SK          , EUR         , SK          
+Albania                       , AL          , ALL         , AL          
+Sweden                        , SE          , SEK         , SE          
+Thailand                      , TH          , THB         , TH          
+Turkey                        , TR          , TRY         , TR          
+Islamic Republic of Pakistan  , PK          , PKR         , PK          
+Indonesia                     , ID          , IDR         , ID          
+Ukraine                       , UA          , UAH         , UA          
+Belarus                       , BY          , BYR         , BY          
+Slovenia                      , SI          , EUR         , SI          
+Estonia                       , EE          , EEK         , EE          
+Latvia                        , LV          , LVL         , LV          
+Lithuania                     , LT          , LTL         , LT          
+Tajikistan                    , TJ          , TJS         , TJ          
+Iran                          , IR          , IRR         , IR          
+Vietnam                       , VN          , VND         , VN          
+Armenia                       , AM          , AMD         , AM          
+Azerbaijan                    , AZ          , AZN         , AZ          
+Spain                         , ES          , EUR         , ES          
+Germany                       , DE          , EUR         , DE          
+Macedonia (FYROM)             , MK          , MKD         , MK          
+South Africa                  , ZA          , ZAR         , ZA          
+South Africa                  , ZA          , ZAR         , ZA          
+South Africa                  , ZA          , ZAR         , ZA          
+South Africa                  , ZA          , ZAR         , ZA          
+Georgia                       , GE          , GEL         , GE          
+Faroe Islands                 , FO          , DKK         , FO          
+India                         , IN          , INR         , IN          
+Malta                         , MT          , EUR         , MT          
+Norway                        , NO          , NOK         , NO          
+Malaysia                      , MY          , MYR         , MY          
+Kazakhstan                    , KZ          , KZT         , KZ          
+Kyrgyzstan                    , KG          , KGS         , KG          
+Kenya                         , KE          , KES         , KE          
+Turkmenistan                  , TM          , TMT         , TM          
+Uzbekistan                    , UZ          , UZS         , UZ          
+Russia                        , RU          , RUB         , RU          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+India                         , IN          , INR         , IN          
+Mongolia                      , MN          , MNT         , MN          
+People's Republic of China    , CN          , CNY         , CN          
+United Kingdom                , GB          , GBP         , GB          
+Cambodia                      , KH          , KHR         , KH          
+Lao P.D.R.                    , LA          , LAK         , LA          
+Spain                         , ES          , EUR         , ES          
+India                         , IN          , INR         , IN          
+Syria                         , SY          , SYP         , SY          
+Sri Lanka                     , LK          , LKR         , LK          
+Canada                        , CA          , CAD         , CA          
+Ethiopia                      , ET          , ETB         , ET          
+Nepal                         , NP          , NPR         , NP          
+Netherlands                   , NL          , EUR         , NL          
+Afghanistan                   , AF          , AFN         , AF          
+Philippines                   , PH          , PHP         , PH          
+Maldives                      , MV          , MVR         , MV          
+Nigeria                       , NG          , NIO         , NG          
+Nigeria                       , NG          , NIO         , NG          
+Bolivia                       , BO          , BOB         , BO          
+South Africa                  , ZA          , ZAR         , ZA          
+Russia                        , RU          , RUB         , RU          
+Luxembourg                    , LU          , EUR         , LU          
+Greenland                     , GL          , DKK         , GL          
+Nigeria                       , NG          , NIO         , NG          
+People's Republic of China    , CN          , CNY         , CN          
+Chile                         , CL          , CLP         , CL          
+Canada                        , CA          , CAD         , CA          
+France                        , FR          , EUR         , FR          
+People's Republic of China    , CN          , CNY         , CN          
+New Zealand                   , NZ          , NZD         , NZ          
+France                        , FR          , EUR         , FR          
+France                        , FR          , EUR         , FR          
+France                        , FR          , EUR         , FR          
+Russia                        , RU          , RUB         , RU          
+Guatemala                     , GT          , GTQ         , GT          
+Rwanda                        , RW          , RWF         , RW          
+Senegal                       , SN          , XOF         , SN          
+Afghanistan                   , AF          , AFN         , AF          
+United Kingdom                , GB          , GBP         , GB          
+Iraq                          , IQ          , IQD         , IQ          
+People's Republic of China    , CN          , CNY         , CN          
+Switzerland                   , CH          , CHF         , CH          
+United Kingdom                , GB          , GBP         , GB          
+Mexico                        , MX          , MXN         , MX          
+Belgium                       , BE          , EUR         , BE          
+Switzerland                   , CH          , CHF         , CH          
+Belgium                       , BE          , EUR         , BE          
+Norway                        , NO          , NOK         , NO          
+Portugal                      , PT          , EUR         , PT          
+Serbia and Montenegro (Former), CS          , CSD         , CS          
+Finland                       , FI          , EUR         , FI          
+Azerbaijan                    , AZ          , AZN         , AZ          
+Germany                       , DE          , EUR         , DE          
+Sweden                        , SE          , SEK         , SE          
+Ireland                       , IE          , EUR         , IE          
+Brunei Darussalam             , BN          , BND         , BN          
+Uzbekistan                    , UZ          , UZS         , UZ          
+Bangladesh                    , BD          , BDT         , BD          
+People's Republic of China    , CN          , CNY         , CN          
+Canada                        , CA          , CAD         , CA          
+Algeria                       , DZ          , DZD         , DZ          
+Ecuador                       , EC          , USD         , EC          
+Egypt                         , EG          , EGP         , EG          
+Hong Kong S.A.R.              , HK          , HKD         , HK          
+Austria                       , AT          , EUR         , AT          
+Australia                     , AU          , AUD         , AU          
+Spain                         , ES          , EUR         , ES          
+Canada                        , CA          , CAD         , CA          
+Serbia and Montenegro (Former), CS          , CSD         , CS          
+Finland                       , FI          , EUR         , FI          
+Peru                          , PE          , PEN         , PE          
+Libya                         , LY          , LYD         , LY          
+Singapore                     , SG          , SGD         , SG          
+Luxembourg                    , LU          , EUR         , LU          
+Canada                        , CA          , CAD         , CA          
+Guatemala                     , GT          , GTQ         , GT          
+Switzerland                   , CH          , CHF         , CH          
+Bosnia and Herzegovina        , BA          , BAM         , BA          
+Norway                        , NO          , NOK         , NO          
+Algeria                       , DZ          , DZD         , DZ          
+Macao S.A.R.                  , MO          , MOP         , MO          
+Liechtenstein                 , LI          , CHF         , LI          
+New Zealand                   , NZ          , NZD         , NZ          
+Costa Rica                    , CR          , CRC         , CR          
+Luxembourg                    , LU          , EUR         , LU          
+Bosnia and Herzegovina        , BA          , BAM         , BA          
+Sweden                        , SE          , SEK         , SE          
+Morocco                       , MA          , MAD         , MA          
+Ireland                       , IE          , EUR         , IE          
+Panama                        , PA          , PAB         , PA          
+Principality of Monaco        , MC          , EUR         , MC          
+Bosnia and Herzegovina        , BA          , BAM         , BA          
+Norway                        , NO          , NOK         , NO          
+Tunisia                       , TN          , TND         , TN          
+South Africa                  , ZA          , ZAR         , ZA          
+Dominican Republic            , DO          , DOP         , DO          
+Bosnia and Herzegovina        , BA          , BAM         , BA          
+Sweden                        , SE          , SEK         , SE          
+Oman                          , OM          , OMR         , OM          
+Jamaica                       , JM          , JMD         , JM          
+Bolivarian Republic of Venezuela, VE          , VEF         , VE          
+Bosnia and Herzegovina        , BA          , BAM         , BA          
+Finland                       , FI          , EUR         , FI          
+Yemen                         , YE          , YER         , YE          
+Caribbean                     , 029         , USD         , 029         
+Colombia                      , CO          , COP         , CO          
+Serbia                        , RS          , RSD         , RS          
+Finland                       , FI          , EUR         , FI          
+Syria                         , SY          , SYP         , SY          
+Belize                        , BZ          , BZD         , BZ          
+Peru                          , PE          , PEN         , PE          
+Serbia                        , RS          , RSD         , RS          
+Jordan                        , JO          , JOD         , JO          
+Trinidad and Tobago           , TT          , TTD         , TT          
+Argentina                     , AR          , ARS         , AR          
+Montenegro                    , ME          , EUR         , ME          
+Lebanon                       , LB          , LBP         , LB          
+Zimbabwe                      , ZW          , ZWL         , ZW          
+Ecuador                       , EC          , USD         , EC          
+Montenegro                    , ME          , EUR         , ME          
+Kuwait                        , KW          , KWD         , KW          
+Republic of the Philippines   , PH          , PHP         , PH          
+Chile                         , CL          , CLP         , CL          
+U.A.E.                        , AE          , AED         , AE          
+Uruguay                       , UY          , UYU         , UY          
+Bahrain                       , BH          , BHD         , BH          
+Paraguay                      , PY          , PYG         , PY          
+Qatar                         , QA          , QAR         , QA          
+India                         , IN          , INR         , IN          
+Bolivia                       , BO          , BOB         , BO          
+Malaysia                      , MY          , MYR         , MY          
+El Salvador                   , SV          , USD         , SV          
+Singapore                     , SG          , SGD         , SG          
+Honduras                      , HN          , HNL         , HN          
+Nicaragua                     , NI          , NIO         , NI          
+Puerto Rico                   , PR          , USD         , PR          
+United States                 , US          , USD         , US</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="acca8af3-7328-477e-bdd4-871b222f8c73" testId="8b19d8fc-0483-e63a-4b3a-e0773c9abfd8" testName="Test_first_level_cache" computerName="MACPC" duration="00:00:00.4762029" startTime="2012-06-13T11:47:29.1328049+02:00" endTime="2012-06-13T11:47:29.6103134+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="acca8af3-7328-477e-bdd4-871b222f8c73">
+      <Output>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="48ccb22c-fee0-4dd0-b577-4582089dd5e1" testId="99c2fd44-120c-2c4c-b432-60559c7d15a5" testName="TestMethod1" computerName="MACPC" duration="00:00:00.1554200" startTime="2012-06-13T11:47:29.6200784+02:00" endTime="2012-06-13T11:47:29.7782714+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48ccb22c-fee0-4dd0-b577-4582089dd5e1">
+      <Output>
+        <StdOut>Q0JrVb8VLd6fI2KCQ24BfpUzO//d3chgiRi04exKysQ=
+43426b55bf152dde9f236282436e017e95333bffddddc8608918b4e1ec4acac4</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.UnitTest1.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\UnitTest1.cs:line 170
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

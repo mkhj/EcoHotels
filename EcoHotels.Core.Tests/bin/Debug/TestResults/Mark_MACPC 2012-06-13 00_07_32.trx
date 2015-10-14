@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4236d33a-1de2-422f-bf4c-588c6eb784bf" name="Mark@MACPC 2012-06-13 00:07:32" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-13 00_07_32" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-13T00:07:32.6780789+02:00" queuing="2012-06-13T00:07:33.1304762+02:00" start="2012-06-13T00:07:33.7411637+02:00" finish="2012-06-13T00:07:39.4689239+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="31853b94-b4e6-faf6-dab5-9fbef20709e9">
+      <Execution timeOut="1800000" id="42ef6f8d-3778-4fc2-ad85-b84868f0e8f2" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="31853b94-b4e6-faf6-dab5-9fbef20709e9" executionId="42ef6f8d-3778-4fc2-ad85-b84868f0e8f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="42ef6f8d-3778-4fc2-ad85-b84868f0e8f2" testId="31853b94-b4e6-faf6-dab5-9fbef20709e9" testName="TestMethod1" computerName="MACPC" duration="00:00:04.7221741" startTime="2012-06-13T00:07:34.2433931+02:00" endTime="2012-06-13T00:07:39.3594887+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42ef6f8d-3778-4fc2-ad85-b84868f0e8f2">
+      <Output>
+        <StdOut>NHibernate: SELECT TOP (@p0)  ip.countrySHORT FROM IP2Location ip WHERE ipFROM &lt;= @p1 AND @p1 &lt;= ipTO;@p0 = 1 [Type: Int32 (0)], @p1 = 16776331264 [Type: Double (0)]</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

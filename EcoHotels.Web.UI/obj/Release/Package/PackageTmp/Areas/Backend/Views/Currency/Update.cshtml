@@ -1,0 +1,91 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.RefreshCurrencyModel
+
+@{
+    ViewBag.Title = "Currency edit";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "backend" });}
+
+<div id="view" class="container" data-view="currency" data-action="refresh">
+    <h2>
+        Currency
+        <small>Change exchange rates</small>
+    </h2>
+    <div class="row">
+
+        <div class="span9">
+
+            <form class="form-horizontal ajaxform" action="@Url.Action("update", "currency", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                </div>
+
+                <div class="content">
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+
+                    <div class="clearfix">
+                        <div class="btn-toolbar pull-right clearfix">
+                            <a id="btn-add-files" class="btn btn-small" href="@Url.Action("update", "currency")">Refresh</a>                       
+                        </div>
+                    </div>
+
+			        <table class="table table-striped" cellpadding="0" cellspacing="0">			
+				        <thead>
+					        <tr>
+                                <td></td>
+					            <th style="width: 275px;">Name</th>
+					            <th style="width: 275px;">Symbol</th>
+                                <th>New Exchange<br />rate</th>
+                                <th>Old Exchange<br />rate</th>
+					        </tr>
+				        </thead>				
+				        <tbody>
+                            @for (int i = 0; i < Model.Items.Count; i++)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.HiddenFor(m => m.Items[i].Id)
+                                    </td>
+                                    <td>
+                                
+                                        @Html.DisplayFor(m => m.Items[i].Name)
+                                        @Html.HiddenFor(m => m.Items[i].IsoCode)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(m => m.Items[i].Symbol)
+                                    </td>
+                                    <td>
+                                        @if (Model.Items[i].Symbol != "DKK")
+                                        {
+                                            @Html.TextBoxFor(m => m.Items[i].NewConversionFactor, new { @class = "required align-right span1" })
+                                        }
+                                        else 
+                                        { 
+                                            @Html.TextBoxFor(m => m.Items[i].NewConversionFactor, new { @class = "required align-right span1", disabled = "disabled" })
+                                        }
+                                    </td>
+                                    <td>
+                                        @Html.TextBoxFor(m => m.Items[i].OldConversionFactor, new { @class = "required align-right span1", disabled = "disabled" })                                 
+                                    </td>
+                                </tr>                    
+                            }
+				        </tbody>
+			        </table>
+                </div>
+  
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save">Save</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("backend", "navigation", new { page = "currency" });}
+        </div>
+    </div>
+</div>

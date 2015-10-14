@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ac985ed2-1bd9-43f4-9d04-e48185bb9de5" name="Mark@MACPC 2012-06-15 18:24:31" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-15 18_24_31" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-15T18:24:31.1062590+02:00" queuing="2012-06-15T18:24:31.9896478+02:00" start="2012-06-15T18:24:32.4772706+02:00" finish="2012-06-15T18:24:39.0782566+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_import_currencies" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="0b057ebe-f9d0-3bb1-141c-ae1d6eb83d1c">
+      <Execution timeOut="1800000" id="fab9fc38-18b4-45a0-9606-4c4a9b3eac8b" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Install.CurrencyTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_import_currencies" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b057ebe-f9d0-3bb1-141c-ae1d6eb83d1c" executionId="fab9fc38-18b4-45a0-9606-4c4a9b3eac8b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fab9fc38-18b4-45a0-9606-4c4a9b3eac8b" testId="0b057ebe-f9d0-3bb1-141c-ae1d6eb83d1c" testName="Can_import_currencies" computerName="MACPC" duration="00:00:05.7826500" startTime="2012-06-15T18:24:32.8476294+02:00" endTime="2012-06-15T18:24:38.9629470+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fab9fc38-18b4-45a0-9606-4c4a9b3eac8b">
+      <Output>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Install.CurrencyTester.Can_import_currencies threw exception: 
+System.ApplicationException: Currency service is not resolved.</Message>
+          <StackTrace>    at EcoHotels.Web.Core.Services.ImportCurrenciesService.&lt;ProcessData&gt;d__0.MoveNext() in C:\SourceCode\EcoHotels\EcoHotels.Web.Core\Services\ImportCurrenciesService.cs:line 27
+   at EcoHotels.Core.Infrastructure.Services.Price.CurrencyService.Save(IEnumerable`1 currencies) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Services\Price\CurrencyService.cs:line 57
+   at EcoHotels.Core.Tests.Install.CurrencyTester.Can_import_currencies() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Install\CurrencyTester.cs:line 54
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,64 @@
+﻿@model EcoHotels.Web.UI.Areas.Backend.Models.OrganizationListModel
+@{
+    ViewBag.Title = "Backed";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "backend" });}
+
+
+<div id="view" class="container">
+    <h2>
+        Organization
+        <small>Listing all available clients</small>
+    </h2>
+    <div class="row">
+
+        <div class="span9">
+            <div class="content">
+	        <table class="table table-striped" cellpadding="0" cellspacing="0">			
+		        <thead>
+			        <tr>
+                        <td></td>
+				        <th style="width: 275px;">Name</th>
+				        <th style="width: 275px;">Vat No.</th>
+                        <th>Phone</th>
+                        <th></th>
+                        <th></th>
+			        </tr>
+		        </thead>				
+		        <tbody>
+                    @for (int i = 0; i < Model.Items.Count; i++)
+                    {
+                        <tr class="@(i % 2 == 1 ? "odd" : "even")">
+                            <td>
+                        
+                            </td>
+                            <td>                                
+                                @Html.DisplayFor(m => m.Items[i].Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => m.Items[i].VatNo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => m.Items[i].Phone)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "edit", "organization", new { id = Model.Items[i].Id }, null)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Logon", "logon", "organization", new { id = Model.Items[i].Id }, null)
+                            </td>
+                        </tr>                    
+                    }
+		        </tbody>
+	        </table>
+            </div>
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("backend", "navigation", new { page = "list-organizations" });}
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ca23e67a-0ba9-4a79-a5ec-fc04a5c991e8" name="Mark@MACPC 2013-06-13 15:02:28" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-06-13 15_02_28" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-13T15:02:28.1422945+02:00" queuing="2013-06-13T15:02:28.6475069+02:00" start="2013-06-13T15:02:29.3774753+02:00" finish="2013-06-13T15:02:36.0449109+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\release\ecohotels.core.tests.dll" id="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c">
+      <Execution timeOut="1800000" id="5092c56d-0f57-49c6-b06f-e67f359bcdb6" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Release/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.SearchServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" executionId="5092c56d-0f57-49c6-b06f-e67f359bcdb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5092c56d-0f57-49c6-b06f-e67f359bcdb6" testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" testName="TestMethod1" computerName="MACPC" duration="00:00:05.5775753" startTime="2013-06-13T15:02:29.7234041+02:00" endTime="2013-06-13T15:02:35.8787869+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5092c56d-0f57-49c6-b06f-e67f359bcdb6">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT searchtagc0_.Id as Id26_0_, searchtagc0_.Name as Name26_0_, searchtagc0_.CountryId as CountryId26_0_ FROM SearchTagCities searchtagc0_ WHERE searchtagc0_.Id=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT hotels0_.SearchTagCityId as SearchT28_1_, hotels0_.Id as Id1_, hotels0_.Id as Id9_0_, hotels0_.Name as Name9_0_, hotels0_.Address1 as Address3_9_0_, hotels0_.Address2 as Address4_9_0_, hotels0_.Zipcode as Zipcode9_0_, hotels0_.City as City9_0_, hotels0_.Country as Country9_0_, hotels0_.Phone as Phone9_0_, hotels0_.Fax as Fax9_0_, hotels0_.Email as Email9_0_, hotels0_.WWW as WWW9_0_, hotels0_.VatNo as VatNo9_0_, hotels0_.CategoryOneId as Categor13_9_0_, hotels0_.CategoryTwoId as Categor14_9_0_, hotels0_.CategoryThreeId as Categor15_9_0_, hotels0_.IsActive as IsActive9_0_, hotels0_.CheckIn as CheckIn9_0_, hotels0_.CheckOut as CheckOut9_0_, hotels0_.Created as Created9_0_, hotels0_.Modified as Modified9_0_, hotels0_.Verified as Verified9_0_, hotels0_.AboutMultiLanguageId as AboutMu22_9_0_, hotels0_.OrganizationId as Organiz23_9_0_, hotels0_.LocalCurrencyId as LocalCu24_9_0_, hotels0_.CancellationPolicyMultiLanguageId as Cancell25_9_0_, hotels0_.PaymentPolicyMultiLanguageId as Payment26_9_0_, hotels0_.PageInformationId as PageInf27_9_0_, hotels0_.SearchTagCityId as SearchT28_9_0_ FROM Hotels hotels0_ WHERE hotels0_.SearchTagCityId=@p0;@p0 = 1 [Type: Int32 (0)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Integration.Services.SearchServiceTester.TestMethod1 threw exception: 
+NHibernate.Exceptions.GenericADOException: could not initialize a collection: [EcoHotels.Core.Domain.Models.Tags.SearchTagCity.Hotels#1][SQL: SELECT hotels0_.SearchTagCityId as SearchT28_1_, hotels0_.Id as Id1_, hotels0_.Id as Id9_0_, hotels0_.Name as Name9_0_, hotels0_.Address1 as Address3_9_0_, hotels0_.Address2 as Address4_9_0_, hotels0_.Zipcode as Zipcode9_0_, hotels0_.City as City9_0_, hotels0_.Country as Country9_0_, hotels0_.Phone as Phone9_0_, hotels0_.Fax as Fax9_0_, hotels0_.Email as Email9_0_, hotels0_.WWW as WWW9_0_, hotels0_.VatNo as VatNo9_0_, hotels0_.CategoryOneId as Categor13_9_0_, hotels0_.CategoryTwoId as Categor14_9_0_, hotels0_.CategoryThreeId as Categor15_9_0_, hotels0_.IsActive as IsActive9_0_, hotels0_.CheckIn as CheckIn9_0_, hotels0_.CheckOut as CheckOut9_0_, hotels0_.Created as Created9_0_, hotels0_.Modified as Modified9_0_, hotels0_.Verified as Verified9_0_, hotels0_.AboutMultiLanguageId as AboutMu22_9_0_, hotels0_.OrganizationId as Organiz23_9_0_, hotels0_.LocalCurrencyId as LocalCu24_9_0_, hotels0_.CancellationPolicyMultiLanguageId as Cancell25_9_0_, hotels0_.PaymentPolicyMultiLanguageId as Payment26_9_0_, hotels0_.PageInformationId as PageInf27_9_0_, hotels0_.SearchTagCityId as SearchT28_9_0_ FROM Hotels hotels0_ WHERE hotels0_.SearchTagCityId=?] ---&gt; System.Data.SqlClient.SqlException: Invalid column name 'SearchTagCityId'.
+Invalid column name 'SearchTagCityId'.
+Invalid column name 'SearchTagCityId'.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+ --- End of inner exception stack trace ---
+    at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   at NHibernate.Loader.Collection.CollectionLoader.Initialize(Object id, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Initialize(Object key, ISessionImplementor session)
+   at NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(InitializeCollectionEvent event)
+   at NHibernate.Impl.SessionImpl.InitializeCollection(IPersistentCollection collection, Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Initialize(Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Read()
+   at NHibernate.Collection.Generic.PersistentGenericSet`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at EcoHotels.Core.Infrastructure.Services.SearchService.Find(Int32 searchTagCityId, DateTime arrival, DateTime depature) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Services\SearchService.cs:line 42
+   at EcoHotels.Core.Tests.Integration.Services.SearchServiceTester.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Services\SearchServiceTester.cs:line 55
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

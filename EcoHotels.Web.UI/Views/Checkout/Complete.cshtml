@@ -1,0 +1,159 @@
+﻿@model EcoHotels.Web.UI.Models.CheckoutCompleteModel
+@{
+    ViewBag.Title = "Reservation Completed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="view" class="container" data-view="checkout" data-action="complete">
+
+    <div id="checkout-complete" class="row">
+        <div class="span8 offset2 form-horizontal">
+            <div style="padding: 20px 20px 0px 20px;">
+                <h1>Thank You</h1>
+                <small>Your reservation has been sent.</small>
+            </div>
+
+            <hr />
+
+            <div style="padding: 0px 20px 0px 20px;">
+                <h3>Reservation confirmation</h3>
+                <p>
+                    Dear @Model.Firstname @Model.Lastname
+                </p>
+                <p>
+                    Thank you for your reservation. A confirmation has been sent to your e-mail. Please print this confirmation and show it at check-in. 
+                </p>
+                <table class="table">
+                    <tr>
+                        <td style="width: 115px;">Confirmation no.</td>
+                        <td>@Model.ReservationId</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>@Model.Firstname @Model.Lastname</td>
+                    </tr>
+                    <tr>
+                        <td>Phone number</td>
+                        <td>@Model.PhoneNumber</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>@Model.Email</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr />
+            <div style="padding: 0px 20px 20px 20px;">
+                <h3>Your Reservation</h3>
+
+                <h4>Hotel Information</h4>
+                <table class="table">
+                    <tr>
+                        <td style="width: 115px;">Hotel</td>
+                        <td>@Model.HotelName</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>@Model.CountryName</td>
+                    </tr>
+                    <tr>
+                        <td>Phone number</td>
+                        <td>@Model.HotelPhoneNumber</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>@Model.HotelEmail</td>
+                    </tr>
+                </table>
+
+                <h4>Information about your reservation</h4>
+                <table class="table">
+                    <tr>
+                        <td style="width: 115px;">Check-In</td>
+                        <td>@Model.Arrival.ToString("dddd dd MMMM, yyyy")</td>
+                    </tr>
+                    <tr>
+                        <td>Check-Out</td>
+                        <td>@Model.Depature.ToString("dddd dd MMMM, yyyy")</td>
+                    </tr>
+                    <tr>
+                        <td>Quantity</td>
+                        <td>@Model.Rooms.Count room(s) for @Model.Duration night(s)</td>
+                    </tr>
+                </table>
+
+                <h4>Room information</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 140px;"></th>
+                            <th style="width: 300px;">Name of guest</th>
+                            <th class="align-right">Guests</th>
+                            <th class="align-right" style="width: 150px;">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        @for (int i = 0; i < Model.Rooms.Count(); i++)
+                        {
+                            <tr>
+                                <td style="padding-bottom: 0px;">
+                                    @Model.Rooms[i].Description
+                                </td>
+                                <td style="padding-bottom: 0px;">
+                                    @Model.Rooms[i].NameOfPrimaryGuest
+                                </td>
+                                <td class="align-right" style="padding-bottom: 0px;">
+                                    @Model.Rooms[i].Adults
+                                </td>
+                                <td class="align-right" style="padding-bottom: 0px;">
+                                    DKK @Model.Rooms[i].TotalPrice
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="border: none; padding-top: 0px;">
+                                    (@Model.Rooms[i].AddonsSummary)
+                                </td>
+                            </tr>                                                   
+                        }
+                    </tbody>      
+                    <tfoot>
+                        <tr>
+                            <th class="align-right" colspan="3">Total</th>
+                            <td class="align-right">DKK @Model.TotalPrice</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <br /><br />
+                <h4>Rates per day</h4>
+                    
+                @foreach (var room in Model.Rooms)
+                {                                        
+                    <table class="table">   
+                        <thead>
+                            <tr>
+                                <th colspan="2">@room.Description</th>
+                            </tr>
+                        </thead>                       
+                        <tbody>
+                            @foreach (var pricePerDate in room.RatesPerDay)
+                            { 
+                                <tr>
+                                    <td>@pricePerDate.Date.ToString("dd/MM/yyyy")</td>
+                                    <td class="align-right">DKK @pricePerDate.Price</td>
+                                </tr>                          
+                            }                              
+                        </tbody>
+                    </table>          
+                }
+
+                <br /><br />
+                <h4>Cancellation Policy</h4>
+
+                Full refund if cancellation occurs minimum 72 hours prior to booking date at 14.00. Cancellation less than 72 hours before, will incur payment for the first night of the booking.
+            </div>
+
+        </div>
+    </div>
+</div>

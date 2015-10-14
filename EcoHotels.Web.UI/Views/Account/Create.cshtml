@@ -1,0 +1,77 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.LogOnModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+    <style type="text/css">
+      /* Override some defaults */
+      body {
+        padding-top: 40px;
+      }
+      .container.center {
+        width: 356px;
+        margin: 150px auto 100px;
+      }
+ 
+      /* The white background content wrapper */
+      .container > .content {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+           -moz-border-radius: 10px 10px 10px 10px;
+                border-radius: 10px 10px 10px 10px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+ 
+      .login-form {
+        margin-left: 50px;
+        margin-right: 36px;
+      }
+      
+      .login-form h2
+      {
+          margin-bottom: 15px;
+      }
+ 
+      legend {
+        margin-right: -50px;
+        font-weight: bold;
+        color: #404040;
+      }
+ 
+    </style>
+
+<div id="view" class="container center" data-view="account" data-action="logon">
+    <div class="content">
+        <div class="row">
+            <div class="login-form">
+                <h2>Create an account</h2>
+
+                @if (ViewData["error"] != null)
+                {
+                    <div class="alert alert-error"><p>@ViewData["error"]</p></div>
+                }
+
+                <form class="form" action="@Url.Action("create", "account", null)" method="post">
+                    <div>
+                        @Html.AntiForgeryToken()
+                    </div>
+                    <fieldset>
+                        <div class="clearfix">
+                            <input class="span4" name="email" type="text" placeholder="Email">
+                        </div>
+                        <div class="clearfix">
+                            <input class="span4" name="password" type="password" placeholder="Password">
+                        </div>
+                        <button class="btn primary" type="submit">Create</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> <!-- /container -->

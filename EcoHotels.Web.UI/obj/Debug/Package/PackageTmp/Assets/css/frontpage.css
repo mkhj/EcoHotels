@@ -1,0 +1,16 @@
+﻿html
+{
+    background: none;
+}
+
+body
+{
+    overflow:hidden;
+    background: url(/assets/img/frontpage-bg.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;        
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./assets/img/frontpage-bg.jpeg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/img/frontpage-bg.jpeg', sizingMethod='scale')";
+}

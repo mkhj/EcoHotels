@@ -1,0 +1,1995 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/d:Property/f:HotelService.cs" caret="3699" fromTop="133" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/d:Property/f:OrganizationService.cs" caret="1993" fromTop="68" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/d:Property/f:RoomTypeService.cs" caret="2528" fromTop="83" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:CalendarService.cs" caret="204" fromTop="6" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:CountryService.cs" caret="1007" fromTop="35" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:CustomerService.cs" caret="1641" fromTop="55" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:ImportCurrenciesService.cs" caret="1651" fromTop="52" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:InventoryService.cs" caret="290" fromTop="9" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:IP2LocationService.cs" caret="1841" fromTop="58" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:LanguageService.cs" caret="2534" fromTop="82" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:PageInformationService.cs" caret="0" fromTop="0" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:ReservationService.cs" caret="1825" fromTop="54" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:SearchService.cs" caret="5030" fromTop="120" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:UserService.cs" caret="547" fromTop="19" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Controllers/f:RateController.cs" caret="726" fromTop="6" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/d:Integration/d:Services/f:UserServiceTester.cs" caret="697" fromTop="20" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/d:Integration/d:Services/f:OrganizationServiceTester.cs" caret="1872" fromTop="30" />
+      <File id="B1E07DAC-9802-48AD-B7FE-E3F55902359F/d:Attributes/f:CurrencyAttribute.cs" caret="346" fromTop="10" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/d:Integration/d:Services/f:RateServiceTester.cs" caret="1007" fromTop="14" />
+      <File id="B1E07DAC-9802-48AD-B7FE-E3F55902359F/d:Attributes/f:ValidateJsonAntiForgeryTokenAttribute.cs" caret="0" fromTop="0" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Views/d:User/f:Create.cshtml" caret="0" fromTop="0" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Views/d:Shared/f:_App.cshtml" caret="3203" fromTop="47" />
+      <File id="B1E07DAC-9802-48AD-B7FE-E3F55902359F/d:Services/f:EmailService.cs" caret="2495" fromTop="31" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/f:UnitTest1.cs" caret="2735" fromTop="0" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/f:Web.config" caret="10033" fromTop="16" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Controllers/f:NavigationController.cs" caret="0" fromTop="0" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Models/f:NavigationModels.cs" caret="0" fromTop="0" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Controllers/f:AccountController.cs" caret="611" fromTop="2" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/f:Global.asax.cs" caret="1506" fromTop="3" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Views/d:Home/f:Index.cshtml" caret="5328" fromTop="71" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:CountryService.cs" caret="1007" fromTop="35" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:CustomerService.cs" caret="1641" fromTop="55" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:ImportCurrenciesService.cs" caret="1651" fromTop="52" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:InventoryService.cs" caret="4711" fromTop="125" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:InventoryService.cs" caret="290" fromTop="9" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:IP2LocationService.cs" caret="1841" fromTop="58" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:LanguageService.cs" caret="2534" fromTop="82" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:ReservationService.cs" caret="1825" fromTop="54" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:SearchService.cs" caret="5030" fromTop="120" />
+      <File id="983093B2-593F-48FB-869E-2BD8B268B085/d:Infrastructure/d:Services/d:Impl/f:UserService.cs" caret="2038" fromTop="75" />
+      <File id="B1E07DAC-9802-48AD-B7FE-E3F55902359F/d:Attributes/f:CurrencyAttribute.cs" caret="346" fromTop="10" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/d:Integration/d:Services/f:OrganizationServiceTester.cs" caret="633" fromTop="17" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Controllers/f:RateController.cs" caret="726" fromTop="21" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/d:Integration/d:Services/f:UserServiceTester.cs" caret="506" fromTop="16" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/d:Integration/d:Services/f:UserServiceTester.cs" caret="697" fromTop="20" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/f:UnitTest1.cs" caret="1604" fromTop="20" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/f:UnitTest1.cs" caret="1295" fromTop="11" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/d:Integration/d:Services/f:RateServiceTester.cs" caret="529" fromTop="18" />
+      <File id="B1E07DAC-9802-48AD-B7FE-E3F55902359F/d:Services/f:EmailService.cs" caret="2495" fromTop="19" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/f:UnitTest1.cs" caret="1985" fromTop="19" />
+      <File id="F7DDB001-DEF5-4A64-A75A-A41D73E99335/f:UnitTest1.cs" caret="3034" fromTop="19" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/f:Web.config" caret="4756" fromTop="30" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/f:Web.config" caret="1285" fromTop="0" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/f:Web.config" caret="10033" fromTop="16" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Controllers/f:NavigationController.cs" caret="5145" fromTop="11" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Models/f:NavigationModels.cs" caret="5090" fromTop="15" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Controllers/f:AccountController.cs" caret="2421" fromTop="16" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/f:Global.asax.cs" caret="3308" fromTop="31" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Views/d:Home/f:Index.cshtml" caret="3705" fromTop="8" />
+      <File id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Views/d:Home/f:Index.cshtml" caret="5328" fromTop="41" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@Newtonsoft.Json.JsonConvert">
+      <Item value="SerializeObject`0" priority="0" />
+      <Item value="DeserializeObject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="object" priority="18" />
+      <Item value="return" priority="96" />
+      <Item value="Convert`0" priority="4" />
+      <Item value="Console`0" priority="4" />
+      <Item value="public" priority="389" />
+      <Item value="void" priority="30" />
+      <Item value="OrganizationService`0" priority="0" />
+      <Item value="organization" priority="44" />
+      <Item value="TestInitialize" priority="0" />
+      <Item value="var" priority="71" />
+      <Item value="session" priority="2" />
+      <Item value="virtual" priority="34" />
+      <Item value="DateTime`0" priority="83" />
+      <Item value="protected" priority="18" />
+      <Item value="Organization" priority="2" />
+      <Item value="UserMap`0" priority="0" />
+      <Item value="PasswordHelper`0" priority="4" />
+      <Item value="password" priority="6" />
+      <Item value="typeof" priority="3" />
+      <Item value="Backend" priority="3" />
+      <Item value="user" priority="29" />
+      <Item value="Assert`0" priority="9" />
+      <Item value="shouldBeInvalid" priority="0" />
+      <Item value="Extensions" priority="3" />
+      <Item value="Framework40" priority="0" />
+      <Item value="private" priority="25" />
+      <Item value="readonly" priority="1" />
+      <Item value="HttpApplication`0" priority="1" />
+      <Item value="context" priority="3" />
+      <Item value="MvcApplication_AuthenticateRequest`0" priority="0" />
+      <Item value="UserService" priority="3" />
+      <Item value="User`0" priority="9" />
+      <Item value="string" priority="146" />
+      <Item value="email" priority="2" />
+      <Item value="if" priority="96" />
+      <Item value="isValid" priority="0" />
+      <Item value="LogOnModel`0" priority="0" />
+      <Item value="model" priority="71" />
+      <Item value="Nullable" priority="0" />
+      <Item value="this" priority="10" />
+      <Item value="Guid`0" priority="73" />
+      <Item value="IAppService`0" priority="3" />
+      <Item value="AppService" priority="21" />
+      <Item value="base" priority="2" />
+      <Item value="new" priority="119" />
+      <Item value="List" priority="18" />
+      <Item value="IOrganizationService`0" priority="4" />
+      <Item value="OrganizationService" priority="10" />
+      <Item value="currentOrganizationId" priority="13" />
+      <Item value="languages" priority="3" />
+      <Item value="IAmenityService`0" priority="2" />
+      <Item value="AmenityService" priority="2" />
+      <Item value="organizationId" priority="7" />
+      <Item value="Organization`0" priority="5" />
+      <Item value="AppDomainSetup`0" priority="0" />
+      <Item value="IEnumerable" priority="63" />
+      <Item value="Authorize" priority="5" />
+      <Item value="RedirectToAction`0" priority="4" />
+      <Item value="NonAction" priority="1" />
+      <Item value="Content`0" priority="10" />
+      <Item value="asset" priority="15" />
+      <Item value="Length" priority="0" />
+      <Item value="ActionResult`0" priority="7" />
+      <Item value="View`0" priority="15" />
+      <Item value="AssetCategory`0" priority="2" />
+      <Item value="Table`0" priority="1" />
+      <Item value="ICollection" priority="1" />
+      <Item value="References`1" priority="1" />
+      <Item value="x" priority="72" />
+      <Item value="AntiForgery`0" priority="0" />
+      <Item value="ValidateAntiForgeryToken" priority="5" />
+      <Item value="categories" priority="6" />
+      <Item value="selectedId" priority="0" />
+      <Item value="Name" priority="9" />
+      <Item value="selectedCategory" priority="1" />
+      <Item value="Id" priority="12" />
+      <Item value="AssetCategoryRepo`0" priority="0" />
+      <Item value="AssetCategoryRepo" priority="1" />
+      <Item value="assetCategory" priority="6" />
+      <Item value="interface" priority="5" />
+      <Item value="AssetCategoryService`0" priority="0" />
+      <Item value="AssetCategoryService" priority="1" />
+      <Item value="throw" priority="8" />
+      <Item value="ArgumentNullException`0" priority="0" />
+      <Item value="IDictionary" priority="1" />
+      <Item value="id" priority="7" />
+      <Item value="assetCategoryId" priority="0" />
+      <Item value="start" priority="0" />
+      <Item value="ContentResult`0" priority="0" />
+      <Item value="foreach" priority="19" />
+      <Item value="SessionFactory`0" priority="0" />
+      <Item value="AssetService" priority="0" />
+      <Item value="assetIds" priority="0" />
+      <Item value="ids" priority="2" />
+      <Item value="TestMethod" priority="2" />
+      <Item value="user2" priority="0" />
+      <Item value="beginTransaction" priority="0" />
+      <Item value="null" priority="12" />
+      <Item value="TransientLifetimeManager`0" priority="0" />
+      <Item value="NHibernate" priority="0" />
+      <Item value="static" priority="17" />
+      <Item value="ISession`0" priority="1" />
+      <Item value="Init`0" priority="0" />
+      <Item value="Save`0" priority="2" />
+      <Item value="currency" priority="9" />
+      <Item value="ICurrencyService`0" priority="1" />
+      <Item value="currencyService" priority="1" />
+      <Item value="CurrencyService" priority="4" />
+      <Item value="using" priority="7" />
+      <Item value="UrlParameter`0" priority="0" />
+      <Item value="HandleError" priority="1" />
+      <Item value="ip2LocationService" priority="1" />
+      <Item value="Ip2LocationService" priority="0" />
+      <Item value="ICountryService`0" priority="2" />
+      <Item value="countryService" priority="1" />
+      <Item value="CountryService" priority="2" />
+      <Item value="Country`0" priority="5" />
+      <Item value="CountryRepo" priority="0" />
+      <Item value="location" priority="1" />
+      <Item value="originCountry" priority="2" />
+      <Item value="Language" priority="0" />
+      <Item value="LocationService" priority="1" />
+      <Item value="ILocationService`0" priority="0" />
+      <Item value="LocationService`0" priority="0" />
+      <Item value="Shortname" priority="0" />
+      <Item value="IsActive" priority="3" />
+      <Item value="false" priority="1" />
+      <Item value="ex" priority="1" />
+      <Item value="IP2LocationService`0" priority="1" />
+      <Item value="ThreadStaticAttribute`0" priority="0" />
+      <Item value="T`0" priority="2" />
+      <Item value="data" priority="1" />
+      <Item value="authCookie" priority="2" />
+      <Item value="HttpContext`0" priority="1" />
+      <Item value="const" priority="1" />
+      <Item value="name" priority="3" />
+      <Item value="httpCookie" priority="3" />
+      <Item value="default" priority="2" />
+      <Item value="CookieHelper`0" priority="1" />
+      <Item value="cookie" priority="1" />
+      <Item value="CurrencyId" priority="0" />
+      <Item value="country" priority="2" />
+      <Item value="LanguageId" priority="0" />
+      <Item value="ILanguageService`0" priority="1" />
+      <Item value="LanguageService" priority="4" />
+      <Item value="json" priority="1" />
+      <Item value="language" priority="1" />
+      <Item value="Response" priority="1" />
+      <Item value="languageId" priority="0" />
+      <Item value="HttpNotFoundResult`0" priority="1" />
+      <Item value="culture" priority="0" />
+      <Item value="EcoHotels" priority="6" />
+      <Item value="lang" priority="1" />
+      <Item value="filterContext" priority="1" />
+      <Item value="Cookies" priority="0" />
+      <Item value="currencyId" priority="1" />
+      <Item value="override" priority="4" />
+      <Item value="RedirectResult`0" priority="4" />
+      <Item value="EntityBase" priority="0" />
+      <Item value="Customer`0" priority="7" />
+      <Item value="Customer" priority="2" />
+      <Item value="Email" priority="7" />
+      <Item value="Lastname" priority="3" />
+      <Item value="PhoneNumber" priority="2" />
+      <Item value="bool" priority="10" />
+      <Item value="Role" priority="0" />
+      <Item value="Password" priority="1" />
+      <Item value="customer" priority="22" />
+      <Item value="CustomerMap`0" priority="0" />
+      <Item value="Id`1" priority="0" />
+      <Item value="Map`0" priority="3" />
+      <Item value="entity" priority="1" />
+      <Item value="ICustomerService`0" priority="3" />
+      <Item value="CustomerService`0" priority="0" />
+      <Item value="CustomerService" priority="4" />
+      <Item value="MoneyTester`0" priority="0" />
+      <Item value="Currency`0" priority="8" />
+      <Item value="Money`0" priority="2" />
+      <Item value="Value" priority="7" />
+      <Item value="newValue" priority="0" />
+      <Item value="money" priority="0" />
+      <Item value="usdMoney" priority="0" />
+      <Item value="DKK" priority="0" />
+      <Item value="Postal" priority="0" />
+      <Item value="Email`0" priority="0" />
+      <Item value="to" priority="2" />
+      <Item value="Json`0" priority="3" />
+      <Item value="int" priority="85" />
+      <Item value="Math`0" priority="1" />
+      <Item value="while" priority="0" />
+      <Item value="generate" priority="1" />
+      <Item value="ValidateAntiForgeryTokenAttribute`0" priority="0" />
+      <Item value="DataErrorInfoModelValidatorProvider`0" priority="0" />
+      <Item value="class" priority="23" />
+      <Item value="Time" priority="0" />
+      <Item value="UserResetModel`0" priority="0" />
+      <Item value="dynamic" priority="2" />
+      <Item value="checked" priority="0" />
+      <Item value="RenderEmail`0" priority="0" />
+      <Item value="EmailService`0" priority="1" />
+      <Item value="SendGridEmailService`0" priority="0" />
+      <Item value="template" priority="2" />
+      <Item value="Session" priority="10" />
+      <Item value="EditOrganizationSettings`0" priority="1" />
+      <Item value="currencies" priority="7" />
+      <Item value="Core" priority="1" />
+      <Item value="Domain" priority="1" />
+      <Item value="Value_objects" priority="0" />
+      <Item value="selectedCurrencyId" priority="1" />
+      <Item value="ModelState`0" priority="5" />
+      <Item value="ChildActionOnly" priority="1" />
+      <Item value="Page" priority="2" />
+      <Item value="page" priority="2" />
+      <Item value="users" priority="1" />
+      <Item value="Items" priority="2" />
+      <Item value="DivideByZeroException`0" priority="1" />
+      <Item value="selectedUserId" priority="0" />
+      <Item value="ModelClientValidationStringLengthRule`0" priority="0" />
+      <Item value="HotelService`0" priority="2" />
+      <Item value="HotelService" priority="6" />
+      <Item value="IRoomTypeService`0" priority="1" />
+      <Item value="RoomType`0" priority="12" />
+      <Item value="HttpGetAttribute`0" priority="2" />
+      <Item value="selectedHotelId" priority="3" />
+      <Item value="MultiSelectList`0" priority="0" />
+      <Item value="RoomTypeService`0" priority="0" />
+      <Item value="IHotelService`0" priority="3" />
+      <Item value="hotel" priority="39" />
+      <Item value="ArgumentException" priority="1" />
+      <Item value="Language`0" priority="4" />
+      <Item value="assets" priority="0" />
+      <Item value="LanguageType`0" priority="7" />
+      <Item value="roomtypeId" priority="0" />
+      <Item value="roomType" priority="32" />
+      <Item value="ObjectExtension`0" priority="0" />
+      <Item value="ReadOnly" priority="4" />
+      <Item value="Security" priority="0" />
+      <Item value="true" priority="4" />
+      <Item value="IUserService`0" priority="0" />
+      <Item value="EmailService" priority="0" />
+      <Item value="Log4NetLoggerFactory`0" priority="0" />
+      <Item value="RepositoryBase" priority="1" />
+      <Item value="PageInformation`0" priority="0" />
+      <Item value="PageInformationRepo" priority="1" />
+      <Item value="IPageInformationService`0" priority="2" />
+      <Item value="PageInformationService`0" priority="0" />
+      <Item value="PageInformationService" priority="2" />
+      <Item value="filename" priority="1" />
+      <Item value="Count`0" priority="0" />
+      <Item value="criteria" priority="2" />
+      <Item value="HotelRepo" priority="2" />
+      <Item value="InActiveHotels" priority="0" />
+      <Item value="inActiveHotels" priority="0" />
+      <Item value="FindAll`0" priority="0" />
+      <Item value="Guid" priority="1" />
+      <Item value="Firstname" priority="2" />
+      <Item value="RolesEnum`0" priority="0" />
+      <Item value="Restrictions`0" priority="0" />
+      <Item value="active" priority="0" />
+      <Item value="hotelsToVerify" priority="1" />
+      <Item value="EditCustomerInformationModel`0" priority="0" />
+      <Item value="Gender" priority="0" />
+      <Item value="CartItem`0" priority="0" />
+      <Item value="Country" priority="2" />
+      <Item value="Male" priority="1" />
+      <Item value="List&lt;SelectListItem&gt;" priority="3" />
+      <Item value="twitter" priority="1" />
+      <Item value="authorizationRequest" priority="0" />
+      <Item value="FacebookClient`0" priority="0" />
+      <Item value="BasicUserData`0" priority="0" />
+      <Item value="AccountType`0" priority="2" />
+      <Item value="accountType" priority="2" />
+      <Item value="AccountType" priority="1" />
+      <Item value="AccountTypeEnum`0" priority="0" />
+      <Item value="ExternalId" priority="1" />
+      <Item value="ApplicationException`0" priority="1" />
+      <Item value="externalId" priority="0" />
+      <Item value="customerService" priority="0" />
+      <Item value="client" priority="1" />
+      <Item value="Twitter" priority="1" />
+      <Item value="scopes" priority="0" />
+      <Item value="facebookConsumer" priority="0" />
+      <Item value="AuthorizationServer`0" priority="0" />
+      <Item value="Userdata" priority="1" />
+      <Item value="Request" priority="2" />
+      <Item value="sessionState" priority="0" />
+      <Item value="credentials" priority="0" />
+      <Item value="FacebookData`0" priority="0" />
+      <Item value="None" priority="0" />
+      <Item value="out" priority="1" />
+      <Item value="HasValidBirthday" priority="0" />
+      <Item value="User" priority="4" />
+      <Item value="Redirect`0" priority="2" />
+      <Item value="HttpGet" priority="0" />
+      <Item value="HttpPost" priority="1" />
+      <Item value="AuthorizeCustomer" priority="1" />
+      <Item value="switch" priority="0" />
+      <Item value="case" priority="1" />
+      <Item value="break" priority="2" />
+      <Item value="countries" priority="1" />
+      <Item value="months" priority="1" />
+      <Item value="Enumerable`0" priority="2" />
+      <Item value="SelectedBirthYear" priority="1" />
+      <Item value="birthYear" priority="0" />
+      <Item value="SelectedBirthMonth" priority="2" />
+      <Item value="SelectedBirthDate" priority="1" />
+      <Item value="birthdate" priority="0" />
+      <Item value="else" priority="6" />
+      <Item value="cart" priority="12" />
+      <Item value="cartItems" priority="0" />
+      <Item value="Required" priority="2" />
+      <Item value="Cart`0" priority="4" />
+      <Item value="Checkin" priority="0" />
+      <Item value="CartItem" priority="0" />
+      <Item value="Description" priority="4" />
+      <Item value="Room" priority="1" />
+      <Item value="SelectedCountryName" priority="1" />
+      <Item value="Rooms" priority="3" />
+      <Item value="cartItem" priority="5" />
+      <Item value="TempData" priority="2" />
+      <Item value="Departure" priority="4" />
+      <Item value="Arrival" priority="5" />
+      <Item value="decimal" priority="23" />
+      <Item value="Currency" priority="1" />
+      <Item value="NotImplementedException" priority="1" />
+      <Item value="ICartService`0" priority="0" />
+      <Item value="CartService" priority="3" />
+      <Item value="CartService`0" priority="0" />
+      <Item value="currentCart" priority="3" />
+      <Item value="item" priority="8" />
+      <Item value="ReservationService" priority="1" />
+      <Item value="as" priority="3" />
+      <Item value="Reservation`0" priority="19" />
+      <Item value="reservation" priority="41" />
+      <Item value="Reservations" priority="0" />
+      <Item value="reservations" priority="4" />
+      <Item value="GuidExtenstions`0" priority="0" />
+      <Item value="CreditcardNumber" priority="0" />
+      <Item value="Fullname" priority="0" />
+      <Item value="HotelAddress" priority="1" />
+      <Item value="HotelPhoneNumber" priority="1" />
+      <Item value="HotelEmail" priority="1" />
+      <Item value="ExpireMonth" priority="0" />
+      <Item value="ExpireYear" priority="0" />
+      <Item value="CVC" priority="0" />
+      <Item value="HotelName" priority="2" />
+      <Item value="internal" priority="1" />
+      <Item value="CreditCardHolder" priority="0" />
+      <Item value="propertyGeneratedBuilder" priority="0" />
+      <Item value="ApplicationException" priority="0" />
+      <Item value="Cancelled" priority="0" />
+      <Item value="Supporter" priority="0" />
+      <Item value="SelectedMonth" priority="0" />
+      <Item value="selectedYear" priority="6" />
+      <Item value="selectedMonth" priority="6" />
+      <Item value="Hotel`0" priority="11" />
+      <Item value="CheckOut" priority="0" />
+      <Item value="UrlHelper`0" priority="0" />
+      <Item value="Url" priority="0" />
+      <Item value="Address1" priority="0" />
+      <Item value="Address2" priority="0" />
+      <Item value="Zipcode" priority="0" />
+      <Item value="City" priority="0" />
+      <Item value="Phone" priority="0" />
+      <Item value="Fax" priority="0" />
+      <Item value="WWW" priority="0" />
+      <Item value="VatNo" priority="0" />
+      <Item value="selectedHotel" priority="0" />
+      <Item value="LanguageType" priority="0" />
+      <Item value="RoomTypeId" priority="3" />
+      <Item value="enumerable" priority="0" />
+      <Item value="hotels" priority="2" />
+      <Item value="EditCurrencyItemModel`0" priority="0" />
+      <Item value="EditHotelCurrencyItemModel`0" priority="0" />
+      <Item value="DependencyAttribute`0" priority="1" />
+      <Item value="Selected" priority="0" />
+      <Item value="SelectedCurrencyId" priority="0" />
+      <Item value="ev" priority="0" />
+      <Item value="httpContext" priority="1" />
+      <Item value="dbImageSettings" priority="0" />
+      <Item value="settings" priority="0" />
+      <Item value="Hotel" priority="6" />
+      <Item value="Asset" priority="2" />
+      <Item value="Photo`0" priority="0" />
+      <Item value="Asset`0" priority="0" />
+      <Item value="Photo" priority="0" />
+      <Item value="topX" priority="0" />
+      <Item value="BottomX" priority="2" />
+      <Item value="CropXUnit" priority="1" />
+      <Item value="cropXUnit" priority="0" />
+      <Item value="cropYUnit" priority="1" />
+      <Item value="Now" priority="0" />
+      <Item value="TopX" priority="1" />
+      <Item value="TopY" priority="2" />
+      <Item value="BottomY" priority="1" />
+      <Item value="CropYUnit" priority="0" />
+      <Item value="selectedAsset" priority="5" />
+      <Item value="Modified" priority="0" />
+      <Item value="XmlSiteMapProvider`0" priority="2" />
+      <Item value="Repository" priority="10" />
+      <Item value="AbandonedMutexException" priority="0" />
+      <Item value="Serializable" priority="0" />
+      <Item value="HotelDescription`0" priority="0" />
+      <Item value="MultiLanguageText" priority="2" />
+      <Item value="MultiLanguageText`0" priority="0" />
+      <Item value="HotelBulletPoint`0" priority="1" />
+      <Item value="Type" priority="1" />
+      <Item value="Descriptions" priority="1" />
+      <Item value="About" priority="1" />
+      <Item value="CreateLambda" priority="0" />
+      <Item value="ResourceManager`0" priority="0" />
+      <Item value="HotelCategoryEnum`0" priority="0" />
+      <Item value="whatYouNeedToKnow" priority="0" />
+      <Item value="y" priority="0" />
+      <Item value="OrderId" priority="0" />
+      <Item value="modelBulletPoint" priority="0" />
+      <Item value="point" priority="0" />
+      <Item value="countryRepo" priority="1" />
+      <Item value="CreateDelegate" priority="0" />
+      <Item value="Cache" priority="1" />
+      <Item value="Access" priority="1" />
+      <Item value="NhibernateContext`0" priority="0" />
+      <Item value="entity1" priority="0" />
+      <Item value="entity2" priority="0" />
+      <Item value="Statistics" priority="0" />
+      <Item value="entityNotInCache" priority="0" />
+      <Item value="FindBy`0" priority="0" />
+      <Item value="CreateSessionFactory`0" priority="0" />
+      <Item value="ISessionStatistics`0" priority="0" />
+      <Item value="ReservationItemType`0" priority="0" />
+      <Item value="date" priority="7" />
+      <Item value="ReservationItem`0" priority="0" />
+      <Item value="CountryName" priority="0" />
+      <Item value="Depature" priority="0" />
+      <Item value="reservationItem" priority="6" />
+      <Item value="Reservation" priority="1" />
+      <Item value="ReservationItem" priority="1" />
+      <Item value="PricePerDate" priority="1" />
+      <Item value="prices" priority="4" />
+      <Item value="Addons" priority="4" />
+      <Item value="addons" priority="2" />
+      <Item value="type" priority="0" />
+      <Item value="ReservationPrice`0" priority="1" />
+      <Item value="ReservationAddon`0" priority="0" />
+      <Item value="repo" priority="0" />
+      <Item value="SearchTagCity" priority="0" />
+      <Item value="tagCities" priority="1" />
+      <Item value="TagCities" priority="1" />
+      <Item value="agCities" priority="0" />
+      <Item value="Dictionary" priority="3" />
+      <Item value="SelectListItem`0" priority="1" />
+      <Item value="SelectListItem" priority="0" />
+      <Item value="Text" priority="1" />
+      <Item value="Date`0" priority="5" />
+      <Item value="dateTime" priority="3" />
+      <Item value="Date" priority="1" />
+      <Item value="i" priority="13" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="Repositories" priority="0" />
+      <Item value="Amenity`0" priority="0" />
+      <Item value="ReservationRepo" priority="0" />
+      <Item value="ReservationServiceTester`0" priority="0" />
+      <Item value="DateTime" priority="1" />
+      <Item value="departure" priority="5" />
+      <Item value="year" priority="2" />
+      <Item value="month" priority="2" />
+      <Item value="for" priority="7" />
+      <Item value="numberOfDays" priority="0" />
+      <Item value="result" priority="1" />
+      <Item value="startDate" priority="0" />
+      <Item value="DaysInMonth" priority="0" />
+      <Item value="inventoryItem" priority="0" />
+      <Item value="roomtype" priority="3" />
+      <Item value="inventory" priority="9" />
+      <Item value="RoomTypeInventory`0" priority="3" />
+      <Item value="RoomTypeInventory" priority="0" />
+      <Item value="roomTypeId" priority="0" />
+      <Item value="date1" priority="0" />
+      <Item value="quantity" priority="4" />
+      <Item value="List&lt;InventoryItemModel&gt;" priority="0" />
+      <Item value="roomTypes" priority="7" />
+      <Item value="inventories" priority="9" />
+      <Item value="daysInMonth" priority="0" />
+      <Item value="firstDayInMonth" priority="0" />
+      <Item value="InventoryItemModel" priority="0" />
+      <Item value="InventoryItemQtyModel" priority="0" />
+      <Item value="List&lt;InventoryItemQtyModel&gt;" priority="0" />
+      <Item value="roomTypeInventory" priority="2" />
+      <Item value="newInventory" priority="0" />
+      <Item value="ICacheStorage`0" priority="0" />
+      <Item value="ICalendarService`0" priority="1" />
+      <Item value="RateCategory`0" priority="7" />
+      <Item value="RateCategory" priority="0" />
+      <Item value="description" priority="0" />
+      <Item value="isActive" priority="0" />
+      <Item value="category" priority="13" />
+      <Item value="Type`0" priority="0" />
+      <Item value="service" priority="1" />
+      <Item value="ratePrice" priority="10" />
+      <Item value="Category" priority="0" />
+      <Item value="rateCategory" priority="15" />
+      <Item value="RateService" priority="5" />
+      <Item value="double" priority="1" />
+      <Item value="rackRateItemModel" priority="1" />
+      <Item value="CreateRateCategoryItemModel`0" priority="0" />
+      <Item value="itemModel" priority="4" />
+      <Item value="EditRateCategoryItemModel`0" priority="0" />
+      <Item value="hotelId" priority="4" />
+      <Item value="ArgumentNullException" priority="0" />
+      <Item value="Hotelname" priority="0" />
+      <Item value="StringLength" priority="1" />
+      <Item value="LanguageTypeEnum`0" priority="2" />
+      <Item value="organizationService" priority="2" />
+      <Item value="firstOrDefault" priority="1" />
+      <Item value="currentHotelId" priority="1" />
+      <Item value="RoomTypeService" priority="1" />
+      <Item value="rateService" priority="1" />
+      <Item value="IRateService`0" priority="0" />
+      <Item value="RateCategoryRepo" priority="0" />
+      <Item value="Addon`0" priority="0" />
+      <Item value="IAddonService`0" priority="0" />
+      <Item value="AddonService" priority="0" />
+      <Item value="addon" priority="1" />
+      <Item value="Repository&lt;Hotel&gt;" priority="1" />
+      <Item value="SearchService" priority="1" />
+      <Item value="cityId" priority="0" />
+      <Item value="arrival" priority="7" />
+      <Item value="is" priority="0" />
+      <Item value="RedirectToRouteResult`0" priority="0" />
+      <Item value="city" priority="0" />
+      <Item value="Hotels" priority="0" />
+      <Item value="try" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="LogException`0" priority="0" />
+      <Item value="HttpRequestBase" priority="0" />
+      <Item value="requestBase" priority="0" />
+      <Item value="ModelState" priority="0" />
+      <Item value="routeData" priority="0" />
+      <Item value="HotelModel`0" priority="0" />
+      <Item value="English" priority="2" />
+      <Item value="hotelIds" priority="0" />
+      <Item value="resultList" priority="1" />
+      <Item value="SearchResultHotel" priority="1" />
+      <Item value="searchResult" priority="3" />
+      <Item value="ActionName" priority="0" />
+      <Item value="minimumQuantity" priority="1" />
+      <Item value="AvailableQuantity" priority="0" />
+      <Item value="SearchModel`0" priority="0" />
+      <Item value="searchResultHotel" priority="1" />
+      <Item value="SearchResultHotel`0" priority="2" />
+      <Item value="List&lt;CheckoutRoomInformationModel&gt;" priority="0" />
+      <Item value="roomInformationModel" priority="0" />
+      <Item value="depature" priority="1" />
+      <Item value="room" priority="1" />
+      <Item value="Prices" priority="1" />
+      <Item value="price" priority="3" />
+      <Item value="reservationItems" priority="0" />
+      <Item value="Available" priority="0" />
+      <Item value="available" priority="1" />
+      <Item value="Price" priority="0" />
+      <Item value="SearchResultRoomPrice" priority="0" />
+      <Item value="reservationPrices" priority="0" />
+      <Item value="selectedRoom" priority="1" />
+      <Item value="q" priority="0" />
+      <Item value="TotalPrice" priority="0" />
+      <Item value="width" priority="0" />
+      <Item value="height" priority="0" />
+      <Item value="ConsoleColor`0" priority="0" />
+      <Item value="Color" priority="1" />
+      <Item value="rateCategories" priority="2" />
+      <Item value="roomTypeInventories" priority="2" />
+      <Item value="PricingModelItem`0" priority="0" />
+      <Item value="PricingModelItem" priority="0" />
+      <Item value="TEST`0" priority="0" />
+      <Item value="currentdate" priority="0" />
+      <Item value="Years" priority="0" />
+      <Item value="iterator" priority="0" />
+      <Item value="Day" priority="0" />
+      <Item value="AmenityService`0" priority="0" />
+      <Item value="message" priority="3" />
+      <Item value="header" priority="0" />
+      <Item value="subject" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToBase64String`0" priority="1" />
+      <Item value="ToInt32`0" priority="0" />
+      <Item value="ToChar`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="Inconclusive`0" priority="0" />
+      <Item value="IsFalse`0" priority="0" />
+      <Item value="IsTrue`0" priority="4" />
+      <Item value="IsNotNull`0" priority="3" />
+      <Item value="AreEqual`0" priority="1" />
+      <Item value="IsNull`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.Property.OrganizationService">
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Property.Organization">
+      <Item value="Create`0" priority="1" />
+      <Item value="SystemOrganizationId" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISessionFactory">
+      <Item value="OpenSession`0" priority="2" />
+      <Item value="GetCurrentSession`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISession">
+      <Item value="Save`0" priority="4" />
+      <Item value="SaveOrUpdate`0" priority="2" />
+      <Item value="Flush`0" priority="1" />
+      <Item value="Close`0" priority="0" />
+      <Item value="Get`1" priority="3" />
+      <Item value="BeginTransaction`0" priority="0" />
+      <Item value="Transaction" priority="1" />
+      <Item value="Load`0" priority="0" />
+      <Item value="Connection" priority="0" />
+      <Item value="SessionFactory" priority="1" />
+      <Item value="CreateSQLQuery`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="28" />
+      <Item value="Parse`0" priority="0" />
+      <Item value="UtcNow" priority="0" />
+      <Item value="MinValue" priority="6" />
+      <Item value="TryParse`0" priority="1" />
+      <Item value="FromBinary`0" priority="0" />
+      <Item value="DaysInMonth`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Property.Organization">
+      <Item value="Created" priority="1" />
+      <Item value="Users" priority="6" />
+      <Item value="Id" priority="4" />
+      <Item value="DefaultLanguage" priority="4" />
+      <Item value="Name" priority="2" />
+      <Item value="DefaultCurrency" priority="3" />
+      <Item value="Hotels" priority="12" />
+      <Item value="IsNull`0" priority="0" />
+      <Item value="Address1" priority="1" />
+      <Item value="Address2" priority="1" />
+      <Item value="Zipcode" priority="1" />
+      <Item value="City" priority="1" />
+      <Item value="Phone" priority="1" />
+      <Item value="Email" priority="1" />
+      <Item value="VatNo" priority="0" />
+      <Item value="Country" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Security.User">
+      <Item value="Organization" priority="4" />
+      <Item value="Password" priority="2" />
+      <Item value="Role" priority="8" />
+      <Item value="Firstname" priority="6" />
+      <Item value="SetNewPassword`0" priority="0" />
+      <Item value="Id" priority="4" />
+      <Item value="IsActive" priority="2" />
+      <Item value="Lastname" priority="3" />
+      <Item value="Email" priority="3" />
+      <Item value="GetFullname`0" priority="1" />
+      <Item value="IsNull`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ICollection`1">
+      <Item value="Add`0" priority="11" />
+      <Item value="Remove`0" priority="2" />
+      <Item value="Any`1" priority="2" />
+      <Item value="FirstOrDefault`1" priority="8" />
+      <Item value="First`1" priority="2" />
+      <Item value="Select`2" priority="6" />
+      <Item value="Distinct`1" priority="0" />
+      <Item value="Clear`0" priority="1" />
+      <Item value="Where`1" priority="1" />
+      <Item value="All`1" priority="0" />
+      <Item value="ElementAt`1" priority="2" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Helpers.PasswordHelper">
+      <Item value="HashPassword`0" priority="3" />
+      <Item value="ValidatePassword`0" priority="2" />
+      <Item value="Generate`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.PropertyPart">
+      <Item value="CustomType`0" priority="1" />
+      <Item value="CustomSqlType`0" priority="0" />
+      <Item value="Generated" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Security.User+RolesEnum">
+      <Item value="None" priority="0" />
+      <Item value="Backend" priority="1" />
+      <Item value="Supporter" priority="0" />
+      <Item value="Organization" priority="1" />
+      <Item value="Customer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Security.FormsAuthentication">
+      <Item value="TicketCompatibilityMode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Security.User+RolesEnum">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpApplication">
+      <Item value="PostAuthenticateRequest" priority="0" />
+      <Item value="AuthenticateRequest" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.UserRepo">
+      <Item value="FindByEmail`0" priority="0" />
+      <Item value="FindBy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.IUserService">
+      <Item value="FindByEmail`0" priority="1" />
+      <Item value="Save`0" priority="0" />
+      <Item value="FindById`0" priority="0" />
+      <Item value="IsEmailUnique`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.LogOnModel">
+      <Item value="Email" priority="0" />
+      <Item value="Password" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Controllers.AccountController">
+      <Item value="HttpContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpContextBase">
+      <Item value="Session" priority="0" />
+      <Item value="Request" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.Core.Services.IAppService">
+      <Item value="GetCurrentOrganizationId`0" priority="22" />
+      <Item value="AbondonSession`0" priority="0" />
+      <Item value="SetCurrentOrganizationId`0" priority="0" />
+      <Item value="SetCurrentHotelId`0" priority="2" />
+      <Item value="GetCurrentHotelId`0" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.SessionState.HttpSessionState">
+      <Item value="Abandon`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.Core.Attributes.AuthorizeAdmin">
+      <Item value="Roles" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Join`4" priority="0" />
+      <Item value="ToArray`0" priority="0" />
+      <Item value="Count" priority="2" />
+      <Item value="ForEach`0" priority="2" />
+      <Item value="Add`0" priority="7" />
+      <Item value="IndexOf`0" priority="0" />
+      <Item value="AddRange`0" priority="1" />
+      <Item value="Distinct`1" priority="0" />
+      <Item value="GroupBy`4" priority="0" />
+      <Item value="Select`2" priority="1" />
+      <Item value="FirstOrDefault`1" priority="0" />
+      <Item value="Sort`0" priority="0" />
+      <Item value="Contains`0" priority="0" />
+      <Item value="Exists`0" priority="0" />
+      <Item value="Where`1" priority="0" />
+      <Item value="Sum`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Join`0" priority="0" />
+      <Item value="Empty" priority="26" />
+      <Item value="Concat`0" priority="1" />
+      <Item value="IsNullOrEmpty`0" priority="1" />
+      <Item value="Compare`0" priority="3" />
+      <Item value="Format`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.Price.IAddonService">
+      <Item value="FindAllByHotelId`0" priority="2" />
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.Rates.AddonRepo">
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.Property.IOrganizationService">
+      <Item value="FindById`0" priority="14" />
+      <Item value="Save`0" priority="5" />
+      <Item value="Delete`0" priority="1" />
+      <Item value="FindSystemOrganization`0" priority="0" />
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Localization.Language">
+      <Item value="Id" priority="4" />
+      <Item value="Shortname" priority="3" />
+      <Item value="IsActive" priority="0" />
+      <Item value="IsNull`0" priority="1" />
+      <Item value="IsNotNull`0" priority="0" />
+      <Item value="Name" priority="1" />
+      <Item value="Type" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.Property.AmenityRepo">
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.Price.ICurrencyService">
+      <Item value="FindAvailableSystemCurrencies`0" priority="0" />
+      <Item value="Save`0" priority="1" />
+      <Item value="FindById`0" priority="2" />
+      <Item value="FindByISOSymbol`0" priority="0" />
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToGuid`0" priority="11" />
+      <Item value="Indexer" priority="1" />
+      <Item value="ToCharArray`0" priority="0" />
+      <Item value="IsNotNullOrEmpty`0" priority="2" />
+      <Item value="IsNull`0" priority="0" />
+      <Item value="ToLower`0" priority="1" />
+      <Item value="Length" priority="1" />
+      <Item value="Trim`0" priority="2" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="IndexOf`0" priority="0" />
+      <Item value="Substring`0" priority="0" />
+      <Item value="ToInt`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="19" />
+      <Item value="First`1" priority="10" />
+      <Item value="Contains`1" priority="1" />
+      <Item value="Select`2" priority="16" />
+      <Item value="Intersect`1" priority="1" />
+      <Item value="IsNotNull`0" priority="0" />
+      <Item value="OrderBy`2" priority="5" />
+      <Item value="Cast`1" priority="0" />
+      <Item value="Distinct`1" priority="1" />
+      <Item value="OrderByDescending`2" priority="0" />
+      <Item value="GroupBy`4" priority="2" />
+      <Item value="Count`1" priority="2" />
+      <Item value="Any`1" priority="0" />
+      <Item value="ElementAt`1" priority="4" />
+      <Item value="FirstOrDefault`1" priority="9" />
+      <Item value="SelectMany`3" priority="2" />
+      <Item value="Where`1" priority="3" />
+      <Item value="ToArray`1" priority="1" />
+      <Item value="Sum`1" priority="2" />
+      <Item value="ElementAtOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Asset">
+      <Item value="OrganizationId" priority="0" />
+      <Item value="Data" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpPostedFileBase">
+      <Item value="InputStream" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Flush`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.AssetRepo">
+      <Item value="FindById`0" priority="0" />
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Services.IAssetService">
+      <Item value="FindById`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+      <Item value="FindByIds`0" priority="0" />
+      <Item value="FindAllByHotelId`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Helpers.WebImage">
+      <Item value="GetBytes`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="12" />
+      <Item value="ConvertToEnum`1" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Common.Check">
+      <Item value="Require`0" priority="2" />
+      <Item value="Assert`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="Empty" priority="11" />
+      <Item value="NewGuid`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Asset.AssetCategory">
+      <Item value="IsNotNull`0" priority="0" />
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Asset.Asset">
+      <Item value="Category" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.CascadeExpression`1">
+      <Item value="None`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Media.AssetCategory">
+      <Item value="Name" priority="2" />
+      <Item value="Id" priority="6" />
+      <Item value="IsValid`0" priority="0" />
+      <Item value="Items" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.Media.AssetCategoryRepo">
+      <Item value="FindByOrganizationId`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.Media.IAssetCategoryService">
+      <Item value="FindAllByOrganizationId`0" priority="0" />
+      <Item value="Save`0" priority="1" />
+      <Item value="FindById`0" priority="2" />
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ModelStateDictionary">
+      <Item value="IsValid" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Media.AssetCategory">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.AssetCategoryModel">
+      <Item value="Name" priority="1" />
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.TimeSpan">
+      <Item value="Add`0" priority="0" />
+      <Item value="Seconds" priority="0" />
+      <Item value="Days" priority="2" />
+      <Item value="Duration`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Infrastructure.SessionFactory">
+      <Item value="GetCurrentSession`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.Media.AssetRepo">
+      <Item value="Session" priority="1" />
+      <Item value="FindAll`0" priority="1" />
+      <Item value="FindByIds`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.IQuery">
+      <Item value="SetParameterList`0" priority="0" />
+      <Item value="SetGuid`0" priority="0" />
+      <Item value="UniqueResult`1" priority="0" />
+      <Item value="ExecuteUpdate`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Criterion.DetachedCriteria">
+      <Item value="IsIn`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+      <Item value="SetCacheMode`0" priority="0" />
+      <Item value="CreateAlias`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ITransaction">
+      <Item value="Commit`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.MsSqlConfiguration">
+      <Item value="ShowSql`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Practices.Unity.UnityContainer">
+      <Item value="RegisterType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.UnityServiceContainer">
+      <Item value="Container" priority="2" />
+      <Item value="GetService`0" priority="1" />
+      <Item value="TryGetService`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Infrastructure.UoW.NHibernateStarter">
+      <Item value="IsInitialized" priority="0" />
+      <Item value="GetCurrentSession`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Tests.NHibernateStarter">
+      <Item value="BeginTransaction`0" priority="0" />
+      <Item value="EndTransaction`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.FluentConfiguration">
+      <Item value="BuildSessionFactory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Infrastructure.NHibernate.SessionFactory">
+      <Item value="GetCurrentSession`0" priority="0" />
+      <Item value="BeginTransaction`0" priority="0" />
+      <Item value="EndTransaction`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Country">
+      <Item value="Currency" priority="5" />
+      <Item value="IsNotNull`0" priority="0" />
+      <Item value="Language" priority="3" />
+      <Item value="Name" priority="4" />
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.ManyToOnePart`1">
+      <Item value="LazyLoad`0" priority="0" />
+      <Item value="Cascade" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.IIP2LocationService">
+      <Item value="GetLocation`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.ICountryService">
+      <Item value="FindByISOCode`0" priority="0" />
+      <Item value="FindAll`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.Core.Services.ILocationService">
+      <Item value="FindLocationByIp`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpCookie">
+      <Item value="Value" priority="2" />
+      <Item value="Values" priority="1" />
+      <Item value="Expires" priority="1" />
+      <Item value="Secure" priority="0" />
+      <Item value="IsNotNull`0" priority="1" />
+      <Item value="HasKeys" priority="0" />
+      <Item value="IsNull`0" priority="0" />
+      <Item value="Domain" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddYears`0" priority="1" />
+      <Item value="AddDays`0" priority="10" />
+      <Item value="AddMinutes`0" priority="1" />
+      <Item value="Ticks" priority="0" />
+      <Item value="ToFileTimeUtc`0" priority="0" />
+      <Item value="ToString`0" priority="5" />
+      <Item value="ToLocalTime`0" priority="0" />
+      <Item value="Month" priority="6" />
+      <Item value="Date" priority="12" />
+      <Item value="Day" priority="3" />
+      <Item value="Year" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.HttpContext">
+      <Item value="Current" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpContext">
+      <Item value="Response" priority="0" />
+      <Item value="Request" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponse">
+      <Item value="Cookies" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpCookieCollection">
+      <Item value="Add`0" priority="0" />
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Web.Core.Helpers.CookieHelper">
+      <Item value="SetCookie`1" priority="0" />
+      <Item value="ECOHOTELS_DATA_COOKIE" priority="1" />
+      <Item value="GetCookie`1" priority="0" />
+      <Item value="ECOHOTELS_COUNTRY_COOKIE" priority="0" />
+      <Item value="GetCookie`0" priority="0" />
+      <Item value="ECOHOTELS_CURRENCY_COOKIE" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Value_objects.Currency">
+      <Item value="Id" priority="6" />
+      <Item value="IsNull`0" priority="0" />
+      <Item value="ExchangeRate" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="ISOCurrencySymbol" priority="1" />
+      <Item value="MemberwiseClone`0" priority="0" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.ILanguageService">
+      <Item value="FindById`0" priority="4" />
+      <Item value="FindByShortName`0" priority="0" />
+      <Item value="FindAllActive`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.Core.Cookies.UserDataCookie">
+      <Item value="LanguageId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Guid">
+      <Item value="ToString`0" priority="3" />
+      <Item value="CompareTo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponseBase">
+      <Item value="Cookies" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ActionExecutingContext">
+      <Item value="Result" priority="1" />
+      <Item value="HttpContext" priority="1" />
+      <Item value="RouteData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ActionFilterAttribute">
+      <Item value="OnActionExecuting`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.AuthorizationContext">
+      <Item value="Result" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.Customer">
+      <Item value="SetNewPassword`0" priority="2" />
+      <Item value="Id" priority="0" />
+      <Item value="WantNewsletter" priority="0" />
+      <Item value="IsValid`0" priority="0" />
+      <Item value="Country" priority="3" />
+      <Item value="Gender" priority="3" />
+      <Item value="Firstname" priority="2" />
+      <Item value="Lastname" priority="2" />
+      <Item value="Email" priority="1" />
+      <Item value="Birthday" priority="5" />
+      <Item value="ExternalId" priority="0" />
+      <Item value="Password" priority="0" />
+      <Item value="Reservations" priority="0" />
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.CustomerRepo">
+      <Item value="FindByEmail`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+      <Item value="Exists`0" priority="0" />
+      <Item value="IsEmailUnique`0" priority="0" />
+      <Item value="FindBy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Commerce.Customer">
+      <Item value="Create`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.ICustomerService">
+      <Item value="Save`0" priority="2" />
+      <Item value="FindById`0" priority="2" />
+      <Item value="FindByExternalId`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Common.Money">
+      <Item value="Create`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Value_objects.Currency">
+      <Item value="Create`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Common.Money">
+      <Item value="Value" priority="0" />
+      <Item value="ConvertTo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Email.SendGridEmailService">
+      <Item value="CreateEmail`0" priority="0" />
+      <Item value="SendTEST`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.Core.Services.EmailService">
+      <Item value="TestEmailService`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Random">
+      <Item value="Next`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.UserResetModel">
+      <Item value="Email" priority="1" />
+      <Item value="IsTimeValid`0" priority="0" />
+      <Item value="Time" priority="0" />
+      <Item value="Token" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="Subject" priority="1" />
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Email.IEmailService">
+      <Item value="Send`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.ResetAccountModel">
+      <Item value="Email" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpSessionStateBase">
+      <Item value="Add`0" priority="2" />
+      <Item value="Keys" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.EditOrganizationSettings">
+      <Item value="SelectedCurrency" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.CollectionCascadeExpression`1">
+      <Item value="None`0" priority="1" />
+      <Item value="Delete`0" priority="0" />
+      <Item value="All`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.UserModel">
+      <Item value="Password" priority="1" />
+      <Item value="Email" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Property.Hotel">
+      <Item value="Id" priority="22" />
+      <Item value="Name" priority="3" />
+      <Item value="IsNull`0" priority="3" />
+      <Item value="RoomTypes" priority="10" />
+      <Item value="Organization" priority="0" />
+      <Item value="IsActive" priority="1" />
+      <Item value="PageInformation" priority="1" />
+      <Item value="Verified" priority="1" />
+      <Item value="Modified" priority="0" />
+      <Item value="CancellationPolicy" priority="2" />
+      <Item value="PaymentPolicy" priority="3" />
+      <Item value="CheckIn" priority="2" />
+      <Item value="CheckOut" priority="2" />
+      <Item value="Currency" priority="6" />
+      <Item value="IsNotNull`0" priority="1" />
+      <Item value="Photos" priority="0" />
+      <Item value="Descriptions" priority="2" />
+      <Item value="About" priority="2" />
+      <Item value="CategoryOne" priority="2" />
+      <Item value="CategoryThree" priority="1" />
+      <Item value="CategoryTwo" priority="0" />
+      <Item value="Addons" priority="0" />
+      <Item value="Phone" priority="0" />
+      <Item value="Email" priority="0" />
+      <Item value="Assets" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Boolean">
+      <Item value="IsNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Property.RoomType">
+      <Item value="Name" priority="4" />
+      <Item value="Id" priority="21" />
+      <Item value="IsNotNull`0" priority="1" />
+      <Item value="RackRate" priority="3" />
+      <Item value="Hotel" priority="1" />
+      <Item value="Description" priority="0" />
+      <Item value="Capacity" priority="0" />
+      <Item value="Quantity" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Localization.MultiLanguageText">
+      <Item value="GetText`0" priority="8" />
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Localization.LanguageType">
+      <Item value="English" priority="10" />
+      <Item value="Italien" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.Property.IRoomTypeService">
+      <Item value="FindById`0" priority="0" />
+      <Item value="FindByIdAndOrganizationId`0" priority="0" />
+      <Item value="FindAllByHotelId`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.Property.RoomTypeRepo">
+      <Item value="FindByIdAndOrganizationId`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.Property.IHotelService">
+      <Item value="FindById`0" priority="8" />
+      <Item value="CountInActiveHotels`0" priority="0" />
+      <Item value="FindAllNonVerifiedHotels`0" priority="0" />
+      <Item value="FindAllInActive`0" priority="1" />
+      <Item value="CountHotelsToVerify`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Property.RoomType">
+      <Item value="Create`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.Property.IAmenityService">
+      <Item value="FindAll`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Property.CreateRoomTypelModel">
+      <Item value="HotelId" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Extensions.ObjectExtension">
+      <Item value="Clone`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.RefreshCurrencyItemModel">
+      <Item value="NewConversionFactor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Security.User">
+      <Item value="Create`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Property.CreateOrganizationModel">
+      <Item value="UserEmail" priority="1" />
+      <Item value="Password" priority="0" />
+      <Item value="Firstname" priority="0" />
+      <Item value="Lastname" priority="0" />
+      <Item value="Email" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Backend.Models.EditHotelInfoModel">
+      <Item value="IsActive" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.PageInformationRepo">
+      <Item value="FindByFilename`0" priority="0" />
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.IPageInformationService">
+      <Item value="IsFilenameUnique`0" priority="0" />
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.Property.HotelRepo">
+      <Item value="Session" priority="2" />
+      <Item value="CountInActiveHotels`0" priority="0" />
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Localization.PageInformation">
+      <Item value="Filename" priority="0" />
+      <Item value="LastModified" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.LanguageRepo">
+      <Item value="FindAllActive`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Security.RolesEnum">
+      <Item value="Backend" priority="3" />
+      <Item value="Supporter" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Backend.Models.EditUserModel">
+      <Item value="Id" priority="0" />
+      <Item value="SelectedRoleId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Principal.IPrincipal">
+      <Item value="IsInRole`0" priority="1" />
+      <Item value="Identity" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Security.RolesEnum">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NHibernate.Criterion.Restrictions">
+      <Item value="LtProperty`0" priority="0" />
+      <Item value="Not`0" priority="0" />
+      <Item value="Eq`0" priority="0" />
+      <Item value="IsNull`0" priority="1" />
+      <Item value="And`0" priority="0" />
+      <Item value="On`0" priority="0" />
+      <Item value="In`0" priority="0" />
+      <Item value="Le`0" priority="0" />
+      <Item value="Ge`0" priority="0" />
+      <Item value="LeProperty`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ComponentModel.DataAnnotations.DataType">
+      <Item value="Password" priority="0" />
+      <Item value="EmailAddress" priority="0" />
+      <Item value="Date" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Common.Enum.GenderTypeEnum">
+      <Item value="Mand" priority="0" />
+      <Item value="Male" priority="1" />
+      <Item value="Female" priority="2" />
+      <Item value="None" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Account.Models.EditCustomerInformationModel">
+      <Item value="Firstname" priority="0" />
+      <Item value="Lastname" priority="0" />
+      <Item value="Country" priority="0" />
+      <Item value="Birthday" priority="0" />
+      <Item value="Email" priority="0" />
+      <Item value="SelectedGenderType" priority="0" />
+      <Item value="SelectedCountryName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DotNetOpenAuth.OAuth.WebConsumer">
+      <Item value="Channel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DotNetOpenAuth.Messaging.Channel">
+      <Item value="PrepareResponse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Common.Enum.AccountType">
+      <Item value="Normal" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Common.Enum.AccountTypeEnum">
+      <Item value="Normal" priority="0" />
+      <Item value="Facebook" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.OAuth.TwitterClient">
+      <Item value="UserId" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.OAuth.FacebookClient">
+      <Item value="ScopeNeeded" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.OAuth.FacebookClient">
+      <Item value="RequestUserAuthorization`0" priority="0" />
+      <Item value="AuthorizationServer" priority="0" />
+      <Item value="AuthorizationTracker" priority="0" />
+      <Item value="ClientSecret" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DotNetOpenAuth.OAuth2.IClientAuthorizationTracker">
+      <Item value="GetAuthorizationState`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DotNetOpenAuth.OAuth2.AuthorizationServerDescription">
+      <Item value="AuthorizationEndpoint" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.OAuth.FacebookUserdata">
+      <Item value="Id" priority="0" />
+      <Item value="Email" priority="0" />
+      <Item value="Firstname" priority="0" />
+      <Item value="Lastname" priority="0" />
+      <Item value="Birthday" priority="0" />
+      <Item value="ConvertBirthdayToDatetime`0" priority="0" />
+      <Item value="HasValidBirthday" priority="0" />
+      <Item value="Gender" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
+      <Item value="Params" priority="1" />
+      <Item value="UserHostAddress" priority="0" />
+      <Item value="RawUrl" priority="0" />
+      <Item value="UrlReferrer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.OAuth.FacebookData">
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Security.FormsAuthenticationTicket">
+      <Item value="Name" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Principal.IIdentity">
+      <Item value="Name" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Linq.Enumerable">
+      <Item value="Range`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="Value" priority="3" />
+      <Item value="HasValue" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Models.EditCustomerInformationModel">
+      <Item value="HasValidBirthday`0" priority="0" />
+      <Item value="GetBirthday`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Models.EditCustomerPasswordModel">
+      <Item value="NewPassword" priority="1" />
+      <Item value="ConfirmPassword" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.Cart">
+      <Item value="BookingDetails" priority="7" />
+      <Item value="SetDates`0" priority="0" />
+      <Item value="AddItem`0" priority="0" />
+      <Item value="Items" priority="4" />
+      <Item value="TotalPrice" priority="1" />
+      <Item value="CurrencySymbol" priority="0" />
+      <Item value="Currency" priority="1" />
+      <Item value="IsNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.CartBookingDetails">
+      <Item value="Firstname" priority="0" />
+      <Item value="Lastname" priority="0" />
+      <Item value="Phonenumber" priority="0" />
+      <Item value="Country" priority="0" />
+      <Item value="Email" priority="0" />
+      <Item value="Arrival" priority="0" />
+      <Item value="Departure" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.CartItem">
+      <Item value="NameOfPrimaryGuest" priority="1" />
+      <Item value="Description" priority="1" />
+      <Item value="Adults" priority="0" />
+      <Item value="ItemType" priority="3" />
+      <Item value="MaxCapacity" priority="2" />
+      <Item value="Id" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Commerce.CartItem">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Select`2" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.TempDataDictionary">
+      <Item value="Keep`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureInfo">
+      <Item value="CurrentCulture" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.Core.Services.ICartService">
+      <Item value="HasActiveCart`0" priority="0" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="GetCurrentCart`0" priority="0" />
+      <Item value="Create`0" priority="0" />
+      <Item value="Update`0" priority="1" />
+      <Item value="GetCartContent`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Models.CheckoutBillingInformationModel">
+      <Item value="SelectedCountryName" priority="0" />
+      <Item value="CreditcardNumber" priority="0" />
+      <Item value="ExpireMonth" priority="0" />
+      <Item value="ExpireYear" priority="0" />
+      <Item value="CVC" priority="0" />
+      <Item value="Rooms" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Models.CheckoutRoomInformationModel">
+      <Item value="NameOfPrimaryGuest" priority="2" />
+      <Item value="Id" priority="1" />
+      <Item value="Guests" priority="0" />
+      <Item value="Adults" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.Reservation">
+      <Item value="Id" priority="4" />
+      <Item value="IsNull`0" priority="3" />
+      <Item value="Customer" priority="0" />
+      <Item value="HotelName" priority="5" />
+      <Item value="HotelId" priority="4" />
+      <Item value="Arrival" priority="3" />
+      <Item value="Departure" priority="2" />
+      <Item value="CreditcardNumberObfuscated" priority="0" />
+      <Item value="Firstname" priority="0" />
+      <Item value="Lastname" priority="0" />
+      <Item value="HotelAddress" priority="2" />
+      <Item value="HotelPhoneNumber" priority="3" />
+      <Item value="HotelEmail" priority="3" />
+      <Item value="CreditCardMonth" priority="1" />
+      <Item value="CreditCardHolder" priority="1" />
+      <Item value="CreditCardYear" priority="0" />
+      <Item value="CreditCardCvc" priority="0" />
+      <Item value="Email" priority="0" />
+      <Item value="Cancelled" priority="0" />
+      <Item value="ReservationId" priority="2" />
+      <Item value="Items" priority="2" />
+      <Item value="CurrencySymbol" priority="0" />
+      <Item value="PhoneNumber" priority="0" />
+      <Item value="HoteId" priority="0" />
+      <Item value="TotalPrice" priority="1" />
+      <Item value="Duration" priority="0" />
+      <Item value="Country" priority="0" />
+      <Item value="Fullname" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.ReservationRepo">
+      <Item value="FindOne`0" priority="1" />
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Services.IReservationService">
+      <Item value="FindByCustomer`0" priority="1" />
+      <Item value="FindBy`0" priority="1" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.IdentityPart">
+      <Item value="GeneratedBy" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.IdentityGenerationStrategyBuilder`1">
+      <Item value="Identity`0" priority="2" />
+      <Item value="Native`0" priority="0" />
+      <Item value="Increment`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.PropertyGeneratedBuilder">
+      <Item value="Insert`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Routing.RouteData">
+      <Item value="Values" priority="1" />
+      <Item value="DataTokens" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Routing.RouteCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelPolicyModel">
+      <Item value="Id" priority="0" />
+      <Item value="CheckIn" priority="0" />
+      <Item value="CheckOut" priority="0" />
+      <Item value="Payment" priority="0" />
+      <Item value="Cancellation" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.EditOrganizationModel">
+      <Item value="SelectedCountryName" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="Address2" priority="1" />
+      <Item value="City" priority="0" />
+      <Item value="Zipcode" priority="0" />
+      <Item value="Phone" priority="0" />
+      <Item value="Email" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelCurrenciesModel">
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelCurrencyItemModel">
+      <Item value="HotelId" priority="0" />
+      <Item value="SelectedCurrencyId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequest">
+      <Item value="Url" priority="2" />
+      <Item value="Params" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Uri">
+      <Item value="AbsolutePath" priority="2" />
+      <Item value="Query" priority="2" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.Core.ImageResize.DBImageSettings">
+      <Item value="HasQueryData" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Media.Asset">
+      <Item value="Modified" priority="1" />
+      <Item value="TopX" priority="2" />
+      <Item value="TopY" priority="3" />
+      <Item value="BottomX" priority="2" />
+      <Item value="BottomY" priority="2" />
+      <Item value="CropXUnit" priority="2" />
+      <Item value="CropYUnit" priority="2" />
+      <Item value="Id" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="IsNotNull`0" priority="0" />
+      <Item value="SetCroppingInformation`0" priority="0" />
+      <Item value="GenerateCroppingQuery`0" priority="2" />
+      <Item value="GenerateUrl`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Media.Photo">
+      <Item value="TopX" priority="0" />
+      <Item value="BottomX" priority="0" />
+      <Item value="CropXUnit" priority="0" />
+      <Item value="CropYUnit" priority="0" />
+      <Item value="Hotel" priority="0" />
+      <Item value="Asset" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Property.RoomTypeSelectedAsset">
+      <Item value="TopX" priority="0" />
+      <Item value="TopY" priority="0" />
+      <Item value="BottomX" priority="1" />
+      <Item value="BottomY" priority="1" />
+      <Item value="CropYUnit" priority="2" />
+      <Item value="CropXUnit" priority="0" />
+      <Item value="Id" priority="3" />
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IGrouping`2">
+      <Item value="First`1" priority="3" />
+      <Item value="Key" priority="1" />
+      <Item value="Select`2" priority="1" />
+      <Item value="OrderBy`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.Repository`1">
+      <Item value="FindAll`0" priority="0" />
+      <Item value="Count`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelPhotoModel">
+      <Item value="Assets" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Property.HotelBulletPoint">
+      <Item value="Hotel" priority="0" />
+      <Item value="Id" priority="2" />
+      <Item value="OrderId" priority="1" />
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.MvcApplication">
+      <Item value="BeginRequest" priority="0" />
+      <Item value="EndRequest" priority="0" />
+      <Item value="Error" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.OneToManyPart`1">
+      <Item value="Fetch" priority="0" />
+      <Item value="OrderBy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.FetchTypeExpression`1">
+      <Item value="Join`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Resources.ResourceManager">
+      <Item value="CreateFileBasedResourceManager`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Common.Enum.HotelCategories">
+      <Item value="GetList`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Value" priority="3" />
+      <Item value="Key" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelDescriptionModel">
+      <Item value="SelectedCategoryOne" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Common.Enum.HotelBulletPointEnum">
+      <Item value="WhatYouNeedToKnow" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelDescriptionBulletPoint">
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.CountryRepo">
+      <Item value="FindByISOCode`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+      <Item value="FindBy`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.CachePart">
+      <Item value="ReadOnly`0" priority="0" />
+      <Item value="Region`0" priority="0" />
+      <Item value="NonStrictReadWrite`0" priority="0" />
+      <Item value="ReadWrite`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Infrastructure.NH.SessionFactory">
+      <Item value="Statistics" priority="0" />
+      <Item value="GetCurrentSession`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Stat.IStatistics">
+      <Item value="SecondLevelCacheHitCount" priority="3" />
+      <Item value="QueryCacheMissCount" priority="0" />
+      <Item value="QueryCacheHitCount" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.SessionState.SessionStateBehavior">
+      <Item value="Disabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Commerce.ReservationItem">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Commerce.ReservationItemType">
+      <Item value="Room" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Commerce.ReservationPrice">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.ReservationItem">
+      <Item value="Type" priority="0" />
+      <Item value="Description" priority="2" />
+      <Item value="TotalNumberOfGuests" priority="0" />
+      <Item value="NameOfPrimaryGuest" priority="0" />
+      <Item value="Adults" priority="0" />
+      <Item value="Reservation" priority="0" />
+      <Item value="Addons" priority="0" />
+      <Item value="SetAddons`0" priority="0" />
+      <Item value="SetPriceRates`0" priority="0" />
+      <Item value="RoomTypeId" priority="3" />
+      <Item value="PricePerDate" priority="1" />
+      <Item value="TotalPriceWithoutDiscount" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Tags.SearchTagCity">
+      <Item value="Country" priority="6" />
+      <Item value="Name" priority="3" />
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Repositories.NH.Tags.SearchTagCityRepo">
+      <Item value="Save`0" priority="0" />
+      <Item value="FindAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Tags.SearchTagCity">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedEnumerable`1">
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="ThenBy`2" priority="4" />
+      <Item value="GroupBy`4" priority="0" />
+      <Item value="ToList`1" priority="1" />
+      <Item value="ThenByDescending`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="1" />
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="Select`2" priority="0" />
+      <Item value="Count`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.SelectListItem">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Date">
+      <Item value="Value" priority="7" />
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Date">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.RevenueManagement.RoomTypeInventory">
+      <Item value="Date" priority="0" />
+      <Item value="Quantity" priority="0" />
+      <Item value="PriceGroup" priority="0" />
+      <Item value="RoomTypeId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.NH.Repository`1">
+      <Item value="FindAll`0" priority="6" />
+      <Item value="Save`0" priority="1" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="FindBy`0" priority="2" />
+      <Item value="FindOne`0" priority="0" />
+      <Item value="Session" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.IInventoryService">
+      <Item value="FindInventoryBy`0" priority="0" />
+      <Item value="FindByIds`0" priority="1" />
+      <Item value="Save`0" priority="0" />
+      <Item value="FindByDateInterval`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.InventoryModel">
+      <Item value="SelectedHotelId" priority="0" />
+      <Item value="Rooms" priority="3" />
+      <Item value="SelectedYear" priority="0" />
+      <Item value="SelectedMonth" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.InventoryItemModel">
+      <Item value="RoomTypeId" priority="6" />
+      <Item value="Quantities" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.RoomTypeInventory">
+      <Item value="Id" priority="1" />
+      <Item value="RoomTypeId" priority="3" />
+      <Item value="Date" priority="6" />
+      <Item value="IsNull`0" priority="1" />
+      <Item value="Quantity" priority="3" />
+      <Item value="IsValid`0" priority="0" />
+      <Item value="IsNotNull`0" priority="0" />
+      <Item value="RateCategoryId" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Commerce.RoomTypeInventory">
+      <Item value="Create`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.InventoryItemQtyModel">
+      <Item value="Value" priority="1" />
+      <Item value="Date" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.ICalendarService">
+      <Item value="FindBy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.RateCategory">
+      <Item value="Description" priority="2" />
+      <Item value="IsValid`0" priority="0" />
+      <Item value="HotelId" priority="0" />
+      <Item value="Items" priority="8" />
+      <Item value="IsNotNull`0" priority="0" />
+      <Item value="Id" priority="5" />
+      <Item value="Hotel" priority="0" />
+      <Item value="Name" priority="2" />
+      <Item value="IsNull`0" priority="1" />
+      <Item value="Color" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.RatePrice">
+      <Item value="Value" priority="6" />
+      <Item value="IsActive" priority="2" />
+      <Item value="RoomTypeId" priority="5" />
+      <Item value="Category" priority="4" />
+      <Item value="IsNotNull`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Commerce.RateCategory">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.Price.IRateService">
+      <Item value="Save`0" priority="1" />
+      <Item value="Delete`0" priority="1" />
+      <Item value="FindBy`0" priority="3" />
+      <Item value="FindByHotel`0" priority="3" />
+      <Item value="EnsureRatesForNewRoomType`0" priority="0" />
+      <Item value="RemoveRatesForRoomType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Commerce.RatePrice">
+      <Item value="Create`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Price.RackRateItemModel">
+      <Item value="RoomTypeId" priority="0" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Price.CreateRateCategoryModel">
+      <Item value="Name" priority="0" />
+      <Item value="Description" priority="0" />
+      <Item value="Color" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Price.CreateRateCategoryItemModel">
+      <Item value="RoomTypeId" priority="0" />
+      <Item value="Value" priority="0" />
+      <Item value="IsActive" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Price.EditRateCategoryItemModel">
+      <Item value="Value" priority="0" />
+      <Item value="IsActive" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISQLQuery">
+      <Item value="SetInt32`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Models.Property.Hotel">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.SqlDbType">
+      <Item value="Int" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Common.Enum.LanguageTypeEnum">
+      <Item value="English" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Models.Commerce.Addon">
+      <Item value="Hotel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ActionExecutedContext">
+      <Item value="RequestContext" priority="0" />
+      <Item value="Result" priority="0" />
+      <Item value="Exception" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Infrastructure.Services.ISearchService">
+      <Item value="Find`0" priority="0" />
+      <Item value="FindByHotel`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Value_objects.SearchResultHotel">
+      <Item value="Rooms" priority="5" />
+      <Item value="About" priority="0" />
+      <Item value="HasAvailableRooms" priority="0" />
+      <Item value="HotelId" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Email" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Value_objects.SearchResultRoom">
+      <Item value="IsAvailable" priority="3" />
+      <Item value="RoomTypeId" priority="2" />
+      <Item value="Name" priority="0" />
+      <Item value="Prices" priority="0" />
+      <Item value="TotalPrice" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Models.SearchModel">
+      <Item value="Arrival" priority="1" />
+      <Item value="CityId" priority="0" />
+      <Item value="Departure" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Value_objects.SearchResultList">
+      <Item value="Hotels" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Value_objects.SearchResultHotel">
+      <Item value="Create`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Routing.RouteValueDictionary">
+      <Item value="ContainsKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Min`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="MaxValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Models.CartModel">
+      <Item value="Arrival" priority="2" />
+      <Item value="Departure" priority="2" />
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Models.CartItemModel">
+      <Item value="Quantity" priority="1" />
+      <Item value="RoomTypeId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EcoHotels.Core.Domain.Value_objects.SearchResultRoomPrice">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Core.Domain.Value_objects.SearchResultRoomPrice">
+      <Item value="Price" priority="2" />
+      <Item value="Date" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Models.CheckoutCompleteRoomInformationModel">
+      <Item value="TotalPrice" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.UI.Areas.Admin.Models.Price.EditRateCategoryModel">
+      <Item value="Name" priority="0" />
+      <Item value="Description" priority="0" />
+      <Item value="Color" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Mail.MailMessage">
+      <Item value="Headers" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SendGridMail.SendGrid">
+      <Item value="To" priority="0" />
+      <Item value="AddTo`0" priority="0" />
+      <Item value="from" priority="0" />
+      <Item value="From" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EcoHotels.Web.Core.Social.FacebookUserdata">
+      <Item value="Birthday" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <Bookmarks>
+    <Bookmark owner="NumberedBookmarkManager" id="Bookmark7" file-id="1AFFE65B-D391-4122-8975-F6DC012962FE/d:Areas/d:Admin/d:Controllers/f:MediaController.cs" coords="(Doc Ln 41 Col 0)" />
+  </Bookmarks>
+</Configuration>

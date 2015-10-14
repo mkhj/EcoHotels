@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="42755ab6-3f75-4e87-93fa-5cbab166cd0f" name="Mark@MACPC 2012-09-20 18:32:24" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-09-20 18_32_24" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-09-20T18:32:24.8654297+02:00" queuing="2012-09-20T18:32:25.3236427+02:00" start="2012-09-20T18:32:25.9176587+02:00" finish="2012-09-20T18:32:31.0517937+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TEST" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="23763737-3a1e-4738-ae1f-0b48cbd62d81">
+      <Execution timeOut="1800000" id="2ce01b0a-7857-4b31-b3ef-985e42630231" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.NHCachingTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEST" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="23763737-3a1e-4738-ae1f-0b48cbd62d81" executionId="2ce01b0a-7857-4b31-b3ef-985e42630231" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2ce01b0a-7857-4b31-b3ef-985e42630231" testId="23763737-3a1e-4738-ae1f-0b48cbd62d81" testName="TEST" computerName="MACPC" duration="00:00:04.4009093" startTime="2012-09-20T18:32:26.1892647+02:00" endTime="2012-09-20T18:32:30.9531167+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ce01b0a-7857-4b31-b3ef-985e42630231">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT this_.Id as Id4_0_, this_.Name as Name4_0_, this_.[Alpha-2 code] as column3_4_0_, this_.CurrencyId as CurrencyId4_0_, this_.LanguageId as LanguageId4_0_ FROM Countries this_ WHERE this_.[Alpha-2 code] = @p0;@p0 = 'DK' [Type: String (4000)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.Integration.NHCachingTester.TEST() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\NHCachingTester.cs:line 40
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

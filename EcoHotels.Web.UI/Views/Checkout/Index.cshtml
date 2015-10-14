@@ -1,0 +1,231 @@
+﻿@model EcoHotels.Web.UI.Models.CheckoutBillingInformationModel
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="view" class="container" data-view="checkout" data-action="step1">
+
+    <div class="row">
+        <div class="span9">
+            
+            <div style="padding: 20px 20px 0px 20px;">
+                <h1>Hotel das Cataratas</h1>
+                @Model.Arrival.ToString("dddd dd MMMM, yyyy") - @Model.Departure.ToString("dddd dd MMMM, yyyy") 
+            </div>
+            <hr />
+            <form class="form-horizontal ajaxform" action="@Url.Action("index", "checkout", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    @Html.Hidden("next-step", @Url.Action("complete", "checkout", null), new { @readonly = "true" })
+                </div>
+
+                <!--
+                <div class="control-group" style="padding: 10px 20px;">
+                    <div class="alert hidden">...</div>
+                </div>
+                -->
+                <div style="padding: 0px 20px 20px 20px;">
+
+                    <h3>Personal Information</h3>
+                    <small>Please provide your personal information for this reservation.</small>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">First name</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Firstname, new { @class = "span4 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Last name:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Lastname, new { @class = "span4 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Phone number:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "span4 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Country:</label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.SelectedCountryName, Model.AvailableCountries, new { @class = "span4 required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Email address:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "span4 email-required" })
+                    </div>
+                </div>
+
+                <hr />
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>Room Information</h3>
+                    <small>Enter name and number of guests in room.</small>
+                </div>
+                <div style="padding: 0px 20px 0px 20px;">
+                    <table id="room-information" data-days="@Model.Duration" data-currency="DKK">
+                        <thead>
+                            <tr>
+                                <th style="width: 140px;"></th>
+                                <th style="width: 300px;">Name of guest</th>
+                                <th>Guests</th>
+                                <th class="align-right" style="width: 150px;">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>         
+                            @for (int i = 0; i < Model.Rooms.Count(); i++)
+                            {
+                                <tr class="bookingline">
+                                    <td>
+                                        <div class="control-group">
+                                            @Html.HiddenFor(m => m.Rooms[i].Id, new { @readonly = "true" })
+                                            <label for="sdfsdf">@Model.Rooms[i].ItemType</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="control-group">
+                                            @Html.TextBoxFor(m => m.Rooms[i].NameOfPrimaryGuest, new { @class = "span4 no-error-message required" })
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="control-group">
+                                            @Html.DropDownListFor(m => m.Rooms[i].Adults, Model.Rooms[i].Guests, new { @class = "input-mini number-of-guests no-error-message required" })
+                                        </div>
+                                    </td>
+                                    <td class="align-right" style="padding-bottom: 18px;">
+                                        DKK <span class="room-total" data-roomprice="@Model.Rooms[i].TotalPrice">@Model.Rooms[i].TotalPrice.ToString()</span>
+                                    </td>
+                                </tr>
+                                <tr class="addonline">
+                                    <td colspan="4" style="padding-left: 40px;">
+
+                                        <table>
+                                        @for (var n = 0; n < Model.Rooms[i].Addons.Count(); n++)
+                                        {
+                                            var attributes = new Dictionary<string, object>();
+                                            attributes.Add("class", "checkbox addon");
+                                            attributes.Add("data-price", Model.Rooms[i].Addons[n].Price);
+                                            attributes.Add("data-postingrhythm", Model.Rooms[i].Addons[n].PostingRhythm);
+                                            attributes.Add("data-calculationrule", Model.Rooms[i].Addons[n].CalculationRule);
+                                            
+                                            <tr class="addon-item">
+                                                <td valign="top">
+                                                    @Html.HiddenFor(m => m.Rooms[i].Addons[n].Id, new {@readonly="readonly"})
+                                                    @Html.CheckBoxFor(m => m.Rooms[i].Addons[n].IsSelected, attributes)
+                                                </td>
+                                                <td width=340 valign="top"  >
+                                                    <label  style="margin-top: 4px;" for="Rooms_@(i)__Addons_@(n)__IsSelected">@Model.Rooms[i].Addons[n].Name</label>
+                                                    - @Model.Rooms[i].Addons[n].Description
+                                                </td>
+                                                <td valign="top">
+                                                    <div style="line-height: 20px;">
+
+                                                        DKK @Model.Rooms[i].Addons[n].Price
+
+                                                        
+                                                        @if (Model.Rooms[i].Addons[n].CalculationRule == 1) 
+                                                        { 
+                                                            // Per Person
+                                                            <text> x </text> 
+                                                            <span class="addon-item-guests">@Model.Rooms[i].Adults</span>
+                                                        }else{
+                                                            // Per Room
+                                                            <text> x 1</text>
+                                                        }
+                                                        
+                                                        @* Per day *@
+                                                        @if (Model.Rooms[i].Addons[n].PostingRhythm == 1)
+                                                        { 
+                                                            // Per day
+                                                            <text> x @Model.Duration</text>
+                                                        }
+                                                        else
+                                                        {
+                                                            // entire stay
+                                                        }
+
+                                                        = DKK <span class="addon-item-total">0,00</span>
+                                                    </div>
+                                                </td>
+                                            </tr>                                            
+                                        }
+                                        </table>
+                                        <br />
+                                        <br />
+                                    </td>
+                                </tr>                        
+                            }                   
+                        </tbody>      
+                        <tfoot>
+                            <tr>
+                                <th class="align-right" colspan="3">Total</th>
+                                <td class="align-right booking-total">@Model.TotalPrice.ToString()</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+
+                <div class="control-group">
+                    <label class="control-label" for="input01"></label>
+                    <div class="controls">
+                        <label class="checkbox">@Html.CheckBox("sdfsdf") I agree to the <a id="tos" href="#">Terms and Conditions</a> and understand the <a href=#">Cancellation Policy</a>.</label>
+                    </div>
+                </div>
+
+                <div id="test-tos" style="display: none;">
+                    <div style="height: 100px; width: 100px;">sdfsdf</div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-large btn-success" data-loading-text="Please wait...!" data-complete-text="Confirm Reservation"><i class="icon-ok icon-white"></i> Confirm Reservation</button>
+                </div>  
+
+            </form>
+
+  
+        </div>
+        <div id="sidebar" class="span3">
+            <div style="padding: 20px;">
+                <h3>Reservation Summary</h3>
+
+                <hr />
+                <b>Check In</b><br />
+                @Model.Arrival.ToString("dddd dd MMMM, yyyy")<br /><br />
+
+                <b>Check Out</b><br />
+                @Model.Departure.ToString("dddd dd MMMM, yyyy")<br /><br />
+
+                <b>Check-in Instructions Notifications:</b><br />
+                Children 18 years old and younger are not permitted at this property.
+                <hr />
+                <b>Charges</b>
+                <table style="width: 100%; line-height: 1.6em;">
+                    <tr>
+                        <td>Night(s)</td>
+                        <td class="align-right">@Model.Duration</td>
+                    </tr>
+                    <tr>
+                        <td>Rooms</td>
+                        <td class="align-right">@Model.Rooms.Count</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td class="align-right">@Model.TotalPrice.ToString()</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

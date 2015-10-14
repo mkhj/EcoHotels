@@ -1,0 +1,85 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Price.AddonModel
+
+@{
+    ViewBag.Title = "Edit Addon";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "pricing" });}
+
+<div id="view" class="container"data-view="addon" data-action="edit">
+    <h2>
+        Addons
+        <small>Edit addon</small>
+    </h2>
+
+    <div class="row">        
+        <div class="span9">
+            <br />
+            <form class="form-horizontal ajaxform" action="@Url.Action("edit", "addon", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Id" value="@Model.Id" readonly="readonly" />
+                </div>
+                
+
+                <div class="content">
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Name:</label>
+                    <div class="controls">
+                        @Html.TextBoxLocalizationFor(m => m.Name, Model.SelectedLanguageId, new { @class = "input-xlarge required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Description:</label>
+                    <div class="controls">
+                        @Html.TextAreaLocalizationFor(m => m.Description, Model.SelectedLanguageId, new { @class="span6", rows = "4" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Price:</label>
+                    <div class="controls">
+                        <div class="input-prepend">
+                            <span class="add-on">@Model.Currency</span>
+                            @Html.TextBoxFor(m => m.Price, new { @class = "span1 required"}) 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Calculation Rule:</label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.SelectedCalculationRule, Model.CalculationRules, new { @class = "required medium" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Posting Rhythm:</label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.SelectedPostingRhythm, Model.PostingRhythms, new { @class = "required medium" })
+                    </div>
+                </div>
+
+
+                <div class="form-actions">
+                    <a data-toggle="modal" href="#model-delete" class="btn">Delete</a>
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>                                                       
+                </div>
+	        </form>    
+        </div>
+        <div class="span3">
+            @{Html.RenderAction("addons", "navigation", new { page = "roomtype", id = Model.Id });}
+        </div>        
+    </div>
+
+
+</div>
+
+@Html.Partial("Modal/Delete")

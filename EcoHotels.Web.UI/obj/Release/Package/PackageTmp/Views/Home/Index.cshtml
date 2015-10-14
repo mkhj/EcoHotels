@@ -1,0 +1,196 @@
+﻿@{
+    ViewBag.Title = "";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section gce{
+    @Html.Partial("_ContentExperimentCode")
+}
+
+@{
+    @*Html.RequiresCss("/assets/css/frontpage2.css", 100);*@
+}
+
+@section javascript{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#datepicker").datepicker({minDate:0});
+        });
+    </script>
+}
+
+    <style>
+#hero 
+{
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.search-area 
+{
+    height: 300px;
+    width: 730px;    
+    padding-top: 82px;
+    position: absolute;
+    top: 0;
+    z-index: 160;    
+}
+
+.search-area h1
+{
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.search-area h1, 
+.search-area h2 {
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.6),0 -1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.search-form
+{
+    margin-top: 18px;
+    margin-left: 0px;
+    padding: 10px; 
+    width: 220px;
+}
+
+#hero {
+    z-index: 1;
+    position: relative;
+    height: 700px;
+    margin-top: -18px;
+    margin-bottom: 28px;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.6);
+}
+
+#slideshow {
+    margin: 0;
+    
+}
+
+#slideshow li 
+{
+    z-index: 2;
+    position: absolute;
+    z-index: 80;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+}
+
+#slideshow li.active
+{
+    z-index: 100;
+}
+
+#slideshow li.next
+{
+    z-index: 90;
+}
+
+#slideshow li > img 
+{
+    z-index: 2;
+    position: relative;
+    left: 50%;
+    margin-left: -800px;
+    max-width: inherit;
+}
+    
+    </style>
+
+<div id="view" data-view="frontpage" data-action="">
+    <div id="hero">
+
+        <ul class="unstyled" id="slideshow">
+            <li class="active" style="display: block; ">
+                <img src="/assets/img/hotels/front1.jpg" alt="" style="height:700px; width: 1600px;" >
+            </li>
+            <li class="" style="display: block; ">
+                <img src="/assets/img/hotels/front2.jpg" alt="" style="height:700px; width: 1600px;" >
+            </li>
+            <li class="" style="display: block; ">
+                <img src="/assets/img/hotels/front3.jpg" alt="" style="height:700px; width: 1600px;" >
+            </li>
+            
+        </ul>
+
+        <div class="container">
+
+        <div class="search-area">
+            <h1>Find a place to stay</h1>
+            <!--<h2>“A journey of a thousand miles must begin with a single step.” – Lao Tzu</h2>-->
+            <h2>“Take only memories, leave only footprints.” – Chief Seattle</h2>
+           <!--<h2>Stay in one of the 28,093 cities and 192 countries.</h2>-->
+            <form action="@Url.Action("search")">
+                <div class="span4 search-form shadow">
+                    <select class="span3">
+                        <option>Please select destination..</option>
+                        <optgroup label="Denmark">
+                            <option>Copenhagen</option>
+                            <option>Aarhus</option>
+                        </optgroup>
+                        <optgroup label="France">                            
+                            <option>Lyon</option>
+                            <option>Marseille</option>
+                            <option>Paris</option>
+                        </optgroup>
+                        <optgroup label="Germany">
+                            <option>Berlin</option>
+                            <option>Hamburg</option>
+                            <option>Munich</option>
+                        </optgroup>
+                        <optgroup label="Norway">
+                            <option>Oslo</option>
+                        </optgroup>                                          
+                    </select>
+
+                    @Html.TextBox("sdfsdfsdf", "", new { @class = "span3", placeholder="Check In" })
+
+                    @Html.TextBox("sdfsdfsdf", "", new { @class = "", placeholder = "Check Out" })
+
+                    <center>
+                    <button type="submit" class="btn btn-success">Check Availability</button>
+                    </center>                    
+                </div> 
+            </form>
+        </div>        
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <center><h1>Popular Destinations</h1></center>
+
+        <ul class="thumbnails">
+            <li class="span4">
+                <a href="#" class="thumbnail">
+                    <img src="/assets/img/hotels/teaser1.jpg" alt="">                
+                </a>
+            </li>
+            <li class="span4">
+                <a href="#" class="thumbnail">
+                    <img src="/assets/img/hotels/teaser2.jpg" alt="">
+                </a>
+            </li>
+            <li class="span4">
+                <a href="#" class="thumbnail">
+                    <img src="/assets/img/hotels/teaser3.jpg" alt="">
+                </a>
+            </li>
+            <!--
+            <li class="span3">
+                <a href="#" class="thumbnail">
+                <img src="http://cdn.jetcdn.com/static/image/ZmNmXwR5ZFkcoJSaMKZipUWiMUIwqP9jpz9jMKW0nJImYmRkAQtip3WwYGR3BQHkYGRmZQLkAmp2BGDhnaOa" alt="">
+                </a>
+            </li>
+            -->
+        </ul>
+    </div>
+</div>

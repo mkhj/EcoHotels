@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="df04b956-bd18-489f-b2d4-3687f64c5c3e" name="Mark@MACPC 2013-01-01 19:31:08" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-01-01 19_31_08" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-01T19:31:08.3387291+01:00" queuing="2013-01-01T19:31:09.0188603+01:00" start="2013-01-01T19:31:09.6932141+01:00" finish="2013-01-01T19:31:19.4027057+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="b89f4b58-d56b-7f24-c5dc-b60b14545fb4">
+      <Execution timeOut="1800000" id="aed64668-781c-4821-be1a-197ae4a72789" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.RateServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b89f4b58-d56b-7f24-c5dc-b60b14545fb4" executionId="aed64668-781c-4821-be1a-197ae4a72789" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="aed64668-781c-4821-be1a-197ae4a72789" testId="b89f4b58-d56b-7f24-c5dc-b60b14545fb4" testName="TestMethod1" computerName="MACPC" duration="00:00:08.0027995" startTime="2013-01-01T19:31:10.4497217+01:00" endTime="2013-01-01T19:31:19.1925647+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aed64668-781c-4821-be1a-197ae4a72789">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: Batch commands:
+command 0:INSERT INTO RateCategories (HotelId, Name, Description, Id) VALUES (@p0, @p1, @p2, @p3);@p0 = de419819-f58c-4cf0-a2a2-3157a7a2438d [Type: Guid (0)], @p1 = 'lalala' [Type: String (4000)], @p2 = 'sdfsdfsdf' [Type: String (4000)], @p3 = 63e10592-0250-40bc-bde6-a1390141b5dc [Type: Guid (0)]
+
+NHibernate: Batch commands:
+command 0:INSERT INTO RatePrices (RoomTypeId, Value, IsActive, RateCategoryId, Id) VALUES (@p0, @p1, @p2, @p3, @p4);@p0 = 5de592c7-8044-45d5-a5c3-d7deba9ef88a [Type: Guid (0)], @p1 = 0 [Type: Double (0)], @p2 = True [Type: Boolean (0)], @p3 = 63e10592-0250-40bc-bde6-a1390141b5dc [Type: Guid (0)], @p4 = 3a1fc2ff-f848-445b-8e8b-a1390141b5f4 [Type: Guid (0)]
+
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="df971007-577f-477d-9c47-5481eebe6038" name="Mark@MACPC 2012-09-19 16:38:36" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-09-19 16_38_36" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-09-19T16:38:36.2388479+02:00" queuing="2012-09-19T16:38:36.7674590+02:00" start="2012-09-19T16:38:37.4338412+02:00" finish="2012-09-19T16:38:42.9593417+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Tes2t" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="b036e0c1-7fa7-30d1-16a2-959bd0c6e442">
+      <Execution timeOut="1800000" id="ad4d29e5-487e-458a-896e-0e53c58ea9f3" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tes2t" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b036e0c1-7fa7-30d1-16a2-959bd0c6e442" executionId="ad4d29e5-487e-458a-896e-0e53c58ea9f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ad4d29e5-487e-458a-896e-0e53c58ea9f3" testId="b036e0c1-7fa7-30d1-16a2-959bd0c6e442" testName="Tes2t" computerName="MACPC" duration="00:00:04.6728022" startTime="2012-09-19T16:38:37.7103605+02:00" endTime="2012-09-19T16:38:42.8508836+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad4d29e5-487e-458a-896e-0e53c58ea9f3">
+      <Output>
+        <StdOut>Starting NH Session
+Danish
+NHibernate: SELECT this_.Id as Id4_0_, this_.Name as Name4_0_, this_.[Alpha-2 code] as column3_4_0_, this_.CurrencyId as CurrencyId4_0_, this_.LanguageId as LanguageId4_0_ FROM Countries this_ WHERE this_.[Alpha-2 code] = @p0;@p0 = 'DK' [Type: String (4000)]
+NHibernate: Batch commands:
+command 0:UPDATE Countries SET Name = @p0, [Alpha-2 code] = @p1, CurrencyId = @p2, LanguageId = @p3 WHERE Id = @p4;@p0 = ' Denmark11111' [Type: String (4000)], @p1 = 'DK' [Type: String (4000)], @p2 = f21d8d81-ae42-439e-a0bd-a06e014192b5 [Type: Guid (0)], @p3 = 3873b730-57d4-4022-835c-9f31011587e3 [Type: Guid (0)], @p4 = 61 [Type: Int32 (0)]
+
+NHibernate: SELECT this_.Id as Id4_0_, this_.Name as Name4_0_, this_.[Alpha-2 code] as column3_4_0_, this_.CurrencyId as CurrencyId4_0_, this_.LanguageId as LanguageId4_0_ FROM Countries this_ WHERE this_.[Alpha-2 code] = @p0;@p0 = 'DK' [Type: String (4000)]
+NHibernate: SELECT language0_.Id as Id10_0_, language0_.Name as Name10_0_, language0_.Shortname as Shortname10_0_, language0_.IsActive as IsActive10_0_ FROM Languages language0_ WHERE language0_.Id=@p0;@p0 = 3873b730-57d4-4022-835c-9f31011587e3 [Type: Guid (0)]
+NHibernate: SELECT this_.Id as Id4_0_, this_.Name as Name4_0_, this_.[Alpha-2 code] as column3_4_0_, this_.CurrencyId as CurrencyId4_0_, this_.LanguageId as LanguageId4_0_ FROM Countries this_ WHERE this_.[Alpha-2 code] = @p0;@p0 = 'DK' [Type: String (4000)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

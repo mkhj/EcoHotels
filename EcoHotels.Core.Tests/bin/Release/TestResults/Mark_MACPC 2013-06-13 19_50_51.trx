@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="974fe26f-6ae2-4bc5-8a97-a74086f70d47" name="Mark@MACPC 2013-06-13 19:50:51" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-06-13 19_50_51" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-13T19:50:51.6661724+02:00" queuing="2013-06-13T19:50:52.1811568+02:00" start="2013-06-13T19:50:52.7225256+02:00" finish="2013-06-13T19:50:58.6306768+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\release\ecohotels.core.tests.dll" id="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c">
+      <Execution timeOut="1800000" id="824d4bb2-3aba-4491-a01d-f296ba4c3010" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Release/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.SearchServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" executionId="824d4bb2-3aba-4491-a01d-f296ba4c3010" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="824d4bb2-3aba-4491-a01d-f296ba4c3010" testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" testName="TestMethod1" computerName="MACPC" duration="00:00:04.9925289" startTime="2013-06-13T19:50:53.1182916+02:00" endTime="2013-06-13T19:50:58.5300252+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="824d4bb2-3aba-4491-a01d-f296ba4c3010">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT searchtagc0_.Id as Id26_0_, searchtagc0_.Name as Name26_0_, searchtagc0_.CountryId as CountryId26_0_ FROM SearchTagCities searchtagc0_ WHERE searchtagc0_.Id=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT hotels0_.SearchTagCityId as SearchT28_1_, hotels0_.Id as Id1_, hotels0_.Id as Id9_0_, hotels0_.Name as Name9_0_, hotels0_.Address1 as Address3_9_0_, hotels0_.Address2 as Address4_9_0_, hotels0_.Zipcode as Zipcode9_0_, hotels0_.City as City9_0_, hotels0_.Country as Country9_0_, hotels0_.Phone as Phone9_0_, hotels0_.Fax as Fax9_0_, hotels0_.Email as Email9_0_, hotels0_.WWW as WWW9_0_, hotels0_.VatNo as VatNo9_0_, hotels0_.CategoryOneId as Categor13_9_0_, hotels0_.CategoryTwoId as Categor14_9_0_, hotels0_.CategoryThreeId as Categor15_9_0_, hotels0_.IsActive as IsActive9_0_, hotels0_.CheckIn as CheckIn9_0_, hotels0_.CheckOut as CheckOut9_0_, hotels0_.Created as Created9_0_, hotels0_.Modified as Modified9_0_, hotels0_.Verified as Verified9_0_, hotels0_.AboutMultiLanguageId as AboutMu22_9_0_, hotels0_.OrganizationId as Organiz23_9_0_, hotels0_.LocalCurrencyId as LocalCu24_9_0_, hotels0_.CancellationPolicyMultiLanguageId as Cancell25_9_0_, hotels0_.PaymentPolicyMultiLanguageId as Payment26_9_0_, hotels0_.PageInformationId as PageInf27_9_0_, hotels0_.SearchTagCityId as SearchT28_9_0_ FROM Hotels hotels0_ WHERE hotels0_.SearchTagCityId=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT this_.Id as Id21_1_, this_.Quantity as Quantity21_1_, this_.RateCategoryId as RateCate3_21_1_, this_.RoomTypeId as RoomTypeId21_1_, this_.CalendarId as CalendarId21_1_, d1_.Id as Id7_0_, d1_.Value as Value7_0_ FROM RoomTypeInventory this_ inner join Calendar d1_ on this_.CalendarId=d1_.Id WHERE this_.RoomTypeId in (@p0) and d1_.Value &gt;= @p1 and d1_.Value &lt;= @p2;@p0 = 1 [Type: Int32 (0)], @p1 = 13-06-2013 00:00:00 [Type: DateTime (0)], @p2 = 16-06-2013 00:00:00 [Type: DateTime (0)]
+NHibernate: SELECT this_.Id as Id15_0_, this_.Name as Name15_0_, this_.Description as Descript3_15_0_, this_.HotelId as HotelId15_0_ FROM RateCategories this_ WHERE this_.HotelId in (@p0);@p0 = 1 [Type: Int32 (0)]
+-------
+NHibernate: SELECT this_.Id as Id19_2_, this_.IpAddress as IpAddress19_2_, this_.HotelId as HotelId19_2_, this_.HotelName as HotelName19_2_, this_.HotelAddress as HotelAdd5_19_2_, this_.HotelPhoneNumber as HotelPho6_19_2_, this_.HotelEmail as HotelEmail19_2_, this_.Arrival as Arrival19_2_, this_.Departure as Departure19_2_, this_.CurrencySymbol as Currenc10_19_2_, this_.Firstname as Firstname19_2_, this_.Lastname as Lastname19_2_, this_.PhoneNumber as PhoneNu13_19_2_, this_.Country as Country19_2_, this_.Email as Email19_2_, this_.CreditCardHolder as CreditC16_19_2_, this_.CreditCardNumber as CreditC17_19_2_, this_.CreditCardMonth as CreditC18_19_2_, this_.CreditCardYear as CreditC19_19_2_, this_.CreditCardCvc as CreditC20_19_2_, this_.Type as Type19_2_, this_.Created as Created19_2_, this_.Modified as Modified19_2_, this_.Cancelled as Cancelled19_2_, this_.CustomerId as CustomerId19_2_, i1_.Id as Id18_0_, i1_.RoomTypeId as RoomTypeId18_0_, i1_.Description as Descript3_18_0_, i1_.GuestName as GuestName18_0_, i1_.Adults as Adults18_0_, i1_.Children as Children18_0_, i1_.Babies as Babies18_0_, i1_.Type as Type18_0_, i1_.ReservationId as Reservat9_18_0_, p2_.Id as Id20_1_, p2_.Date as Date20_1_, p2_.Price as Price20_1_, p2_.ReservationItemId as Reservat4_20_1_ FROM Reservations this_ inner join ReservationItems i1_ on this_.Id=i1_.ReservationId inner join ReservationPrices p2_ on i1_.Id=p2_.ReservationItemId WHERE this_.HotelId in (@p0) and p2_.Date &gt;= @p1 and p2_.Date &lt;= @p2;@p0 = 1 [Type: Int32 (0)], @p1 = 13-06-2013 00:00:00 [Type: DateTime (0)], @p2 = 16-06-2013 00:00:00 [Type: DateTime (0)]
+-------
+NHibernate: SELECT roomtypes0_.HotelId as HotelId1_, roomtypes0_.Id as Id1_, roomtypes0_.Id as Id22_0_, roomtypes0_.BedTypes as BedTypes22_0_, roomtypes0_.RoomView as RoomView22_0_, roomtypes0_.Capacity as Capacity22_0_, roomtypes0_.PhysicalRooms as Physical5_22_0_, roomtypes0_.RoomSize as RoomSize22_0_, roomtypes0_.Quantity as Quantity22_0_, roomtypes0_.Price as Price22_0_, roomtypes0_.Smoking as Smoking22_0_, roomtypes0_.HotelId as HotelId22_0_, roomtypes0_.NameMultiLanguageId as NameMul11_22_0_, roomtypes0_.DescriptionMultiLanguageId as Descrip12_22_0_ FROM RoomTypes roomtypes0_ WHERE roomtypes0_.HotelId=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT items0_.RateCategoryId as RateCate5_1_, items0_.Id as Id1_, items0_.Id as Id16_0_, items0_.RoomTypeId as RoomTypeId16_0_, items0_.Value as Value16_0_, items0_.IsActive as IsActive16_0_, items0_.RateCategoryId as RateCate5_16_0_ FROM RatePrices items0_ WHERE items0_.RateCategoryId=@p0;@p0 = 5 [Type: Int32 (0)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2728d077-f4eb-49fa-85be-61e26d91392d" name="Mark@MACPC 2012-12-20 15:32:17" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-12-20 15_32_17" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-20T15:32:17.8881063+01:00" queuing="2012-12-20T15:32:18.3316189+01:00" start="2012-12-20T15:32:18.6989333+01:00" finish="2012-12-20T15:32:24.4264980+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Insert_dates_into_calendar" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="a9222e75-00f3-e2f0-3786-38194d1e0f15">
+      <Execution timeOut="1800000" id="ba4ecfc9-8a63-4a62-9295-ac69a64ec1ea" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Install.DataInstaller, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Insert_dates_into_calendar" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a9222e75-00f3-e2f0-3786-38194d1e0f15" executionId="ba4ecfc9-8a63-4a62-9295-ac69a64ec1ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ba4ecfc9-8a63-4a62-9295-ac69a64ec1ea" testId="a9222e75-00f3-e2f0-3786-38194d1e0f15" testName="Insert_dates_into_calendar" computerName="MACPC" duration="00:00:05.0062320" startTime="2012-12-20T15:32:18.9382738+01:00" endTime="2012-12-20T15:32:24.2574943+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba4ecfc9-8a63-4a62-9295-ac69a64ec1ea">
+      <Output>
+        <StdOut>NHibernate: SELECT date_.Value FROM Calendar date_ WHERE date_.Value=@p0;@p0 = 20-12-2012 00:00:00 [Type: DateTime (0)]</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Install.DataInstaller.Insert_dates_into_calendar threw exception: 
+NHibernate.Exceptions.GenericADOException: could not retrieve snapshot: [EcoHotels.Core.Domain.Models.Date#20-12-2012 00:00:00][SQL: SELECT date_.Value FROM Calendar date_ WHERE date_.Value=?] ---&gt; System.Data.SqlClient.SqlException: Invalid column name 'Value'.
+Invalid column name 'Value'.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.GetDatabaseSnapshot(Object id, ISessionImplementor session)
+ --- End of inner exception stack trace ---
+    at NHibernate.Persister.Entity.AbstractEntityPersister.GetDatabaseSnapshot(Object id, ISessionImplementor session)
+   at NHibernate.Engine.StatefulPersistenceContext.GetDatabaseSnapshot(Object id, IEntityPersister persister)
+   at NHibernate.Engine.ForeignKeys.IsTransient(String entityName, Object entity, Nullable`1 assumed, ISessionImplementor session)
+   at NHibernate.Event.Default.AbstractSaveEventListener.GetEntityState(Object entity, String entityName, EntityEntry entry, ISessionImplementor source)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   at EcoHotels.Core.Tests.Install.DataInstaller.Insert_dates_into_calendar() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Install\DataInstaller.cs:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="213a5b04-14a5-4ec3-a057-a28cae770849" name="Mark@MACPC 2013-01-03 20:32:33" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-01-03 20_32_33" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-03T20:32:33.7214683+01:00" queuing="2013-01-03T20:32:34.2402022+01:00" start="2013-01-03T20:32:34.8253653+01:00" finish="2013-01-03T20:32:40.3516886+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_delete_entity" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="8cd56fb3-7443-6b9a-2f0e-a346cddec2c3">
+      <Execution timeOut="1800000" id="da29c63c-312a-4e81-aa23-9b115ae76ce0" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_delete_entity" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8cd56fb3-7443-6b9a-2f0e-a346cddec2c3" executionId="da29c63c-312a-4e81-aa23-9b115ae76ce0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="da29c63c-312a-4e81-aa23-9b115ae76ce0" testId="8cd56fb3-7443-6b9a-2f0e-a346cddec2c3" testName="Can_delete_entity" computerName="MACPC" duration="00:00:04.6764633" startTime="2013-01-03T20:32:35.1282043+01:00" endTime="2013-01-03T20:32:40.2276223+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da29c63c-312a-4e81-aa23-9b115ae76ce0">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT organizati0_.Id as Id13_0_, organizati0_.Name as Name13_0_, organizati0_.VatNo as VatNo13_0_, organizati0_.Phone as Phone13_0_, organizati0_.Email as Email13_0_, organizati0_.Address1 as Address6_13_0_, organizati0_.Address2 as Address7_13_0_, organizati0_.City as City13_0_, organizati0_.Zipcode as Zipcode13_0_, organizati0_.Country as Country13_0_, organizati0_.Created as Created13_0_ FROM Organizations organizati0_ WHERE organizati0_.Id=@p0;@p0 = 1 [Type: Int32 (0)]
+Ending NH Session</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.IsNotNull failed. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester.Can_delete_entity() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Services\OrganizationServiceTester.cs:line 52
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

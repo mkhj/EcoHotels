@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c70ee15d-f414-450d-991b-9fc17baac577" name="Mark@MACPC 2012-09-19 15:54:57" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-09-19 15_54_57" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-09-19T15:54:57.6798024+02:00" queuing="2012-09-19T15:54:58.2170424+02:00" start="2012-09-19T15:54:58.7884704+02:00" finish="2012-09-19T15:55:04.3786968+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Tes2t" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="b036e0c1-7fa7-30d1-16a2-959bd0c6e442">
+      <Execution timeOut="1800000" id="e1283bed-6681-49b2-bde3-e31a889c0f2b" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tes2t" />
+    </UnitTest>
+    <UnitTest name="Test" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="d75c8714-168d-8b15-2b06-a263426686c2">
+      <Execution timeOut="1800000" id="8af04a87-0c65-411b-b556-f78c77e97571" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test" />
+    </UnitTest>
+    <UnitTest name="Tes3t" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="5bac52e2-e394-bbe2-c82b-7db332a4eeb0">
+      <Execution timeOut="1800000" id="ed73f4ee-b559-4614-8276-d17614b43724" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tes3t" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b036e0c1-7fa7-30d1-16a2-959bd0c6e442" executionId="e1283bed-6681-49b2-bde3-e31a889c0f2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5bac52e2-e394-bbe2-c82b-7db332a4eeb0" executionId="ed73f4ee-b559-4614-8276-d17614b43724" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d75c8714-168d-8b15-2b06-a263426686c2" executionId="8af04a87-0c65-411b-b556-f78c77e97571" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e1283bed-6681-49b2-bde3-e31a889c0f2b" testId="b036e0c1-7fa7-30d1-16a2-959bd0c6e442" testName="Tes2t" computerName="MACPC" duration="00:00:05.1555281" startTime="2012-09-19T15:54:59.0121576+02:00" endTime="2012-09-19T15:55:04.2243624+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1283bed-6681-49b2-bde3-e31a889c0f2b">
+      <Output>
+        <StdOut>Starting NH Session
+Danish
+NHibernate: SELECT this_.Id as Id4_0_, this_.Name as Name4_0_, this_.[Alpha-2 code] as column3_4_0_, this_.CurrencyId as CurrencyId4_0_, this_.LanguageId as LanguageId4_0_ FROM Countries this_ WHERE this_.[Alpha-2 code] = @p0;@p0 = 'DK' [Type: String (4000)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ed73f4ee-b559-4614-8276-d17614b43724" testId="5bac52e2-e394-bbe2-c82b-7db332a4eeb0" testName="Tes3t" computerName="MACPC" duration="00:00:00.0125379" startTime="2012-09-19T15:55:04.2507360+02:00" endTime="2012-09-19T15:55:04.2771096+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed73f4ee-b559-4614-8276-d17614b43724">
+      <Output>
+        <StdOut>Starting NH Session
+Danish
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8af04a87-0c65-411b-b556-f78c77e97571" testId="d75c8714-168d-8b15-2b06-a263426686c2" testName="Test" computerName="MACPC" duration="00:00:00.0031515" startTime="2012-09-19T15:55:04.2829704+02:00" endTime="2012-09-19T15:55:04.2927384+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8af04a87-0c65-411b-b556-f78c77e97571">
+      <Output>
+        <StdOut>Starting NH Session
+Danish
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

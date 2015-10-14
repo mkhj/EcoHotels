@@ -1,0 +1,25 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.HotelSectionModel
+
+<ul id="sidebar" class="nav nav-list">
+    <li class="nav-header">Hotel</li>    
+    <li class="@(Model.Page == "details" ? "active" : "")"><a href="@Url.Action("details", "hotel")">Details</a></li>
+    <li class="@(Model.Page == "policies" ? "active" : "")"><a href="@Url.Action("policies", "hotel")">Policies</a></li>
+    <li class="@(Model.Page == "photos" ? "active" : "")"><a href="@Url.Action("photos", "hotel")">Photos</a></li> 
+    <li class="@(Model.Page == "information" ? "active" : "")"><a href="@Url.Action("edit", "hotel")">Contact Information</a></li>
+
+    <li class="nav-header">Rooms</li>
+    @foreach (var item in Model.Items)
+    {
+        if (item.IsSelected)
+        { 
+            <li class="active"><a>@item.Name</a></li>
+        }
+        else
+        { 
+            <li><a href="@Url.Action("edit", "roomtype", new { id = item.Id })">@item.Name</a></li>
+        }
+    }  
+
+    <li class="divider"></li>
+    <li class="@(Model.Page == "add-roomtype" ? "active" : "")"><a href="@Url.Action("create", "roomtype")">Add Roomtype</a></li>
+</ul>

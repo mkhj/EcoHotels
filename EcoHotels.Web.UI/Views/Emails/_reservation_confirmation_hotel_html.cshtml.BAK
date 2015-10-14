@@ -1,0 +1,172 @@
+﻿@{
+    Layout = null;
+}
+
+@* comment *@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td bgcolor="#000000">        
+        <center>
+        <table style="width: 600px;">
+            <tr>
+                <td>
+                
+                    <h3 style="font-size: 14px; color: #B38136; font-weight: bold; margin-bottom: 10px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #595959;">Reservation confirmation</h3>
+	                <span style="color: #CDCDCD;">Dear @Model.Reservation.Firstname @Model.Reservation.Lastname</span>
+                    <br /><br />
+                            
+                    <span style="color: #CDCDCD;">Thank you for your reservation. Please print this confirmation and show it at check-in.</span>
+                    <br /><br />
+                    <table cellspacing="0">
+	                    <tbody>
+	                        <tr>
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Confirmation no.</td>
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@Model.Reservation.Id</td>
+                            </tr>
+	                        <tr>
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Password</td>
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;"></td>
+                            </tr>
+	                        <tr>
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Name</td>
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@Model.Reservation.Firstname @Model.Reservation.Lastname</td>
+                            </tr>
+	                        <tr>
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Phone number</td>
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@Model.Reservation.PhoneNumber</td>
+                            </tr>
+	                        <tr>	
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">E-mail</td>
+	                            <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;"><a href="mailto:@Model.Reservation.Email" style="color: #FFA500;">@Model.Reservation.Email</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 style="font-size: 14px; color: #B38136; font-weight: bold; margin-bottom: 10px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #595959;">Your reservation</h3>
+
+                    <h4 style="font-size: 12px; color: #B38136; font-weight: bold; margin-bottom: 10px;">Hotel information</h4>
+                    <table cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Hotel</td>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@Model.Hotel.Name</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Address</td>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@Model.Hotel.Address1, @Model.Hotel.Address2, @Model.Hotel.Zipcode, @Model.Hotel.City</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Phone number</td>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@Model.Hotel.Phone</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">E-mail</td>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;"><a href="mailto:@Model.Hotel.Email" style="color: #FFA500;">@Model.Hotel.Email</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 style="font-size: 12px; color: #B38136; font-weight: bold; margin-bottom: 10px;">Information about your reservation</h4>
+                    <table cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Check-In</td>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@Model.Reservation.Arrival.ToString("dd/MM/yyyy")</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Check-Out</td>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@Model.Reservation.Departure.ToString("dd/MM/yyyy")</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Quantity</td>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@Model.Reservation.Items.Count room(s) for @Model.Reservation.Duration night(s)</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">Company code</td>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;"></td>
+                            </tr>
+                        </tbody>    
+                    </table>
+
+                    <h4 style="font-size: 12px; color: #B38136; font-weight: bold; margin-bottom: 10px;">Order information</h4>
+                    <table style="width: 100%;" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th style="color: #B38136; padding: 0px 0.6em 0.6em 1.2em; font-weight: normal; text-align: left; width: 200px;">Room type</th>
+                                <th style="color: #B38136; padding: 0px 0.6em 0.6em 1.2em; font-weight: normal; text-align: left; width: 150px;">Name of guest</th>
+                                <th style="color: #B38136; padding: 0px 0.6em 0.6em 1.2em; font-weight: normal; text-align: right; width: 40px;">Guests</th>
+                                <th style="color: #B38136; padding: 0px 0.6em 0.6em 1.2em; font-weight: normal; text-align: right; width: 90px;">Price</th>
+                            </tr>
+                        </thead>                            
+                        <tbody>
+                            @foreach(var item in @Model.Reservation.Items)
+                            {
+                                var result = new List<string>();
+                                foreach(var addon in item.Addons)
+                                {
+                                    result.Add(addon.Name + " " + addon.CalculatePrice(item.Adults, item.Children, item.Babies, Model.Reservation.Duration));
+                                }
+                        
+                                var addonDescription = string.Join(", ", result.ToArray());
+                        
+                                <tr>
+                                    <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@item.Description<br />(@addonDescription)</td>
+                                    <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@item.NameOfPrimaryGuest</td>
+                                    <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em; text-align: right;">@item.TotalNumberOfGuests</td>
+                                    <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em; text-align: right;">@item.TotalPriceWithoutDiscount</td>
+                                </tr>                         
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em; text-align: right;" colspan="3"><strong>Total</strong></td>
+                                <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em; text-align: right;"><strong>@Model.Reservation.TotalPrice</strong></td>
+                            </tr>                                       
+                        </tfoot>
+                    </table>
+
+                    <h4 style="font-size: 12px; color: #B38136; font-weight: bold; margin-bottom: 10px;">Rates per day</h4>
+                    @foreach(var item in @Model.Reservation.Items)
+                    {
+                        <table style="width: 100%;" cellspacing="0">     
+                            <thead>
+                                <tr>
+                                    <th style="color: #B38136; padding: 0px 0.6em 0.6em 1.2em; text-align: left;" colspan="2">@item.Description</th>
+                                </tr>
+                            </thead>                       
+                            <tbody>
+                                @foreach (var pricePerDate in item.PricePerDate)
+                                { 
+                                    <tr>
+                                        <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em;">@pricePerDate.Date.ToString("dd/MM/yyyy")</td>
+                                        <td style="color: #CDCDCD; padding: 0px 0.6em 0.6em 1.2em; text-align: right;">@pricePerDate.Price</td>
+                                    </tr>                          
+                                }                              
+                            </tbody>
+                        </table>            
+                    }
+
+                    <h4 style="font-size: 12px; color: #B38136; font-weight: bold; margin-bottom: 10px;">How to change or cancel a reservation</h4>
+                    <span style="color: #CDCDCD;">You can change or cancel your booking through our online self service tool My Reservation:</span>
+                    <br /><br />
+                    
+                    https://booking.Hotelguldsmeden.com/en/logon.aspx?id=24440&c=220238
+                    <br /><br />
+
+                    <h4 style="font-size: 12px; color: #B38136; font-weight: bold; margin-bottom: 10px;">Cancellation Policy</h4>
+                    <span style="color: #CDCDCD;">Full refund if cancellation occurs minimum 72 hours prior to booking date at 14.00. Cancellation less than 72 hours before, will incur payment for the first night of the booking.</span>
+
+                </td>
+            </tr>       
+        </table>
+        </center>
+    </td>
+</tr>
+</table>
+</body>
+</html>

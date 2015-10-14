@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7f6b13b9-6c9f-4a80-89ea-8fb6f2162b4a" name="Mark@MACPC 2012-12-20 16:06:15" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-12-20 16_06_15" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-20T16:06:15.8840726+01:00" queuing="2012-12-20T16:06:16.4703926+01:00" start="2012-12-20T16:06:16.8563866+01:00" finish="2012-12-20T16:06:22.5358730+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="insert_inventory_data" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="1cc80d08-41ae-fbe4-c02f-ebd2d23eccc2">
+      <Execution timeOut="1800000" id="01cc62a4-7f57-4b14-b1b9-8f349ba208ce" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Install.DataInstaller, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="insert_inventory_data" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1cc80d08-41ae-fbe4-c02f-ebd2d23eccc2" executionId="01cc62a4-7f57-4b14-b1b9-8f349ba208ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="01cc62a4-7f57-4b14-b1b9-8f349ba208ce" testId="1cc80d08-41ae-fbe4-c02f-ebd2d23eccc2" testName="insert_inventory_data" computerName="MACPC" duration="00:00:04.9159340" startTime="2012-12-20T16:06:17.1006866+01:00" endTime="2012-12-20T16:06:22.4274038+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01cc62a4-7f57-4b14-b1b9-8f349ba208ce">
+      <Output>
+        <StdOut>NHibernate: SELECT date0_.Id as Id7_0_, date0_.Value as Value7_0_ FROM Calendar date0_ WHERE date0_.Id=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: INSERT INTO RoomTypeInventory (Quantity, PriceGroup, RoomTypeId, CalendarId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 0 [Type: Int32 (0)], @p1 = 0 [Type: Int32 (0)], @p2 = 88d2d49f-af10-4d3a-ae4f-a0b9011c2fa0 [Type: Guid (0)], @p3 = NULL [Type: Int32 (0)]</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

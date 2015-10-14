@@ -1,0 +1,81 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.LogOnModel
+@{
+    ViewBag.Title = "logon";
+    Layout = "~/Areas/Admin/Views/Shared/_Basic.cshtml";
+}
+
+@section stylesheet{
+    <style type="text/css">
+      /* Override some defaults */
+      html, body {
+        background-color: #eee;
+      }
+      body {
+        padding-top: 40px;
+      }
+      .container {
+        width: 300px;
+        margin: 150px auto 100px;
+      }
+ 
+      /* The white background content wrapper */
+      .container > .content {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+           -moz-border-radius: 10px 10px 10px 10px;
+                border-radius: 10px 10px 10px 10px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+ 
+      .login-form, reset-form {
+        margin-left: 65px;
+        margin-right: 36px;
+      }
+      
+      #reset{ display: none; }
+ 
+      legend {
+        margin-right: -50px;
+        font-weight: bold;
+        color: #404040;
+      }
+ 
+    </style>
+}
+    <div id="view" class="container" data-view="account" data-action="logon">    
+        <div class="content">
+            <div class="row">
+                <div id="login" class="login-form">
+                    <h2>Login</h2>
+
+                    @if (ViewData["error"] != null)
+                    {
+                        <div class="alert alert-error"><p>@ViewData["error-login"]</p></div>
+                    }
+
+                    <form class="form" action="@Url.Action("logon", "account", null)" method="post">
+                        <div>
+                            @Html.AntiForgeryToken()
+                        </div>
+                        <fieldset>
+                            <div class="clearfix">
+                                <input name="email" type="text" placeholder="Email">
+                            </div>
+                            <div class="clearfix">
+                                <input name="password" type="password" placeholder="Password">
+                            </div>
+                            
+                            <div style="text-align: right;">
+                                <a href="@Url.Action("reset", "account", null)" style="margin-right: 8px;">Forgot password?</a>
+                                <button class="btn btn-primary" type="submit">Sign in</button>
+                            </div>                     
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->

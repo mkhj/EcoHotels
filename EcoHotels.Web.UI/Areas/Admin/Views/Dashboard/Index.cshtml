@@ -1,0 +1,85 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.DashboardModel
+
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@section javascript{
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1', { packages: ['imageareachart'] });
+    </script>
+    <script type="text/javascript">
+        function drawVisualization() {
+            var stats = @Html.Raw(Json.Encode(Model.TotalNumberOfRoomsBookedInMonth.Select(x => new object[2] { x.Key.ToString(), x.Value })));
+            var data = google.visualization.arrayToDataTable(stats);
+
+            var options = {
+                //colors: ['#68ae00'],
+                legend: 'top',
+                max: 20
+            };
+
+            new google.visualization.ImageAreaChart(document.getElementById('visualization')).
+            draw(data, options);
+        }
+
+
+        google.setOnLoadCallback(drawVisualization);
+    </script>
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "frontdesk" });}
+
+@*
+@{Html.RenderAction("dashboard", "navigation", new { selected = "dashboard" });}
+*@
+<div class="container">
+
+    <div class="row">
+        <div class="span12">
+            <div class="content">
+
+                <h2>Performance</h2>
+                <small>Number of rooms sold within the last 30 days.</small>
+
+                <div id="visualization" style="width: 900px; height: 300px;"></div>
+                <br /><br />
+                <h3>Arriving guest</h3>
+                <small>Guests arriving within the next 7 days.</small>
+
+                @if (Model.UpcomingGuest.Count() > 0)
+                {                    
+                    <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Fullname</th>
+                        <th>Arrival</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        @foreach (var item in Model.UpcomingGuest)
+                        { 
+                            <td>@item.ReservationId</td>
+                            <td>@item.Fullname</td>
+                            <td>@item.Arrival.ToShortDateString()</td>                    
+                        }
+                      </tr>
+                    </tbody>
+                  </table> 
+                }
+                else 
+                { 
+                    <br /><br />
+                    <strong>No guests are arriving</strong>
+                    <br /><br />
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>

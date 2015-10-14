@@ -1,0 +1,105 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Price.AddonModel
+
+@{
+    ViewBag.Title = "Edit Addon";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("navigation", "app", new { selected = "pricing" });}
+
+@{Html.RenderAction("PricingNavigation", "app", new { selected = "addons" });}
+
+<div id="view" class="container">
+    <div id="addon" class="edit">
+
+        <div class="row">
+            <div class="span2">
+                <div style="text-align: center; margin-bottom: 12px;">
+                    <a class="btn" href="@Url.Action("create", "addon")" >Create addon</a>
+                </div>
+                    <ul id="sidebar" class="nav nav-pills nav-stacked">
+                        @foreach (var item in Model.MenuItems)
+                        {
+                            if (item.IsSelected)
+                            {
+                                <li class="active"><a href="@Url.Action("edit", "addon", new { id = item.Id })">@item.Name</a></li>
+                            }
+                            else
+                            { 
+                                <li><a href="@Url.Action("edit", "addon", new { id = item.Id })">@item.Name</a></li>
+                            }                        
+                        
+                        }   
+                    </ul>       
+            </div>
+            <div class="span10">
+                <form class="form-horizontal ajaxform" action="@Url.Action("edit", "addon", null)" method="post">
+                    <div>
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="Id" value="@Model.Id" readonly="readonly" />
+                    </div>
+                
+                    <fieldset>
+                        <legend style="padding-bottom: 5px;">
+                            Edit addon
+                            <span id="language-selector" class="btn-toolbar pull-right">                                
+                                @Html.LanguageSelectorFor(m => m.AvailableLanguages, Model.SelectedLanguageId)               
+                            </span>   
+                        </legend>
+
+                        <div class="control-group">
+                            <div class="alert hidden">...</div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="input01">Name:</label>
+                            <div class="controls">
+                                @Html.TextBoxLocalizationFor(m => m.Name, Model.SelectedLanguageId, new { @class = "input-xlarge required" })
+                            </div>
+                        </div>
+
+                       <div class="control-group">
+                            <label class="control-label" for="input01">Description:</label>
+                            <div class="controls">
+                                @Html.TextAreaLocalizationFor(m => m.Description, Model.SelectedLanguageId, new { @class="span6", rows = "4" })
+                            </div>
+                        </div>
+
+                       <div class="control-group">
+                            <label class="control-label" for="input01">Price:</label>
+                            <div class="controls">
+                                <div class="input-prepend">
+                                    <span class="add-on">@Model.Currency</span>
+                                    @Html.TextBoxFor(m => m.Price, new { @class = "span1 required"}) 
+                                </div>
+                            </div>
+                        </div>
+
+                       <div class="control-group">
+                            <label class="control-label" for="input01">Calculation Rule:</label>
+                            <div class="controls">
+                                @Html.DropDownListFor(m => m.SelectedCalculationRule, Model.CalculationRules, new { @class = "required medium" })
+                            </div>
+                        </div>
+
+                       <div class="control-group">
+                            <label class="control-label" for="input01">Posting Rhythm:</label>
+                            <div class="controls">
+                                @Html.DropDownListFor(m => m.SelectedPostingRhythm, Model.PostingRhythms, new { @class = "required medium" })
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                        <div class="form-actions">
+                            <a data-toggle="modal" href="#model-delete" class="btn">Delete</a>
+                            <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>                                                       
+                        </div>
+	            </form>    
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@Html.Partial("Modal/Delete")

@@ -1,0 +1,54 @@
+﻿@model EcoHotels.Web.UI.Areas.Backend.Models.HotelListModel
+@{
+    ViewBag.Title = "New Hotels";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "frontdesk" });}
+
+<div class="container">
+    <h2>
+        Hotel
+        <small>Following hotels are inactive</small>
+    </h2>
+    <div class="row">
+        <div class="span9">
+            <div class="content">
+                @if (Model.Items.Count() == 0)
+                {
+                    
+                    <p>There are no inactive hotels</p>
+                }
+                else
+                {
+	                <table class="table table-striped" cellpadding="0" cellspacing="0">			
+		                <thead>
+			                <tr>
+				                <th>Name</th>
+                                <th style="width: 100px;"></th>
+			                </tr>
+		                </thead>				
+		                <tbody>
+                            @for (int i = 0; i < Model.Items.Count(); i++)
+                            {
+                                <tr>
+                                    <td>                                
+                                        @Html.DisplayFor(m => m.Items.ElementAt(i).Name)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Edit", "edit", "hotel", new { id = Model.Items.ElementAt(i).Id }, null)
+                                    </td>
+                                </tr>                    
+                            }
+		                </tbody>
+	                </table>                      
+                }    
+          
+            </div>
+        </div>
+        <div class="span3">
+            @{Html.RenderAction("backend", "navigation", new { page = "inactive-hotels" });}
+        </div>
+    </div>
+
+</div>

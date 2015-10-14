@@ -1,0 +1,52 @@
+﻿@model EcoHotels.Web.UI.Areas.Backend.Models.UserListModel
+@{
+    ViewBag.Title = "Backed";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "backend" });}
+
+<div id="view" class="container" data-view="roomtype" data-action="create">
+    <h2>
+        User
+        <small>Listing all available system users</small>
+    </h2>
+    <div class="row">
+
+        <div class="span9">
+            <div class="content">
+                <div class="clearfix">
+                    <div class="btn-toolbar pull-right clearfix">
+                        <a id="btn-remove-files" href="@Url.Action("create", "user")" class="btn btn-small">Add</a>                            
+                    </div>
+                </div>
+	            <table class="table table-striped" cellpadding="0" cellspacing="0">			
+		            <thead>
+			            <tr>
+				            <th>Name</th>
+                            <th style="width: 50px;"></th>
+			            </tr>
+		            </thead>				
+		            <tbody>
+                        @for (int i = 0; i < Model.Items.Count(); i++)
+                        {
+                            <tr>
+                                <td>                                
+                                    @Html.DisplayFor(m => m.Items.ElementAt(i).Name)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "edit", "user", new { id = Model.Items.ElementAt(i).Id }, null)
+                                </td>
+                            </tr>                    
+                        }
+		            </tbody>
+	            </table>
+            </div>
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("backend", "navigation", new { page = "list-users" });}
+        </div>
+
+    </div>
+</div>

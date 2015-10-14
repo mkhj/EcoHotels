@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="303a61be-3e14-4177-a546-34db116b5fd5" name="Mark@MACPC 2012-09-20 19:00:45" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-09-20 19_00_45" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-09-20T19:00:45.2456225+02:00" queuing="2012-09-20T19:00:45.7195160+02:00" start="2012-09-20T19:00:46.3556081+02:00" finish="2012-09-20T19:00:51.7990322+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="1" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Will_fetch_from_Second_Level_Cache_when_using_Id_with_different_SessionScopes" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="f93091aa-5648-82d3-2752-ab97d55bb584">
+      <Execution timeOut="1800000" id="52a3993c-e4f6-41c9-acd0-42c68e7d6906" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.NHCachingTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Will_fetch_from_Second_Level_Cache_when_using_Id_with_different_SessionScopes" />
+    </UnitTest>
+    <UnitTest name="Will_fetch_from_First_Level_Cache_when_using_Id_in_same_SessionScope" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="2f40d87f-3d39-4b7d-f3cc-9859612d2852">
+      <Execution timeOut="1800000" id="fa82abb7-23cc-4073-a60a-1d7c8a7f366f" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.NHCachingTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Will_fetch_from_First_Level_Cache_when_using_Id_in_same_SessionScope" />
+    </UnitTest>
+    <UnitTest name="Will_fetch_from_cache_when_using_a_Query" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="a8cd2f37-f169-ba6b-e524-c0cd926dc8b8">
+      <Execution timeOut="1800000" id="d705e74b-27be-432f-af75-d078afb49936" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.NHCachingTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Will_fetch_from_cache_when_using_a_Query" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a8cd2f37-f169-ba6b-e524-c0cd926dc8b8" executionId="d705e74b-27be-432f-af75-d078afb49936" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f40d87f-3d39-4b7d-f3cc-9859612d2852" executionId="fa82abb7-23cc-4073-a60a-1d7c8a7f366f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f93091aa-5648-82d3-2752-ab97d55bb584" executionId="52a3993c-e4f6-41c9-acd0-42c68e7d6906" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d705e74b-27be-432f-af75-d078afb49936" testId="a8cd2f37-f169-ba6b-e524-c0cd926dc8b8" testName="Will_fetch_from_cache_when_using_a_Query" computerName="MACPC" duration="00:00:04.6947067" startTime="2012-09-20T19:00:46.5441884+02:00" endTime="2012-09-20T19:00:51.6182687+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d705e74b-27be-432f-af75-d078afb49936">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT this_.Id as Id4_0_, this_.Name as Name4_0_, this_.[Alpha-2 code] as column3_4_0_, this_.CurrencyId as CurrencyId4_0_, this_.LanguageId as LanguageId4_0_ FROM Countries this_ WHERE this_.[Alpha-2 code] = @p0;@p0 = 'DK' [Type: String (4000)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fa82abb7-23cc-4073-a60a-1d7c8a7f366f" testId="2f40d87f-3d39-4b7d-f3cc-9859612d2852" testName="Will_fetch_from_First_Level_Cache_when_using_Id_in_same_SessionScope" computerName="MACPC" duration="00:00:00.0455082" startTime="2012-09-20T19:00:51.6319481+02:00" endTime="2012-09-20T19:00:51.6964367+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa82abb7-23cc-4073-a60a-1d7c8a7f366f">
+      <Output>
+        <StdOut>Starting NH Session
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;1&gt;. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.Integration.NHCachingTester.Will_fetch_from_First_Level_Cache_when_using_Id_in_same_SessionScope() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\NHCachingTester.cs:line 38
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="52a3993c-e4f6-41c9-acd0-42c68e7d6906" testId="f93091aa-5648-82d3-2752-ab97d55bb584" testName="Will_fetch_from_Second_Level_Cache_when_using_Id_with_different_SessionScopes" computerName="MACPC" duration="00:00:00.0063390" startTime="2012-09-20T19:00:51.7120703+02:00" endTime="2012-09-20T19:00:51.7198871+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52a3993c-e4f6-41c9-acd0-42c68e7d6906">
+      <Output>
+        <StdOut>Starting NH Session
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;2&gt;. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.Integration.NHCachingTester.Will_fetch_from_Second_Level_Cache_when_using_Id_with_different_SessionScopes() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\NHCachingTester.cs:line 54
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

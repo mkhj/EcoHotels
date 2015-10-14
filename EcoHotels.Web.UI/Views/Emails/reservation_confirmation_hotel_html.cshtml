@@ -1,0 +1,228 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; margin: 0;" bgcolor="transparent !important">
+<style type="text/css">
+.clearfix:before { display: table !important; line-height: 0 !important; content: "" !important; }
+.clearfix:after { display: table !important; line-height: 0 !important; content: "" !important; }
+.clearfix:after { clear: both !important; }
+a:focus { outline: 5px auto -webkit-focus-ring-color !important; outline-offset: -2px !important; }
+a:hover { outline: 0 !important; }
+a:active { outline: 0 !important; }
+a:visited { text-decoration: underline !important; }
+a[href]:after { content: " (" attr(href) ")" !important; }
+a:hover { color: #005580 !important; text-decoration: underline !important; }
+a:focus { color: #005580 !important; text-decoration: underline !important; }
+.row:before { display: table !important; line-height: 0 !important; content: "" !important; }
+.row:after { display: table !important; line-height: 0 !important; content: "" !important; }
+.row:after { clear: both !important; }
+.row-fluid:before { display: table !important; line-height: 0 !important; content: "" !important; }
+.row-fluid:after { display: table !important; line-height: 0 !important; content: "" !important; }
+.row-fluid:after { clear: both !important; }
+.container:before { display: table !important; line-height: 0 !important; content: "" !important; }
+.container:after { display: table !important; line-height: 0 !important; content: "" !important; }
+.container:after { clear: both !important; }
+.container-fluid:before { display: table !important; line-height: 0 !important; content: "" !important; }
+.container-fluid:after { display: table !important; line-height: 0 !important; content: "" !important; }
+.container-fluid:after { clear: both !important; }
+a.muted:hover { color: #808080 !important; }
+a.muted:focus { color: #808080 !important; }
+a.text-warning:hover { color: #a47e3c !important; }
+a.text-warning:focus { color: #a47e3c !important; }
+a.text-error:hover { color: #953b39 !important; }
+a.text-error:focus { color: #953b39 !important; }
+a.text-info:hover { color: #2d6987 !important; }
+a.text-info:focus { color: #2d6987 !important; }
+a.text-success:hover { color: #356635 !important; }
+a.text-success:focus { color: #356635 !important; }
+.dl-horizontal:before { display: table !important; line-height: 0 !important; content: "" !important; }
+.dl-horizontal:after { display: table !important; line-height: 0 !important; content: "" !important; }
+.dl-horizontal:after { clear: both !important; }
+.controls-row:before { display: table !important; line-height: 0 !important; content: "" !important; }
+.controls-row:after { display: table !important; line-height: 0 !important; content: "" !important; }
+.controls-row:after { clear: both !important; }
+.control-group.warning input:focus { border-color: #a47e3c !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e !important; }
+.control-group.warning select:focus { border-color: #a47e3c !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e !important; }
+.control-group.warning textarea:focus { border-color: #a47e3c !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e !important; }
+.control-group.error input:focus { border-color: #953b39 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392 !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392 !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392 !important; }
+.control-group.error select:focus { border-color: #953b39 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392 !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392 !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392 !important; }
+.control-group.error textarea:focus { border-color: #953b39 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392 !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392 !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392 !important; }
+.control-group.success input:focus { border-color: #356635 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b !important; }
+.control-group.success select:focus { border-color: #356635 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b !important; }
+.control-group.success textarea:focus { border-color: #356635 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b !important; }
+.control-group.info input:focus { border-color: #2d6987 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3 !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3 !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3 !important; }
+.control-group.info select:focus { border-color: #2d6987 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3 !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3 !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3 !important; }
+.control-group.info textarea:focus { border-color: #2d6987 !important; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3 !important; -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3 !important; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3 !important; }
+.form-horizontal .control-group:before { display: table !important; line-height: 0 !important; content: "" !important; }
+.form-horizontal .control-group:after { display: table !important; line-height: 0 !important; content: "" !important; }
+.form-horizontal .control-group:after { clear: both !important; }
+.table-hover tbody tr:hover > td { background-color: #f5f5f5 !important; }
+.table-hover tbody tr:hover > th { background-color: #f5f5f5 !important; }
+.table-hover tbody tr.success:hover > td { background-color: #d0e9c6 !important; }
+.table-hover tbody tr.error:hover > td { background-color: #ebcccc !important; }
+.table-hover tbody tr.warning:hover > td { background-color: #faf2cc !important; }
+.table-hover tbody tr.info:hover > td { background-color: #c4e3f3 !important; }
+a.label:hover { color: #ffffff !important; text-decoration: none !important; cursor: pointer !important; }
+a.label:focus { color: #ffffff !important; text-decoration: none !important; cursor: pointer !important; }
+a.badge:hover { color: #ffffff !important; text-decoration: none !important; cursor: pointer !important; }
+a.badge:focus { color: #ffffff !important; text-decoration: none !important; cursor: pointer !important; }
+</style>
+    
+<div class="container" style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; width: 940px; margin-right: auto; margin-left: auto; *zoom: 1;">
+
+    <div class="row" style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; margin-left: -20px; *zoom: 1;">
+        <div class="span8 offset2 form-horizontal" style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; float: left; min-height: 1px; margin-left: 180px; width: 620px;">
+<div style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; padding: 0px 20px;">
+                <h3 style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; orphans: 3; widows: 3; page-break-after: avoid; font-family: inherit; font-weight: bold; line-height: 40px; text-rendering: optimizelegibility; font-size: 24.5px; margin: 10px 0;">Reservation confirmation</h3>
+                <p style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; orphans: 3; widows: 3; margin: 0 0 10px;">
+                    Dear @Model.Reservation.Firstname @Model.Reservation.Lastname
+                </p>
+                <p style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; orphans: 3; widows: 3; margin: 0 0 10px;">
+                    Thank you for your reservation. Please print this confirmation and show it at check-in. 
+                </p>
+                <table class="table" style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; max-width: 100%; border-collapse: collapse; border-spacing: 0; width: 100%; margin-bottom: 20px;" bgcolor="transparent !important">
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="width: 115px; color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Confirmation no.</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Reservation.Id</td>
+                    </tr>
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Name</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Reservation.Firstname @Model.Reservation.Lastname</td>
+                    </tr>
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Phone number</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Reservation.PhoneNumber</td>
+                    </tr>
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Email</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Reservation.Email</td>
+                    </tr>
+</table>
+</div>
+
+            <hr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; border-top-color: #eeeeee; border-top-style: solid; border-bottom-color: #ffffff; border-bottom-style: solid; margin: 20px 0; border-width: 1px 0;">
+<div style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; padding: 0px 20px 20px;">
+                <h3 style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; orphans: 3; widows: 3; page-break-after: avoid; font-family: inherit; font-weight: bold; line-height: 40px; text-rendering: optimizelegibility; font-size: 24.5px; margin: 10px 0;">Your Reservation</h3>
+
+                <h4 style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; font-family: inherit; font-weight: bold; line-height: 20px; text-rendering: optimizelegibility; font-size: 17.5px; margin: 10px 0;">Hotel Information</h4>
+                <table class="table" style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; max-width: 100%; border-collapse: collapse; border-spacing: 0; width: 100%; margin-bottom: 20px;" bgcolor="transparent !important">
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="width: 115px; color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Hotel</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Hotel.Name</td>
+                    </tr>
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Address</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Hotel.Address1, @Model.Hotel.Address2, @Model.Hotel.Zipcode, @Model.Hotel.City</td>
+                    </tr>
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Phone number</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Hotel.Phone</td>
+                    </tr>
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Email</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top"><a href="mailto:@Model.Hotel.Email" style="color: #FFA500;">@Model.Hotel.Email</a></td>
+                    </tr>
+</table>
+<h4 style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; font-family: inherit; font-weight: bold; line-height: 20px; text-rendering: optimizelegibility; font-size: 17.5px; margin: 10px 0;">Information about your reservation</h4>
+                <table class="table" style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; max-width: 100%; border-collapse: collapse; border-spacing: 0; width: 100%; margin-bottom: 20px;" bgcolor="transparent !important">
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="width: 115px; color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Check-In</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Reservation.Arrival.ToString("dd/MM/yyyy")</td>
+                    </tr>
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Check-Out</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Reservation.Departure.ToString("dd/MM/yyyy")</td>
+                    </tr>
+<tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Quantity</td>
+                        <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">@Model.Reservation.Items.Count room(s) for @Model.Reservation.Duration night(s)</td>
+                    </tr>
+</table>
+<h4 style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; font-family: inherit; font-weight: bold; line-height: 20px; text-rendering: optimizelegibility; font-size: 17.5px; margin: 10px 0;">Room information</h4>
+                <table class="table" style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; max-width: 100%; border-collapse: collapse; border-spacing: 0; width: 100%; margin-bottom: 20px;" bgcolor="transparent !important">
+<thead style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; display: table-header-group;"><tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<th style="width: 140px; color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: bottom; border-top-color: #dddddd; border-top-width: 0; border-top-style: solid; font-weight: bold; padding: 8px;" align="left" bgcolor="transparent !important" valign="bottom"></th>
+                            <th style="width: 300px; color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: bottom; border-top-color: #dddddd; border-top-width: 0; border-top-style: solid; font-weight: bold; padding: 8px;" align="left" bgcolor="transparent !important" valign="bottom">Name of guest</th>
+                            <th style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: right; vertical-align: bottom; border-top-color: #dddddd; border-top-width: 0; border-top-style: solid; font-weight: bold; padding: 8px;" align="left" bgcolor="transparent !important" valign="bottom">Guests</th>
+                            <th class="align-right" style="width: 150px; color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: right; vertical-align: bottom; border-top-color: #dddddd; border-top-width: 0; border-top-style: solid; font-weight: bold; padding: 8px;" align="right" bgcolor="transparent !important" valign="bottom">Price</th>
+                        </tr></thead>
+<tbody style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important;">
+
+
+
+                            @foreach(var item in @Model.Reservation.Items)
+                            {
+                                var result = new List<string>();
+                                foreach(var addon in item.Addons)
+                                {
+                                    result.Add(addon.Name + " " + addon.CalculatePrice(item.Adults, item.Children, item.Babies, Model.Reservation.Duration));
+                                }
+                        
+                                var addonDescription = string.Join(", ", result.ToArray());         
+                                
+                                <tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+                                    <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">
+                                        @item.Description
+                                    </td>
+                                    <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">
+                                        @item.NameOfPrimaryGuest
+                                    </td>
+                                    <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: right; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="right" bgcolor="transparent !important" valign="top">
+                                        @item.TotalNumberOfGuests
+                                    </td>
+                                    <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: right; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px 8px 18px;" align="right" bgcolor="transparent !important" valign="top">
+                                        @item.TotalPriceWithoutDiscount
+                                    </td>
+                                </tr>
+                                <tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+                                    <td style="padding-left: 8px;" colspan="4">
+                                        (@item.AddonsSummary)
+                                    </td>
+                                </tr>                             
+                                           
+                            }
+
+</tbody>
+<tfoot style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important;"><tr style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; page-break-inside: avoid;" bgcolor="transparent !important">
+<th class="align-right" colspan="3" style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: left; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; font-weight: bold; padding: 8px;" align="left" bgcolor="transparent !important" valign="top">Total</th>
+                            <td style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; line-height: 20px; text-align: right; vertical-align: top; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid; padding: 8px;" align="right" bgcolor="transparent !important" valign="top">@Model.Reservation.TotalPrice</td>
+                        </tr></tfoot>
+</table>
+<h4 style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; font-family: inherit; font-weight: bold; line-height: 20px; text-rendering: optimizelegibility; font-size: 17.5px; margin: 10px 0;">Rates per day</h4>
+
+                    @foreach(var item in @Model.Reservation.Items)
+                    {
+                        <table style="width: 100%; border-top-color: #dddddd; border-top-width: 1px; border-top-style: solid;" cellspacing="0">     
+                            <thead>
+                                <tr>
+                                    <th style="color: #000; padding: 0px 0.6em 0.6em 1.2em; text-align: left;" colspan="2">@item.Description</th>
+                                </tr>
+                            </thead>                       
+                            <tbody>
+                                @foreach (var pricePerDate in item.PricePerDate)
+                                { 
+                                    <tr>
+                                        <td style="color: #000; padding: 0px 0.6em 0.6em 1.2em;">@pricePerDate.Date.ToString("dd/MM/yyyy")</td>
+                                        <td style="color: #000; padding: 0px 0.6em 0.6em 1.2em; text-align: right;">@pricePerDate.Price</td>
+                                    </tr>                          
+                                }                              
+                            </tbody>
+                        </table>            
+                    }
+
+                <br style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important;"><br style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important;"><h4 style="color: #000 !important; text-shadow: none !important; background-color: transparent !important; box-shadow: none !important; font-family: inherit; font-weight: bold; line-height: 20px; text-rendering: optimizelegibility; font-size: 17.5px; margin: 10px 0;">Cancellation Policy</h4>
+
+                Full refund if cancellation occurs minimum 72 hours prior to booking date at 14.00. Cancellation less than 72 hours before, will incur payment for the first night of the booking.
+            </div>
+
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0ce609c6-fca8-4e42-8935-20f42f337e4c" name="Mark@MACPC 2013-07-24 15:46:06" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-07-24 15_46_06" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-07-24T15:46:06.6319519+02:00" queuing="2013-07-24T15:46:07.0902587+02:00" start="2013-07-24T15:46:07.4400963+02:00" finish="2013-07-24T15:46:13.4156743+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="eb5d4132-c775-6d56-788f-17980df0f4f8">
+      <Execution timeOut="1800000" id="79ea11e6-3926-46f8-bcc9-1843a9e71cdd" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Unit.SearchTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="eb5d4132-c775-6d56-788f-17980df0f4f8" executionId="79ea11e6-3926-46f8-bcc9-1843a9e71cdd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="79ea11e6-3926-46f8-bcc9-1843a9e71cdd" testId="eb5d4132-c775-6d56-788f-17980df0f4f8" testName="TestMethod1" computerName="MACPC" duration="00:00:04.9940816" startTime="2013-07-24T15:46:07.8485659+02:00" endTime="2013-07-24T15:46:13.2827751+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79ea11e6-3926-46f8-bcc9-1843a9e71cdd">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT hotel0_.Id as Id9_0_, hotel0_.Name as Name9_0_, hotel0_.Address1 as Address3_9_0_, hotel0_.Address2 as Address4_9_0_, hotel0_.Zipcode as Zipcode9_0_, hotel0_.City as City9_0_, hotel0_.Country as Country9_0_, hotel0_.Phone as Phone9_0_, hotel0_.Fax as Fax9_0_, hotel0_.Email as Email9_0_, hotel0_.WWW as WWW9_0_, hotel0_.VatNo as VatNo9_0_, hotel0_.CategoryOneId as Categor13_9_0_, hotel0_.CategoryTwoId as Categor14_9_0_, hotel0_.CategoryThreeId as Categor15_9_0_, hotel0_.IsActive as IsActive9_0_, hotel0_.CheckIn as CheckIn9_0_, hotel0_.CheckOut as CheckOut9_0_, hotel0_.Created as Created9_0_, hotel0_.Modified as Modified9_0_, hotel0_.Verified as Verified9_0_, hotel0_.AboutMultiLanguageId as AboutMu22_9_0_, hotel0_.OrganizationId as Organiz23_9_0_, hotel0_.LocalCurrencyId as LocalCu24_9_0_, hotel0_.CancellationPolicyMultiLanguageId as Cancell25_9_0_, hotel0_.PaymentPolicyMultiLanguageId as Payment26_9_0_, hotel0_.PageInformationId as PageInf27_9_0_, hotel0_.SearchTagCityId as SearchT28_9_0_ FROM Hotels hotel0_ WHERE hotel0_.Id=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT this_.Id as Id19_2_, this_.IpAddress as IpAddress19_2_, this_.HotelId as HotelId19_2_, this_.HotelName as HotelName19_2_, this_.HotelAddress as HotelAdd5_19_2_, this_.HotelPhoneNumber as HotelPho6_19_2_, this_.HotelEmail as HotelEmail19_2_, this_.Arrival as Arrival19_2_, this_.Departure as Departure19_2_, this_.CurrencySymbol as Currenc10_19_2_, this_.Firstname as Firstname19_2_, this_.Lastname as Lastname19_2_, this_.PhoneNumber as PhoneNu13_19_2_, this_.Country as Country19_2_, this_.Email as Email19_2_, this_.CreditCardHolder as CreditC16_19_2_, this_.CreditCardNumber as CreditC17_19_2_, this_.CreditCardMonth as CreditC18_19_2_, this_.CreditCardYear as CreditC19_19_2_, this_.CreditCardCvc as CreditC20_19_2_, this_.Type as Type19_2_, this_.Created as Created19_2_, this_.Modified as Modified19_2_, this_.Cancelled as Cancelled19_2_, this_.CustomerId as CustomerId19_2_, i1_.ReservationId as Reservat9_4_, i1_.Id as Id4_, i1_.Id as Id18_0_, i1_.RoomTypeId as RoomTypeId18_0_, i1_.Description as Descript3_18_0_, i1_.GuestName as GuestName18_0_, i1_.Adults as Adults18_0_, i1_.Children as Children18_0_, i1_.Babies as Babies18_0_, i1_.Type as Type18_0_, i1_.ReservationId as Reservat9_18_0_, p2_.Id as Id20_1_, p2_.Date as Date20_1_, p2_.Price as Price20_1_, p2_.ReservationItemId as Reservat4_20_1_ FROM Reservations this_ left outer join ReservationItems i1_ on this_.Id=i1_.ReservationId inner join ReservationPrices p2_ on i1_.Id=p2_.ReservationItemId WHERE this_.HotelId in (@p0) and p2_.Date &gt;= @p1 and p2_.Date &lt;= @p2;@p0 = 1 [Type: Int32 (0)], @p1 = 24-07-2013 00:00:00 [Type: DateTime (0)], @p2 = 26-07-2013 00:00:00 [Type: DateTime (0)]
+NHibernate: SELECT roomtypes0_.HotelId as HotelId1_, roomtypes0_.Id as Id1_, roomtypes0_.Id as Id22_0_, roomtypes0_.BedTypes as BedTypes22_0_, roomtypes0_.RoomView as RoomView22_0_, roomtypes0_.Capacity as Capacity22_0_, roomtypes0_.PhysicalRooms as Physical5_22_0_, roomtypes0_.RoomSize as RoomSize22_0_, roomtypes0_.Quantity as Quantity22_0_, roomtypes0_.Price as Price22_0_, roomtypes0_.Smoking as Smoking22_0_, roomtypes0_.HotelId as HotelId22_0_, roomtypes0_.NameMultiLanguageId as NameMul11_22_0_, roomtypes0_.DescriptionMultiLanguageId as Descrip12_22_0_ FROM RoomTypes roomtypes0_ WHERE roomtypes0_.HotelId=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT this_.Id as Id21_1_, this_.Quantity as Quantity21_1_, this_.RateCategoryId as RateCate3_21_1_, this_.RoomTypeId as RoomTypeId21_1_, this_.CalendarId as CalendarId21_1_, d1_.Id as Id7_0_, d1_.Value as Value7_0_ FROM RoomTypeInventory this_ inner join Calendar d1_ on this_.CalendarId=d1_.Id WHERE this_.RoomTypeId in (@p0, @p1, @p2, @p3, @p4, @p5) and d1_.Value &gt;= @p6 and d1_.Value &lt;= @p7;@p0 = 1 [Type: Int32 (0)], @p1 = 6 [Type: Int32 (0)], @p2 = 12 [Type: Int32 (0)], @p3 = 13 [Type: Int32 (0)], @p4 = 14 [Type: Int32 (0)], @p5 = 15 [Type: Int32 (0)], @p6 = 24-07-2013 00:00:00 [Type: DateTime (0)], @p7 = 26-07-2013 00:00:00 [Type: DateTime (0)]
+NHibernate: SELECT this_.Id as Id15_0_, this_.Name as Name15_0_, this_.Description as Descript3_15_0_, this_.HotelId as HotelId15_0_ FROM RateCategories this_ WHERE this_.HotelId in (@p0);@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 17 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 17 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 18 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 18 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 33 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 33 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 34 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 34 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 68 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 68 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 69 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 69 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 70 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 70 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 71 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 71 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 72 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 72 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 73 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 73 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 74 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 74 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 75 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 75 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 1 [Type: Int32 (0)]
+Ending NH Session</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Exception while rolling file [C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt] -&gt; [C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt2013.07.13]
+System.IO.IOException: The process cannot access the file because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.__Error.WinIOError()
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at log4net.Appender.RollingFileAppender.RollFile(String fromFile, String toFile)</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Exception while rolling file [C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt] -&gt; [C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt2013.07.13]
+System.IO.IOException: The process cannot access the file because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.__Error.WinIOError()
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at log4net.Appender.RollingFileAppender.RollFile(String fromFile, String toFile)
+SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.Unit.SearchTester.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Unit\SearchTester.cs:line 42
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

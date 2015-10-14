@@ -1,0 +1,120 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.AssetCategoryModel
+@{
+    ViewBag.Title = "Media - folder";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@section javascript{
+
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "media" });}
+
+<div id="view" class="container" data-view="media" data-action="view">
+    <h2>
+        Media
+        <small>Manage all your media assets</small>
+    </h2>
+    <div class="row">
+        <div class="span9">
+            <div class="content">
+            <form id="fileupload" action="@Url.Action("uploadfiles", "media")" method="post" enctype="multipart/form-data">
+                <div>
+                    @Html.AntiForgeryToken()
+                    <input id="CategoryId" type="hidden" name="Id" value="@Model.Id" readonly="readonly" />
+                </div>
+
+                <fieldset>
+                    <!--
+                    <legend>
+                        Photos <a id="btn-add-files" class="btn btn-mini" data-toggle="modal" href="@Url.Action("editfolder", "media", new { id = Model.Id })" >edit</a>
+                    </legend>
+                    -->
+                    <div class="row fileupload-buttonbar">
+                        <div class="">
+                            <span class="btn fileinput-button">
+                                <i class="icon-plus icon-black"></i>
+                                <span>Add files</span>
+                                <input type="file" name="files[]" multiple>
+                            </span>
+
+                            <button id="btn-remove-files" type="button" class="btn delete" data-loading-text="Deleting...!" data-complete-text="<i class='icon-trash icon-black'></i>Delete">
+                                <i class="icon-trash icon-black"></i>
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+
+                    <!-- The loading indicator is shown during file processing -->
+                    <div class="fileupload-loading"></div>
+                    <br />
+                    <ul id="assets" class="thumbnails files">
+                        @foreach (var asset in Model.Items)
+                        { 
+                            <li class="span2" style="width: 170px; height:130px;" data-id="@asset.Id">
+                                <a class="thumbnail preview" title="@asset.Name" rel="gallery" download="@asset.Name"><img src="/img/@asset.Id/170x130/@asset.Name"  /></a>
+                            </li>            
+                        }
+                    </ul>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+        <div class="span3">
+            @{Html.RenderAction("media", "navigation", new { page = "folder", folderId = Model.Id });}
+        </div>
+    </div>
+</div>
+    
+<!-- modal-gallery is the modal dialog used for the image gallery -->
+<div id="modal-gallery" class="modal modal-gallery hide fade" data-filter=":odd">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+        <h3 class="modal-title"></h3>
+    </div>
+    <div class="modal-body"><div class="modal-image"></div></div>
+    <div class="modal-footer">
+        <a class="btn modal-download" target="_blank">
+            <i class="icon-download"></i>
+            <span>Download</span>
+        </a>
+        <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000">
+            <i class="icon-play icon-white"></i>
+            <span>Slideshow</span>
+        </a>
+        <a class="btn btn-info modal-prev">
+            <i class="icon-arrow-left icon-white"></i>
+            <span>Previous</span>
+        </a>
+        <a class="btn btn-primary modal-next">
+            <span>Next</span>
+            <i class="icon-arrow-right icon-white"></i>
+        </a>
+    </div>
+</div>
+
+<!-- The template to display files available for upload -->
+<script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+          <li class="span2 template-upload fade">
+            <div class="preview" style="width: 160px; height:104px;"><span class="fade"></span></div>
+            <div class="progress" style="width:160px;"><div class="bar" style="width:0%;"></div></div>
+          </li>
+{% } %}
+
+
+
+</script>
+<!-- The template to display files available for download -->
+<script id="template-download" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+          <li class="span2 template-download fade" style="width: 170px; height:130px;">
+            <a class="thumbnail preview" href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+          </li>
+{% } %}
+
+</script>

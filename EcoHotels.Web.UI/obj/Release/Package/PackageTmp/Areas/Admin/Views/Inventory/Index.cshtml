@@ -1,0 +1,119 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "pricing" });}
+
+<style>
+    input.span1
+    {
+        width: 16px;
+        padding: 4px 3px;
+    }
+	
+	.content td.ui-selecting input { border: 1px solid red;  }
+	.content td.ui-selected input { border: 1px solid green; }    
+	
+	input.room-open
+	{
+	    background: #dff0d8;    
+    }
+    
+    input.room-sold-out
+    {
+        background-color:  #fcf8e3;
+    }    
+    
+    input.room-closed
+    {
+        background-color:  #f2dede;
+    }
+    /*
+        #fcf8e3 yellow
+        #d9edf7 blue
+    */
+	
+	#qty-editor
+	{
+	    position: absolute;
+	    background: #fff;
+	    border: 1px solid #bbb; 
+	    width: 168px; 
+	    padding: 5px;  
+    }
+	
+    #qty-editor .control-group
+    {
+        margin: 0px;
+    }
+
+    #qty-editor input
+    {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;	    
+    }
+    
+    #qty-controls input,
+    #qty-controls select
+    {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;	          
+    }
+
+</style>
+
+<div id="view" class="container" data-view="inventory" data-action="edit">
+
+
+    <h2>
+        Room Management
+        <small>Control how many rooms that are available</small>
+    </h2>
+
+    <div class="row">
+        <div class="span12">
+
+            <br />
+            
+            <div style="padding: 0px 20px 20px 20px;">
+                <h3>Available</h3>
+                <small>Set room inventory for the selected periode.</small>
+            </div>
+
+            <div class="content" style="position: relative;">
+
+                <div id="qty-editor" class="shadow" style="display: none;">       
+                        <div class="control-group">
+                            <div class="controls">
+                                @Html.TextBox("new-qty", "", new { @class = "input-mini align-right required" })
+                                <a href="#" id="btn-accept-qty" class="btn btn-success"><i class="icon-ok icon-white"></i></a> 
+                                <a href="#" id="btn-cancel-qty" class="btn btn-danger"><i class="icon-remove icon-white"></i></a> 
+                            </div>
+                        </div>
+                </div>
+
+                <br />
+
+                <form id="form" class="ajaxform" action="@Url.Action("index", "inventory", null)" method="post">
+                    <div>
+                        @Html.AntiForgeryToken()
+                    </div>                
+                    <div id="room-overview">
+                        @* TODO: RenderPartial, Parse rooms as model *@
+                        @{Html.RenderAction("List");}
+                    </div>
+                    <div class="form-actions" style="text-align: center;">
+                        <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

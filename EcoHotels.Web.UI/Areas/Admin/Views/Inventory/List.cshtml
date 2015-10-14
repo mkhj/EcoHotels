@@ -1,0 +1,43 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.InventoryModel
+
+
+                            
+
+        <tr>
+            <th></th>
+            @foreach (var date in Model.DaysInMonth)
+            { 
+                <th>@date.Key<br />@date.Value</th>
+            }
+                        
+        </tr>                           
+    @for (var n = 0; n < Model.Rooms.Count; n++)
+    { 
+        <tr>
+            <th>
+                @Model.Rooms[n].RoomType
+                @Html.HiddenFor(m => m.Rooms[n].RoomTypeId)
+            </th>
+            @for (var i = 0; i < Model.Rooms[n].Quantities.Count; i++)
+            { 
+                <td>
+                    @*
+                        room-open (green)
+                        room-sold-out (red)
+                        room-closed (yellow)
+                    *@
+
+                    @if (Model.Rooms[n].Quantities[i].Value > 0)
+                    { 
+                        @Html.TextBoxFor(m => m.Rooms[n].Quantities[i].Value, new { @class = "span1 room-open" })
+                    }
+                    else 
+                    { 
+                        @Html.TextBoxFor(m => m.Rooms[n].Quantities[i].Value, new { @class = "span1 room-sold-out" })
+                    }
+
+                    @Html.HiddenFor(m => m.Rooms[n].Quantities[i].Date)                                            
+                </td>
+            }
+        </tr>                
+    }

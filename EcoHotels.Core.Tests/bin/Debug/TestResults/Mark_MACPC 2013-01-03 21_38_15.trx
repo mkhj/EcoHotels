@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="315656d2-91ac-4571-9a13-0f674cfb4bce" name="Mark@MACPC 2013-01-03 21:38:15" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-01-03 21_38_15" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-03T21:38:15.1086336+01:00" queuing="2013-01-03T21:38:16.2598930+01:00" start="2013-01-03T21:38:17.0182778+01:00" finish="2013-01-03T21:38:26.4585102+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_persist_entity" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="b0ae0b6e-3641-ab1e-bcc9-76e5f1467160">
+      <Execution timeOut="1800000" id="267f83ee-c6ae-4b6e-9022-048f47580258" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.UserServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_persist_entity" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b0ae0b6e-3641-ab1e-bcc9-76e5f1467160" executionId="267f83ee-c6ae-4b6e-9022-048f47580258" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="267f83ee-c6ae-4b6e-9022-048f47580258" testId="b0ae0b6e-3641-ab1e-bcc9-76e5f1467160" testName="Can_persist_entity" computerName="MACPC" duration="00:00:07.6473071" startTime="2013-01-03T21:38:17.5362468+01:00" endTime="2013-01-03T21:38:26.2199270+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="267f83ee-c6ae-4b6e-9022-048f47580258">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT organizati0_.Id as Id13_0_, organizati0_.Name as Name13_0_, organizati0_.VatNo as VatNo13_0_, organizati0_.Phone as Phone13_0_, organizati0_.Email as Email13_0_, organizati0_.Address1 as Address6_13_0_, organizati0_.Address2 as Address7_13_0_, organizati0_.City as City13_0_, organizati0_.Zipcode as Zipcode13_0_, organizati0_.Country as Country13_0_, organizati0_.Created as Created13_0_ FROM Organizations organizati0_ WHERE organizati0_.Id=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT users0_.OrganizationId as Organiza8_1_, users0_.Id as Id1_, users0_.Id as Id28_0_, users0_.Firstname as Firstname28_0_, users0_.Lastname as Lastname28_0_, users0_.Email as Email28_0_, users0_.Password as Password28_0_, users0_.Role as Role28_0_, users0_.IsActive as IsActive28_0_, users0_.OrganizationId as Organiza8_28_0_ FROM Users users0_ WHERE users0_.OrganizationId=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: INSERT INTO Users (Firstname, Lastname, Email, Password, Role, IsActive, OrganizationId) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY();@p0 = '' [Type: String (4000)], @p1 = '' [Type: String (4000)], @p2 = 'donnib@gmail.com' [Type: String (4000)], @p3 = 'a3d46a4362d07d6001baed7d20e164aafa974ea4c7bb0028fd4aa32e66c76359f4d69db60314ceffcdbb9637ff03e1f46c3e45d227d125d96c712f22100dea62' [Type: String (4000)], @p4 = 10 [Type: Int32 (0)], @p5 = False [Type: Boolean (0)], @p6 = 1 [Type: Int32 (0)]
+Ending NH Session</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+null id in EcoHotels.Core.Domain.Models.Security.User entry (don't flush the Session after an exception occurs)
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Integration.Services.UserServiceTester.Can_persist_entity threw exception: 
+NHibernate.Exceptions.GenericADOException: could not insert: [EcoHotels.Core.Domain.Models.Security.User][SQL: INSERT INTO Users (Firstname, Lastname, Email, Password, Role, IsActive, OrganizationId) VALUES (?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()] ---&gt; System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'Id', table 'EcoHotels.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session)
+   at NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder)
+ --- End of inner exception stack trace ---
+    at NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityIdentityInsertAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   at NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeProperty(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeCollectionElements(Object parent, Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeCollection(Object parent, Object child, CascadeStyle style, Object anything, CollectionType type)
+   at NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeProperty(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   at NHibernate.Event.Default.AbstractFlushingEventListener.CascadeOnFlush(IEventSource session, IEntityPersister persister, Object key, Object anything)
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PrepareEntityFlushes(IEventSource session)
+   at NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at EcoHotels.Core.Infrastructure.NH.Repository`1.Save(T item) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\NH\Repository.cs:line 163
+   at EcoHotels.Core.Infrastructure.Services.Property.OrganizationService.Save(Organization organization) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Services\Property\OrganizationService.cs:line 70
+   at EcoHotels.Core.Tests.Integration.Services.UserServiceTester.Can_persist_entity() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Services\UserServiceTester.cs:line 25
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

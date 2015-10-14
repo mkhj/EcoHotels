@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7757740e-fe49-41f7-b89a-40b9c14b6fb6" name="Mark@MACPC 2012-09-19 14:51:41" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-09-19 14_51_41" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-09-19T14:51:41.8375264+02:00" queuing="2012-09-19T14:51:42.5482416+02:00" start="2012-09-19T14:51:43.3596496+02:00" finish="2012-09-19T14:51:43.9452320+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="d75c8714-168d-8b15-2b06-a263426686c2">
+      <Execution timeOut="1800000" id="5f465a5b-5bef-442e-a41a-ec60400d391c" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test" />
+    </UnitTest>
+    <UnitTest name="Tes2t" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="b036e0c1-7fa7-30d1-16a2-959bd0c6e442">
+      <Execution timeOut="1800000" id="f60f95d3-d122-4670-853d-5007ef2e2454" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tes2t" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b036e0c1-7fa7-30d1-16a2-959bd0c6e442" executionId="f60f95d3-d122-4670-853d-5007ef2e2454" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d75c8714-168d-8b15-2b06-a263426686c2" executionId="5f465a5b-5bef-442e-a41a-ec60400d391c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f60f95d3-d122-4670-853d-5007ef2e2454" testId="b036e0c1-7fa7-30d1-16a2-959bd0c6e442" testName="Tes2t" computerName="MACPC" duration="00:00:00.0195189" startTime="2012-09-19T14:51:43.6079600+02:00" endTime="2012-09-19T14:51:43.7291824+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f60f95d3-d122-4670-853d-5007ef2e2454">
+      <Output>
+        <StdOut>Starting NH Session
+TestInitialize
+Danish
+TestCleanup</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5f465a5b-5bef-442e-a41a-ec60400d391c" testId="d75c8714-168d-8b15-2b06-a263426686c2" testName="Test" computerName="MACPC" duration="00:00:00.0003198" startTime="2012-09-19T14:51:43.7858832+02:00" endTime="2012-09-19T14:51:43.7897936+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f465a5b-5bef-442e-a41a-ec60400d391c">
+      <Output>
+        <StdOut>TestInitialize
+Danish
+TestCleanup</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

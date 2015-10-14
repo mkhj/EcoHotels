@@ -1,0 +1,81 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Property.AmenityModel
+@{
+    ViewBag.Title = "Edit amenity";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+
+@{Html.RenderAction("navigation", "app", new { selected = "settings" });}
+
+@{Html.RenderAction("settingsnavigation", "app", new { selected = "amenities" });}
+
+
+<div id="view" class="container" data-view="amenity" data-action="edit">
+
+    <div class="row">
+        <div class="span2">
+            <div style="text-align: center; margin-bottom: 12px;">
+                <a class="btn" href="@Url.Action("create", "amenities", null)" >Create Amenity</a>
+            </div>
+            <ul id="sidebar" class="nav nav-pills nav-stacked">
+                @foreach (var item in Model.MenuItems)
+                {
+                    if (item.IsSelected)
+                    { 
+                        <li class="active"><a href="#">@item.Name</a></li>
+                    }
+                    else
+                    { 
+                        <li><a href="@Url.Action("edit", "amenities", new { id = item.Id })">@item.Name</a></li>
+                    }
+                }  
+            </ul>
+        </div>
+        <div class="span10">
+            <form class="form-horizontal ajaxform" action="@Url.Action("edit", "amenities", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Id" value="@Model.Id" readonly="readonly" />
+                </div>
+                    
+                <fieldset>
+                    <legend style="padding-bottom: 5px;">
+                        Edit amenity
+                        <span id="language-selector" class="btn-toolbar pull-right">                                
+                            @Html.LanguageSelectorFor(m => m.AvailableLanguages, Model.SelectedLanguageId)               
+                        </span>   
+                    </legend>
+
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Name:</label>
+                        <div class="controls">
+                            @Html.TextBoxLocalizationFor(m => m.Name, Model.SelectedLanguageId, new { @class = "text required", size = "60" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Description:</label>
+                        <div class="controls">
+                            @Html.TextAreaLocalizationFor(m => m.Description, Model.SelectedLanguageId, new { @class = "text span6 required", rows="6" })
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+                <div class="form-actions">
+                    <a data-toggle="modal" href="#model-delete" class="btn">Delete</a>
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+@Html.Partial("Modal/Delete")

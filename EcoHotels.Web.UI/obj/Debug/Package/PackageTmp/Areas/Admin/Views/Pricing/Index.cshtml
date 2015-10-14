@@ -1,0 +1,293 @@
+﻿@{
+    ViewBag.Title = "Rates";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "pricing" });}
+
+<div id="view" class="container" data-view="pricing" data-action="rates">
+
+
+<style>
+    input.span1
+    {
+        width: 16px;
+        padding: 4px 3px;
+    }
+    .calendar-date
+    {
+        display: block;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    
+    table tbody td
+    {
+        padding: 4px;
+    }
+    
+    #qty-controls input,
+    #qty-controls select
+    {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;	          
+    }    
+    
+</style>
+
+    <h2>
+        Rate Management
+        <small>Control how many rooms that are available</small>
+    </h2>
+
+    <div class="row">
+        <div class="span12">
+            <br  />
+            <div style="padding: 0px 20px 20px 20px;">
+                <h3>Room rates</h3>
+                <small>Set rates for all the rooms in the given periode.</small>
+            </div>
+            <br />
+
+            <div id="qty-controls" style="width: 540px; margin: 0 auto; margin-bottom: 20px; text-align center;">
+
+                <select>
+                    <option>Hotel Guldsmeden</option>
+                    <option>Hotel Guldsmeden</option>
+                    <option>Hotel Guldsmeden</option>
+                </select>
+                
+                <select class="span2">
+                    <option>January</option>
+                    <option>Febuary</option>
+                </select>
+
+                <select class="span2">
+                    <option>2010</option>
+                    <option>2011</option>
+                </select>
+                                                                          
+            </div>
+
+            <form id="form" class="ajaxform" action="@Url.Action("index", "inventory", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                </div> 
+                <div class="content" style="width: 720px; margin: 0 auto;">
+
+  
+
+
+            <div class="row">
+                <div class="first span3">                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="7">January</th>
+                            </tr>
+                            <tr>
+                                <th>Mo</th>
+                                <th>Tu</th>
+                                <th>We</th>
+                                <th>Th</th>
+                                <th>Fr</th>
+                                <th>Sa</th>
+                                <th>Su</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><span class="calendar-date">1</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">2</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">3</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">4</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">5</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">6</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">7</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">8</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">9</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">10</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">11</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">12</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">13</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">14</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">15</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">16</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">17</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">18</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">19</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">20</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">21</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">22</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">23</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">24</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">25</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">26</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">27</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">28</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">29</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">30</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">31</span><input type="text" class="span1 align-right" /></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>              
+                </div>
+                <div class="span3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="7">Febuary</th>
+                            </tr>
+                            <tr>
+                                <th>Mo</th>
+                                <th>Tu</th>
+                                <th>We</th>
+                                <th>Th</th>
+                                <th>Fr</th>
+                                <th>Sa</th>
+                                <th>Su</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><span class="calendar-date">1</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">2</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">3</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">4</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">5</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">6</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">7</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">8</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">9</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">10</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">11</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">12</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">13</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">14</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">15</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">16</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">17</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">18</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">19</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">20</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">21</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">22</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">23</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">24</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">25</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">26</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">27</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">28</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">29</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">30</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">31</span><input type="text" class="span1 align-right" /></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>       
+                </div>
+                <div class="span3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="7">Marts</th>
+                            </tr>
+                            <tr>
+                                <th>Mo</th>
+                                <th>Tu</th>
+                                <th>We</th>
+                                <th>Th</th>
+                                <th>Fr</th>
+                                <th>Sa</th>
+                                <th>Su</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><span class="calendar-date">1</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">2</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">3</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">4</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">5</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">6</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">7</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">8</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">9</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">10</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">11</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">12</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">13</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">14</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">15</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">16</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">17</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">18</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">19</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">20</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">21</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">22</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">23</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">24</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">25</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">26</span><input type="text" class="span1 align-right" /></td>
+                            </tr>
+                            <tr>
+                                <td><span class="calendar-date">27</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">28</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">29</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">30</span><input type="text" class="span1 align-right" /></td>
+                                <td><span class="calendar-date">31</span><input type="text" class="span1 align-right" /></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+            </div>
+
+                </div>
+
+
+
+                <div class="form-actions" style="text-align: center;">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+</div>

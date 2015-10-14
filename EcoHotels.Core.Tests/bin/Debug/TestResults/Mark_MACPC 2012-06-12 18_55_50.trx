@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ff88ca67-2993-4380-a0bf-fdb33b8b2707" name="Mark@MACPC 2012-06-12 18:55:50" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-12 18_55_50" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-12T18:55:50.5507998+02:00" queuing="2012-06-12T18:55:51.2023921+02:00" start="2012-06-12T18:55:51.9096677+02:00" finish="2012-06-12T18:55:58.1559663+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="8eac6221-589f-6773-4e34-9508143ccf9c">
+      <Execution timeOut="1800000" id="e72f1993-e503-4450-8b8d-c025ed0e3aaf" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Data.CurrencyTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8eac6221-589f-6773-4e34-9508143ccf9c" executionId="e72f1993-e503-4450-8b8d-c025ed0e3aaf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e72f1993-e503-4450-8b8d-c025ed0e3aaf" testId="8eac6221-589f-6773-4e34-9508143ccf9c" testName="TestMethod1" computerName="MACPC" duration="00:00:04.8754995" startTime="2012-06-12T18:55:52.7498017+02:00" endTime="2012-06-12T18:55:58.0065006+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e72f1993-e503-4450-8b8d-c025ed0e3aaf">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method EcoHotels.Core.Tests.Data.CurrencyTester.CreateSessionFactory threw exception. FluentNHibernate.Cfg.FluentConfigurationException: FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---&gt; NHibernate.InvalidProxyTypeException: The following types may not be used as proxies:
+EcoHotels.Core.Domain.Value_objects.Currency: method get_CurrencyDecimalDigits should be 'public/protected virtual' or 'protected internal virtual'
+EcoHotels.Core.Domain.Value_objects.Currency: method set_CurrencyDecimalDigits should be 'public/protected virtual' or 'protected internal virtual'
+EcoHotels.Core.Domain.Value_objects.Currency: method get_CurrencyDecimalSeparator should be 'public/protected virtual' or 'protected internal virtual'
+EcoHotels.Core.Domain.Value_objects.Currency: method set_CurrencyDecimalSeparator should be 'public/protected virtual' or 'protected internal virtual'
+EcoHotels.Core.Domain.Value_objects.Currency: method get_CurrencyGroupSeparator should be 'public/protected virtual' or 'protected internal virtual'
+EcoHotels.Core.Domain.Value_objects.Currency: method set_CurrencyGroupSeparator should be 'public/protected virtual' or 'protected internal virtual'.</Message>
+          <StackTrace>    at NHibernate.Cfg.Configuration.ValidateEntities() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Cfg\Configuration.cs:line 1052
+   at NHibernate.Cfg.Configuration.Validate() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Cfg\Configuration.cs:line 959
+   at NHibernate.Cfg.Configuration.BuildSessionFactory() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Cfg\Configuration.cs:line 1251
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Cfg\FluentConfiguration.cs:line 230
+ --- End of inner exception stack trace ---
+    at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() in C:\SourceCode\Hotelr - Copy\Libraries\Fluent NHibernate\src\FluentNHibernate\Cfg\FluentConfiguration.cs:line 235
+   at EcoHotels.Core.Tests.Data.CurrencyTester.CreateSessionFactory() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Data\CurrencyTester.cs:line 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

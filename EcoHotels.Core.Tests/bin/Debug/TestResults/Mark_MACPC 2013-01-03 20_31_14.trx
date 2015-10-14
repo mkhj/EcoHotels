@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3c90dfb3-9e01-4c5d-8f30-2c36a058c939" name="Mark@MACPC 2013-01-03 20:31:14" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-01-03 20_31_14" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-03T20:31:14.1780872+01:00" queuing="2013-01-03T20:31:14.6939432+01:00" start="2013-01-03T20:31:15.2820972+01:00" finish="2013-01-03T20:31:21.3971402+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_persist_entity" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="0e9ccde3-606f-d55a-757a-8f455e305efe">
+      <Execution timeOut="1800000" id="2d2b246a-abf5-4069-935f-5e682290fa80" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_persist_entity" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0e9ccde3-606f-d55a-757a-8f455e305efe" executionId="2d2b246a-abf5-4069-935f-5e682290fa80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2d2b246a-abf5-4069-935f-5e682290fa80" testId="0e9ccde3-606f-d55a-757a-8f455e305efe" testName="Can_persist_entity" computerName="MACPC" duration="00:00:05.2800068" startTime="2013-01-03T20:31:15.5419792+01:00" endTime="2013-01-03T20:31:21.2554752+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d2b246a-abf5-4069-935f-5e682290fa80">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT currency0_.Id as Id5_0_, currency0_.Name as Name5_0_, currency0_.ISO_4217_Number as ISO3_5_0_, currency0_.ISOCurrencySymbol as ISOCurre4_5_0_, currency0_.ExchangeRate as Exchange5_5_0_, currency0_.LCID as LCID5_0_ FROM Currencies currency0_ WHERE currency0_.Id=@p0;@p0 = 5 [Type: Int32 (0)]
+NHibernate: INSERT INTO Organizations (Name, VatNo, Phone, Email, Address1, Address2, City, Zipcode, Country, Created) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); select SCOPE_IDENTITY();@p0 = 'I Love Eco Hotels' [Type: String (4000)], @p1 = '9999999999' [Type: String (4000)], @p2 = '' [Type: String (4000)], @p3 = '' [Type: String (4000)], @p4 = '' [Type: String (4000)], @p5 = '' [Type: String (4000)], @p6 = '' [Type: String (4000)], @p7 = '' [Type: String (4000)], @p8 = '' [Type: String (4000)], @p9 = 03-01-2013 20:31:20 [Type: DateTime (0)]
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO PageInformations (Filename, LastModified, TitleMultiLanguageId, DescriptionMultiLanguageId, KeywordsMultiLanguageId) VALUES (@p0, @p1, @p2, @p3, @p4); select SCOPE_IDENTITY();@p0 = 'my-hotel' [Type: String (4000)], @p1 = 03-01-2013 20:31:20 [Type: DateTime (0)], @p2 = 11 [Type: Int32 (0)], @p3 = 12 [Type: Int32 (0)], @p4 = 13 [Type: Int32 (0)]
+Ending NH Session
+NHibernate: INSERT INTO MultiLanguageText DEFAULT VALUES; select SCOPE_IDENTITY()
+NHibernate: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (@p0, @p1, @p2, @p3); select SCOPE_IDENTITY();@p0 = 0 [Type: Int32 (0)], @p1 = 0 [Type: Int32 (0)], @p2 = NULL [Type: Int32 (0)], @p3 = 14 [Type: Int32 (0)]</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+could not insert: [EcoHotels.Core.Domain.Models.Property.HotelBulletPoint][SQL: INSERT INTO HotelBulletPoints (Type, OrderId, HotelId, TextMultiLanguageId) VALUES (?, ?, ?, ?); select SCOPE_IDENTITY()]
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester.Can_persist_entity threw exception: 
+NHibernate.Exceptions.GenericADOException: could not insert: [EcoHotels.Core.Domain.Models.Localization.PageInformation][SQL: INSERT INTO PageInformations (Filename, LastModified, TitleMultiLanguageId, DescriptionMultiLanguageId, KeywordsMultiLanguageId) VALUES (?, ?, ?, ?, ?); select SCOPE_IDENTITY()] ---&gt; System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.PageInformations' with unique index 'IX_Unique_Filename'.
+The statement has been terminated.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session)
+   at NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder)
+ --- End of inner exception stack trace ---
+    at NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityIdentityInsertAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   at NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeProperty(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   at NHibernate.Event.Default.AbstractSaveEventListener.CascadeBeforeSave(IEventSource source, IEntityPersister persister, Object entity, Object anything)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   at NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeProperty(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeCollectionElements(Object parent, Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeCollection(Object parent, Object child, CascadeStyle style, Object anything, CollectionType type)
+   at NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeProperty(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   at NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   at NHibernate.Event.Default.AbstractSaveEventListener.CascadeAfterSave(IEventSource source, IEntityPersister persister, Object entity, Object anything)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   at EcoHotels.Core.Infrastructure.NH.Repository`1.Save(T item) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\NH\Repository.cs:line 162
+   at EcoHotels.Core.Infrastructure.Services.Property.OrganizationService.Save(Organization organization) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Services\Property\OrganizationService.cs:line 70
+   at EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester.Can_persist_entity() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Services\OrganizationServiceTester.cs:line 28
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

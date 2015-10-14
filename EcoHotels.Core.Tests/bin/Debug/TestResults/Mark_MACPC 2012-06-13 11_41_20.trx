@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7f4f70c5-0f90-4e28-8139-b88818cf85be" name="Mark@MACPC 2012-06-13 11:41:20" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-13 11_41_20" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-13T11:41:20.3522959+02:00" queuing="2012-06-13T11:41:20.7829765+02:00" start="2012-06-13T11:41:21.5710927+02:00" finish="2012-06-13T11:41:27.1377127+02:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="3" executed="3" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_first_level_cache" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="8b19d8fc-0483-e63a-4b3a-e0773c9abfd8">
+      <Execution timeOut="1800000" id="08e20778-4a0f-42d9-89cd-bb0f0e00392a" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_first_level_cache" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="99c2fd44-120c-2c4c-b432-60559c7d15a5">
+      <Execution timeOut="1800000" id="9aadacec-60c8-4bab-aed8-e3915adf00a5" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="Test" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="a8346873-92d1-9365-b4cf-3038ef102245">
+      <Execution timeOut="1800000" id="f7b126f0-35a2-4fb5-a339-077ca6e663b6" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a8346873-92d1-9365-b4cf-3038ef102245" executionId="f7b126f0-35a2-4fb5-a339-077ca6e663b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b19d8fc-0483-e63a-4b3a-e0773c9abfd8" executionId="08e20778-4a0f-42d9-89cd-bb0f0e00392a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99c2fd44-120c-2c4c-b432-60559c7d15a5" executionId="9aadacec-60c8-4bab-aed8-e3915adf00a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f7b126f0-35a2-4fb5-a339-077ca6e663b6" testId="a8346873-92d1-9365-b4cf-3038ef102245" testName="Test" computerName="MACPC" duration="00:00:04.2262927" startTime="2012-06-13T11:41:21.8298917+02:00" endTime="2012-06-13T11:41:26.4697183+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7b126f0-35a2-4fb5-a339-077ca6e663b6">
+      <Output>
+        <StdOut>English                       , Name        , Currency    , TwoIso      
+Arabic (Saudi Arabia)         , SA          , SAR         , ar          
+Bulgarian (Bulgaria)          , BG          , BGN         , bg          
+Catalan (Catalan)             , ES          , EUR         , ca          
+Chinese (Traditional, Taiwan) , TW          , TWD         , zh          
+Czech (Czech Republic)        , CZ          , CZK         , cs          
+Danish (Denmark)              , DK          , DKK         , da          
+German (Germany)              , DE          , EUR         , de          
+Greek (Greece)                , GR          , EUR         , el          
+English (United States)       , US          , USD         , en          
+Finnish (Finland)             , FI          , EUR         , fi          
+French (France)               , FR          , EUR         , fr          
+Hebrew (Israel)               , IL          , ILS         , he          
+Hungarian (Hungary)           , HU          , HUF         , hu          
+Icelandic (Iceland)           , IS          , ISK         , is          
+Italian (Italy)               , IT          , EUR         , it          
+Japanese (Japan)              , JP          , JPY         , ja          
+Korean (Korea)                , KR          , KRW         , ko          
+Dutch (Netherlands)           , NL          , EUR         , nl          
+Norwegian, Bokmål (Norway)    , NO          , NOK         , nb          
+Polish (Poland)               , PL          , PLN         , pl          
+Portuguese (Brazil)           , BR          , BRL         , pt          
+Romansh (Switzerland)         , CH          , CHF         , rm          
+Romanian (Romania)            , RO          , RON         , ro          
+Russian (Russia)              , RU          , RUB         , ru          
+Croatian (Croatia)            , HR          , HRK         , hr          
+Slovak (Slovakia)             , SK          , EUR         , sk          
+Albanian (Albania)            , AL          , ALL         , sq          
+Swedish (Sweden)              , SE          , SEK         , sv          
+Thai (Thailand)               , TH          , THB         , th          
+Turkish (Turkey)              , TR          , TRY         , tr          
+Urdu (Islamic Republic of Pakistan), PK          , PKR         , ur          
+Indonesian (Indonesia)        , ID          , IDR         , id          
+Ukrainian (Ukraine)           , UA          , UAH         , uk          
+Belarusian (Belarus)          , BY          , BYR         , be          
+Slovenian (Slovenia)          , SI          , EUR         , sl          
+Estonian (Estonia)            , EE          , EEK         , et          
+Latvian (Latvia)              , LV          , LVL         , lv          
+Lithuanian (Lithuania)        , LT          , LTL         , lt          
+Tajik (Cyrillic, Tajikistan)  , TJ          , TJS         , tg          
+Persian                       , IR          , IRR         , fa          
+Vietnamese (Vietnam)          , VN          , VND         , vi          
+Armenian (Armenia)            , AM          , AMD         , hy          
+Azeri (Latin, Azerbaijan)     , AZ          , AZN         , az          
+Basque (Basque)               , ES          , EUR         , eu          
+Upper Sorbian (Germany)       , DE          , EUR         , hsb         
+Macedonian (Former Yugoslav Republic of Macedonia), MK          , MKD         , mk          
+Setswana (South Africa)       , ZA          , ZAR         , tn          
+isiXhosa (South Africa)       , ZA          , ZAR         , xh          
+isiZulu (South Africa)        , ZA          , ZAR         , zu          
+Afrikaans (South Africa)      , ZA          , ZAR         , af          
+Georgian (Georgia)            , GE          , GEL         , ka          
+Faroese (Faroe Islands)       , FO          , DKK         , fo          
+Hindi (India)                 , IN          , INR         , hi          
+Maltese (Malta)               , MT          , EUR         , mt          
+Sami, Northern (Norway)       , NO          , NOK         , se          
+Malay (Malaysia)              , MY          , MYR         , ms          
+Kazakh (Kazakhstan)           , KZ          , KZT         , kk          
+Kyrgyz (Kyrgyzstan)           , KG          , KGS         , ky          
+Kiswahili (Kenya)             , KE          , KES         , sw          
+Turkmen (Turkmenistan)        , TM          , TMT         , tk          
+Uzbek (Latin, Uzbekistan)     , UZ          , UZS         , uz          
+Tatar (Russia)                , RU          , RUB         , tt          
+Bengali (India)               , IN          , INR         , bn          
+Punjabi (India)               , IN          , INR         , pa          
+Gujarati (India)              , IN          , INR         , gu          
+Oriya (India)                 , IN          , INR         , or          
+Tamil (India)                 , IN          , INR         , ta          
+Telugu (India)                , IN          , INR         , te          
+Kannada (India)               , IN          , INR         , kn          
+Malayalam (India)             , IN          , INR         , ml          
+Assamese (India)              , IN          , INR         , as          
+Marathi (India)               , IN          , INR         , mr          
+Sanskrit (India)              , IN          , INR         , sa          
+Mongolian (Cyrillic, Mongolia), MN          , MNT         , mn          
+Tibetan (PRC)                 , CN          , CNY         , bo          
+Welsh (United Kingdom)        , GB          , GBP         , cy          
+Khmer (Cambodia)              , KH          , KHR         , km          
+Lao (Lao P.D.R.)              , LA          , LAK         , lo          
+Galician (Galician)           , ES          , EUR         , gl          
+Konkani (India)               , IN          , INR         , kok         
+Syriac (Syria)                , SY          , SYP         , syr         
+Sinhala (Sri Lanka)           , LK          , LKR         , si          
+Inuktitut (Syllabics, Canada) , CA          , CAD         , iu          
+Amharic (Ethiopia)            , ET          , ETB         , am          
+Nepali (Nepal)                , NP          , NPR         , ne          
+Frisian (Netherlands)         , NL          , EUR         , fy          
+Pashto (Afghanistan)          , AF          , AFN         , ps          
+Filipino (Philippines)        , PH          , PHP         , fil         
+Divehi (Maldives)             , MV          , MVR         , dv          
+Hausa (Latin, Nigeria)        , NG          , NIO         , ha          
+Yoruba (Nigeria)              , NG          , NIO         , yo          
+Quechua (Bolivia)             , BO          , BOB         , quz         
+Sesotho sa Leboa (South Africa), ZA          , ZAR         , nso         
+Bashkir (Russia)              , RU          , RUB         , ba          
+Luxembourgish (Luxembourg)    , LU          , EUR         , lb          
+Greenlandic (Greenland)       , GL          , DKK         , kl          
+Igbo (Nigeria)                , NG          , NIO         , ig          
+Yi (PRC)                      , CN          , CNY         , ii          
+Mapudungun (Chile)            , CL          , CLP         , arn         
+Mohawk (Mohawk)               , CA          , CAD         , moh         
+Breton (France)               , FR          , EUR         , br          
+Uyghur (PRC)                  , CN          , CNY         , ug          
+Maori (New Zealand)           , NZ          , NZD         , mi          
+Occitan (France)              , FR          , EUR         , oc          
+Corsican (France)             , FR          , EUR         , co          
+Alsatian (France)             , FR          , EUR         , gsw         
+Yakut (Russia)                , RU          , RUB         , sah         
+K'iche (Guatemala)            , GT          , GTQ         , qut         
+Kinyarwanda (Rwanda)          , RW          , RWF         , rw          
+Wolof (Senegal)               , SN          , XOF         , wo          
+Dari (Afghanistan)            , AF          , AFN         , prs         
+Scottish Gaelic (United Kingdom), GB          , GBP         , gd          
+Arabic (Iraq)                 , IQ          , IQD         , ar          
+Chinese (Simplified, PRC)     , CN          , CNY         , zh          
+German (Switzerland)          , CH          , CHF         , de          
+English (United Kingdom)      , GB          , GBP         , en          
+Spanish (Mexico)              , MX          , MXN         , es          
+French (Belgium)              , BE          , EUR         , fr          
+Italian (Switzerland)         , CH          , CHF         , it          
+Dutch (Belgium)               , BE          , EUR         , nl          
+Norwegian, Nynorsk (Norway)   , NO          , NOK         , nn          
+Portuguese (Portugal)         , PT          , EUR         , pt          
+Serbian (Latin, Serbia and Montenegro (Former)), CS          , CSD         , sr          
+Swedish (Finland)             , FI          , EUR         , sv          
+Azeri (Cyrillic, Azerbaijan)  , AZ          , AZN         , az          
+Lower Sorbian (Germany)       , DE          , EUR         , dsb         
+Sami, Northern (Sweden)       , SE          , SEK         , se          
+Irish (Ireland)               , IE          , EUR         , ga          
+Malay (Brunei Darussalam)     , BN          , BND         , ms          
+Uzbek (Cyrillic, Uzbekistan)  , UZ          , UZS         , uz          
+Bengali (Bangladesh)          , BD          , BDT         , bn          
+Mongolian (Traditional Mongolian, PRC), CN          , CNY         , mn          
+Inuktitut (Latin, Canada)     , CA          , CAD         , iu          
+Tamazight (Latin, Algeria)    , DZ          , DZD         , tzm         
+Quechua (Ecuador)             , EC          , USD         , quz         
+Arabic (Egypt)                , EG          , EGP         , ar          
+Chinese (Traditional, Hong Kong S.A.R.), HK          , HKD         , zh          
+German (Austria)              , AT          , EUR         , de          
+English (Australia)           , AU          , AUD         , en          
+Spanish (Spain, International Sort), ES          , EUR         , es          
+French (Canada)               , CA          , CAD         , fr          
+Serbian (Cyrillic, Serbia and Montenegro (Former)), CS          , CSD         , sr          
+Sami, Northern (Finland)      , FI          , EUR         , se          
+Quechua (Peru)                , PE          , PEN         , quz         
+Arabic (Libya)                , LY          , LYD         , ar          
+Chinese (Simplified, Singapore), SG          , SGD         , zh          
+German (Luxembourg)           , LU          , EUR         , de          
+English (Canada)              , CA          , CAD         , en          
+Spanish (Guatemala)           , GT          , GTQ         , es          
+French (Switzerland)          , CH          , CHF         , fr          
+Croatian (Latin, Bosnia and Herzegovina), BA          , BAM         , hr          
+Sami, Lule (Norway)           , NO          , NOK         , smj         
+Arabic (Algeria)              , DZ          , DZD         , ar          
+Chinese (Traditional, Macao S.A.R.), MO          , MOP         , zh          
+German (Liechtenstein)        , LI          , CHF         , de          
+English (New Zealand)         , NZ          , NZD         , en          
+Spanish (Costa Rica)          , CR          , CRC         , es          
+French (Luxembourg)           , LU          , EUR         , fr          
+Bosnian (Latin, Bosnia and Herzegovina), BA          , BAM         , bs          
+Sami, Lule (Sweden)           , SE          , SEK         , smj         
+Arabic (Morocco)              , MA          , MAD         , ar          
+English (Ireland)             , IE          , EUR         , en          
+Spanish (Panama)              , PA          , PAB         , es          
+French (Monaco)               , MC          , EUR         , fr          
+Serbian (Latin, Bosnia and Herzegovina), BA          , BAM         , sr          
+Sami, Southern (Norway)       , NO          , NOK         , sma         
+Arabic (Tunisia)              , TN          , TND         , ar          
+English (South Africa)        , ZA          , ZAR         , en          
+Spanish (Dominican Republic)  , DO          , DOP         , es          
+Serbian (Cyrillic, Bosnia and Herzegovina), BA          , BAM         , sr          
+Sami, Southern (Sweden)       , SE          , SEK         , sma         
+Arabic (Oman)                 , OM          , OMR         , ar          
+English (Jamaica)             , JM          , JMD         , en          
+Spanish (Bolivarian Republic of Venezuela), VE          , VEF         , es          
+Bosnian (Cyrillic, Bosnia and Herzegovina), BA          , BAM         , bs          
+Sami, Skolt (Finland)         , FI          , EUR         , sms         
+Arabic (Yemen)                , YE          , YER         , ar          
+English (Caribbean)           , 029         , USD         , en          
+Spanish (Colombia)            , CO          , COP         , es          
+Serbian (Latin, Serbia)       , RS          , RSD         , sr          
+Sami, Inari (Finland)         , FI          , EUR         , smn         
+Arabic (Syria)                , SY          , SYP         , ar          
+English (Belize)              , BZ          , BZD         , en          
+Spanish (Peru)                , PE          , PEN         , es          
+Serbian (Cyrillic, Serbia)    , RS          , RSD         , sr          
+Arabic (Jordan)               , JO          , JOD         , ar          
+English (Trinidad and Tobago) , TT          , TTD         , en          
+Spanish (Argentina)           , AR          , ARS         , es          
+Serbian (Latin, Montenegro)   , ME          , EUR         , sr          
+Arabic (Lebanon)              , LB          , LBP         , ar          
+English (Zimbabwe)            , ZW          , ZWL         , en          
+Spanish (Ecuador)             , EC          , USD         , es          
+Serbian (Cyrillic, Montenegro), ME          , EUR         , sr          
+Arabic (Kuwait)               , KW          , KWD         , ar          
+English (Republic of the Philippines), PH          , PHP         , en          
+Spanish (Chile)               , CL          , CLP         , es          
+Arabic (U.A.E.)               , AE          , AED         , ar          
+Spanish (Uruguay)             , UY          , UYU         , es          
+Arabic (Bahrain)              , BH          , BHD         , ar          
+Spanish (Paraguay)            , PY          , PYG         , es          
+Arabic (Qatar)                , QA          , QAR         , ar          
+English (India)               , IN          , INR         , en          
+Spanish (Bolivia)             , BO          , BOB         , es          
+English (Malaysia)            , MY          , MYR         , en          
+Spanish (El Salvador)         , SV          , USD         , es          
+English (Singapore)           , SG          , SGD         , en          
+Spanish (Honduras)            , HN          , HNL         , es          
+Spanish (Nicaragua)           , NI          , NIO         , es          
+Spanish (Puerto Rico)         , PR          , USD         , es          
+Spanish (United States)       , US          , USD         , es</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="08e20778-4a0f-42d9-89cd-bb0f0e00392a" testId="8b19d8fc-0483-e63a-4b3a-e0773c9abfd8" testName="Test_first_level_cache" computerName="MACPC" duration="00:00:00.3680920" startTime="2012-06-13T11:41:26.4921801+02:00" endTime="2012-06-13T11:41:26.8632881+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08e20778-4a0f-42d9-89cd-bb0f0e00392a">
+      <Output>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9aadacec-60c8-4bab-aed8-e3915adf00a5" testId="99c2fd44-120c-2c4c-b432-60559c7d15a5" testName="TestMethod1" computerName="MACPC" duration="00:00:00.1310412" startTime="2012-06-13T11:41:26.8730541+02:00" endTime="2012-06-13T11:41:27.0068483+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9aadacec-60c8-4bab-aed8-e3915adf00a5">
+      <Output>
+        <StdOut>noZv7BFPOz58GV/qcX5uLrwU5nt3sIsuEL36AoLqvdc=
+9e866fec114f3b3e7c195fea717e6e2ebc14e67b77b08b2e10bdfa0282eabdd7</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.UnitTest1.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\UnitTest1.cs:line 169
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

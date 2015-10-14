@@ -1,0 +1,105 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.EditOrganizationModel
+@{
+    ViewBag.Title = "Create Hotel";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "settings" });}
+
+<div id="view" class="container" data-view="hotel" data-action="create">
+
+    <h2>
+        Owner information
+        <small>Change your contact information</small>
+    </h2>
+
+    <div class="row">
+
+        <div class="span9">
+            <br />
+            <form class="form-horizontal ajaxform" action="@Url.Action("general", "settings", null)" method="post">
+                <div>@Html.AntiForgeryToken()</div>
+
+                <div class="content">
+
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Name:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "span4 required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Vat No.:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.VatNo, new { @class = "required" })
+                        </div>
+                    </div>
+            
+                    <div class="control-group">
+                        <label class="control-label" for="input01">E-mail:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "required email" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Phone:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Phone, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Address:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Address1)
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Address2)
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Address:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.City, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Zipcode:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Zipcode, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Country:</label>
+                        <div class="controls">
+                            @Html.DropDownListFor(m => m.SelectedCountryName, Model.AvailableCountries, new { @class = "required" })
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save Changes">Save Changes</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("settings", "navigation", new { page = "general" });}
+        </div>
+
+    </div>
+</div>

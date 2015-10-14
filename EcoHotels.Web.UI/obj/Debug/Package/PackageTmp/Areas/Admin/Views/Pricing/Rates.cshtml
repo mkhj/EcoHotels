@@ -1,0 +1,178 @@
+﻿@{
+    ViewBag.Title = "Rates";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "pricing" });}
+
+<style>
+    
+    table th
+    {
+        width: 110px;    
+    }
+    
+    table tbody td
+    {
+        text-align: center;
+    }
+    
+    #qty-controls input,
+    #qty-controls select,
+    table tbody td input
+    {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;	          
+    }    
+    
+</style>
+
+<script>
+
+    $(function () {
+
+        $('table tbody').on('click', ':checkbox', function (e) {
+            var $this = $(this);
+            var elements = $this.parent().siblings();
+            $(elements[1]).text(elements[0].value);
+            elements.toggle();
+        });
+    
+    });
+
+</script>
+
+<div id="view" class="container" data-view="pricing" data-action="rates">
+    <h2>
+        Rate Management
+        <small>Control how many rooms that are available</small>
+    </h2>
+    <div class="row">
+        <div class="span12">
+            <br  />
+            <div style="padding: 0px 20px 20px 20px;">
+                <h3>Room rates</h3>
+                <small>Set rates for all the rooms in the given periode.</small>
+            </div>
+            <br />
+
+            <form id="form" class="form-inline ajaxform" action="@Url.Action("index", "inventory", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                </div> 
+
+                <div class="content">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th colspan="6">
+                                <div style="margin-bottom: 20px;">
+                                    <select>
+                                        <option>Hotel Guldsmeden</option>
+                                        <option>Hotel Guldsmeden</option>
+                                        <option>Hotel Guldsmeden</option>
+                                    </select>
+                                </div>   
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>Rack rate</th>
+                            <th>Group 1</th>
+                            <th>Group 2</th>
+                            <th>Group 3</th>
+                            <th>Group 4</th>
+                            <th>Group 5</th>
+                            <th>Group 6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Single Standard</td>
+                            <td><input type="text" class="span1 align-right" /></td>
+                            <td>
+                                <input type="text" class="span1 align-right" value="1230" />
+                                <span class="span1 uneditable-input align-right" style="display: none;">1230</span>
+                                <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label>
+                            </td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                        </tr>
+                        <tr>
+                            <td>Single Superior</td>
+                            <td><input type="text" class="span1 align-right" /></td>
+                            <td><span class="span1 uneditable-input"></span> <label class="checkbox">@Html.CheckBox("sdfsdf")</label></td>
+                            <td><span class="span1 uneditable-input"></span> <label class="checkbox">@Html.CheckBox("sdfsdf")</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf")</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                        </tr>
+                        <tr>
+                            <td>Double Standard</td>
+                            <td><input type="text" class="span1 align-right" /></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf")</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                        </tr>
+                        <tr>
+                            <td>Double Superior</td>
+                            <td><input type="text" class="span1 align-right" /></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf")</label></td>
+                        </tr>
+                        <tr>
+                            <td>Junior Suite</td>
+                            <td><input type="text" class="span1 align-right" /></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf")</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf")</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf")</label></td>
+                        </tr>
+                        <tr>
+                            <td>Penthouse Suite</td>
+                            <td><input type="text" class="span1 align-right" /></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                            <td><input type="text" class="span1 align-right" /> <label class="checkbox">@Html.CheckBox("sdfsdf", true)</label></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th></th>
+                        <th colspan="6">
+                            <div style="margin-top: 20px;"><cite>Prices are in DKK</cite></div>                            
+                        </th>
+                    </tfoot>
+                </table>
+
+
+                </div>
+
+
+                <div class="form-actions" style="text-align: center;">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

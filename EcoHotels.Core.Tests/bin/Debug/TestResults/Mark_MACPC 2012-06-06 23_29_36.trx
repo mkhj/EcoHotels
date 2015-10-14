@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e6190ad9-dfbe-47db-a755-611080d57911" name="Mark@MACPC 2012-06-06 23:29:36" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-06 23_29_36" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-06T23:29:36.1010954+02:00" queuing="2012-06-06T23:29:36.4421382+02:00" start="2012-06-06T23:29:36.9463734+02:00" finish="2012-06-06T23:29:41.7129769+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateUser" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="eb9db0aa-a93e-37a9-9d2c-14ca706497a2">
+      <Execution timeOut="1800000" id="5a239aa2-a079-46e4-8c58-b3bf1306e884" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.UnitTest1, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateUser" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="eb9db0aa-a93e-37a9-9d2c-14ca706497a2" executionId="5a239aa2-a079-46e4-8c58-b3bf1306e884" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5a239aa2-a079-46e4-8c58-b3bf1306e884" testId="eb9db0aa-a93e-37a9-9d2c-14ca706497a2" testName="CreateUser" computerName="MACPC" duration="00:00:03.9898699" startTime="2012-06-06T23:29:37.2072858+02:00" endTime="2012-06-06T23:29:41.6054959+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a239aa2-a079-46e4-8c58-b3bf1306e884">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.UnitTest1.CreateUser threw exception: 
+NHibernate.HibernateException: No CurrentSessionContext configured (set the property current_session_context_class)!</Message>
+          <StackTrace>    at NHibernate.Impl.SessionFactoryImpl.GetCurrentSession() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Impl\SessionFactoryImpl.cs:line 1039
+   at EcoHotels.Core.Tests.UnitTest1.CreateUser() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\UnitTest1.cs:line 38
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

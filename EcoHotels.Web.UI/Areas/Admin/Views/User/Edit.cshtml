@@ -1,0 +1,85 @@
+﻿    @model EcoHotels.Web.UI.Areas.Admin.Models.UserModel
+@{
+    ViewBag.Title = "Settings - Edit user";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "settings" });}
+
+<div id="view" class="container" data-view="user" data-action="edit">
+
+    <h2>
+        User
+        <small>Change user information</small>
+    </h2>
+
+    <div class="row">
+
+        <div class="span9">
+            <br />
+            <form class="form-horizontal ajaxform" action="@Url.Action("edit", "user", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Id" value="@Model.Id" readonly="readonly" />
+                </div>
+
+                <div class="content">
+                    
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">First name:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Firstname, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Last name:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Lastname, new { @class = "required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">E-mail:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "email required" })
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Password:</label>
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Password, new { @class = "" })
+                            <a id="btn-generate-password" class="btn">Generate</a>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Is active:</label>
+                        <div class="controls">
+                            @Html.CheckBoxFor(m => m.IsActive)
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+                    <a id="btn-delete" data-toggle="modal" href="#model-delete" class="btn">Delete</a>
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save changes">Save changes</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("settings", "navigation", new { page = "users" });}
+        </div>
+
+    </div>
+</div>
+
+@Html.Partial("Modal/Delete")

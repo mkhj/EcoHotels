@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="837bd5e2-97f1-49b8-bf88-d8b20538f88d" name="Mark@MACPC 2012-12-20 19:38:06" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-12-20 19_38_06" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-20T19:38:06.3857137+01:00" queuing="2012-12-20T19:38:06.9825996+01:00" start="2012-12-20T19:38:07.7055056+01:00" finish="2012-12-20T19:38:13.4350241+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="56ee1a7a-7208-4431-ad1d-3dda9038a86f">
+      <Execution timeOut="1800000" id="5cd7e0c3-05c6-4a72-95af-3009a55fa0fd" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.ReservationServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="56ee1a7a-7208-4431-ad1d-3dda9038a86f" executionId="5cd7e0c3-05c6-4a72-95af-3009a55fa0fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5cd7e0c3-05c6-4a72-95af-3009a55fa0fd" testId="56ee1a7a-7208-4431-ad1d-3dda9038a86f" testName="TestMethod1" computerName="MACPC" duration="00:00:04.7781463" startTime="2012-12-20T19:38:08.1031039+01:00" endTime="2012-12-20T19:38:13.2630897+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5cd7e0c3-05c6-4a72-95af-3009a55fa0fd">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT this_.Id as Id18_0_, this_.ReservationId as Reservat2_18_0_, this_.IpAddress as IpAddress18_0_, this_.HotelId as HotelId18_0_, this_.HotelName as HotelName18_0_, this_.HotelAddress as HotelAdd6_18_0_, this_.HotelPhoneNumber as HotelPho7_18_0_, this_.HotelEmail as HotelEmail18_0_, this_.Arrival as Arrival18_0_, this_.Departure as Departure18_0_, this_.CurrencySymbol as Currenc11_18_0_, this_.Firstname as Firstname18_0_, this_.Lastname as Lastname18_0_, this_.PhoneNumber as PhoneNu14_18_0_, this_.Country as Country18_0_, this_.Email as Email18_0_, this_.CreditCardHolder as CreditC17_18_0_, this_.CreditCardNumber as CreditC18_18_0_, this_.CreditCardMonth as CreditC19_18_0_, this_.CreditCardYear as CreditC20_18_0_, this_.CreditCardCvc as CreditC21_18_0_, this_.Type as Type18_0_, this_.Created as Created18_0_, this_.Modified as Modified18_0_, this_.Cancelled as Cancelled18_0_, this_.CustomerId as CustomerId18_0_ FROM Reservations this_ WHERE this_.HotelId = @p0 and this_.Arrival &gt;= @p1 and this_.Departure &lt;= @p2;@p0 = 27effbf2-3a36-4a7f-9fe5-a0b90117d63b [Type: Guid (0)], @p1 = 20-09-2012 00:00:00 [Type: DateTime (0)], @p2 = 25-09-2012 00:00:00 [Type: DateTime (0)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

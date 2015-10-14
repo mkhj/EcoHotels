@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9c52165a-932d-4c5c-889f-ec47d22e67ca" name="Mark@MACPC 2013-01-03 20:47:25" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-01-03 20_47_25" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-03T20:47:25.0380535+01:00" queuing="2013-01-03T20:47:25.7083441+01:00" start="2013-01-03T20:47:26.8202839+01:00" finish="2013-01-03T20:47:35.3357104+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_delete_entity" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="8cd56fb3-7443-6b9a-2f0e-a346cddec2c3">
+      <Execution timeOut="1800000" id="5f706c98-03b6-443d-a4c6-e55fefcb91a3" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.OrganizationServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_delete_entity" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8cd56fb3-7443-6b9a-2f0e-a346cddec2c3" executionId="5f706c98-03b6-443d-a4c6-e55fefcb91a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5f706c98-03b6-443d-a4c6-e55fefcb91a3" testId="8cd56fb3-7443-6b9a-2f0e-a346cddec2c3" testName="Can_delete_entity" computerName="MACPC" duration="00:00:07.3206871" startTime="2013-01-03T20:47:27.2511850+01:00" endTime="2013-01-03T20:47:35.1207484+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f706c98-03b6-443d-a4c6-e55fefcb91a3">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT organizati0_.Id as Id13_0_, organizati0_.Name as Name13_0_, organizati0_.VatNo as VatNo13_0_, organizati0_.Phone as Phone13_0_, organizati0_.Email as Email13_0_, organizati0_.Address1 as Address6_13_0_, organizati0_.Address2 as Address7_13_0_, organizati0_.City as City13_0_, organizati0_.Zipcode as Zipcode13_0_, organizati0_.Country as Country13_0_, organizati0_.Created as Created13_0_ FROM Organizations organizati0_ WHERE organizati0_.Id=@p0;@p0 = 4 [Type: Int32 (0)]
+NHibernate: SELECT users0_.OrganizationId as Organiza8_1_, users0_.Id as Id1_, users0_.Id as Id28_0_, users0_.Firstname as Firstname28_0_, users0_.Lastname as Lastname28_0_, users0_.Email as Email28_0_, users0_.Password as Password28_0_, users0_.Role as Role28_0_, users0_.IsActive as IsActive28_0_, users0_.OrganizationId as Organiza8_28_0_ FROM Users users0_ WHERE users0_.OrganizationId=@p0;@p0 = 4 [Type: Int32 (0)]
+NHibernate: SELECT hotels0_.OrganizationId as Organiz23_1_, hotels0_.Id as Id1_, hotels0_.Id as Id9_0_, hotels0_.Name as Name9_0_, hotels0_.Address1 as Address3_9_0_, hotels0_.Address2 as Address4_9_0_, hotels0_.Zipcode as Zipcode9_0_, hotels0_.City as City9_0_, hotels0_.Country as Country9_0_, hotels0_.Phone as Phone9_0_, hotels0_.Fax as Fax9_0_, hotels0_.Email as Email9_0_, hotels0_.WWW as WWW9_0_, hotels0_.VatNo as VatNo9_0_, hotels0_.CategoryOneId as Categor13_9_0_, hotels0_.CategoryTwoId as Categor14_9_0_, hotels0_.CategoryThreeId as Categor15_9_0_, hotels0_.IsActive as IsActive9_0_, hotels0_.CheckIn as CheckIn9_0_, hotels0_.CheckOut as CheckOut9_0_, hotels0_.Created as Created9_0_, hotels0_.Modified as Modified9_0_, hotels0_.Verified as Verified9_0_, hotels0_.AboutMultiLanguageId as AboutMu22_9_0_, hotels0_.OrganizationId as Organiz23_9_0_, hotels0_.LocalCurrencyId as LocalCu24_9_0_, hotels0_.CancellationPolicyMultiLanguageId as Cancell25_9_0_, hotels0_.PaymentPolicyMultiLanguageId as Payment26_9_0_, hotels0_.PageInformationId as PageInf27_9_0_ FROM Hotels hotels0_ WHERE hotels0_.OrganizationId=@p0;@p0 = 4 [Type: Int32 (0)]
+NHibernate: SELECT roomtypes0_.HotelId as HotelId1_, roomtypes0_.Id as Id1_, roomtypes0_.Id as Id22_0_, roomtypes0_.BedTypes as BedTypes22_0_, roomtypes0_.RoomView as RoomView22_0_, roomtypes0_.Capacity as Capacity22_0_, roomtypes0_.PhysicalRooms as Physical5_22_0_, roomtypes0_.RoomSize as RoomSize22_0_, roomtypes0_.Quantity as Quantity22_0_, roomtypes0_.Price as Price22_0_, roomtypes0_.Smoking as Smoking22_0_, roomtypes0_.HotelId as HotelId22_0_, roomtypes0_.NameMultiLanguageId as NameMul11_22_0_, roomtypes0_.DescriptionMultiLanguageId as Descrip12_22_0_ FROM RoomTypes roomtypes0_ WHERE roomtypes0_.HotelId=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT descriptio0_.HotelId as HotelId1_, descriptio0_.Id as Id1_, descriptio0_.Id as Id8_0_, descriptio0_.Type as Type8_0_, descriptio0_.OrderId as OrderId8_0_, descriptio0_.HotelId as HotelId8_0_, descriptio0_.TextMultiLanguageId as TextMult5_8_0_ FROM HotelBulletPoints descriptio0_ WHERE descriptio0_.HotelId=@p0 ORDER BY descriptio0_.OrderId;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 28 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 28 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 33 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 33 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 34 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 34 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 29 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 29 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 30 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 30 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 35 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 35 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 36 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 36 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 31 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 31 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 32 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 32 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 37 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 37 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 22 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 22 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 23 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 23 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 24 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 24 [Type: Int32 (0)]
+NHibernate: SELECT pageinform0_.Id as Id14_0_, pageinform0_.Filename as Filename14_0_, pageinform0_.LastModified as LastModi3_14_0_, pageinform0_.TitleMultiLanguageId as TitleMul4_14_0_, pageinform0_.DescriptionMultiLanguageId as Descript5_14_0_, pageinform0_.KeywordsMultiLanguageId as Keywords6_14_0_ FROM PageInformations pageinform0_ WHERE pageinform0_.Id=@p0;@p0 = 6 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 25 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 25 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 26 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 26 [Type: Int32 (0)]
+NHibernate: SELECT multilangu0_.Id as Id12_0_ FROM MultiLanguageText multilangu0_ WHERE multilangu0_.Id=@p0;@p0 = 27 [Type: Int32 (0)]
+NHibernate: SELECT texts0_.MultiLanguageTextId as MultiLan3_1_, texts0_.Id as Id1_, texts0_.Id as Id27_0_, texts0_.Value as Value27_0_, texts0_.MultiLanguageTextId as MultiLan3_27_0_, texts0_.LanguageId as LanguageId27_0_ FROM Texts texts0_ WHERE texts0_.MultiLanguageTextId=@p0;@p0 = 27 [Type: Int32 (0)]
+Ending NH Session
+NHibernate: DELETE FROM Hotels_Assets WHERE HotelId = @p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 4 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 28 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 9 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 33 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 10 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 34 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 5 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 29 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 6 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 30 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 11 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 35 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 12 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 36 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 7 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 31 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 8 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 32 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM HotelBulletPoints WHERE Id = @p0;@p0 = 13 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 37 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM Hotels WHERE Id = @p0;@p0 = 1 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 22 [Type: Int32 (0)]
+command 1:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 23 [Type: Int32 (0)]
+command 2:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 24 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM PageInformations WHERE Id = @p0;@p0 = 6 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 25 [Type: Int32 (0)]
+command 1:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 26 [Type: Int32 (0)]
+command 2:DELETE FROM MultiLanguageText WHERE Id = @p0;@p0 = 27 [Type: Int32 (0)]
+
+NHibernate: Batch commands:
+command 0:DELETE FROM Organizations WHERE Id = @p0;@p0 = 4 [Type: Int32 (0)]</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt. The process cannot access the file 'C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Logs\log-unittest.txt' because it is being used by another process.
+SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

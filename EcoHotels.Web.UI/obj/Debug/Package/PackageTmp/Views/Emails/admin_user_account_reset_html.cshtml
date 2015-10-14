@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+    <title>Reset your password</title>
+</head>
+<body>
+
+Hi @Model.Firstname @Model.Lastname
+<br />
+
+<p>
+You have requested that we should reset your password.<br />
+Please click on the link below. It link will expire withing the next 10 minutes.
+</p>
+<br />
+
+<p>
+
+<a href="@Url.Action("verifyreset", "account", new { email = @Model.Email, time = @Model.Time, token = @Model.Token })">Click to reset your password.</a>
+</p>
+
+<br />
+
+<p>
+Best regards,<br />
+I Love Eco Hotels
+</p>
+
+</body>
+</html>

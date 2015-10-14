@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2d0fc573-2e5a-4fb2-bbd0-67a6c8bef2c3" name="Mark@MACPC 2013-04-20 21:52:26" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-04-20 21_52_26" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-04-20T21:52:26.0259342+02:00" queuing="2013-04-20T21:52:26.6491964+02:00" start="2013-04-20T21:52:27.3183729+02:00" finish="2013-04-20T21:52:44.2675879+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c">
+      <Execution timeOut="1800000" id="4a5e1df3-b782-4398-9be9-e85257b94b22" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.SearchServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" executionId="4a5e1df3-b782-4398-9be9-e85257b94b22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4a5e1df3-b782-4398-9be9-e85257b94b22" testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" testName="TestMethod1" computerName="MACPC" duration="00:00:15.3185941" startTime="2013-04-20T21:52:27.7355092+02:00" endTime="2013-04-20T21:52:43.9061349+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a5e1df3-b782-4398-9be9-e85257b94b22">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT this_.Id as Id21_1_, this_.Quantity as Quantity21_1_, this_.RateCategoryId as RateCate3_21_1_, this_.RoomTypeId as RoomTypeId21_1_, this_.CalendarId as CalendarId21_1_, d1_.Id as Id7_0_, d1_.Value as Value7_0_ FROM RoomTypeInventory this_ inner join Calendar d1_ on this_.CalendarId=d1_.Id WHERE d1_.Value &gt;= @p0 and d1_.Value &lt;= @p1;@p0 = 20-04-2013 00:00:00 [Type: DateTime (0)], @p1 = 23-04-2013 00:00:00 [Type: DateTime (0)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

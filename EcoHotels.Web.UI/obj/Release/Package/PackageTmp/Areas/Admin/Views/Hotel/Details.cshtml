@@ -1,0 +1,155 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelDescriptionModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "hotels" });}
+
+<div id="view" class="container" data-view="hotel" data-action="details">
+    <h2>
+        Hotel Details
+        <small>This gives the customer details about your hotel</small>
+    </h2>
+    <div class="row">
+        <div class="span9">
+
+            <form class="form-horizontal ajaxform" action="@Url.Action("details", "hotel", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Id" value="@Model.Id" readonly="readonly" />
+                </div>
+
+                <div class="content">
+                    <br />
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+                </div>
+
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>About the hotel</h3>
+                    <small>Giv an great and short description about the hotel</small>
+                </div>                 
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Description:</label>
+                    <div class="controls">
+                        @Html.TextAreaLocalizationFor(m => m.About, Model.SelectedLanguageId, new { @class = "required span6", rows = "6" })
+                    </div>
+                </div>
+
+
+                <hr />
+            
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>What we love</h3>
+                    <small>Point out what amazing features about the hotel</small>
+                    
+                </div>
+
+                <div>
+
+                @if (Model.WhatWeLove.Count == 0)
+                { 
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Point 1:</label>
+                        <div class="controls">
+                            @Html.Hidden("WhatWeLove[0].Text[0].Id", Guid.NewGuid())
+                            @Html.TextBox("WhatWeLove[0].Text[0].Value", "", new { @class = "span6" })                            
+                        </div>
+                    </div>
+                }
+
+                @for (var n = 0; n < Model.WhatWeLove.Count; n++)
+                { 
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Point 1:</label>
+                        <div class="controls">
+                            @Html.TextBoxLocalizationFor(m => m.WhatWeLove[n].Text, Model.SelectedLanguageId, new { @class = "span6" })
+                            <i class="icon-remove"></i>
+                        </div>
+                    </div>                
+                }
+
+                    <div class="control-group">
+                        <label class="control-label" for="input01"></label>
+                        <div class="controls">
+                            <button class="btn btn-mini" type="button">Add more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr />
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>What you need to know</h3>
+                    <small>State what important information your guests need to know about there stay</small>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Point 1:</label>
+                    <div class="controls">
+                         
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Point 2:</label>
+                    <div class="controls">
+                        @Html.TextBox("sdfsdf", "", new { @class = "span6" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Point 2:</label>
+                    <div class="controls">
+                        @Html.TextBox("sdfsdf", "", new { @class = "span6" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Point 3:</label>
+                    <div class="controls">
+                        @Html.TextBox("sdfsdf", "", new { @class = "span6" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Point 4:</label>
+                    <div class="controls">
+                        @Html.TextBox("sdfsdf", "", new { @class = "span6" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Point 5:</label>
+                    <div class="controls">
+                        @Html.TextBox("sdfsdf", "", new { @class = "span6" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Point 6:</label>
+                    <div class="controls">
+                        @Html.TextBox("sdfsdf", "", new { @class = "span6" })
+                    </div>
+                </div>
+
+
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                </div>
+
+            </form>
+
+        </div>
+        <div class="span3">
+            @{Html.RenderAction("hotels", "navigation", new { page = "details", hotelId = Model.Id });}
+        </div>
+    </div>
+
+</div>

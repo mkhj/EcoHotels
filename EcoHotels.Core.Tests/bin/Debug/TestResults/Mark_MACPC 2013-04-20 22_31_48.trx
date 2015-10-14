@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f4ba823e-ed69-41bc-b624-00eac6fa95f7" name="Mark@MACPC 2013-04-20 22:31:48" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-04-20 22_31_48" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-04-20T22:31:48.6572841+02:00" queuing="2013-04-20T22:31:49.2854308+02:00" start="2013-04-20T22:31:49.8373793+02:00" finish="2013-04-20T22:32:02.5090413+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c">
+      <Execution timeOut="1800000" id="56d7a865-b68e-4470-a9f6-0db1657de3bb" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.SearchServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" executionId="56d7a865-b68e-4470-a9f6-0db1657de3bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="56d7a865-b68e-4470-a9f6-0db1657de3bb" testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" testName="TestMethod1" computerName="MACPC" duration="00:00:11.3727741" startTime="2013-04-20T22:31:50.2935916+02:00" endTime="2013-04-20T22:32:02.3312637+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56d7a865-b68e-4470-a9f6-0db1657de3bb">
+      <Output>
+        <StdOut>Starting NH Session
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Integration.Services.SearchServiceTester.TestMethod1 threw exception: 
+System.RankException: The specified arrays must have the same number of dimensions.</Message>
+          <StackTrace>    at System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   at System.Array.CopyTo(Array array, Int32 index)
+   at NHibernate.Criterion.Restrictions.In(String propertyName, ICollection values)
+   at EcoHotels.Core.Infrastructure.Services.SearchService.Find(DateTime arrival, DateTime depature) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Services\SearchService.cs:line 26
+   at EcoHotels.Core.Tests.Integration.Services.SearchServiceTester.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Services\SearchServiceTester.cs:line 18
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7e060f9e-623d-41e3-ab23-5e2d83b5b004" name="Mark@MACPC 2013-06-13 19:34:10" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-06-13 19_34_10" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-13T19:34:10.4701674+02:00" queuing="2013-06-13T19:34:10.9157706+02:00" start="2013-06-13T19:34:11.2548590+02:00" finish="2013-06-13T19:34:16.9802738+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\release\ecohotels.core.tests.dll" id="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c">
+      <Execution timeOut="1800000" id="c6a9c603-b15a-4324-8dd2-d766d809e8f0" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Release/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.SearchServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" executionId="c6a9c603-b15a-4324-8dd2-d766d809e8f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c6a9c603-b15a-4324-8dd2-d766d809e8f0" testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" testName="TestMethod1" computerName="MACPC" duration="00:00:04.8365887" startTime="2013-06-13T19:34:11.6574654+02:00" endTime="2013-06-13T19:34:16.8727818+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6a9c603-b15a-4324-8dd2-d766d809e8f0">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT searchtagc0_.Id as Id26_0_, searchtagc0_.Name as Name26_0_, searchtagc0_.CountryId as CountryId26_0_ FROM SearchTagCities searchtagc0_ WHERE searchtagc0_.Id=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT hotels0_.SearchTagCityId as SearchT28_1_, hotels0_.Id as Id1_, hotels0_.Id as Id9_0_, hotels0_.Name as Name9_0_, hotels0_.Address1 as Address3_9_0_, hotels0_.Address2 as Address4_9_0_, hotels0_.Zipcode as Zipcode9_0_, hotels0_.City as City9_0_, hotels0_.Country as Country9_0_, hotels0_.Phone as Phone9_0_, hotels0_.Fax as Fax9_0_, hotels0_.Email as Email9_0_, hotels0_.WWW as WWW9_0_, hotels0_.VatNo as VatNo9_0_, hotels0_.CategoryOneId as Categor13_9_0_, hotels0_.CategoryTwoId as Categor14_9_0_, hotels0_.CategoryThreeId as Categor15_9_0_, hotels0_.IsActive as IsActive9_0_, hotels0_.CheckIn as CheckIn9_0_, hotels0_.CheckOut as CheckOut9_0_, hotels0_.Created as Created9_0_, hotels0_.Modified as Modified9_0_, hotels0_.Verified as Verified9_0_, hotels0_.AboutMultiLanguageId as AboutMu22_9_0_, hotels0_.OrganizationId as Organiz23_9_0_, hotels0_.LocalCurrencyId as LocalCu24_9_0_, hotels0_.CancellationPolicyMultiLanguageId as Cancell25_9_0_, hotels0_.PaymentPolicyMultiLanguageId as Payment26_9_0_, hotels0_.PageInformationId as PageInf27_9_0_, hotels0_.SearchTagCityId as SearchT28_9_0_ FROM Hotels hotels0_ WHERE hotels0_.SearchTagCityId=@p0;@p0 = 1 [Type: Int32 (0)]
+NHibernate: SELECT this_.Id as Id21_1_, this_.Quantity as Quantity21_1_, this_.RateCategoryId as RateCate3_21_1_, this_.RoomTypeId as RoomTypeId21_1_, this_.CalendarId as CalendarId21_1_, d1_.Id as Id7_0_, d1_.Value as Value7_0_ FROM RoomTypeInventory this_ inner join Calendar d1_ on this_.CalendarId=d1_.Id WHERE this_.RoomTypeId in (@p0) and d1_.Value &gt;= @p1 and d1_.Value &lt;= @p2;@p0 = 1 [Type: Int32 (0)], @p1 = 13-06-2013 00:00:00 [Type: DateTime (0)], @p2 = 16-06-2013 00:00:00 [Type: DateTime (0)]
+NHibernate: SELECT this_.Id as Id15_0_, this_.Name as Name15_0_, this_.Description as Descript3_15_0_, this_.HotelId as HotelId15_0_ FROM RateCategories this_ WHERE this_.HotelId in (@p0);@p0 = 1 [Type: Int32 (0)]
+-------
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Integration.Services.SearchServiceTester.TestMethod1 threw exception: 
+NHibernate.QueryException: could not resolve property: Hotel.Id of: EcoHotels.Core.Domain.Models.Commerce.Reservation</Message>
+          <StackTrace>    at NHibernate.Persister.Entity.AbstractPropertyMapping.ToType(String propertyName)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.ToType(String propertyName)
+   at NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetType(ICriteria subcriteria, String propertyName)
+   at NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetTypeUsingProjection(ICriteria subcriteria, String propertyName)
+   at NHibernate.Criterion.InExpression.AssertPropertyIsNotCollection(ICriteriaQuery criteriaQuery, ICriteria criteria)
+   at NHibernate.Criterion.InExpression.ToSqlString(ICriteria criteria, ICriteriaQuery criteriaQuery, IDictionary`2 enabledFilters)
+   at NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetWhereCondition(IDictionary`2 enabledFilters)
+   at NHibernate.Loader.Criteria.CriteriaJoinWalker..ctor(IOuterJoinLoadable persister, CriteriaQueryTranslator translator, ISessionFactoryImplementor factory, ICriteria criteria, String rootEntityName, IDictionary`2 enabledFilters)
+   at NHibernate.Loader.Criteria.CriteriaLoader..ctor(IOuterJoinLoadable persister, ISessionFactoryImplementor factory, CriteriaImpl rootCriteria, String rootEntityName, IDictionary`2 enabledFilters)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List[T]()
+   at EcoHotels.Core.Infrastructure.NH.Repository`1.FindAll(DetachedCriteria criteria) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\NH\Repository.cs:line 101
+   at EcoHotels.Core.Infrastructure.Services.SearchService.Find(Int32 searchTagCityId, DateTime arrival, DateTime depature) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Services\SearchService.cs:line 55
+   at EcoHotels.Core.Tests.Integration.Services.SearchServiceTester.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Services\SearchServiceTester.cs:line 100
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

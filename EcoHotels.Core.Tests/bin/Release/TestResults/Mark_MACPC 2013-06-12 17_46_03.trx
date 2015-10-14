@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5015f905-03c3-4947-8c07-400b599345d9" name="Mark@MACPC 2013-06-12 17:46:03" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2013-06-12 17_46_03" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-12T17:46:03.6175310+02:00" queuing="2013-06-12T17:46:04.1442418+02:00" start="2013-06-12T17:46:04.8067834+02:00" finish="2013-06-12T17:46:11.2181926+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\release\ecohotels.core.tests.dll" id="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c">
+      <Execution timeOut="1800000" id="2a1e956e-ca92-4b69-9bff-8b58d51de3e6" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Release/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Services.SearchServiceTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" executionId="2a1e956e-ca92-4b69-9bff-8b58d51de3e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2a1e956e-ca92-4b69-9bff-8b58d51de3e6" testId="f5cbb49f-8f1e-de5b-196c-c5c7dc58693c" testName="TestMethod1" computerName="MACPC" duration="00:00:05.3427985" startTime="2013-06-12T17:46:05.2338198+02:00" endTime="2013-06-12T17:46:11.0970198+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a1e956e-ca92-4b69-9bff-8b58d51de3e6">
+      <Output>
+        <StdOut>Starting NH Session
+NHibernate: SELECT this_.Id as Id9_0_, this_.Name as Name9_0_, this_.Address1 as Address3_9_0_, this_.Address2 as Address4_9_0_, this_.Zipcode as Zipcode9_0_, this_.City as City9_0_, this_.Country as Country9_0_, this_.Phone as Phone9_0_, this_.Fax as Fax9_0_, this_.Email as Email9_0_, this_.WWW as WWW9_0_, this_.VatNo as VatNo9_0_, this_.CategoryOneId as Categor13_9_0_, this_.CategoryTwoId as Categor14_9_0_, this_.CategoryThreeId as Categor15_9_0_, this_.IsActive as IsActive9_0_, this_.CheckIn as CheckIn9_0_, this_.CheckOut as CheckOut9_0_, this_.Created as Created9_0_, this_.Modified as Modified9_0_, this_.Verified as Verified9_0_, this_.AboutMultiLanguageId as AboutMu22_9_0_, this_.OrganizationId as Organiz23_9_0_, this_.LocalCurrencyId as LocalCu24_9_0_, this_.CancellationPolicyMultiLanguageId as Cancell25_9_0_, this_.PaymentPolicyMultiLanguageId as Payment26_9_0_, this_.PageInformationId as PageInf27_9_0_ FROM Hotels this_
+NHibernate: SELECT this_.Id as Id21_1_, this_.Quantity as Quantity21_1_, this_.RateCategoryId as RateCate3_21_1_, this_.RoomTypeId as RoomTypeId21_1_, this_.CalendarId as CalendarId21_1_, d1_.Id as Id7_0_, d1_.Value as Value7_0_ FROM RoomTypeInventory this_ inner join Calendar d1_ on this_.CalendarId=d1_.Id WHERE this_.RoomTypeId in (@p0) and d1_.Value &gt;= @p1 and d1_.Value &lt;= @p2;@p0 = 1 [Type: Int32 (0)], @p1 = 12-06-2013 00:00:00 [Type: DateTime (0)], @p2 = 15-06-2013 00:00:00 [Type: DateTime (0)]
+Ending NH Session</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. </Message>
+          <StackTrace>   at EcoHotels.Core.Tests.Integration.Services.SearchServiceTester.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Services\SearchServiceTester.cs:line 22
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

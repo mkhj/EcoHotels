@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoHotels.Core", "EcoHotels.Core\EcoHotels.Core.csproj", "{983093B2-593F-48FB-869E-2BD8B268B085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoHotels.Extensions", "EcoHotels.Extensions\EcoHotels.Extensions.csproj", "{A65B48AB-2284-489F-B9DA-14EB64067E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoHotels.Web.Core", "EcoHotels.Web.Core\EcoHotels.Web.Core.csproj", "{B1E07DAC-9802-48AD-B7FE-E3F55902359F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoHotels.Web.UI", "EcoHotels.Web.UI\EcoHotels.Web.UI.csproj", "{1AFFE65B-D391-4122-8975-F6DC012962FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoHotels.Core.Tests", "EcoHotels.Core.Tests\EcoHotels.Core.Tests.csproj", "{F7DDB001-DEF5-4A64-A75A-A41D73E99335}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BC250F57-89FE-4202-9E48-9197C4D9791D}"
+	ProjectSection(SolutionItems) = preProject
+		EcoHotels.vsmdi = EcoHotels.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoHotels.Core.Email", "EcoHotels.Core.Email\EcoHotels.Core.Email.csproj", "{1C497836-3249-416C-AE1D-5C8DF9B2BD57}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = EcoHotels.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{983093B2-593F-48FB-869E-2BD8B268B085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983093B2-593F-48FB-869E-2BD8B268B085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983093B2-593F-48FB-869E-2BD8B268B085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983093B2-593F-48FB-869E-2BD8B268B085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65B48AB-2284-489F-B9DA-14EB64067E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65B48AB-2284-489F-B9DA-14EB64067E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65B48AB-2284-489F-B9DA-14EB64067E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65B48AB-2284-489F-B9DA-14EB64067E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E07DAC-9802-48AD-B7FE-E3F55902359F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E07DAC-9802-48AD-B7FE-E3F55902359F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E07DAC-9802-48AD-B7FE-E3F55902359F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E07DAC-9802-48AD-B7FE-E3F55902359F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AFFE65B-D391-4122-8975-F6DC012962FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AFFE65B-D391-4122-8975-F6DC012962FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AFFE65B-D391-4122-8975-F6DC012962FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AFFE65B-D391-4122-8975-F6DC012962FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7DDB001-DEF5-4A64-A75A-A41D73E99335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7DDB001-DEF5-4A64-A75A-A41D73E99335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7DDB001-DEF5-4A64-A75A-A41D73E99335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7DDB001-DEF5-4A64-A75A-A41D73E99335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C497836-3249-416C-AE1D-5C8DF9B2BD57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C497836-3249-416C-AE1D-5C8DF9B2BD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C497836-3249-416C-AE1D-5C8DF9B2BD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C497836-3249-416C-AE1D-5C8DF9B2BD57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

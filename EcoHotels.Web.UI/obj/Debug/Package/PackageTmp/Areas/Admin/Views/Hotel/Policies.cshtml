@@ -1,0 +1,83 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelPolicyModel
+@{
+    ViewBag.Title = "Polices";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "hotels" });}
+
+<div id="view" class="container" data-view="roomtype" data-action="create">
+    <h2>
+        Hotel Policies
+        <small>Change your basic property settings</small>
+    </h2>
+    <div class="row">
+        <div class="span9">
+
+            <form class="form-horizontal ajaxform" action="@Url.Action("policies", "hotel", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Id" value="@Model.Id" readonly="readonly" />
+                </div>
+
+                <div class="control-group">
+                    <div class="alert hidden">...</div>
+                </div>        
+            
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>Reservation policy</h3>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Check In:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(x => x.CheckIn)
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Check Out:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(x => x.CheckOut)
+                    </div>
+                </div>
+
+                <hr />
+                
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>Payment policy</h3>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Description:</label>
+                    <div class="controls">
+                        @Html.TextAreaLocalizationFor(m => m.Payment, Model.SelectedLanguageId, new { @class = "span6 required", rows = "6" })
+                    </div>
+                </div>
+
+                <hr />
+                
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>Cancellation policy</h3>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Description:</label>
+                    <div class="controls">
+                        @Html.TextAreaLocalizationFor(m => m.Cancellation, Model.SelectedLanguageId, new { @class = "span6 required", rows = "6" })
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                </div>
+
+            </form>
+
+        </div>
+        <div class="span3">
+            @{Html.RenderAction("hotels", "navigation", new { page = "policies", hotelId = Model.Id });}
+        </div>
+    </div>
+
+</div>

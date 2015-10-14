@@ -1,0 +1,125 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Property.CreateHotelModel
+@{
+    ViewBag.Title = "Create Hotel";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "hotels" });}
+
+<div id="view" class="container" data-view="hotel" data-action="create">
+    <h2>
+        Hotel
+        <small>Add a new property</small>
+    </h2>
+    <div class="row">
+
+        <div class="span9">
+            <br />
+            <form class="form-horizontal ajaxform" action="@Url.Action("create", "hotel", null)" method="post">
+                <div>@Html.AntiForgeryToken()</div>
+
+                    <div class="content">
+                        <div class="control-group">
+                            <div class="alert hidden">...</div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h3>Contact Information</h3>
+
+                        <div class="control-group">
+                            <label class="control-label">Name:</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.Name, new { @class = "span4 required" })
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Vat No.:</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.VatNo, new { @class = "required" })
+                            </div>
+                        </div>
+            
+                        <div class="control-group">
+                            <label class="control-label">E-mail:</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.Email, new { @class = "required email" })
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label"">Phone:</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.Phone, new { @class = "required" })
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="input01">Fax:</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.Fax)
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="input01">WWW:</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.WWW)
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="input01">Address:</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.Address1, new { @class = "required" })
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.Address2)
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="input01">City:</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.City, new { @class = "required" })
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="input01">Zipcode:</label>
+                            <div class="controls">
+                                @Html.TextBoxFor(m => m.Zipcode, new { @class = "required" })
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="input01">Country:</label>
+                            <div class="controls">
+                                @Html.DropDownListFor(m => m.SelectedCountryName, Model.AvailableCountries, new { @class = "required" })
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="content">
+                        <h3>Settings</h3>
+
+                        <div class="control-group">
+                            <label class="control-label" for="input01">Currency:</label>
+                            <div class="controls">
+                                @Html.DropDownListFor(m => m.SelectedCurrencyId, Model.AvailableCurrencies, new { @class = "required" })
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Add">Add</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

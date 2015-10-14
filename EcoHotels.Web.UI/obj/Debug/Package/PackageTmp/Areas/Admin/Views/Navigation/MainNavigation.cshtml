@@ -1,0 +1,64 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.MainMenuModel
+
+<div class="navbar black navbar-fixed-top shadow">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse">
+            <ul class="nav">
+                <li class="@(Model.Page == "frontdesk" ? "active" : "")"><a href="@Url.Action("index", "dashboard", null)">Dashboard</a></li>
+
+                <li class="dropdown @(Model.Page == "pricing" ? "active" : "")" id="menu2">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Pricing
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href="@Url.Action("index", "inventory")">Inventory</a></li>
+                        <li><a href="@Url.Action("index", "pricing")">Rates</a></li>
+                        <li><a href="@Url.Action("rates", "pricing")">Categories</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown @(Model.Page == "hotels" ? "active" : "")" id="menu1">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Hotels
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        @if (Model.Hotels.Count() > 0)
+                        { 
+                            foreach (var item in Model.Hotels)
+                            {
+                                <li><a href="@Url.Action("edit", "hotel", new { id = item.Id })">@item.Name</a></li>
+                            } 
+                            <li class="divider"></li>
+                        }
+                        <li><a href="@Url.Action("create", "hotel")">Add hotel</a></li>
+                    </ul>
+                </li>
+
+                <li class="@(Model.Page == "media" ? "active" : "")"><a href="@Url.Action("index", "media")">Media</a></li>
+
+                <li class="@(Model.Page == "settings" ? "active" : "")"><a href="@Url.Action("general", "settings", null)">Settings</a></li>
+
+
+                @if (User.IsInRole("Supporter") || User.IsInRole("Backend"))
+                { 
+                    <li class="@(Model.Page == "backend" ? "active" : "")">
+                        <a href="@Url.Action("index", "dashboard", new { area="backend" })">Backend</a>   
+                    </li>
+                }  
+            </ul>
+            <ul class="nav pull-right">
+                <li class="divider-vertical"></li>
+                <li><a href="@Url.Action("logoff", "account", null)">Log out</a></li>
+            </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>

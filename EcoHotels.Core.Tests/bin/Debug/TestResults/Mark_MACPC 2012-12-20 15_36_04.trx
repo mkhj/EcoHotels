@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fc074d86-82dc-40d6-a0ee-209b8f9425c2" name="Mark@MACPC 2012-12-20 15:36:04" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-12-20 15_36_04" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-20T15:36:04.2937423+01:00" queuing="2012-12-20T15:36:04.7412083+01:00" start="2012-12-20T15:36:05.0958593+01:00" finish="2012-12-20T15:36:10.6071163+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Insert_dates_into_calendar" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="a9222e75-00f3-e2f0-3786-38194d1e0f15">
+      <Execution timeOut="1800000" id="3f8428d2-9ea8-427b-9246-cc5cf66327b7" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Install.DataInstaller, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Insert_dates_into_calendar" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a9222e75-00f3-e2f0-3786-38194d1e0f15" executionId="3f8428d2-9ea8-427b-9246-cc5cf66327b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3f8428d2-9ea8-427b-9246-cc5cf66327b7" testId="a9222e75-00f3-e2f0-3786-38194d1e0f15" testName="Insert_dates_into_calendar" computerName="MACPC" duration="00:00:04.8056406" startTime="2012-12-20T15:36:05.3782123+01:00" endTime="2012-12-20T15:36:10.4967153+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f8428d2-9ea8-427b-9246-cc5cf66327b7">
+      <Output>
+        <StdOut>NHibernate: SELECT date_.Value FROM Calendar date_ WHERE date_.Value=@p0;@p0 = 20-12-2012 00:00:00 [Type: DateTime (0)]</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

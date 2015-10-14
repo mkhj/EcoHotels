@@ -1,0 +1,145 @@
+﻿@model EcoHotels.Web.UI.Areas.Backend.Models.CreateOrganizationModel
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "backend" });}
+
+<div id="view" class="container" data-view="organization" data-action="create">
+    <h2>
+        Organization
+        <small>Add a new client to the system</small>
+    </h2>
+    <div class="row">
+
+        <div class="span9">
+
+            <form class="form-horizontal ajaxform" action="@Url.Action("create", "organization", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                </div>
+
+                <div class="content">
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+                </div>
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>User Information</h3>
+                    <small>Please provide all the information for this user.</small>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">First name:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Firstname, new { @class = "required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Last name:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Lastname, new { @class = "required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">E-mail:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.UserEmail, new { @class = "email required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Password:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Password, new { @class = "required" })
+                        <a id="btn-generate-password" class="btn">Generate</a>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>Contact information</h3>
+                    <small>Please provide all the information for this organization.</small>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Name:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Name, new { @class = "required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Vat No.:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.VatNo, new { @class = "required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Phone:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Phone, new { @class = "required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">E-mail:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "required" })
+                    </div>
+                </div>  
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Address1:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Address1, new { @class = "required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Address2:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Address2, new { @class = "" })
+                    </div>
+                </div> 
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">City:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.City, new { @class = "required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Zipcode:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Zipcode, new { @class = "required" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Country:</label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.SelectedCountryName, Model.AvailableCountries, new { @class = "required" })
+                    </div>
+                </div>  
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Create">Create</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="span3">
+            @{Html.RenderAction("backend", "navigation", new { page = "add-organization" });}
+        </div>
+
+    </div>
+</div>

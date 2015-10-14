@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="31f155ce-371b-475a-a177-9d70978c7ee5" name="Mark@MACPC 2012-09-19 14:37:49" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-09-19 14_37_49" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-09-19T14:37:49.4485194+02:00" queuing="2012-09-19T14:37:50.4982470+02:00" start="2012-09-19T14:37:51.2322744+02:00" finish="2012-09-19T14:37:58.5686388+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Tes2t" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="b036e0c1-7fa7-30d1-16a2-959bd0c6e442">
+      <Execution timeOut="1800000" id="ef8ee6de-6482-476a-95cd-7a3e906d99a9" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Tes2t" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b036e0c1-7fa7-30d1-16a2-959bd0c6e442" executionId="ef8ee6de-6482-476a-95cd-7a3e906d99a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ef8ee6de-6482-476a-95cd-7a3e906d99a9" testId="b036e0c1-7fa7-30d1-16a2-959bd0c6e442" testName="Tes2t" computerName="MACPC" duration="00:00:06.6477015" startTime="2012-09-19T14:37:51.6349632+02:00" endTime="2012-09-19T14:37:58.3917294+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef8ee6de-6482-476a-95cd-7a3e906d99a9">
+      <Output>
+        <StdOut>TestInitialize
+Danish</StdOut>
+        <DebugTrace>SessionScope Initializing...
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester.Tes2t threw exception: 
+NHibernate.HibernateException: No session bound to the current context</Message>
+          <StackTrace>    at NHibernate.Context.CurrentSessionContext.CurrentSession() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Context\CurrentSessionContext.cs:line 35
+   at NHibernate.Impl.SessionFactoryImpl.GetCurrentSession() in c:\Users\oskar.berggren\Documents\Projects\nhibernate-core-3\src\NHibernate\Impl\SessionFactoryImpl.cs:line 1042
+   at EcoHotels.Core.Infrastructure.NHibernate.SessionFactory.GetCurrentSession() in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\NHibernate\SessionFactory.cs:line 97
+   at EcoHotels.Core.Infrastructure.Repositories.NH.RepositoryBase`1.get_Session() in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Repositories\NH\RepositoryBase.cs:line 23
+   at EcoHotels.Core.Infrastructure.Repositories.NH.RepositoryBase`1.FindOne(DetachedCriteria criteria) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Repositories\NH\RepositoryBase.cs:line 56
+   at EcoHotels.Core.Infrastructure.Repositories.NH.CountryRepo.FindByISOCode(String code) in C:\SourceCode\EcoHotels\EcoHotels.Core\Infrastructure\Repositories\NH\CountryRepo.cs:line 14
+   at EcoHotels.Core.Tests.Integration.Repositories.Ip2LocationRepoTester.Tes2t() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Integration\Repositories\Ip2LocationRepoTester.cs:line 54
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

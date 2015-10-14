@@ -1,0 +1,134 @@
+﻿@model EcoHotels.Web.UI.Models.ReservationModel
+@{
+    ViewBag.Title = "Index";
+    ViewBag.TEST = "BOOM";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+<div id="view" class="container" data-view="reservation" data-action="show">
+
+    <h2>
+        Reservation
+        <small></small>
+        <span class="label label-important">Cancelled</span>
+    </h2>
+
+    <div class="row">
+        <div class="span9 form-horizontal">
+
+            <div>
+                @Html.HiddenFor(x => x.Id)
+                @Html.AntiForgeryToken()
+            </div>
+
+            <div class="control-group" style="padding: 10px 20px;">
+                <div class="alert hidden">...</div>
+            </div>
+
+            <div style="padding: 0px 20px 20px 20px;">
+                <h3>Hotel Information</h3>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="input01">Hotel:</label>
+                <div class="controls text">
+                    @Model.HotelName
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="input01">Address:</label>
+                <div class="controls text">
+                    @Model.HotelAddress
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="input01">Phone number:</label>
+                <div class="controls text">
+                    @Model.HotelPhoneNumber
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="input01">E-mail:</label>
+                <div class="controls text">
+                    @Model.HotelEmail
+                </div>
+            </div>
+
+            <hr />
+
+            <div style="padding: 0px 20px 20px 20px;">
+                <h3>Room Information</h3>
+            </div>
+
+            <hr />
+
+            <div style="padding: 0px 20px 20px 20px;">
+                <h3>Payment</h3>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="input01">Card Holder's name:</label>
+                <div class="controls text">
+                    @Model.CreditcardHolder
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="input01">Credit Card Type:</label>
+                <div class="controls text">
+                    Visa
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="input01">Credit Card Number:</label>
+                <div class="controls text">
+                    @Model.CreditcardNumber
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="input01">Expiration Date:</label>
+                <div class="controls text">
+                    @Model.ExpireMonth / @Model.ExpireYear
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="input01">Security Code (cvc):</label>
+                <div class="controls text">
+                    @Model.CVC
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <a data-toggle="modal" href="#model-cancel" class="btn btn-large"><i class="icon-remove"></i> Cancel</a>
+            </div>  
+
+        </div>
+        <div id="sidebar" class="span3">
+            <ul class="nav nav-pills nav-stacked" style="padding: 20px 20px 0 20px;">
+                <li class="active"><a href="@Url.Action("index", "account", null)">Account</a></li>
+                <li><a href="@Url.Action("password", "account", null)">Credit Cards & Billing</a></li>
+                <li><a href="@Url.Action("password", "account", null)">Password</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div id="model-cancel" class="modal hide fade">
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Alert</h3>
+  </div>
+  <div class="modal-body">
+    <p>Are you sure wish to cancel this reservation?</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal" >Cancel</a>
+    <a href="#" id="btn-cancel-ok" class="btn btn-primary">Ok</a>
+  </div>
+</div>

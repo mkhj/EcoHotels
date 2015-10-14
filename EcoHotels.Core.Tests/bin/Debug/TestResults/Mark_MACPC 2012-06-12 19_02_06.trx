@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="dc53a455-7d9f-4c5e-81cc-5d22918f7860" name="Mark@MACPC 2012-06-12 19:02:06" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-12 19_02_06" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-12T19:02:06.0999849+02:00" queuing="2012-06-12T19:02:06.6911304+02:00" start="2012-06-12T19:02:07.3360164+02:00" finish="2012-06-12T19:02:13.0676850+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="8eac6221-589f-6773-4e34-9508143ccf9c">
+      <Execution timeOut="1800000" id="04980135-cee5-4193-ab4c-9774594638f6" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Data.CurrencyTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8eac6221-589f-6773-4e34-9508143ccf9c" executionId="04980135-cee5-4193-ab4c-9774594638f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="04980135-cee5-4193-ab4c-9774594638f6" testId="8eac6221-589f-6773-4e34-9508143ccf9c" testName="TestMethod1" computerName="MACPC" duration="00:00:04.8514744" startTime="2012-06-12T19:02:07.5861540+02:00" endTime="2012-06-12T19:02:12.9543414+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04980135-cee5-4193-ab4c-9774594638f6">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method EcoHotels.Core.Tests.Data.CurrencyTester.TestMethod1 threw exception: 
+System.ArgumentException: Culture ID 1 (0x0001) is a neutral culture; a region cannot be created from it.
+Parameter name: culture</Message>
+          <StackTrace>    at System.Globalization.RegionInfo..ctor(Int32 culture)
+   at EcoHotels.Core.Domain.Value_objects.Currency.GetNumberFormatInfo(String isoSymbol) in C:\SourceCode\EcoHotels\EcoHotels.Core\Domain\Value objects\Currency.cs:line 107
+   at EcoHotels.Core.Domain.Value_objects.Currency.Create(String name, Int32 isoNumber, String symbol, Decimal exhangeRate) in C:\SourceCode\EcoHotels\EcoHotels.Core\Domain\Value objects\Currency.cs:line 87
+   at EcoHotels.Core.Tests.Data.CurrencyTester.TestMethod1() in C:\SourceCode\EcoHotels\EcoHotels.Core.Tests\Data\CurrencyTester.cs:line 42
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

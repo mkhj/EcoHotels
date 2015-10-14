@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7ee645d1-db29-4e4c-80a2-237372e6ce22" name="Mark@MACPC 2012-06-15 18:59:04" runUser="MacPc\Mark" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f45b0aff-07a5-4726-a4ce-984b897c8a14">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mark_MACPC 2012-06-15 18_59_04" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-15T18:59:04.2854185+02:00" queuing="2012-06-15T18:59:04.8806551+02:00" start="2012-06-15T18:59:05.5140103+02:00" finish="2012-06-15T18:59:16.3651051+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_import_currencies" storage="c:\sourcecode\ecohotels\ecohotels.core.tests\bin\debug\ecohotels.core.tests.dll" id="0b057ebe-f9d0-3bb1-141c-ae1d6eb83d1c">
+      <Execution timeOut="1800000" id="5788bf89-fa30-43f8-913a-d8bb27fb7885" />
+      <TestMethod codeBase="C:/SourceCode/EcoHotels/EcoHotels.Core.Tests/bin/Debug/EcoHotels.Core.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EcoHotels.Core.Tests.Install.CurrencyTester, EcoHotels.Core.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_import_currencies" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b057ebe-f9d0-3bb1-141c-ae1d6eb83d1c" executionId="5788bf89-fa30-43f8-913a-d8bb27fb7885" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5788bf89-fa30-43f8-913a-d8bb27fb7885" testId="0b057ebe-f9d0-3bb1-141c-ae1d6eb83d1c" testName="Can_import_currencies" computerName="MACPC" duration="00:00:09.1248463" startTime="2012-06-15T18:59:06.4317889+02:00" endTime="2012-06-15T18:59:16.0806817+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5788bf89-fa30-43f8-913a-d8bb27fb7885">
+      <Output>
+        <StdOut>NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'EUR' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'USD' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'GBP' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'SEK' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'NOK' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'ISK' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'CHF' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'CAD' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'JPY' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'AUD' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'NZD' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'LVL' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'LTL' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'PLN' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'CZK' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'HUF' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'HKD' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'SGD' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'ZAR' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'BGN' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'RON' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'TRY' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'KRW' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'HRK' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'RUB' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'THB' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'MYR' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'PHP' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'IDR' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'CNY' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'BRL' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'MXN' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'INR' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'ILS' [Type: String (4000)]
+NHibernate: SELECT this_.Id as Id5_0_, this_.Name as Name5_0_, this_.ISO_4217_Number as ISO3_5_0_, this_.ISOCurrencySymbol as ISOCurre4_5_0_, this_.ExchangeRate as Exchange5_5_0_, this_.LCID as LCID5_0_ FROM Currencies this_ WHERE this_.ISOCurrencySymbol = @p0;@p0 = 'SDR' [Type: String (4000)]</StdOut>
+        <DebugTrace>SessionScope Initializing...
+SessionScope BeginTransaction
+SessionScope EndTransaction
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

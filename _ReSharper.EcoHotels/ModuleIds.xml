@@ -1,0 +1,9 @@
+<Modules>
+  <Module PersistentId="983093B2-593F-48FB-869E-2BD8B268B085" ModuleId="EcoHotels.Core" />
+  <Module PersistentId="A65B48AB-2284-489F-B9DA-14EB64067E70" ModuleId="EcoHotels.Extensions" />
+  <Module PersistentId="1AFFE65B-D391-4122-8975-F6DC012962FE" ModuleId="EcoHotels.UI" />
+  <Module PersistentId="B1E07DAC-9802-48AD-B7FE-E3F55902359F" ModuleId="EcoHotels.Web.Core" />
+  <Module PersistentId="F7DDB001-DEF5-4A64-A75A-A41D73E99335" ModuleId="EcoHotels.Core.Tests_1" />
+  <Module PersistentId="1C497836-3249-416C-AE1D-5C8DF9B2BD57" ModuleId="EcoHotels.Core.Email" />
+  <Module PersistentId="A8B1B4CE-5780-4B8D-9B16-0D097C32A841" ModuleId="EcoHotels.OAuth.Facebook" />
+</Modules>

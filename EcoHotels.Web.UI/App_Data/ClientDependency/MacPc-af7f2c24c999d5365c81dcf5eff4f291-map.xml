@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<map>
+  <item key="ed2602d0a97d0df5391d8793dc68dc64" file="" compression="" version="2">
+    <files>
+      <file name="/assets/bootstrap-2.2.2/css/bootstrap.min.css" />
+      <file name="/assets/css/site.css" />
+    </files>
+  </item>
+  <item key="5484577a53a71dd22e8d018a7ffd9ff8" file="" compression="" version="2">
+    <files>
+      <file name="/assets/3rdparty/jQuery/jquery-1.10.2.min.js" />
+      <file name="/assets/3rdparty/jQuery/jquery-ui-1.10.3.custom.min.js" />
+      <file name="/assets/3rdparty/jQuery/jquery.validate.min.js" />
+      <file name="/assets/js/jquery.form.min.js" />
+      <file name="/assets/bootstrap-2.2.2/js/bootstrap.min.js" />
+      <file name="/assets/js/site.js" />
+    </files>
+  </item>
+  <item key="ed2602d0a97d0df5391d8793dc68dc64" file="C:\SourceCode\EcoHotels\EcoHotels.Web.UI\App_Data\ClientDependency\2_40d36876f23c425db184d8b53efed6bb.cdC" compression="gzip" version="2">
+    <files>
+      <file name="/assets/bootstrap-2.2.2/css/bootstrap.min.css" />
+      <file name="/assets/css/site.css" />
+    </files>
+  </item>
+  <item key="5484577a53a71dd22e8d018a7ffd9ff8" file="C:\SourceCode\EcoHotels\EcoHotels.Web.UI\App_Data\ClientDependency\2_0b141638de40472fad51fc7e3a3ba0da.cdJ" compression="gzip" version="2">
+    <files>
+      <file name="/assets/3rdparty/jQuery/jquery-1.10.2.min.js" />
+      <file name="/assets/3rdparty/jQuery/jquery-ui-1.10.3.custom.min.js" />
+      <file name="/assets/3rdparty/jQuery/jquery.validate.min.js" />
+      <file name="/assets/js/jquery.form.min.js" />
+      <file name="/assets/bootstrap-2.2.2/js/bootstrap.min.js" />
+      <file name="/assets/js/site.js" />
+    </files>
+  </item>
+  <item key="4ff9851617491610482147229f619a4b" file="" compression="" version="2">
+    <files>
+      <file name="/assets/bootstrap-2.1.0/css/bootstrap.min.css" />
+      <file name="/assets/css/app.css" />
+    </files>
+  </item>
+  <item key="7d5b4da150096672470f0874d39a8e8d" file="" compression="" version="2">
+    <files>
+      <file name="/assets/3rdparty/jQuery/jquery-1.8.1.min.js" />
+      <file name="/assets/3rdparty/jQuery/jquery-ui-1.8.23.custom.min.js" />
+      <file name="/assets/3rdparty/jQuery/jquery.validate.min.js" />
+      <file name="/assets/js/jquery.form.min.js" />
+      <file name="/assets/js/jquery.contactable.min.js" />
+      <file name="/assets/bootstrap-2.1.0/js/bootstrap.min.js" />
+      <file name="/assets/js/fileupload/tmpl.min.js" />
+      <file name="/assets/js/fileupload/load-image.min.js" />
+      <file name="/assets/js/fileupload/canvas-to-blob.min.js" />
+      <file name="/assets/js/fileupload/jquery.fileupload.js" />
+      <file name="/assets/js/fileupload/jquery.fileupload-fp.js" />
+      <file name="/assets/js/fileupload/jquery.fileupload-ui.js" />
+      <file name="/assets/js/app.js" />
+      <file name="/assets/js/app.views.admin.js" />
+    </files>
+  </item>
+  <item key="358d32ae2c6f4bb9ab74a5b5a806ceeb" file="" compression="" version="2">
+    <files>
+      <file name="/assets/bootstrap-2.2.2/css/bootstrap.min.css" />
+      <file name="/assets/bootstrap-2.2.2/css/bootstrap-responsive.min.css" />
+      <file name="/assets/css/site.css" />
+    </files>
+  </item>
+  <item key="358d32ae2c6f4bb9ab74a5b5a806ceeb" file="C:\SourceCode\EcoHotels\EcoHotels.Web.UI\App_Data\ClientDependency\2_82391dc8d63e4f70a779916b21018af1.cdC" compression="gzip" version="2">
+    <files>
+      <file name="/assets/bootstrap-2.2.2/css/bootstrap.min.css" />
+      <file name="/assets/bootstrap-2.2.2/css/bootstrap-responsive.min.css" />
+      <file name="/assets/css/site.css" />
+    </files>
+  </item>
+  <item key="4ff9851617491610482147229f619a4b" file="C:\SourceCode\EcoHotels\EcoHotels.Web.UI\App_Data\ClientDependency\2_46913793b0dc46f280a0224c6f01484b.cdC" compression="gzip" version="2">
+    <files>
+      <file name="/assets/bootstrap-2.1.0/css/bootstrap.min.css" />
+      <file name="/assets/css/app.css" />
+    </files>
+  </item>
+  <item key="7d5b4da150096672470f0874d39a8e8d" file="C:\SourceCode\EcoHotels\EcoHotels.Web.UI\App_Data\ClientDependency\2_6f30df8a2fda4c2bab55038af76892e7.cdJ" compression="gzip" version="2">
+    <files>
+      <file name="/assets/3rdparty/jQuery/jquery-1.8.1.min.js" />
+      <file name="/assets/3rdparty/jQuery/jquery-ui-1.8.23.custom.min.js" />
+      <file name="/assets/3rdparty/jQuery/jquery.validate.min.js" />
+      <file name="/assets/js/jquery.form.min.js" />
+      <file name="/assets/js/jquery.contactable.min.js" />
+      <file name="/assets/bootstrap-2.1.0/js/bootstrap.min.js" />
+      <file name="/assets/js/fileupload/tmpl.min.js" />
+      <file name="/assets/js/fileupload/load-image.min.js" />
+      <file name="/assets/js/fileupload/canvas-to-blob.min.js" />
+      <file name="/assets/js/fileupload/jquery.fileupload.js" />
+      <file name="/assets/js/fileupload/jquery.fileupload-fp.js" />
+      <file name="/assets/js/fileupload/jquery.fileupload-ui.js" />
+      <file name="/assets/js/app.js" />
+      <file name="/assets/js/app.views.admin.js" />
+    </files>
+  </item>
+</map>

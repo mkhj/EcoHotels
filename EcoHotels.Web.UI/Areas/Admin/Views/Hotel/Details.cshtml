@@ -1,0 +1,161 @@
+﻿@model EcoHotels.Web.UI.Areas.Admin.Models.Property.EditHotelDescriptionModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_App.cshtml";
+}
+
+@{Html.RenderAction("mainnavigation", "navigation", new { page = "hotels" });}
+
+<div id="view" class="container" data-view="hotel" data-action="details">
+    <h2>
+        Hotel Details
+        <small>This gives the customer details about your hotel</small>
+    </h2>
+    <div class="row">
+        <div class="span9">
+            <br />
+            <form class="form-horizontal ajaxform" action="@Url.Action("details", "hotel", null)" method="post">
+                <div>
+                    @Html.AntiForgeryToken()
+                </div>
+
+                <div class="content">
+                    <div class="control-group">
+                        <div class="alert hidden">...</div>
+                    </div>
+                </div>
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>Reservation details</h3>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Check In:</label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.CheckIn, Model.Hours, new { @class = "span1" }) 
+                        @Html.DropDownListFor(m => m.CheckInAMPM, Model.AMPM, new { @class = "span1" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Check Out:</label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.CheckOut, Model.Hours, new { @class = "span1" }) 
+                        @Html.DropDownListFor(m => m.CheckOutAMPM, Model.AMPM, new { @class = "span1" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Minimum stay:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.MinimumStay, new { @class = "required number span1" }) night(s)
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Minimum Check-In Age:</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.MinimumCheckInAge, new { @class = "required number span1" })
+                    </div>
+                </div>
+
+                <hr />
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>About the hotel</h3>
+                    <small>Giv an great and short description about the hotel</small>
+                </div>                 
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Description:</label>
+                    <div class="controls">
+                        @Html.TextAreaLocalizationFor(m => m.About, Model.SelectedLanguageId, new { @class = "required span6", rows = "6" })
+                    </div>
+                </div>
+
+                <hr />
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>Amenities</h3>
+                </div>
+                
+                @for(var i = 0; i < Model.Amenities.Count(); i++)
+                { 
+                    <div class="control-group">
+                        <label class="control-label" for="input01">@Model.Amenities[i].Name:</label>
+                        <div class="controls">
+                           @Html.HiddenFor(x => x.Amenities[i].Id, new { @readonly="readonly"})
+                           @Html.CheckBoxFor(x => x.Amenities[i].IsSelected)
+                        </div>
+                    </div>
+                }
+
+                <hr />
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>Categories</h3>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="input01">Choose:</label>
+                    <div class="controls">
+
+                        @Html.DropDownListFor(m => m.SelectedCategoryOne, Model.Categories, new { @class = "span2 required", style = "margin-right: 15px;" })
+                        
+                        @Html.DropDownListFor(m => m.SelectedCategoryTwo, Model.Categories, new { @class = "span2 required", style = "margin-right: 15px;" })
+                        
+                        @Html.DropDownListFor(m => m.SelectedCategoryThree, Model.Categories, new { @class = "span2 required", style = "" })
+
+                    </div>
+                </div>
+
+                <hr />
+            
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>What we love</h3>
+                    <small>Point out some of the amazing features about the hotel</small>
+                    
+                </div>
+
+                @for (var n = 0; n < Model.WhatWeLove.Count; n++)
+                { 
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Point @(n + 1):</label>
+                        <div class="controls">
+                            @Html.HiddenFor(m => m.WhatWeLove[n].Id)
+                            @Html.TextBoxLocalizationFor(m => m.WhatWeLove[n].Text, Model.SelectedLanguageId, new { @class = "span6" })
+                        </div>
+                    </div>                
+                }
+
+                <hr />
+
+                <div style="padding: 0px 20px 20px 20px;">
+                    <h3>What you need to know</h3>
+                    <small>State what important information your guests need to know about there stay</small>
+                </div>
+
+                @for (var n = 0; n < Model.WhatYouNeedToKnow.Count; n++)
+                { 
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Point @(n + 1):</label>
+                        <div class="controls">
+                            @Html.HiddenFor(m => m.WhatYouNeedToKnow[n].Id)
+                            @Html.TextBoxLocalizationFor(m => m.WhatYouNeedToKnow[n].Text, Model.SelectedLanguageId, new { @class = "span6" })
+                        </div>
+                    </div>                
+                }
+
+                 <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" data-loading-text="Saving...!" data-complete-text="Save change">Save changes</button>
+                </div>
+
+            </form>
+
+        </div>
+        <div class="span3">
+            @{Html.RenderAction("hotels", "navigation", new { page = "details" });}
+        </div>
+    </div>
+
+</div>

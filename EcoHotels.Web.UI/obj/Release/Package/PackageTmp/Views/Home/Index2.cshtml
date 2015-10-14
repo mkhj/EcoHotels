@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.Title = "";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    Html.RequiresCss("/assets/css/frontpage.css", 100);
+}
+
+@section javascript{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#datepicker").datepicker();
+            $("#datepicker2").datepicker();
+        });
+    </script>
+}
+
+    <style type="text/css">
+      /* Override some defaults */
+      html, body {
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .modal-search
+      {    
+        width: 500px;
+        margin: 70px auto 100px;
+      }
+      
+        .modal-search::after {
+        clear: both;
+        }     
+
+        .modal-search::before, .modal::after {
+        display: table;
+        content: "";
+        } 
+ 
+      /* The white background content wrapper */
+      .modal-search > .content {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px;
+        -webkit-border-radius: 4px;
+           -moz-border-radius: 4px;
+                border-radius: 4px;
+        -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,.15);
+           -moz-box-shadow: 5px 5px 5px rgba(0,0,0,.15);
+                box-shadow: 0 0 10px 5px rgba(0,0,0,.15);
+      }
+ 
+        #tagline h2 
+        {
+            margin-top: 50px;
+            font-weight: 200;
+            font-size: 24px;
+            text-align: center;
+            color: #EEE;
+            text-shadow: 1px 2px 0 black, 2px 2px 0 #555;
+        }
+      
+      #reset{ display: none; }
+ 
+      legend {
+        margin-right: -50px;
+        font-weight: bold;
+        color: #404040;
+      }
+ 
+    </style>
+
+    <div class="container">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div style="position: absolute; top: 8px;"><img src="/assets/img/leaf.png" /></div>
+                    <a class="brand" href="#" style="margin-left: 7px;">I Love Eco Hotels</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="@Url.Action("index", "dashboard", null)">Home</a></li>
+
+                            <li><a href="@Url.Action("edit", "fullrate")">Hotels</a></li>
+
+                            <li><a href="@Url.Action("index", "media")">About</a></li>
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li class="divider-vertical"></li>
+                            <li><a href="@Url.Action("logoff", "account", null)">My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    
+    </div>
+
+    <div class="modal-search">
+        <div class="content">
+                <div id="login" class="login-form">
+                    <select style="width: 500px;">
+                        <option>Please select destination..</option>
+                        <optgroup label="Denmark">
+                            <option>Copenhagen</option>
+                            <option>Aarhus</option>
+                        </optgroup>
+                        <optgroup label="France">                            
+                            <option>Lyon</option>
+                            <option>Marseille</option>
+                            <option>Paris</option>
+                        </optgroup>
+                        <optgroup label="Germany">
+                            <option>Berlin</option>
+                            <option>Hamburg</option>
+                            <option>Munich</option>
+                        </optgroup>
+                        <optgroup label="Norway">
+                            <option>Oslo</option>
+                        </optgroup>                                          
+                    </select>
+
+                    <div class="clearfix">
+                        <div style="float: right;">
+                            <div id="datepicker"></div>
+                        </div>
+                        <div style="float: left;">
+                            <div id="datepicker2"></div>
+                        </div>
+                    </div>
+                    <hr />
+            <center>
+            <a class="btn btn-large" href="/en/home/search">Check Availability</a>
+            </center>
+                </div>
+        </div>
+    </div> <!-- /container -->
