@@ -1,4 +1,5 @@
-# CodeChallenge
+# EcoHotels - A Hotel Booking Platform
+An old project of mine from when I was building hotel booking platform for a start-up.
 
 ### Frontpage
 ![Screenshot](https://github.com/mkhj/EcoHotels/blob/master/frontpage.png?raw=true)
