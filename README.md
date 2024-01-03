@@ -1,5 +1,5 @@
 # EcoHotels - A Hotel Booking Platform
-An old project of mine from when I was building hotel booking platform for a start-up.
+An old project of mine from when I was building hotel booking platform.
 
 ### Frontpage
 ![Screenshot](https://github.com/mkhj/EcoHotels/blob/master/frontpage.png?raw=true)
