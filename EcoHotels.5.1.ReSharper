@@ -1,9 +1,0 @@
-<Configuration>
-  <Daemon.SolutionSettings>
-    <SkipFilesAndFolders>
-      <Item>1AFFE65B-D391-4122-8975-F6DC012962FE/d:Assets/d:js/f:app.js</Item>
-      <Item>1AFFE65B-D391-4122-8975-F6DC012962FE/d:Assets/d:js/f:site.js</Item>
-      <Item>1AFFE65B-D391-4122-8975-F6DC012962FE/d:Views/d:Checkout/f:Index.cshtml</Item>
-    </SkipFilesAndFolders>
-  </Daemon.SolutionSettings>
-</Configuration>
